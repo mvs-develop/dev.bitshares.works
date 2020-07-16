@@ -23,8 +23,6 @@
     api/index_api
     development/testnets
     supports_dev/supports
-    development/bsip
-    development/index_usecases
 	
 -------
 
@@ -33,10 +31,6 @@
     :caption: Guides
 
     bts_guide/tutorials/index
-    bts_guide/index_faq
-    knowledge_base/index_kb		
-    references/githubrepo	
-    references/tech_articles
 
 ---------
 
@@ -46,8 +40,6 @@
     :maxdepth: 2
     :caption: References
 
-    references/info_comunities
-    references/info_bts_events
     knowledge_base/glossary
 
 
