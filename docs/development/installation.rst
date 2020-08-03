@@ -21,15 +21,6 @@ Installation
    - See BitShares :ref:`system requirements <system-requirements-node>`
 
 |
-   
-Releases
------------------------
-* BitShares-Core Release information
-
-  - `Latest Release Notes <https://github.com/bitshares/bitshares-core/releases>`_ 
-  - :ref:`Release Notes Summery list <release-note-idx>` 
-   
-|
 
 Download and Build
 -----------------------
@@ -55,19 +46,6 @@ Dependencies
     installation/openssl_libs
     installation/boost_versions
 
-|	
-	
-CLI Tools
--------------------------
-BitShares-Core has prepared three CLI wallet tools. You can find the latest cli tool files in `BitShares-Core Release <https://github.com/bitshares/bitshares-core/releases>`_ page. 
-
-
-* BitShares-Core-x.x.xxxxxx-Linux-cli-tools.tar.gz
-* BitShares-Core-x.x.xxxxxx-macOS-cli-tools.tar.gz
-* BitShares-Core-x.x.xxxxxx-Windows-x64-cli-tools.zip   
-  
-  - :ref:`How to install CLI tool on Windows x64 <cli-tool>`
-
 |
 	
 Use Windows SubSystem for Linux
@@ -85,18 +63,6 @@ Use Windows SubSystem for Linux
 
 |
 
-------------------------
-
-Support
-========================================
-
-* Technical support is available in the `BitSharesTalk technical support subforum. <https://bitsharestalk.org/index.php?board=45.0>`_ 
-* BitShares Core bugs can be reported directly to the `issue tracker. <https://github.com/bitshares/bitshares-core/issues>`_ 
-* BitShares UI bugs should be reported to the `UI issue tracker <https://github.com/bitshares/bitshares-ui/issues>`_ 
-* Up to date online Doxygen documentation can be found at `Doxygen <https://bitshares.org/doxygen/hierarchy.html>`_ 
-
-
-|
 
 ------------------------
 
@@ -110,15 +76,4 @@ Installed directories and files
 
 
 ------------------------
-
-Next Interests
-=====================
-
-.. toctree:: 
-    :maxdepth: 2
-
-    next-step
-	 
-	
-|
 

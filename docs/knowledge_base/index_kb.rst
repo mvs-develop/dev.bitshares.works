@@ -39,9 +39,6 @@ Testing HF
 
 ------------------
 
-* :ref:`BitShares Core Wiki (searchable by this website)  <wiki-legacy-indx>`
-
-	
 ---------------
 
 * :ref:`Graphene Smart Contract - concepts and steps <pre-graphene-smart-contract>`

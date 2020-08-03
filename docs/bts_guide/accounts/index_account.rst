@@ -22,8 +22,6 @@ In this section, we introduce you some of the important functionalities to get f
     vesting_balances	
     bts_permissions
     bts_multi-sign
-    voting
-
 
 -----------------------------
 

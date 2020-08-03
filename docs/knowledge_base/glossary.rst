@@ -23,11 +23,6 @@ API node
 
 B 
 -----
- 
-BitShares Blockchain
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- "BitShares" --> "BitShares Blockchain"
-
 
 
 Blockchain

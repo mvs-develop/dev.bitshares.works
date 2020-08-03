@@ -20,9 +20,6 @@ All API calls are formated in JSON and return JSON only. You can read more about
     blockchain_api
     wallet_api
     objects_ids
-    namespaces
-  
-
 |
 
 |

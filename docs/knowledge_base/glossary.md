@@ -23,8 +23,6 @@ Items:
 
 ************
 
-#### BitShares Blockchain
-- BitShares
 #### Blockchain
 -  	The Blockchain serves as a journal of user-signed instructions that become a binding agreement as soon as they are included into a block. After inclusion into a block, the agreements are stored indefinitely by means of a hash-linked-list (the Blockchain).
 #### BTS Holder

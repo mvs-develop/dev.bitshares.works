@@ -22,7 +22,6 @@ Your wallet private keys have extremely important roles. By importing your priva
   3. In the each tab, click your public key (or the key image). It will open a private key viewer.
   4. On the form, click [Show], (it might ask you to login) save your each private key and public key information to use later.
   
-  * Guide: :ref:`Where are public/private keys? (GUI) <where-pub-prv-keys>`
 
  
 .. Important::  Keep the private keys information to a safe place. 

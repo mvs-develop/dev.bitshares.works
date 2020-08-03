@@ -161,14 +161,6 @@ Witness Questions
 * :ref:`witness-faq-7`
 * :ref:`witness-faq-8`
 
-
-Bitshares Core wiki (reference)
---------------------------------------------------
-
-* :ref:`Wiki Legacy list <wiki-legacy-indx>`
-
-
-
 ----------
 
 

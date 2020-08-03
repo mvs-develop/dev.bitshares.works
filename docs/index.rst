@@ -22,7 +22,6 @@
     development/index_cli
     api/index_api
     development/testnets
-    supports_dev/supports
 	
 -------
 
