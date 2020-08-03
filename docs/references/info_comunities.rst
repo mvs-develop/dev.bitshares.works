@@ -2,18 +2,18 @@
 .. _bitshares-communities:
 
 ********************
-BitShares Community
+DNA Community
 ********************      
 	  
 Join Us!	  
 ======================
 	 
-* `BitShares Community <https://t.me/bitshares_community>`_
+* `DNA Community <https://t.me/bitshares_community>`_
 * `Forum - BitSharesTalk`_ 
 * `Telegram - BitSharesDEX`_
-* `Telegram - BitShares Traders`_
-* `Discord - BitShares`_
-* `BitShares on Steemit`_
+* `Telegram - DNA Traders`_
+* `Discord - DNA`_
+* `DNA on Steemit`_
 * `Twitter`_
 * `Reddit`_	
 * `BitSharesTalk.io`_
@@ -22,11 +22,11 @@ Join Us!
 .. _Forum - BitSharesTalk: https://bitsharestalk.org/
 .. _Telegram - BitSharesDEX: https://t.me/BitSharesDEX
 .. _Telegram - BitSharesEXCHANGES: https://t.me/BitSharesEXCHANGES
-.. _Telegram - BitShares Traders: https://t.me/BitShares_Traders
-.. _Discord - BitShares: https://discord.gg/GsjQfAJ
+.. _Telegram - DNA Traders: https://t.me/BitShares_Traders
+.. _Discord - DNA: https://discord.gg/GsjQfAJ
 .. _BitShares on Steemit: https://steemit.com/trending/bitshares
 .. _Twitter: https://twitter.com/bitshares
-.. _Reddit: https://www.reddit.com/r/BitShares/
+.. _Reddit: https://www.reddit.com/r/DNA/
 .. _BitSharesTalk.io: https://bitsharestalk.io/forums
 
 
@@ -34,8 +34,8 @@ Beyond Bitcoin - Bitshares
 ----------------------------
 
 
-- `BitShares Discord Hangouts <https://discord.gg/RPJEsGp>`_
-  - `BitShares Hangout: Discord Tips <https://steemit.com/bitshares/@ash/bitshares-hangout-discord-tips>`_
+- `DNA Discord Hangouts <https://discord.gg/RPJEsGp>`_
+  - `DNA Hangout: Discord Tips <https://steemit.com/bitshares/@ash/bitshares-hangout-discord-tips>`_
 
 --------------------------
 
@@ -44,10 +44,10 @@ Beyond Bitcoin - Bitshares
 
 
 ************************
-BitShares Blockchain
+DNA Blockchain
 ************************
 
-BitShares Blockchain Foundation
+DNA Blockchain Foundation
 =======================================
 
 - `Bitshares Foundation <http://www.bitshares.foundation/>`_
@@ -56,9 +56,9 @@ BitShares Blockchain Foundation
 - `Bitshares Foundation : Public Mailing Lists <http://lists.bitshares.foundation/listinfo>`_
 - `Bitshares Foundation : Spokesperson <http://www.bitshares.foundation/spokesperson>`_
 
-BitShares UI Wallet
+DNA UI Wallet
 ====================
-- `BitShares UI wallet <https://wallet.bitshares.org>`_
+- `DNA UI wallet <https://wallet.bitshares.org>`_
 
 
 Bitshares Block Exploer

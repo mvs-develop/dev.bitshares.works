@@ -23,7 +23,7 @@ Ubuntu 16.04 LTS (64-bit)
     sudo apt-get install autoconf cmake make automake libtool git libboost-all-dev libssl-dev g++ libcurl4-openssl-dev
 
 
-2. Build BitShares Core::
+2. Build DNA Core::
 
     git clone https://github.com/bitshares/bitshares-core.git
     cd bitshares-core
@@ -71,7 +71,7 @@ We recommend building on Ubuntu 16.04 LTS (64-bit), and the build dependencies m
 - Ubuntu 18.04 LTS (**64-bit**)
 - Ubuntu 16.04 LTS (**64-bit**)
  
-.. Note:: BitShares requires a 64-bit operating system to build, and will not build on a 32-bit OS.
+.. Note:: DNA requires a 64-bit operating system to build, and will not build on a 32-bit OS.
 
 
 ---------------
@@ -93,7 +93,7 @@ Steps to fix::
     git fetch
     git checkout 
 
-And then build BitShares Core.
+And then build DNA Core.
 
 
 |

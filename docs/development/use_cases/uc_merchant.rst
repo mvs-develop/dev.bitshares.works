@@ -6,7 +6,7 @@ Merchants
 *****************
 
 **Merchants** make use of the currency-denomintated assets of a Graphene network
-(e.g. BitShares). Similar to traditional payment solutions they let their
+(e.g. DNA). Similar to traditional payment solutions they let their
 customers pay using bitUSD, bitEUR, or any other *stable* blockchain asset.
 
 .. contents:: Table of Contents
@@ -224,7 +224,7 @@ Example Python script
 
     invoice = {
         "to": "bitshareseurope",
-        "to_label": "BitShares Europre",
+        "to_label": "DNA Europre",
         "currency": "EUR",
         "memo": "Invoice #1234",
         "line_items": [

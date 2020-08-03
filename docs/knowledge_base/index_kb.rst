@@ -5,23 +5,23 @@
 Knowledge Base (for Advanced)
 *************************************
 
-This section provides deeper knowledge of BitShares Core architecture, features, and system procedures. 
+This section provides deeper knowledge of DNA Core architecture, features, and system procedures. 
 
 
 
 Node Internals
 ========================
 
-* `BitShares - P2P Network Protocol <https://github.com/bitshares/bitshares-core/wiki/P2P-network-protocol>`_
+* `DNA - P2P Network Protocol <https://github.com/bitshares/bitshares-core/wiki/P2P-network-protocol>`_
 * `Steps: Node Initialization during application startup <https://github.com/bitshares/bitshares-core/wiki/Node-Initialization>`_ 
-* `Threading in BitShares Core <https://github.com/bitshares/bitshares-core/wiki/Threading>`_
+* `Threading in DNA Core <https://github.com/bitshares/bitshares-core/wiki/Threading>`_
 
 
  
 HTLC (Hashed Time-Lock Contracts)
 =================================
-* `TESTNET: User Guide for Hashed Time-Lock Contracts (HTLC) on BitShares <https://github.com/bitshares/bitshares-core/wiki/HTLC>`_
-* `TESTNET: User Guide for Hashed Time-Lock Contracts (HTLC) on BitShares (CN) <https://github.com/bitshares/bitshares-core/wiki/HTLC-(CN)>`_ 
+* `TESTNET: User Guide for Hashed Time-Lock Contracts (HTLC) on DNA <https://github.com/bitshares/bitshares-core/wiki/HTLC>`_
+* `TESTNET: User Guide for Hashed Time-Lock Contracts (HTLC) on DNA (CN) <https://github.com/bitshares/bitshares-core/wiki/HTLC-(CN)>`_ 
 
 
 SPV (Simple Payment Verification)

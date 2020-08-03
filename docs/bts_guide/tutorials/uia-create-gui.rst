@@ -19,14 +19,14 @@ Go to **[Settings]** - **[Create Asset]**
 
 
 .. image:: uia-ui-1.png
-        :alt: BitShares
+        :alt: DNA
         :width: 150px
         :align: center
 
 		
 		
 .. image:: uia-ui-2.png
-        :alt: BitShares
+        :alt: DNA
         :width: 600px
         :align: center
 
@@ -36,13 +36,13 @@ Primary Settings
 ^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: uia-ui-3-primary.png
-        :alt: BitShares
+        :alt: DNA
         :width: 600px
         :align: center
 		
 To allow transaction fees to be paid in the native asset, a core exchange rate is required at which a customer can implicitly trade the UIA into BTS from the asset’s *fee pool*. 
 
-This also requires that the fee pool is funded (e.g. by the issuer). Since all prices in BitShares are internally represented as *fractions* (i.e. a/b), we need to define a ratio between quote (the UIA) and base (BTS), i.e. the numerator and denominator for price = a/b
+This also requires that the fee pool is funded (e.g. by the issuer). Since all prices in DNA are internally represented as *fractions* (i.e. a/b), we need to define a ratio between quote (the UIA) and base (BTS), i.e. the numerator and denominator for price = a/b
 	
 :Symbol:   The Symbol defined here will be reserved in the system for your assets. One the asset is created, the symbol cannot be changed again.
 :Maximum Supply:  This is also a permanent setting and denotes the maximum amount of shares that can ever exist at the same time.  	Please consult the Networks fees in the explorer! 
@@ -60,7 +60,7 @@ Description
 
 
 .. image:: uia-ui-4-description.png
-        :alt: BitShares
+        :alt: DNA
         :width: 600px
         :align: center
 		
@@ -76,7 +76,7 @@ Permissions (Optional)
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: uia-ui-5-permissions.png
-        :alt: BitShares
+        :alt: DNA
         :width: 600px
         :align: center
 			
@@ -107,7 +107,7 @@ We here also can enable the requirements for users to be white-listed, enable co
 
 
 .. image:: uia-ui-6-flag.png
-        :alt: BitShares
+        :alt: DNA
         :width: 600px
         :align: center
 			
@@ -130,7 +130,7 @@ View existing Asset
 Go to **[Explore]** - **[Asset]** - **[User Issues Assets]**
 		
 .. image:: uia-ui-7.png
-        :alt: BitShares
+        :alt: DNA
         :width: 600px
         :align: center
 			

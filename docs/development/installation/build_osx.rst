@@ -12,7 +12,7 @@ Building on OS X
 ----------------
 
 
-BitShares OS X Build Instructions
+DNA OS X Build Instructions
 ==================================
 
 1. Install XCode and its command line tools
@@ -48,7 +48,7 @@ In OS X 10.11 (El Capitan) and newer, you will be prompted to install developer 
     git clone https://github.com/bitshares/bitshares-core.git
     cd bitshares-core
 
-8. Build BitShares::
+8. Build DNA::
 
     git submodule update --init --recursive
     cmake .

@@ -1,12 +1,12 @@
 ## Glossary
 
 Items:
-- BitShares Blockchain
+- DNA Blockchain
 - Blockchain
 - CLI
 - configuration file (config.ini)
 - Consensus
-- Docker (BitShares) 
+- Docker (DNA) 
 - ElasticSearch Plugin
 - Native Core Token BTS
 - Nodes (full node)
@@ -78,7 +78,7 @@ Items:
 #### Units
 - shares of an asset/token
 #### unit test
-- In BitShares-Core unit test files locate in a /test/ folder. They are meant to ensure that the code behaves the right way.
+- In DNA-Core unit test files locate in a /test/ folder. They are meant to ensure that the code behaves the right way.
 #### 
 - 
 #### 

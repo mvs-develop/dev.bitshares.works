@@ -14,7 +14,7 @@ Overview
 
 Some API calls that are most interesting for exchanges and gateways are listed
 in the following table. They are compared to their corresponding API calls in
-BitShares 1.0.
+DNA 1.0.
 
 We will now take a look at some sample ouputs for some of the API calls in the
 table above. We recommend to read the following articles: 
@@ -353,11 +353,11 @@ the transaction ID along with the signed transaction.
 
 ----------------
 
-Correspondences with BitShares 1.0 Calls
+Correspondences with DNA 1.0 Calls
 ------------------------------------------------
 
 +----------------------------------------+--------------------------------------------------------------------------+
-| BitShares 1.0 Calls                    | BitShares 2.0 Calls                                                      |
+| DNA 1.0 Calls                    | DNA 2.0 Calls                                                      |
 +========================================+==========================================================================+
 |``wallet_open``                         | n.a. (default ``wallet.json``)                                           |
 +----------------------------------------+--------------------------------------------------------------------------+

@@ -1,7 +1,7 @@
 
 .. _afteriinstall:
 
-Installed BitShares-Core Directory
+Installed DNA-Core Directory
 ===================================
 
 In this section, we show you the installed **bitshares-core** folder structure and explain several points of files in the folder. After we examined the installed folder, we test and run two programs (cli_wallet and witness_node).
@@ -16,13 +16,13 @@ In this section, we show you the installed **bitshares-core** folder structure a
 Installed Folders and Files 
 -------------------------------
 
-BitShares-Core folder
+DNA-Core folder
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-After the BitShares-Core installation, you would have a bitShares-core folder and other directories and files inside the bitShares-core folder similar like the below. There is a programs folder that includes a cli_wallet program and a witness_node program. 
+After the DNA-Core installation, you would have a bitShares-core folder and other directories and files inside the bitShares-core folder similar like the below. There is a programs folder that includes a cli_wallet program and a witness_node program. 
 
 .. image:: vm-ubt1.png
-        :alt: BitShares 
+        :alt: DNA 
         :width: 550px
         :align: center
 		

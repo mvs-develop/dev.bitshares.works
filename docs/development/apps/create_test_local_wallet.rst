@@ -12,9 +12,9 @@ Create your Test Local Wallet
 Create a Test Local Wallet
 -------------------------------
 
-We now know what the installed bitshares-core folder contains and how inside folders and files have been structured. In this section, we test running two programs (witness_node and cli_wallet) to examine and get familiar with the BitShares Blockchain data and application program.
+We now know what the installed bitshares-core folder contains and how inside folders and files have been structured. In this section, we test running two programs (witness_node and cli_wallet) to examine and get familiar with the DNA Blockchain data and application program.
 
-Also, we will launch a cli_wallet and import an existing BitShares account and check the balance. Let's start.
+Also, we will launch a cli_wallet and import an existing DNA account and check the balance. Let's start.
 
 **Note: After my initial installation, a database (blocks binary) file size was 306.9MB. And after running a witness_node for several hours, the file size grew to 10GB.**  
    
@@ -104,7 +104,7 @@ Before doing anything with the new wallet, set a password ``set_password`` and u
 .. tip:: 
   After this point, you can issue any command available to the cli-wallet (:ref:`Wallet APIs <wallet-api-calls>`) or construct your own transaction manually.
 
-  - If you have already a BitShares account, you can look up the account balance information. For example,
+  - If you have already a DNA account, you can look up the account balance information. For example,
       unlocked >>> ``list_account_balances your-account-name`` 
   - If you want to get more detailed information, use **gethelp()**. For example,
       unlocked >> ``gethelp "list_account_balances"``
@@ -133,13 +133,13 @@ The below shows a process after started running..
 
 	
 .. image:: vm-ubt-run-w.png
-        :alt: BitShares 
+        :alt: DNA 
         :width: 600px
         :align: center			
 
 		
 .. image:: vm-ubt-run-w2.png
-        :alt: BitShares 
+        :alt: DNA 
         :width: 600px
         :align: center			
 
@@ -158,7 +158,7 @@ The below shows a process after started running..
 
 	
 .. image:: vm-ubt-run-w3.png
-        :alt: BitShares 
+        :alt: DNA 
         :width: 600px
         :align: center			
 		

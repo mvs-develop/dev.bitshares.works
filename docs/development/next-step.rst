@@ -4,25 +4,25 @@
 Next step...
 ========================
 
-BitShares offers many features, after the bitshares-core installation, you might think what's the next step?  The below is a short contents guide that you might be interested to look into.  Also, visit Developers :ref:`Guide <dev-guides>` and :ref:`FAQs <faq-top>`.
+DNA offers many features, after the bitshares-core installation, you might think what's the next step?  The below is a short contents guide that you might be interested to look into.  Also, visit Developers :ref:`Guide <dev-guides>` and :ref:`FAQs <faq-top>`.
 
 *If you want to...*
 ------------------------
 
-Know more about how BitShares Works
+Know more about how DNA Works
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Check `How BitShares Works <http://how.bitshares.works/en/latest/index.html>`_ Guide
-- Understand :ref:`BitShares Accounts <index-bts-accounts>` Features
+- Check `How DNA Works <http://how.bitshares.works/en/latest/index.html>`_ Guide
+- Understand :ref:`DNA Accounts <index-bts-accounts>` Features
 - Read about Types of `Asset Tokens <http://how.bitshares.works/en/latest/bts_holders/tokens.html>`_
 
 
-Create a BitShares GUI wallet
+Create a DNA GUI wallet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Check `BitShares-UI Release <https://github.com/bitshares/bitshares-ui/releases>`_
-- Read how to create `BitShares UI Wallet  <http://how.bitshares.works/en/latest/user_guide/create_account.html>`_ steps 
-- Understand `BitShares Client and Login Mode <http://how.bitshares.works/en/latest/user_guide/bitshares-client.html>`_ 
+- Check `DNA-UI Release <https://github.com/bitshares/bitshares-ui/releases>`_
+- Read how to create `DNA UI Wallet  <http://how.bitshares.works/en/latest/user_guide/create_account.html>`_ steps 
+- Understand `DNA Client and Login Mode <http://how.bitshares.works/en/latest/user_guide/bitshares-client.html>`_ 
 - Know :ref:`where to find public/private keys (GUI) <where-pub-prv-keys>`
 
 Know how to Backup/Restore (GUI) 
@@ -44,41 +44,41 @@ Create and launch a CLI wallet
 Run a node
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Understand about :ref:`BitShares Node(s) <how-to-run-full-node>`
+- Understand about :ref:`DNA Node(s) <how-to-run-full-node>`
 - Know the :ref:`Node configuration and System Requirements <system-requirements-node>`
 - Learn :ref:`How to run and Use a Full Node <how-to-run-full-node2>`
-- Learn :ref:`How to run a BitShares API Node <run-api-node-guide>`
+- Learn :ref:`How to run a DNA API Node <run-api-node-guide>`
 - Check out :ref:`Node Guide <witness-node-guide-tutorials>`
-- Try it in a :ref:`BitShares Public TestNet <public-testnet-details>`
+- Try it in a :ref:`DNA Public TestNet <public-testnet-details>`
 
 
-Use BitShares API 
+Use DNA API 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Learn :ref:`API Restrictions <api-access-and-restrictions>`
 - Understand Bitshares :ref:`Objects and IDs and the format <objects-ids>`
-- Understand BitShares :ref:`Remote Procedure Calls (RPC) <rpc>` 
-- Understand BitShares :ref:`Websocket Calls & Notifications <websocket-calls>`
+- Understand DNA :ref:`Remote Procedure Calls (RPC) <rpc>` 
+- Understand DNA :ref:`Websocket Calls & Notifications <websocket-calls>`
 - Try :ref:`bis-explorer-api-tryitout`
-- Look into BitShares APIs
+- Look into DNA APIs
 
   - :ref:`Blickchain API <blockchain-api>`
   - :ref:`Wallet API <wallet-api-calls>`
 
-Learn BitShares system components
+Learn DNA system components
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Understand about :ref:`block(s) <lib-block>`
-- Read BitShares' :ref:`Protocols <lib-protocols>`
-- Read BitShares' :ref:`Operations <lib-operations>`
-- Learn BitShares' :ref:`Objects <lib-objects>`
+- Read DNA' :ref:`Protocols <lib-protocols>`
+- Read DNA' :ref:`Operations <lib-operations>`
+- Learn DNA' :ref:`Objects <lib-objects>`
 
 .. _bitshares-other-language-support:
 
-Know BitShares other languages' supports
+Know DNA other languages' supports
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Check :ref:`Python BitShares information links <lib-python>`
+- Check :ref:`Python DNA information links <lib-python>`
 - Check  `BitSharesjs: JavaScript Bitshares library <https://bitsharesjs.bitshares.org/>`_
  
 
@@ -86,10 +86,10 @@ Know BitShares other languages' supports
 Know about BSIPs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Read about :ref:`BitShares Improvement Proposals and Protocols (BSIPs) <about-bsips>`
+- Read about :ref:`DNA Improvement Proposals and Protocols (BSIPs) <about-bsips>`
 - Check the `BSIP Repository <https://github.com/bitshares/bsips>`_ 
 
-  - In the repository, you will find submitted technical documents. They describe the process of updating and improving the BitShares blockchain and technical ecosystem.
+  - In the repository, you will find submitted technical documents. They describe the process of updating and improving the DNA blockchain and technical ecosystem.
 
 |
 

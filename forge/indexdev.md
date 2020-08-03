@@ -35,7 +35,7 @@
          4. etc.
    6. Software
       1. Quickstart Docker Images
-      2. BitShares Core
+      2. DNA Core
       3. REST API Server (TBD. see: https://github.com/bitshares/bitshares-core/issues/870)
       4. Reference UI
       5. SDKs

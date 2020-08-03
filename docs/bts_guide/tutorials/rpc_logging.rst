@@ -6,7 +6,7 @@
 RPC (API) Logging
 =================================
 
-How to enable RPC Logging in BitShares
+How to enable RPC Logging in DNA
 ------------------------------------------
 
 You can enable it by appending the below lines into ``config.ini``

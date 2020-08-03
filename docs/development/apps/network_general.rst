@@ -14,7 +14,7 @@ Set up
 -----------
 
 .. image:: ../../../../_static/structures/general-setup.png
-        :alt: BitShares Architecture
+        :alt: DNA Architecture
         :width: 650px
         :align: center
 		
@@ -39,7 +39,7 @@ Set up
 Trusted Full Node
 ----------------------
 
-The trusted full node is your entry point to the BitShares P2P network. It will hold the blockchain, connect to other peers, and will receive new blocks in real-time.
+The trusted full node is your entry point to the DNA P2P network. It will hold the blockchain, connect to other peers, and will receive new blocks in real-time.
 
 For the trusted full node, the default settings can be used. For later, we will need to open the RPC port and listen to an IP address to connect the wallet to.
 

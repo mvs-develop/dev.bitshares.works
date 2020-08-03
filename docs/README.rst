@@ -1,6 +1,6 @@
 
 ****************************
-BitShares Developer Portal
+DNA Developer Portal
 ****************************
 
 .. image:: bitshares-logo.png
@@ -10,24 +10,24 @@ BitShares Developer Portal
 		
 ----------
 
-.. centered:: **Welcome to the BitShares Developers Portal**
+.. centered:: **Welcome to the DNA Developers Portal**
 
 
-Welcome to the documentation portal for the BitShares Blockchain. The content on this page is managed by the BitShares community and is constantly improved.
+Welcome to the documentation portal for the DNA Blockchain. The content on this page is managed by the DNA community and is constantly improved.
 
-The purpose of this site is to provide in-depth documentation about the BitShares Blockchain and make it easier for users and developers to leverage the full power of the BitShares Blockchain.
+The purpose of this site is to provide in-depth documentation about the DNA Blockchain and make it easier for users and developers to leverage the full power of the DNA Blockchain.
 
-- `BitShares.org <https://bitshares.org/>`_ 
-- `BitShares Whitepaper <https://github.com/bitshares-foundation/bitshares.foundation/blob/master/download/articles/BitSharesBlockchain.pdf>`_
-- `BitShares Blockchain Foundation Announcements <http://www.bitshares.foundation/>`_
-- `BitShares Bug Bounty Program <https://hackthedex.io/>`_
-- `BitShares Documentation - Users Guide <http://how.bitshares.works/en/latest/>`_
-- :ref:`BitShares Community <bitshares-communities>` 
-- `Awesome BitShares Blockchain <https://github.com/bitshares/awesome-bitshares>`_
-- `BitShares News <https://news.bitshares.org/>`_
+- `DNA.org <https://bitshares.org/>`_ 
+- `DNA Whitepaper <https://github.com/bitshares-foundation/bitshares.foundation/blob/master/download/articles/BitSharesBlockchain.pdf>`_
+- `DNA Blockchain Foundation Announcements <http://www.bitshares.foundation/>`_
+- `DNA Bug Bounty Program <https://hackthedex.io/>`_
+- `DNA Documentation - Users Guide <http://how.bitshares.works/en/latest/>`_
+- :ref:`DNA Community <bitshares-communities>` 
+- `Awesome DNA Blockchain <https://github.com/bitshares/awesome-bitshares>`_
+- `DNA News <https://news.bitshares.org/>`_
 
 ----------------
 
-BitShares Development:  :ref:`Zero to Sixty in 30 Minutes or Less <zero-to-sixty-guide>`
+DNA Development:  :ref:`Zero to Sixty in 30 Minutes or Less <zero-to-sixty-guide>`
 
 ----------------

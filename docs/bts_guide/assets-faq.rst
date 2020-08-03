@@ -205,7 +205,7 @@ What if two different market fees are involved in a trade?
 Suppose, I set the market fee for MyUIA market at 0.1%.
 and the market fee for YourUIA market at 0.3%.
 
-In BitShares, You pay the fee upon **receiving an asset**. Hence, one
+In DNA, You pay the fee upon **receiving an asset**. Hence, one
 side will pay 0.3% the other will pay 0.1%.
 
 

@@ -6,7 +6,7 @@ Fees
 ======
 
 
-In the BitShares Blockchain Network, every operation is assigned an individual fee. Each operation has different transaction fee. You can check each operation fee schedule if you are interested. 
+In the DNA Blockchain Network, every operation is assigned an individual fee. Each operation has different transaction fee. You can check each operation fee schedule if you are interested. 
 
 .. contents:: Table of Contents
 
@@ -100,11 +100,11 @@ Issuers may optionally maintain a Fee Pool. The **Fee Pool is a pool of BTS** an
 If the assets fee pool is funded, the fees can be payed in the native UIA instead of BTS.
 
 
-BitShares Reserve Pool and Cashflow 
+DNA Reserve Pool and Cashflow 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: ../../_static/output/BitShares-Cashflow2.png
-        :alt: BitShares cashflow
+.. image:: ../../_static/output/DNA-Cashflow2.png
+        :alt: DNA cashflow
         :width: 700px
         :align: center
 		

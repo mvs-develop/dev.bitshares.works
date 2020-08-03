@@ -68,7 +68,7 @@ For our example, we would get:::
 ==========================
 
 If you want to register the account of someone else, all you need is the public
-key. In theory, the BitShares blockchain distinguishes three keys for each
+key. In theory, the DNA blockchain distinguishes three keys for each
 account, namely the **owner**, **active**, and the **memo** key.  However, for
 the sake of simplicity, we here make use of only one public key (see example
 above).

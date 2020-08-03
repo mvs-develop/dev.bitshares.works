@@ -1,12 +1,12 @@
-# BitShares UI - How to create and manage Cloud wallet and/or Local wallet Accounts 
+# DNA UI - How to create and manage Cloud wallet and/or Local wallet Accounts 
 
-This document purpose: To explain BitShares UI wallet Client and wallet types and answer some of frequently asked questions about Wallet and Account.  And also, show how to create a Cloud wallet and a Local wallet. 
+This document purpose: To explain DNA UI wallet Client and wallet types and answer some of frequently asked questions about Wallet and Account.  And also, show how to create a Cloud wallet and a Local wallet. 
 
 #### Contents:
-- [BitShares Client](../knowledge_base/bitshares-ui-wallet-account-mode.md#bitshares-client)
+- [DNA Client](../knowledge_base/bitshares-ui-wallet-account-mode.md#bitshares-client)
   - Lite Client
   - Web Client
-- [BitShares Wallet Types and Login](../knowledge_base/bitshares-ui-wallet-account-mode.md#bitshares-wallet-types-and-login)
+- [DNA Wallet Types and Login](../knowledge_base/bitshares-ui-wallet-account-mode.md#bitshares-wallet-types-and-login)
   - Cloud Wallet 
   - Local Wallet
 - [Frequently asked Questions](../knowledge_base/bitshares-ui-wallet-account-mode.md#frequently-asked-questions)
@@ -16,14 +16,14 @@ This document purpose: To explain BitShares UI wallet Client and wallet types an
 
 ***
 
-## BitShares Client
+## DNA Client
 - BitShres wallet has two client types. 
-  - **Light Client** : Download and install BitShares wallet to your computer. **This does not mean that you will have a Local wallet.**
-    - [BitShares-UI – Latest Release](https://github.com/bitshares/bitshares-ui/releases)
+  - **Light Client** : Download and install DNA wallet to your computer. **This does not mean that you will have a Local wallet.**
+    - [DNA-UI – Latest Release](https://github.com/bitshares/bitshares-ui/releases)
   - **Web Client** : Access the network and open the wallet in the browsers.
     - wallet.bitshares.org https://wallet.bitshares.org
   
-## BitShares Wallet Types and Login   
+## DNA Wallet Types and Login   
 
 ### Cloud Wallet
 - BitShare UI wallet will create a **Cloud wallet** as a default wallet. (i.e., [CREATE ACCOUNT])
@@ -35,7 +35,7 @@ This document purpose: To explain BitShares UI wallet Client and wallet types an
 - **The Cloud wallet has no brainkey.** The password is basically the equivalent of the brainkey, but it's only used for that one account.
   
 ### Local Wallet
-- **If you know you want to have a Local wallet, use an [advanced form] link on the Welcome to BitShares form and create a backup file. This is the way to get a Local wallet.** 
+- **If you know you want to have a Local wallet, use an [advanced form] link on the Welcome to DNA form and create a backup file. This is the way to get a Local wallet.** 
 - The Local wallet creates a correct pair of keys (a brainkey and private keys) and save the information to your browser.
 - The Local wallet creates a database with in your browser. This means that you can only access your funds from the same computer and web browser that you have used to register and create your account.  If you attempt to access your local wallet from any other computer, or any other browser, it will fail unless you actively import your backup file from the original browser backup file.
 - You have to create a backup files to manage the Cloud wallet account. 
@@ -52,12 +52,12 @@ This document purpose: To explain BitShares UI wallet Client and wallet types an
 - **I have a Cloud wallet. Can I have a Local wallet?** 
   - Yes. But you will have to create new account for the Local wallet. 
 - **How can I move my funds from a Cloud wallet to a Local wallet?**
-  - We mentioned before. You have to create new account for the Local wallet. You can create the Local wallet by using an [**advanced form**] link on Welcome to BitShares form. After you created new Local wallet, send your funds from your old account (Cloud wallet) to new account (Local wallet). And create a backup!!
+  - We mentioned before. You have to create new account for the Local wallet. You can create the Local wallet by using an [**advanced form**] link on Welcome to DNA form. After you created new Local wallet, send your funds from your old account (Cloud wallet) to new account (Local wallet). And create a backup!!
 - **I have a Cloud wallet. Do I have to save my private keys information somewhere?**
   - Not necessary. Because the Could wallet always do it for extra security. Also lets you login without exposing your owner key, you can login using only the active key.
 - **Can I change a Cloud wallet password?** 
   - Yes. 
-  - Go to [How to change a password if using a Cloud Wallet](https://github.com/bitshares/bitshares-ui/wiki/Cloud-Wallet-Login-and-changing-password) : from BitShares UI wiki
+  - Go to [How to change a password if using a Cloud Wallet](https://github.com/bitshares/bitshares-ui/wiki/Cloud-Wallet-Login-and-changing-password) : from DNA UI wiki
 - **Can I change a Local wallet password?** 
   - Yes.
   - Go to [**Settings**] - [**Password**] - Change your password. Use this page. 
@@ -67,10 +67,10 @@ This document purpose: To explain BitShares UI wallet Client and wallet types an
 ***
 
 ## Light wallet or Web wallet?
-Before we create a wallet, let’s check which wallet you want to have as your BitShares wallet. Quick check the below chart.
+Before we create a wallet, let’s check which wallet you want to have as your DNA wallet. Quick check the below chart.
 
 <p align="center">
-  <img src="/core/imgs/ui-login/BitShares-wallet-flow.png" width="620" title="welcome_bitshares">
+  <img src="/core/imgs/ui-login/DNA-wallet-flow.png" width="620" title="welcome_bitshares">
 </p>
 
 ***
@@ -87,9 +87,9 @@ This is very important. Please create a strong password and **write down** or **
 
 - 1.Click [**CREATE ACCOUNT**]
 
-It opens a next form to input your BitShares account name and a password. 
+It opens a next form to input your DNA account name and a password. 
 
-- 2.Type in [**ACCOUNT NAME**].  You can create your unique BitShares account name.
+- 2.Type in [**ACCOUNT NAME**].  You can create your unique DNA account name.
 - 3.Set a password. You can use a _GENERATED PASSWORD_ or create own strong password.
 - 4.Type or paste your password to confirm.
 - 5.Check the check boxes. **Make sure you read before you check!**
@@ -125,7 +125,7 @@ This example will create a **Local wallet**.
 </p>
 
 - 1.Click [**advanced form]**
-- 2.Type in [**ACCOUNT NAME**]. You can create your unique BitShares account name.
+- 2.Type in [**ACCOUNT NAME**]. You can create your unique DNA account name.
 - 3.Set a password. Create own strong password.
 - 4.Type or paste your password to confirm.
 - 5.Click [**CREATE ACCOUNT**]

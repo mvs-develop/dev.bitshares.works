@@ -5,7 +5,7 @@
 Quick Start Guide - Public Testnet
 *************************************
 
-The BitShares Open Public Testnet has been deployed and is fully functional for anyone to use and is shared among developers. All developers take the opportunity to construct a tutorial.
+The DNA Open Public Testnet has been deployed and is fully functional for anyone to use and is shared among developers. All developers take the opportunity to construct a tutorial.
 
 
 .. contents:: Table of Contents
@@ -43,7 +43,7 @@ To see more options: Go to :ref:`Installation Guide <installation-guide>`.
 	 sudo apt-get update
 	 sudo apt-get install autoconf cmake git libboost-all-dev libssl-dev g++ libcurl4-openssl-dev
 
-2. Build BitShares Core - Select **testnet** branch
+2. Build DNA Core - Select **testnet** branch
 
 *In order to run a full node, get the sources (branch* **testnet** *) and compile*::
 

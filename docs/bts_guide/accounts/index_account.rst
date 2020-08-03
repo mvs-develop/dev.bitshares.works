@@ -2,12 +2,12 @@
 .. _index-bts-accounts:
 
 ********************
-BitShares Accounts
+DNA Accounts
 ********************
 
-In BitShares Blockchain, you can create an account relatively easily by using BitShares UI wallet.  As a default, you will create a Cloud Wallet. You can imagine the Cloud Wallet smiler to your normal bank account. You remember your account name and a password and the bank manage and save your funds for you. 
+In DNA Blockchain, you can create an account relatively easily by using DNA UI wallet.  As a default, you will create a Cloud Wallet. You can imagine the Cloud Wallet smiler to your normal bank account. You remember your account name and a password and the bank manage and save your funds for you. 
  
-After you create, a BitShares wallet and an account.  We recommend you to look through the BitShares wallet options and functionalities. 
+After you create, a DNA wallet and an account.  We recommend you to look through the DNA wallet options and functionalities. 
 In this section, we introduce you some of the important functionalities to get familiar with. 
 
 -------------------
@@ -25,7 +25,7 @@ In this section, we introduce you some of the important functionalities to get f
 
 -----------------------------
 
-.. note:: BitShares Account section in the dev.bitshares.works and the how.bitshares.works are the same contents. For searching purpose, having pages in both sites.
+.. note:: DNA Account section in the dev.bitshares.works and the how.bitshares.works are the same contents. For searching purpose, having pages in both sites.
 	
 |
 

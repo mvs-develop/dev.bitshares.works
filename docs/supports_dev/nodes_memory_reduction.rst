@@ -14,7 +14,7 @@ Memory Reduction for Nodes
 Four New Options to Reduce RAM
 =========================================
 
-The BitShares blockchain is big and Graphene technology stores all the data into RAM at chain replay. Currently(2017-09-04) a full node requires 40GB of RAM. Most of the time a full node with everything loaded is not needed and expensive due to the amount of memory the machine need to have available. RAM usage can be reduced significantly by using ``witness_node`` executable options.
+The DNA blockchain is big and Graphene technology stores all the data into RAM at chain replay. Currently(2017-09-04) a full node requires 40GB of RAM. Most of the time a full node with everything loaded is not needed and expensive due to the amount of memory the machine need to have available. RAM usage can be reduced significantly by using ``witness_node`` executable options.
 
 Here are the 4 new options you can use to reduce RAM:
 
@@ -96,7 +96,7 @@ Reduce the number of operations for each account that the node will save in the 
 
 Remove operation history objects.
 
-BitShares-core stores operations in two different objects, the 2.9.X and the 1.11.X. they are not exactly the same but if you are removing ops with `--track-account` or `--max-ops-per-account` it makes sense that you also add this option to reduce memory usage even more.::
+DNA-core stores operations in two different objects, the 2.9.X and the 1.11.X. they are not exactly the same but if you are removing ops with `--track-account` or `--max-ops-per-account` it makes sense that you also add this option to reduce memory usage even more.::
 
     programs/witness_node/witness_node --data-dir data/my-blockprod 
 	                                   --rpc-endpoint "127.0.0.1:8090" 

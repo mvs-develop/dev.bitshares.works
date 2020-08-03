@@ -46,7 +46,7 @@ Creates a new account and registers it on the blockchain.
 4. Register an Account
 ----------------------------
 
-If you want to register the account of someone else, all you need is the public key. In theory, the BitShares blockchain distinguishes three keys for each account, namely the **owner**, **active**, and the **memo** key. However, for the sake of simplicity, we here make use of only one public key.
+If you want to register the account of someone else, all you need is the public key. In theory, the DNA blockchain distinguishes three keys for each account, namely the **owner**, **active**, and the **memo** key. However, for the sake of simplicity, we here make use of only one public key.
 
 In order to register an account, we need an other account that has enough funds to pay the fee for the registration transaction. This account will be called `registrar_account`. Another account `referrer_account` can be registered that will get `referrer_percentage` of the referral bonus program. Any registered account can take the role of the referrer. Hence we here say that user `anonymous` has referred us. 
 

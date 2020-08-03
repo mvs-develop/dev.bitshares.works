@@ -11,11 +11,11 @@ Importing Your Wallet
 Web Wallet
 -----------------------
 
-The web wallet of BitShares 2.0 has a **Wallet management Console.** that will
-help you import your funds. It can be access via `BitShares 2.0: Settings -> Wallets` 
+The web wallet of DNA 2.0 has a **Wallet management Console.** that will
+help you import your funds. It can be access via `DNA 2.0: Settings -> Wallets` 
 
 .. image:: wallet-management-console.png
-        :alt: Wallet Management Console in BitShares 2.0
+        :alt: Wallet Management Console in DNA 2.0
         :width: 550px
         :align: center
 
@@ -29,18 +29,18 @@ choose ``Import Keys``.
    sure to click ``Import Keys`` and **not** ``Restore Backup``.
 
 .. image:: wallet-management-console-import-keys.png
-        :alt: Wallet Management Console in BitShares 2.0 -- Import Keys
+        :alt: Wallet Management Console in DNA 2.0 -- Import Keys
         :width: 550px
         :align: center
 
 |
 
-Here you can provide the wallet backup file produced from BitShares 0.9.3c and
+Here you can provide the wallet backup file produced from DNA 0.9.3c and
 the pass phrase. Depending on the size of your import file, this step may take
 some time to auto-complete. Please be patient.
 
 .. image:: ../../../../../../_static/imgs/import-keys.png
-        :alt: Import Wallet Backup from BitShares 1.0
+        :alt: Import Wallet Backup from DNA 1.0
         :width: 550px
         :align: center
 

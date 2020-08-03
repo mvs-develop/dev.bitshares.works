@@ -371,9 +371,9 @@ The ``witness_node`` program can be used as a ``delayed_node``. For the instruct
 Plugins
 **************
 
-To see available BitShares Plugins, go to the below link page.
+To see available DNA Plugins, go to the below link page.
 
-* `BitShares Plugins: Github ReadMe <https://github.com/bitshares/bitshares-core/blob/master/libraries/plugins/README.md>`_ 
+* `DNA Plugins: Github ReadMe <https://github.com/bitshares/bitshares-core/blob/master/libraries/plugins/README.md>`_ 
   
   - ``account_history``, ``debug_witness``, ``delayed_node``, ``elasticsearch``, ``es_objects``,  ``grouped_orders``, ``market_history``, ``snapshot``, ``witness``
 

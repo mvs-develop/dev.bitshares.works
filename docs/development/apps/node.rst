@@ -68,8 +68,8 @@ When restarting the witness node, it may be required to append the ``--replay-bl
 Public Full Node Information 
 ================================
 
-* `BitShares Public Full Nodes (apiConfig) <https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js>`_
-* `Global BitShares Node Distribution Map <https://bitshares.eu/network/>`_
+* `DNA Public Full Nodes (apiConfig) <https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js>`_
+* `Global DNA Node Distribution Map <https://bitshares.eu/network/>`_
 * `Seed Nodes information (application.cpp) <https://github.com/bitshares/bitshares-core/blob/master/libraries/app/application.cpp>`_ 
 
 

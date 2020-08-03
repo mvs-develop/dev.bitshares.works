@@ -5,10 +5,10 @@
 Objects 
 *********************
 
-*BitShares Core - graphene::chain*
+*DNA Core - graphene::chain*
 
 
-This document purpose: to make a list of BitShares objects and provide each object structure and the purpose. 
+This document purpose: to make a list of DNA objects and provide each object structure and the purpose. 
 
 
 .. contents:: Table of Contents

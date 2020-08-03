@@ -15,10 +15,10 @@ Installation
 
 .. Tip::  
    - We recommend building on Ubuntu 16.04 LTS (64-bit)
-   - BitShares requires a 64-bit operating system to build, and will not build on a 32-bit OS.
-   - BitShares now supports Ubuntu 18.04 LTS
-   - BitShares now supports OpenSSL 1.1.0
-   - See BitShares :ref:`system requirements <system-requirements-node>`
+   - DNA requires a 64-bit operating system to build, and will not build on a 32-bit OS.
+   - DNA now supports Ubuntu 18.04 LTS
+   - DNA now supports OpenSSL 1.1.0
+   - See DNA :ref:`system requirements <system-requirements-node>`
 
 |
 
@@ -57,9 +57,9 @@ Use Windows SubSystem for Linux
 
 
 .. note::
-		- BitShares requires a 64-bit operating system to build, and will not build on a 32-bit OS.
-		- BitShares now supports Ubuntu 18.04 LTS
-		- BitShares now supports OpenSSL 1.1.0
+		- DNA requires a 64-bit operating system to build, and will not build on a 32-bit OS.
+		- DNA now supports Ubuntu 18.04 LTS
+		- DNA now supports OpenSSL 1.1.0
 
 |
 

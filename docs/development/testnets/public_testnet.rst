@@ -5,7 +5,7 @@
 Public Testnet Set up
 ************************
 
-In this section, we are going to set up the BitShares Public Testnet. For the Public Testnet, you should download a testnet branch from the BitShares-Core Github repository. The testnet branch files are for the Testnet. 
+In this section, we are going to set up the DNA Public Testnet. For the Public Testnet, you should download a testnet branch from the DNA-Core Github repository. The testnet branch files are for the Testnet. 
 
 
 .. contents:: Table of Contents
@@ -73,7 +73,7 @@ As you know, each blockchain starts with a genesis block that definitions are in
 2-1. Obtain a config.ini file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The BitShares Blockchain Data Configuration file exists in the blockchain data directory. And the data directory will be created by launching a witness_node. 
+The DNA Blockchain Data Configuration file exists in the blockchain data directory. And the data directory will be created by launching a witness_node. 
 
 At this point, we just want to create a :ref:`configuration file (cinfig.ini)  <bts-config-ini-eg-public-testnet>` to observe the parameters. If you want to use the Public Testnet, you can use the default configuration settings without changes.
 
@@ -139,7 +139,7 @@ If you want to create own data directory, use ``--data-dir`` parameter and run t
 
 Although you can use the default :ref:`cinfig.ini <bts-config-ini-eg-public-testnet>` file for the Public Testnet, it's worth to recognize the parameters. 
 
-In BitShares, a seed node is a node that accept incoming P2P connection. Its address is hard coded in the program, so when a new node starts, it will connect to the seed nodes by default. Every node (including seed nodes) tells the connected nodes where other nodes are, so all nodes can connect to each other.
+In DNA, a seed node is a node that accept incoming P2P connection. Its address is hard coded in the program, so when a new node starts, it will connect to the seed nodes by default. Every node (including seed nodes) tells the connected nodes where other nodes are, so all nodes can connect to each other.
 
 .. list-table::
    :widths: 20 80
@@ -193,7 +193,7 @@ If you want to use the ``cli_wallet``, you need to specify at least the rpc endp
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 (If you have your testnet accounts already, you can jump this section.)
 
-We want to use a BitShares Public UI wallet for testnet(http://testnet.bitshares.eu/) to register new testnet account. The public UI wallet has been set the faucet (https://faucet.testnet.bitshares.eu/) already. The faucet address is used to pay the registration fee for new users! (*To learn more details, please refer BitShares Users Guide.*)
+We want to use a DNA Public UI wallet for testnet(http://testnet.bitshares.eu/) to register new testnet account. The public UI wallet has been set the faucet (https://faucet.testnet.bitshares.eu/) already. The faucet address is used to pay the registration fee for new users! (*To learn more details, please refer DNA Users Guide.*)
 
   1) Go to the Public testnet UI wallet: (http://testnet.bitshares.eu/) to create new testnet account.
   2) If you see "Application initialization issues", try to select "Public Testnet Server (...)" from a FULL NODE API SERVER dropdown list. 
@@ -239,7 +239,7 @@ The below table is Example Owner, Active, and Memo key pairs. Each authority has
      - P5J3-Test-MEMO-Private-keyva7C9sYW6
 
 	 
-You might've noticed each public key start with **TEST**.  So, you know those private keys are for the testnet. If you create BitShares mainnet account, you will find **BTS** on the top of each private key.
+You might've noticed each public key start with **TEST**.  So, you know those private keys are for the testnet. If you create DNA mainnet account, you will find **BTS** on the top of each private key.
 
 **Note:** The Memo key is for decrypting transfer memos. 
   
@@ -250,7 +250,7 @@ You might've noticed each public key start with **TEST**.  So, you know those pr
 5.  Use of CLI wallet in Public Testnet
 ----------------------------------------------------
 
-In this section, we will connect a ``cli_wallet`` and import an existing testnet account by importing the two private keys into your cli wallet. After we import the testnet account, we will test our first transaction ``transfer`` on the BitShares testnet blockchain.
+In this section, we will connect a ``cli_wallet`` and import an existing testnet account by importing the two private keys into your cli wallet. After we import the testnet account, we will test our first transaction ``transfer`` on the DNA testnet blockchain.
  
 .. Attention:: If you have newly created testnet account and just started a public testnet witness_node, you have to make sure if your node has been synced completely. Otherwise, you will not be able to find your new account data. 
  
@@ -304,7 +304,7 @@ We want to import two private keys. First one is **Active Private key** to trans
   - \<wifkey\> is the private key in WIF format
 	
 
-In BitShares Blockchain, balances are contained in accounts. Use the following as an example to import your testnet account balances. These balances can be claimed, with no fee.
+In DNA Blockchain, balances are contained in accounts. Use the following as an example to import your testnet account balances. These balances can be claimed, with no fee.
 
 
       >>> import_balance ken-test01 ["P5KN-Test-ACTIVE-Private-key-Pn3jNVZBh"] true

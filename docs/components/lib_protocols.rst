@@ -5,13 +5,13 @@
 Protocols
 ***************************************
 
-*BitShares Core - graphene::chain*
+*DNA Core - graphene::chain*
 
-This document purpose: to bring BitShares Protocols information (files) close to users.
+This document purpose: to bring DNA Protocols information (files) close to users.
 
 The classes declared in these headers provide the complete definition of the Graphene protocol and are organized according to feature. Nothing in this directory should depend upon anything other than fc or other types defined in the protocol directory.
 
-The below information are a collection of the BitShares Protocols. Sometimes it's difficult to find and read through all of them.  The original files locate: (..\\libraries\\chain\\include\\graphene\\chain\\protocol\\xxx.hpp)
+The below information are a collection of the DNA Protocols. Sometimes it's difficult to find and read through all of them.  The original files locate: (..\\libraries\\chain\\include\\graphene\\chain\\protocol\\xxx.hpp)
 
 ----------------
 

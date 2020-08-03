@@ -14,7 +14,7 @@ Type of Nodes
 
 -------
 
-In the BitShares blockchain network, you might find the slightly different naming of **nodes**, such as a full node, witness node, or block producer.  All nodes keep updating an internal database by applying the transactions as they arrive in incoming blocks.  The difference between the node types lies in the amount of history they keep track of, and in the functionality they provide.
+In the DNA blockchain network, you might find the slightly different naming of **nodes**, such as a full node, witness node, or block producer.  All nodes keep updating an internal database by applying the transactions as they arrive in incoming blocks.  The difference between the node types lies in the amount of history they keep track of, and in the functionality they provide.
 
 A **witness node** is a node run by a witness. Each witness node validates all blocks and transactions it receives. The nodes of elected witnesses take turns in bundling new transactions into blocks and broadcasting them to the network.
 
@@ -24,14 +24,14 @@ A **witness node** is a node run by a witness. Each witness node validates all b
 
 
 
-**Seed nodes** are nodes that accept incoming P2P connections.  They are the first nodes contacted by a freshly started node.  In that sense they serve as an entry point into the network.  Once a node has entered the network it will receive additional node addresses from its peers, so all nodes can connect to each other.  A seed node can also be an API node.  The BitShares core software, also called `witness_node`, comes with a preconfigured list of seed nodes for easy bootstrapping.
+**Seed nodes** are nodes that accept incoming P2P connections.  They are the first nodes contacted by a freshly started node.  In that sense they serve as an entry point into the network.  Once a node has entered the network it will receive additional node addresses from its peers, so all nodes can connect to each other.  A seed node can also be an API node.  The DNA core software, also called `witness_node`, comes with a preconfigured list of seed nodes for easy bootstrapping.
 
 So, when and who producing blocks?  We call **Block Producers** ; they serve an important role of validating signatures and timestamping transactions by including them in a block and broadcast it.  Block Producers are witnesses who got enough votes to become **active witnesses** and can produce a block when they got their turn "time slot".  
 
-Each time, block producers produce a block, they get paid for their services. Their pay rate is set by the BTS holders via their elected committee members. If failing to produce a block in a time slot, then the block producer is not paid.  Currently, BitShares blockchain has 27 Block Producers (Active Witnesses).  You can find BitShares Blockchain witnesses in BitShares UI wallet  Explorer-witnesses, or :ref:`other Explorers <trx-performance-explorer>`.
+Each time, block producers produce a block, they get paid for their services. Their pay rate is set by the BTS holders via their elected committee members. If failing to produce a block in a time slot, then the block producer is not paid.  Currently, DNA blockchain has 27 Block Producers (Active Witnesses).  You can find DNA Blockchain witnesses in DNA UI wallet  Explorer-witnesses, or :ref:`other Explorers <trx-performance-explorer>`.
 
 
-You could think about BitShares blockchain nodes like the below. 
+You could think about DNA blockchain nodes like the below. 
 
 * Node Types
 
@@ -47,12 +47,12 @@ You could think about BitShares blockchain nodes like the below.
 
 
 .. image:: ../../_static/output/NodesTypes1.png
-        :alt: BitShares Architecture
+        :alt: DNA Architecture
         :width: 700px
         :align: center
 
 		
-After proper BitShares-Core release installed, each type node is implemented by the same executable, however, each node would need to set up different configurations to start the node. 
+After proper DNA-Core release installed, each type node is implemented by the same executable, however, each node would need to set up different configurations to start the node. 
 
 For example; although a block producing node can have full history, that would be a waste of resources. Block producing nodes *should* run with minimal plugins (i.e., only witness_plugin). Also, Block producing nodes should not have open network ports.
 

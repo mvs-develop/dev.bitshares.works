@@ -2,17 +2,17 @@
 .. _what-is-new:
 
 
-What is New in BitShares 2.0
+What is New in DNA 2.0
 ****************************
 
 
 * **Votable Network Parameters**: 
-  BitShares 2.0 will allow its shareholders to fine-tune any parameter
+  DNA 2.0 will allow its shareholders to fine-tune any parameter
   available to the protocol. This includes, block size, block interval, but
   also the payment for block producers and transaction fees.
 
 * **Flexible and Dynamic Access Control**:
-  BitShares 2.0 allows customers and participants a flexible and dynamic
+  DNA 2.0 allows customers and participants a flexible and dynamic
   access to its funds or account handle. A so called *Authority* can consist of
   a flat hierarchy similar to *multi-signature* in Bitcoin, but could also
   support tree hierarchies never to be seen before. Read more about this about
@@ -27,13 +27,13 @@ What is New in BitShares 2.0
 * **On-Chain Proposed Transactions**:
   In traditional crypto currencies, a multi-signature transaction has to be
   transfered to its corresponding signers on separated communication channels
-  (off-chain). BitShares 2.0 allows to propose transactions on the chain and
+  (off-chain). DNA 2.0 allows to propose transactions on the chain and
   have the signers be notified for their required signature automatically. No
   more manual communications are required.
 
 * **New Full-Node/Client Concept**:
-  We recognize the hassles some people had when synchronizing the BitShares 1.0
-  blockchain with the heavy-weighted BitShares full client. In order to offer
+  We recognize the hassles some people had when synchronizing the DNA 1.0
+  blockchain with the heavy-weighted DNA full client. In order to offer
   more comfort and a faster trading experience, we decided to separated the
   user-interface from the block syncing core component that connects to the
   peer-to-peer network. Of course, both are open source and a full node can run
@@ -50,7 +50,7 @@ What is New in BitShares 2.0
 
 * **Recurring & Scheduled Payments**:
   We wanted to offer a way to have our rent payed automatically. So we
-  implemented it in the blockchain. In BitShares 2.0, participants are capable
+  implemented it in the blockchain. In DNA 2.0, participants are capable
   of allowing others to withdraw funds from your account. Of course, you can
   define a daily/weekly or monthly limit. Read more about `recurring and
   scheduled payments`_.

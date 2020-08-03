@@ -23,7 +23,7 @@ The below is simple blockchain structure image.
 
 
 .. image:: ../../_static/structures/block_structure_si1.png
-        :alt: BitShares Architecture
+        :alt: DNA Architecture
         :width: 700px
         :align: center
 
@@ -121,7 +121,7 @@ Block (detail image)
 ===========================
 		
 .. image:: ../../_static/structures/block_structure_detail1.png
-        :alt: BitShares Architecture
+        :alt: DNA Architecture
         :width: 700px
         :align: center
 

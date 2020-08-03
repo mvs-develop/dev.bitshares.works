@@ -5,7 +5,7 @@
 Wiki Legacy
 *****************************
 
-BitShares Core Wiki (searchable by this website)
+DNA Core Wiki (searchable by this website)
 
 -----------------
 

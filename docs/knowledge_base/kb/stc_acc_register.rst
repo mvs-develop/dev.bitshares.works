@@ -4,7 +4,7 @@
 Register Account - smart contract
 ***********************
 
-In this section, we examine how worker proposal  smart contract was constructed. There are items and helpful steps to construct a smart contract. We want to list those items by examining BitShares blockchain components.
+In this section, we examine how worker proposal  smart contract was constructed. There are items and helpful steps to construct a smart contract. We want to list those items by examining DNA blockchain components.
 * **Smart contract items**
 
   - Object

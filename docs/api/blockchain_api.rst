@@ -21,8 +21,8 @@ passphrase. More detailed description about this can be found on the
 :ref:`api-access-and-restrictions` page.
 
 
-BitShares-Core API References - Doxygen Documentation *\<Quick links\>*
-   - `BitShares-Core Doxygen (Main)  <https://bitshares.org/doxygen/index.html>`_
+DNA-Core API References - Doxygen Documentation *\<Quick links\>*
+   - `DNA-Core Doxygen (Main)  <https://bitshares.org/doxygen/index.html>`_
    - `Class Hierarchy order <https://bitshares.org/doxygen/hierarchy.html>`_
 
 

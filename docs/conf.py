@@ -66,8 +66,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'BitShares Developers Portal'
-copyright = u'2019 BitShares Blockchain Foundation'
+project = u'DNA Developers Portal'
+copyright = u'2019 DNA Blockchain Foundation'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -235,8 +235,8 @@ latex_elements = {
 #   u'Dave Snider, Read the Docs, Inc. & contributors', 'manual'),
 #]
 latex_documents = [
-  ('index', 'BBF.tex', u'BitShares developer Documentation',
-   u'BitShares-Core & contributors', 'manual'),
+  ('index', 'BBF.tex', u'DNA developer Documentation',
+   u'DNA-Core & contributors', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -317,8 +317,8 @@ def setup(app):
 #     [u'Dave Snider, Read the Docs, Inc. & contributors'], 1)
 #]
 man_pages = [
-    ('index', 'BBF.tex', u'BitShares developer Documentation',
-     [u'BitShares-Core & contributors'], 1)
+    ('index', 'BBF.tex', u'DNA developer Documentation',
+     [u'DNA-Core & contributors'], 1)
 ]
 
 
@@ -337,8 +337,8 @@ man_pages = [
 #   'One line description of project.', 'Miscellaneous'),
 #]
 texinfo_documents = [
-  ('index', 'BitSharesDeveloperPortal', u'BitShares developer  Documentation',
-   u'BitShares-Core & contributors', 'BitSharesDeveloperPortal',
+  ('index', 'BitSharesDeveloperPortal', u'DNA developer  Documentation',
+   u'DNA-Core & contributors', 'BitSharesDeveloperPortal',
    'BBF project.', 'Miscellaneous'),
 ]
 

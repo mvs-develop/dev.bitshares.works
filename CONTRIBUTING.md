@@ -1,9 +1,9 @@
-## How to Request or Contribute to BitShares Documentation Project
+## How to Request or Contribute to DNA Documentation Project
 
 
-Thank you for considering contributing to BitShares Documentation. It's people like you that make BitShares Documentation such a great resources to the BitShares Community!
+Thank you for considering contributing to DNA Documentation. It's people like you that make DNA Documentation such a great resources to the DNA Community!
 
-Please take a moment to review this document in order to make the contribution process easy and effective for everyone involved. This is our first step. We would like to start using the steps to collaborate with the BitShares Community.  
+Please take a moment to review this document in order to make the contribution process easy and effective for everyone involved. This is our first step. We would like to start using the steps to collaborate with the DNA Community.  
 
 ***
 

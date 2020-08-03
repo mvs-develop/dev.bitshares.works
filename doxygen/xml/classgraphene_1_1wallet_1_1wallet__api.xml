@@ -1839,7 +1839,7 @@ This function fetches all relevant objects for the given account. If the string 
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Loads a specified BitShares wallet.</para><para>The current wallet is closed before the new wallet is loaded.</para><para><simplesect kind="warning"><para>This does not change the filename that will be used for future wallet writes, so this may cause you to overwrite your original wallet unless you also call <computeroutput><ref refid="classgraphene_1_1wallet_1_1wallet__api_1aa5804e1ee29ff8f2c3bcc668ad2bfbcd" kindref="member">set_wallet_filename()</ref></computeroutput> </para></simplesect>
+<para>Loads a specified DNA wallet.</para><para>The current wallet is closed before the new wallet is loaded.</para><para><simplesect kind="warning"><para>This does not change the filename that will be used for future wallet writes, so this may cause you to overwrite your original wallet unless you also call <computeroutput><ref refid="classgraphene_1_1wallet_1_1wallet__api_1aa5804e1ee29ff8f2c3bcc668ad2bfbcd" kindref="member">set_wallet_filename()</ref></computeroutput> </para></simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>wallet_filename</parametername>
@@ -2078,19 +2078,19 @@ This function fetches all relevant objects for the given account. If the string 
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Imports accounts from a BitShares 0.x wallet file. Current wallet file must be unlocked to perform the import.</para><para><parameterlist kind="param"><parameteritem>
+<para>Imports accounts from a DNA 0.x wallet file. Current wallet file must be unlocked to perform the import.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>filename</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>the BitShares 0.x wallet file to import </para></parameterdescription>
+<para>the DNA 0.x wallet file to import </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>password</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>the password to encrypt the BitShares 0.x wallet file </para></parameterdescription>
+<para>the password to encrypt the DNA 0.x wallet file </para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>a map containing the accounts found and whether imported </para></simplesect>
@@ -2123,33 +2123,33 @@ This function fetches all relevant objects for the given account. If the string 
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Imports from a BitShares 0.x wallet file, find keys that were bound to a given account name on the BitShares 0.x chain, rebind them to an account name on the 2.0 chain. Current wallet file must be unlocked to perform the import.</para><para><parameterlist kind="param"><parameteritem>
+<para>Imports from a DNA 0.x wallet file, find keys that were bound to a given account name on the DNA 0.x chain, rebind them to an account name on the 2.0 chain. Current wallet file must be unlocked to perform the import.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>filename</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>the BitShares 0.x wallet file to import </para></parameterdescription>
+<para>the DNA 0.x wallet file to import </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>password</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>the password to encrypt the BitShares 0.x wallet file </para></parameterdescription>
+<para>the password to encrypt the DNA 0.x wallet file </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>src_account_name</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>name of the account on BitShares 0.x chain </para></parameterdescription>
+<para>name of the account on DNA 0.x chain </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>dest_account_name</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>name of the account on BitShares 2.0 chain, can be same or different to <computeroutput>src_account_name</computeroutput> </para></parameterdescription>
+<para>name of the account on DNA 2.0 chain, can be same or different to <computeroutput>src_account_name</computeroutput> </para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>whether the import has succeeded </para></simplesect>
@@ -3165,7 +3165,7 @@ This function fetches all relevant objects for the given account. If the string 
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Place a limit order attempting to sell one asset for another.</para><para>Buying and selling are the same operation on BitShares; if you want to buy BTS with USD, you should sell USD for BTS.</para><para>The blockchain will attempt to sell the <computeroutput>symbol_to_sell</computeroutput> for as much <computeroutput>symbol_to_receive</computeroutput> as possible, as long as the price is at least <computeroutput>min_to_receive</computeroutput> / <computeroutput>amount_to_sell</computeroutput>.</para><para>In addition to the transaction fees, market fees will apply as specified by the issuer of both the selling asset and the receiving asset as a percentage of the amount exchanged.</para><para>If either the selling asset or the receiving asset is whitelist restricted, the order will only be created if the seller is on the whitelist of the restricted asset type.</para><para>Market orders are matched in the order they are included in the block chain.</para><para><xrefsect id="todo_1_todo000006"><xreftitle>Todo</xreftitle><xrefdescription><para>Document default/max expiration time</para></xrefdescription></xrefsect></para><para><parameterlist kind="param"><parameteritem>
+<para>Place a limit order attempting to sell one asset for another.</para><para>Buying and selling are the same operation on DNA; if you want to buy BTS with USD, you should sell USD for BTS.</para><para>The blockchain will attempt to sell the <computeroutput>symbol_to_sell</computeroutput> for as much <computeroutput>symbol_to_receive</computeroutput> as possible, as long as the price is at least <computeroutput>min_to_receive</computeroutput> / <computeroutput>amount_to_sell</computeroutput>.</para><para>In addition to the transaction fees, market fees will apply as specified by the issuer of both the selling asset and the receiving asset as a percentage of the amount exchanged.</para><para>If either the selling asset or the receiving asset is whitelist restricted, the order will only be created if the seller is on the whitelist of the restricted asset type.</para><para>Market orders are matched in the order they are included in the block chain.</para><para><xrefsect id="todo_1_todo000006"><xreftitle>Todo</xreftitle><xrefdescription><para>Document default/max expiration time</para></xrefdescription></xrefsect></para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>seller_account</parametername>
 </parameternamelist>

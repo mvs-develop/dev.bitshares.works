@@ -24,17 +24,17 @@ General
 
 **Protocol**
 
-* :ref:`What types of protocols BitShares has?  <lib-protocols>`
+* :ref:`What types of protocols DNA has?  <lib-protocols>`
 * :ref:`dev-faq2`
 * :ref:`dev-faq3`
 * :ref:`dev-faq11`
-* `BitShares - P2P Network Protocol <https://github.com/bitshares/bitshares-core/wiki/P2P-network-protocol>`_
+* `DNA - P2P Network Protocol <https://github.com/bitshares/bitshares-core/wiki/P2P-network-protocol>`_
 
 **Data Structures**
 
 * :ref:`dev-faq12`
 * :ref:`How each block is constructed and what kinds of elements are creating the block?   <lib-block>` 
-* :ref:`What types of objects and the elements BitShares has? <lib-objects>`
+* :ref:`What types of objects and the elements DNA has? <lib-objects>`
 
 **Public Key System**
 
@@ -54,13 +54,13 @@ System Components
 
 * :ref:`How Block structured? <lib-block>`
 * :ref:`Where can I find the Protocol information? <lib-protocols>`
-* :ref:`What types of Operations are available in BitShares-Core? <lib-operations>`
-* :ref:`What types of Objects and elements are available in BitShares-Core? <lib-objects>`
+* :ref:`What types of Operations are available in DNA-Core? <lib-operations>`
+* :ref:`What types of Objects and elements are available in DNA-Core? <lib-objects>`
 * :ref:`api-core-faq-4`
 * configuration examples and support files
 
    - :ref:`config.ini <bts-config-ini-eg>` (Node Configuration File )
-   - `apiConfig.js <https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js>`_ (BitShares Public Node information)
+   - `apiConfig.js <https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js>`_ (DNA Public Node information)
    - :ref:`api-access.json <api-access-json>` (API Access restriction)
    - `saltpass.py <https://github.com/bitshares/bitshares-core/blob/master/programs/witness_node/saltpass.py>`_ (obtain hash and salt values from a password)
 
@@ -70,7 +70,7 @@ System Components
 Accounts
 -------------------------------------------------------
 
-* :ref:`Where can I read about the BitShares Account information?<bts-accounts>`
+* :ref:`Where can I read about the DNA Account information?<bts-accounts>`
 
   - Include: *Membership, Fees, Permissions, Public Key and Private key, Muiti-Signature, Voting, Referral Program, and Vesting Balances*
 
@@ -78,7 +78,7 @@ Accounts
 Install options
 --------------------------------------------------------
 
-* Which development environment would be possible to install BitShares-Core?
+* Which development environment would be possible to install DNA-Core?
   
   * Use :ref:`Ubuntu Linux <build-ubuntu>`
   * Use :ref:`OS X <build-osx>`
@@ -97,14 +97,14 @@ APIs
 * :ref:`How to use Remote Procedure Calls (RPC) <rpc>`
 * :ref:`How to use Websocket Call <websocket-calls>`
 * `Where to find the doxygen documentation <https://bitshares.org/doxygen/index.html>`_
-* :ref:`How define BitShares Objects and IDs <objects-ids>`
+* :ref:`How define DNA Objects and IDs <objects-ids>`
 * :ref:`api-core-faq-1`
 * :ref:`api-core-faq-2`
 * :ref:`api-core-faq-3`
 * :ref:`api-core-faq-5`
 * :ref:`api-core-faq-6`
 * `Where can I find a simple Python script saltpass.py to obtain hash and salt values from a password? <https://github.com/bitshares/bitshares-core/blob/master/programs/witness_node/saltpass.py>`_ - (rel: *saltpass.py*)
-* `Where Can I find BitShares Public Full Node information? (apiconfig) <https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js>`_
+* `Where Can I find DNA Public Full Node information? (apiconfig) <https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js>`_
 
 
 .. _asset-faq-index:

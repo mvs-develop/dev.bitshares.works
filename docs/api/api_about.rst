@@ -4,7 +4,7 @@
 1.API Guide
 ========================
 
-BitShares APIs are available by using Remote Procedure Calls (RPC) and WebSocket Calls & Notifications. All API calls are formatted in JSON and return JSON only. We look into the APIs' every feature. BitShares-Core API references locate in the `Doxygen documentation. <https://bitshares.org/doxygen/index.html>`_  Also, you can find the APIs' classes, components, and elements information looking into "Graphene - Namespaces" section. 
+DNA APIs are available by using Remote Procedure Calls (RPC) and WebSocket Calls & Notifications. All API calls are formatted in JSON and return JSON only. We look into the APIs' every feature. DNA-Core API references locate in the `Doxygen documentation. <https://bitshares.org/doxygen/index.html>`_  Also, you can find the APIs' classes, components, and elements information looking into "Graphene - Namespaces" section. 
 
 .. contents:: Table of Contents
    :local:
@@ -30,7 +30,7 @@ In contrast to many existing ecosystems, there is no centralized service that le
 1.2. Public Full Node information 
 -----------------------------
 
-* Here is the latest list of `BitShares Public Full Nodes (apiConfig) <https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js>`_
+* Here is the latest list of `DNA Public Full Nodes (apiConfig) <https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js>`_
 
 
 -----------------
@@ -44,7 +44,7 @@ Which blockchain network you connect to depends on the configuration of the full
 
 
 .. image:: api-interfacing-graphene.png
-        :alt: BitShares
+        :alt: DNA
         :width: 600px
         :align: center
 		

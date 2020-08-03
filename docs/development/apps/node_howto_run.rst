@@ -17,7 +17,7 @@ In order to improve decentralization of service, every user can run his own full
 Installation and build the Node
 =========================================
 
-For the installation of the BitShares Core, please see the :ref:`Installation Guide <installation-guide>`:
+For the installation of the DNA Core, please see the :ref:`Installation Guide <installation-guide>`:
 
 
 To reduce compilation time, you can tell the compile infrastructure to only compile the ``witness_node`` by running.::
@@ -61,7 +61,7 @@ In your wallet (may it be the light wallet or a hosted wallet) you can can defin
 3. If **Automatically select node is ``ON``, click to ``OFF`` the switch.
 
 .. image:: ../../_static/imgs/nodes-1.png
-        :alt: BitShares 
+        :alt: DNA 
         :width: 650px
         :align: center
 		
@@ -70,7 +70,7 @@ There are four tabs. [AVAILABLE], [PERSONSL], [HIDDEN], and [TESTNET].
 4. Click [**PERSONAL**] and [**ADD NODE**]
 		
 .. image:: ../../_static/imgs/nodes-2.png
-        :alt: BitShares 
+        :alt: DNA 
         :width: 650px
         :align: center
 				
@@ -85,7 +85,7 @@ For your own full nodes address, type::
 
    
 .. image:: ../../_static/imgs/nodes-3.png
-        :alt: BitShares 
+        :alt: DNA 
         :width: 600px
         :align: center
 		

@@ -12,7 +12,7 @@ Code Coverage Testing
    
 -------
 
-* `BitShares-Core Test folder on GitHub <https://github.com/bitshares/bitshares-core/tree/master/tests>`_
+* `DNA-Core Test folder on GitHub <https://github.com/bitshares/bitshares-core/tree/master/tests>`_
 
 
 Code Coverage Testing Information

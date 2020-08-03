@@ -3,7 +3,7 @@
 System Components Elements
 *******************************************
 
-**This document purpose:** to bring BitShares-Core system components, element and other detailed system information close to developers. They can read through the information and find more detailed information easier. 
+**This document purpose:** to bring DNA-Core system components, element and other detailed system information close to developers. They can read through the information and find more detailed information easier. 
 
 -----------------------------------
 

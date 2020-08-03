@@ -1,6 +1,6 @@
 ---
 name: Information link request
-about: Create a request to inform a developer support information link for BitShares Developers.
+about: Create a request to inform a developer support information link for DNA Developers.
 
 ---
 

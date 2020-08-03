@@ -1,10 +1,10 @@
 
 .. _distributed-access-to-dex:
 
-Distributed Access to the BitShares Decentralized  Exchange (DEX)
+Distributed Access to the DNA Decentralized  Exchange (DEX)
 =================================================================
    
-I hope to encourage and promote more access points and backup WebSocket (wss) gateways for BitShares. This is the logical progression from `Run your own decentralized
+I hope to encourage and promote more access points and backup WebSocket (wss) gateways for DNA. This is the logical progression from `Run your own decentralized
 exchange <https://steemit.com/bitshares/@ihashfury/run-your-own-decentralised-exchange>`__
 post.
 
@@ -13,12 +13,12 @@ post.
    
 -------
 
-BitShares node setup
+DNA node setup
 -------------------------------
 
 `Run your own decentralized exchange <https://steemit.com/bitshares/@ihashfury/run-your-own-decentralised-exchange>`__
 
-Once you have a full node setup, you can allow BitShares shareholders
+Once you have a full node setup, you can allow DNA shareholders
 secure access to your server to trade and check their accounts by
 following these steps. 
 
@@ -309,7 +309,7 @@ Edit altcap.io
     CTRL+X to save (^X Exit)
 
 You have now setup an SSL secured web server with a WebSocket connected
-to your local BitShares witness\_node (listening on port 8090 - see
+to your local DNA witness\_node (listening on port 8090 - see
 `this
 post <https://steemit.com/bitshares/@ihashfury/run-your-own-decentralised-exchange>`__
 for more information) ###Update altcap.io www virtual host
@@ -331,7 +331,7 @@ SSL <https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-l
 `LetsEncrypt <https://letsencrypt.org/>`__
 `CertBot <https://certbot.eff.org/>`__
 
-Install BitShares web gui
+Install DNA web gui
 --------------------------
 
 Install NVM (Node Version Manager)
@@ -349,7 +349,7 @@ exit bash (terminal) and reconnect
     nvm install v5
     nvm use v5
 
-Download BitShares gui
+Download DNA gui
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - https://github.com/bitshares/bitshares-ui/releases
@@ -366,7 +366,7 @@ Build light wallet
 
     npm run build
 
-You have now created another Access point to the BitShares Decentralised Exchange. **The more the merrier.** Please remember to check your firewall and SSH is up-to-date and configured correctly. DigitalOcean has
+You have now created another Access point to the DNA Decentralised Exchange. **The more the merrier.** Please remember to check your firewall and SSH is up-to-date and configured correctly. DigitalOcean has
 `firewall <https://www.digitalocean.com/community/tags/firewall?type=tutorials>`__
 and `Secure
 SSH <https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2>`__

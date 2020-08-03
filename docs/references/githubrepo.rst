@@ -3,7 +3,7 @@
 Resources
 ====================================
 
-More BitShares related Resources
+More DNA related Resources
 ---------------------------------
 
 .. list-table::
@@ -14,10 +14,10 @@ More BitShares related Resources
      - Note
      - Repository
    * - `bitshares-latency <https://github.com/litepresence/extinction-event/blob/master/EV/bitshares-latency.py>`_ 
-     - BitShares Nodes list (source code)
+     - DNA Nodes list (source code)
      - litepresence	 
    * - `bitshares-infrastructure <https://github.com/blockchainbv/bitshares-infrastructure>`_ 
-     - Configuration for HAproxy with BitShares Health Monitor
+     - Configuration for HAproxy with DNA Health Monitor
      - blockchainbv
    * - `c-libp2p <https://github.com/Agorise?tab=repositories>`_
      - Implementation of libp2p in C
@@ -32,7 +32,7 @@ More BitShares related Resources
      - systemd service startup configuration and description is added  
      - Clementvale-LTD
    * - `bitshares-witness-monitor <https://github.com/clockworkgr/bitshares-witness-monitor>`_
-     - A BitShares witness monitoring script with telegram integration written in JS. 
+     - A DNA witness monitoring script with telegram integration written in JS. 
      - clockworkgr
    * - `blue-loader-python <https://github.com/LedgerHQ/blue-loader-python>`_ 
      - Python Loader for Ledger Blue and Nano S 
@@ -56,7 +56,7 @@ More BitShares related Resources
      - SLIP-0048 : Deterministic Key Hierarchy for Graphene-based Networks #49
      - satoshilabs
    * - `bts_tools <https://github.com/wackou/bts_tools>`_
-     - BitShares delegate tools 
+     - DNA delegate tools 
      - wackou
    * - name
      - 

@@ -10,26 +10,26 @@ Development Environments
    
 -------------------
 
-BitShares Code and Files 
+DNA Code and Files 
 ===============================
 
 * Open Source program
-* Language uses (mainly): BitShares-Core(C++), python
-* `BitShares GitHub <https://github.com/bitshares>`_
+* Language uses (mainly): DNA-Core(C++), python
+* `DNA GitHub <https://github.com/bitshares>`_
 
-   - **BitShares-Core (C++)** - BitShares Blockchain implementation and command-line interface.
+   - **DNA-Core (C++)** - DNA Blockchain implementation and command-line interface.
    
     + `Programs <https://github.com/bitshares/bitshares-core/tree/master/programs#bitshares-programs>`_ : The bitshares programs are a collection of binaries to run the blockchain, interact with it or utilities.	 
 	   
     + `Libraries <https://github.com/bitshares/bitshares-core/tree/master/libraries#bitshares-libraries>`_ : The libraries are the core of the project and defines everything where applications can build on top.
 	 
    - **Bitshares-FC** - Fast-compiling C++ library 
-   - **BitShares python** - Fully featured client-side library for the BitShares Blockchain - written entirely in python.
-   - **BitShares-UI** - Fully featured Graphical User Interface / Reference Wallet for the BitShares Blockchain.
-   - **BSIPs** - BitShares Improvement Proposals and Protocols. These technical documents describe the process of updating and improving the BitShares blockchain and technical ecosystem.
-   - **BitSharesjs** - JavaScript tools for BitShares Encryption and Serialization.
+   - **DNA python** - Fully featured client-side library for the DNA Blockchain - written entirely in python.
+   - **DNA-UI** - Fully featured Graphical User Interface / Reference Wallet for the DNA Blockchain.
+   - **BSIPs** - DNA Improvement Proposals and Protocols. These technical documents describe the process of updating and improving the DNA blockchain and technical ecosystem.
+   - **BitSharesjs** - JavaScript tools for DNA Encryption and Serialization.
    - **BitSharesjs-ws** - Javascript websocket interface for Bitshares 
-   - **Beet** - Beet is a stand-alone key/identity-manager and signing app for BitShares, heavily influenced by Scatter
+   - **Beet** - Beet is a stand-alone key/identity-manager and signing app for DNA, heavily influenced by Scatter
    - **Bitshares Mobile App** - The mobile app for bitshares blockchain
    - (more...)
 
@@ -38,20 +38,20 @@ BitShares Code and Files
 What's your interests?
 ========================
 
-What would you like to know more about BitShares Blockchain? BitShares Core is the BitShares blockchain implementation and command-line interface. If you are interested to know about BitShares blockchain background, history, and features, please visit `how.bitshares.works <http://how.bitshares.works/en/latest/#>`_ and `bitshares.org <https://bitshares.org/>`_ to read more information. 
+What would you like to know more about DNA Blockchain? DNA Core is the DNA blockchain implementation and command-line interface. If you are interested to know about DNA blockchain background, history, and features, please visit `how.bitshares.works <http://how.bitshares.works/en/latest/#>`_ and `bitshares.org <https://bitshares.org/>`_ to read more information. 
 
-If yo do not have a BitShares account yet, you can use BitShares UI wallet (`wallet.bitshares.org <https://wallet.bitshares.org>`_ ) or download a `Light Client Wallet <https://bitshares.org/download>`_  to create your BitShares account. Here is the latest `BitShares-UI – Release <https://github.com/bitshares/bitshares-ui/releases>`_ information. 
+If yo do not have a DNA account yet, you can use DNA UI wallet (`wallet.bitshares.org <https://wallet.bitshares.org>`_ ) or download a `Light Client Wallet <https://bitshares.org/download>`_  to create your DNA account. Here is the latest `DNA-UI – Release <https://github.com/bitshares/bitshares-ui/releases>`_ information. 
 
-If your interests are trying and learning BitShares features, you might want to use BitShares TestNet to experience them. If you are a developer who is interested to contribute to the BitShares Core team, you could download a developer branch and learn more about BitShares-Core current Project might be a good start. Select an appropriate branch when you install BitShares-Core.
+If your interests are trying and learning DNA features, you might want to use DNA TestNet to experience them. If you are a developer who is interested to contribute to the DNA Core team, you could download a developer branch and learn more about DNA-Core current Project might be a good start. Select an appropriate branch when you install DNA-Core.
 
-After you know which branch to download, your next step is the installation of BitShares-Core. Check the :ref:`BitShares Installation Guide <installation-guide>` and select your Operation System to follow the installation steps. 
+After you know which branch to download, your next step is the installation of DNA-Core. Check the :ref:`DNA Installation Guide <installation-guide>` and select your Operation System to follow the installation steps. 
 
 .. image:: ../../_static/imgs/your-interests.png
-        :alt: BitShares
+        :alt: DNA
         :width: 750px
         :align: center
   
-BitSharea has great communities to support others and have discussions. Check out the :ref:`BitShares communities <bitshares-communities>` and join to meet other BTS holders!     
+BitSharea has great communities to support others and have discussions. Check out the :ref:`DNA communities <bitshares-communities>` and join to meet other BTS holders!     
   
 For security issues and bug bounty program, please visit `Hack the DEX <https://hackthedex.io/>`_ .
   
@@ -61,25 +61,25 @@ For security issues and bug bounty program, please visit `Hack the DEX <https://
    
    
    
-BitShares Core: Projects Guide 
+DNA Core: Projects Guide 
 ==================================
 
-If you are interested to know or involve BitShares-Core developments, you will find the contribution guide, current project, issues and plans in this section. 
+If you are interested to know or involve DNA-Core developments, you will find the contribution guide, current project, issues and plans in this section. 
 
 Project Guide and Milestones 
 ------------------------------
 
 - `Contribution Guide [DRAFT] <https://github.com/bitshares/bitshares-core/wiki/Contribution-Guide>`_
 - `Project <https://github.com/bitshares/bitshares-core/projects/6>`_
-- `BitShares-Core: current issues and requests <https://github.com/bitshares/bitshares-core/issues>`_ 
+- `DNA-Core: current issues and requests <https://github.com/bitshares/bitshares-core/issues>`_ 
 - `Milestones and Plans <https://github.com/bitshares/bitshares-core/milestones>`_ 
-- `BitShares-Core Releases <https://github.com/bitshares/bitshares-core/releases>`_ 
+- `DNA-Core Releases <https://github.com/bitshares/bitshares-core/releases>`_ 
 
 
-BitShares-Core (Team) 
+DNA-Core (Team) 
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-The BitShares-Core team is a team of developers who manage the BitShares-Core repository code and handle the issues that are submitted by other developers. The team creates project plans for next release(s) and delivers the result to the Bitshares community. 
+The DNA-Core team is a team of developers who manage the DNA-Core repository code and handle the issues that are submitted by other developers. The team creates project plans for next release(s) and delivers the result to the Bitshares community. 
 
 * Roles
 
@@ -88,12 +88,12 @@ The BitShares-Core team is a team of developers who manage the BitShares-Core re
   - upgrading protocol if needed
   - making Project plans for the future release
   - creating/ announcing  Release 
-  - supporting the BitShares community/ answering questions
+  - supporting the DNA community/ answering questions
   
 	
 ------------------	
 	
-BitShares Core: GitFlow
+DNA Core: GitFlow
 =========================
 
 Purpose
@@ -111,7 +111,7 @@ Non-Consensus: Development / Release / Bugfix Workflows
 -----------------------------------------------------------
 
 .. image:: ../../_static/structures/bts-non-concensus.png
-        :alt: BitShares
+        :alt: DNA
         :width: 750px
         :align: center
 
@@ -119,7 +119,7 @@ Consensus: Development / Release / Bugfix Workflows
 ------------------------------------------------------
 
 .. image:: ../../_static/structures/bts-concensus.png
-        :alt: BitShares 
+        :alt: DNA 
         :width: 750px
         :align: center
 
@@ -174,9 +174,9 @@ For a release,
 14. Create binaries for linux, macos and windows. Once the tag name is known create binaries for this 3 OS. Attach them to release notes.
 **Example**: https://github.com/bitshares/bitshares-core/releases/tag/3.0.0 Binaries names for this release:
   
-  - Linux: BitShares-core-3.0.0-Linux-cli-tools.tar.gz
-  - Windows: BitShares-Core-3.0.0-Windows-x64-cli-tools.zip
-  - macOS: BitShares-Core-3.0.0-macOS-cli-tools.tar.gz
+  - Linux: DNA-core-3.0.0-Linux-cli-tools.tar.gz
+  - Windows: DNA-Core-3.0.0-Windows-x64-cli-tools.zip
+  - macOS: DNA-Core-3.0.0-macOS-cli-tools.tar.gz
 	
 **Note:** Solving conflicts by github(web) will merge branches in unintended directions. Avoid solving this way, merge and resolve conflicts manually through the git command line. Conflicts generally occur when merging release to testnet.
 
@@ -208,7 +208,7 @@ Emergency Fix Workflows
 -----------------------------
 
 .. image:: ../../_static/structures/bts-emergency-fix.png
-        :alt: BitShares
+        :alt: DNA
         :width: 750px
         :align: center
 		

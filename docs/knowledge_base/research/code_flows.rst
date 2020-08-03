@@ -1,7 +1,7 @@
 
 .. _code-flow-chart:
 
-BitShares-Core 
+DNA-Core 
 =====================
 
 If someone wants to know how each method's logic has been constructed, it might be interesting to check out. The below files were created based on a specific Release files. Please know that 'Release #'.

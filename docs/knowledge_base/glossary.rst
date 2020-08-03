@@ -124,9 +124,9 @@ Full Node
 G 
 -----
 
-Genesis Block (in BitShares)
+Genesis Block (in DNA)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- BitShares 2.0 will be initialized with what is called a Genesis Block. That genesis block will be constructed from the balances of BitShares 1.0.
+- DNA 2.0 will be initialized with what is called a Genesis Block. That genesis block will be constructed from the balances of DNA 1.0.
 
 
 N 
@@ -178,7 +178,7 @@ S
 Seed Nodes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 - Seed nodes are the first nodes of the network.It allows other nodes to get started by connecting to them.
-- In BitShares, a seed node is a node that accept incoming P2P connection. Its address is hard coded in the program, so when a new node starts, it will connect to the seed nodes by default. Every node (including seed nodes) tells the connected nodes where other nodes are, so all nodes can connect to each other.
+- In DNA, a seed node is a node that accept incoming P2P connection. Its address is hard coded in the program, so when a new node starts, it will connect to the seed nodes by default. Every node (including seed nodes) tells the connected nodes where other nodes are, so all nodes can connect to each other.
 
 |
 
@@ -206,7 +206,7 @@ Units
 
 unit test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- In BitShares-Core unit test files locate in a /test/ folder. They are meant to ensure that the code behaves the right way.
+- In DNA-Core unit test files locate in a /test/ folder. They are meant to ensure that the code behaves the right way.
 
 |
 

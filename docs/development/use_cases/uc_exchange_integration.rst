@@ -5,7 +5,7 @@ Exchanges, Bridges, and Gateways
 *************************************
 
 **Exchange**, **Bridges**, and **Gateways** represent business that trade or
-exchange assets that are located **inside** a Graphene network (e.g. BitShares)
+exchange assets that are located **inside** a Graphene network (e.g. DNA)
 against assets that are **located** outside the blockchain network. For
 instance, exchanges trade ``BTS:BTC`` while bridges exchange ``bitBTC:BTC``.
 
@@ -16,7 +16,7 @@ a fee and vice versa. For instance:
 1. A customer requests 100 bitUSD from a gateway
 2. The gateway sends an invoice with bank account details
 3. When the funds arrive at the gateway a percentage is taken as a fee and the
-   rest is transfered as bitUSD directly into the BitShares wallet of the
+   rest is transfered as bitUSD directly into the DNA wallet of the
    customer.
 
 For exchanges we recommend to also read :ref:`what-is-different` and
@@ -34,7 +34,7 @@ For exchanges we recommend to also read :ref:`what-is-different` and
 Step-By-Step Instructions for Exchanges
 ============================================
 
-We here describe how to interface your exchange with BitShares step-by-step. We will link to a more detailed description where appropriate.
+We here describe how to interface your exchange with DNA step-by-step. We will link to a more detailed description where appropriate.
 
 1.Installation
 ----------------
@@ -47,7 +47,7 @@ In this step-by-step instruction we assume you have successfully built from the 
 For security reasons we will run two daemons and a wallet according to these diagram:
 
 .. image:: exchange-demons.png
-        :alt: BitShares 
+        :alt: DNA 
         :width: 600px
         :align: center
 		
@@ -63,7 +63,7 @@ Read more details :ref:`network-setups`.
 3. Trusted Full Node
 ---------------------
 
-The trusted full node is your entry point to the BitShares P2P network. It will hold the blockchain, connect to other peers, and will receive new blocks in *real-time*.::
+The trusted full node is your entry point to the DNA P2P network. It will hold the blockchain, connect to other peers, and will receive new blocks in *real-time*.::
 
     ./programs/witness_node/witness_node --data-dir=trusted_node/ --rpc-endpoint="127.0.0.1:8090"
 
@@ -114,9 +114,9 @@ and set a pass phrase:::
 This will generate a ``wallet.json`` file for you that can contain
 encrypted private keys to your account.
 
-Import the active key into BitShares 2 wallet:::
+Import the active key into DNA 2 wallet:::
 
-    BitShares 2: >>> import_key <account-name> <active_private_key>
+    DNA 2: >>> import_key <account-name> <active_private_key>
 
 This gives access to the funds stored in ``<account-name>``. We will
 need the memo private key later when watching deposits.
@@ -200,4 +200,4 @@ above).
 
 - Executing Transfers for Withdrawals
 
- For transfering funds, we recommend pybitshares. This python module enables all features required to operated on/with BitShares. The full documentation is available on `pybitshares.com <http://pybitshares.com>`_.
+ For transfering funds, we recommend pybitshares. This python module enables all features required to operated on/with DNA. The full documentation is available on `pybitshares.com <http://pybitshares.com>`_.

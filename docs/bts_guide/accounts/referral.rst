@@ -48,13 +48,13 @@ How can I do?
 
       https://<url>/?r=<your-account>
 
- with ``<your-account>`` being the name of your BitShares Lite-Time Member account.
+ with ``<your-account>`` being the name of your DNA Lite-Time Member account.
 
  .. note:: If you want link to pages with in the wallet(e.g., a particular decentralized market), you need to have the ``?r=`` parameter **before** the ``#``. Example :  ``https://<url>/?r=<your-account>#/market/USD_BTC``
 
 
  
- * (3)- **or sending your referral link to people you want to refer to BitShares, your referral link would be**::
+ * (3)- **or sending your referral link to people you want to refer to DNA, your referral link would be**::
 		
 		https://wallet.bitshares.org/?r=<your-account-name>
 		

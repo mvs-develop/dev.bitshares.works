@@ -2,11 +2,11 @@
 .. _private-testnet-guide:
 
 **************************************
-Set up BitShares Private Testnet 
+Set up DNA Private Testnet 
 **************************************
 
 
-This chapter provides for instructions for preparing BitShares Private Testnet. 
+This chapter provides for instructions for preparing DNA Private Testnet. 
 
 .. contents:: Table of Contents
    :local:
@@ -20,9 +20,9 @@ In this chapter, we define our base directory ``$HOME/`` and create two director
    :header-rows: 0
    
    * - **$HOME/bitshares-testnet**
-     - uses for downloading BitShares Core files and build the programs
+     - uses for downloading DNA Core files and build the programs
    * - **$HOME/Testnet-Home**  
-     - uses for your BitShares Private Testnet Project
+     - uses for your DNA Private Testnet Project
 	
 	
 * Example files location for this section: /dev.bitshares.works/docs/development/testnets/
@@ -40,22 +40,22 @@ In this chapter, we define our base directory ``$HOME/`` and create two director
 
 |
 
-Downloading BitShares Core (testnet branch) and Build 
+Downloading DNA Core (testnet branch) and Build 
 ========================================================
 
 This section includes instructions for the following:
 
-* Downloading BitShares Core 
+* Downloading DNA Core 
 * Building two application program files (witness_node and cli_wallet)
 
 |
 
-1.Downloading BitShares Core – Testnet branch – source files 
+1.Downloading DNA Core – Testnet branch – source files 
 -------------------------------------------------------------------
 
   A. Open a command window and move to ``$HOME`` directory
 
-  B. Run the following commands to connect Github BitShares Care repository, create a directory ``bitshares-testnet`` for the source code. Move the directory to the ``bitshares-testnet`` folder, and checkout a ``testnet`` branch. 
+  B. Run the following commands to connect Github DNA Care repository, create a directory ``bitshares-testnet`` for the source code. Move the directory to the ``bitshares-testnet`` folder, and checkout a ``testnet`` branch. 
 
   ::
 	
@@ -246,20 +246,20 @@ If getting trouble to embed a genesis file. Clean the build and Make cache varia
 
 |
 
-Creating Another Directory for the BitShares Private Testnet Project
+Creating Another Directory for the DNA Private Testnet Project
 ==========================================================================
 
 This section includes instructions for the following:
 
-* Creating another directory for BitShares Private Testnet Project
-* Copying two application files into the BitShares Private Testnet Project directory
+* Creating another directory for DNA Private Testnet Project
+* Copying two application files into the DNA Private Testnet Project directory
 * Creating a genesis directory for this Private Testnet 
 * Copying a genesis file that completed in the previous section
 
 |
 
 
-1.Creating another directory for BitShares Private Testnet Project
+1.Creating another directory for DNA Private Testnet Project
 -------------------------------------------------------------------
 
   A. Make sure, your current directory is ``$HOME`` 

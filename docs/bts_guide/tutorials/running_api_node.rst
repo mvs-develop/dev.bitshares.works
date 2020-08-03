@@ -2,7 +2,7 @@
 .. _run-api-node-guide:
 
 *****************************
-Running a BitShares API Node 
+Running a DNA API Node 
 *****************************
 
 .. contents:: Table of Contents

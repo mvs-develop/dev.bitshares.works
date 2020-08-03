@@ -5,9 +5,9 @@
 Blockchain Upgrade
 ******************
 
-BitShares 2.0 will be initialized with what is called a *Genesis Block*. That
-genesis block will be constructed from the balances of BitShares 1.0. BitShares
-1.0 offers many features that need to be migrated into BitShares 2.0. To
+DNA 2.0 will be initialized with what is called a *Genesis Block*. That
+genesis block will be constructed from the balances of DNA 1.0. DNA
+1.0 offers many features that need to be migrated into DNA 2.0. To
 simplify the process and reduce the risk of errors, the following conditions
 will be met:
 
@@ -21,12 +21,12 @@ will be met:
 
 * **Account Names**:
 
-  Under BitShares 2.0, accounts are transferable and have different prices
+  Under DNA 2.0, accounts are transferable and have different prices
   based upon the "quality" of the account name. Any "premium" names registered
   on or after 2015-06-08 (US Eastern time) will be given the prefix “bts-“ or
   similar after the migration. All account names registered on or after
   2015-06-18 (US Eastern time) will be prefixed with "bts-" unless they were
-  registered using the BitShares Faucet. 
+  registered using the DNA Faucet. 
 
   * **Premium Name**:  No numbers and has vowles 
   * **Cheap Name**:    Has numbers or no vowels 
@@ -38,11 +38,11 @@ will be met:
   Open orders (except open short positions) will **not** migrate and the funds
   will be credited to the corresponding owners.
 * **Open Shorts**:
-  Short orders will be migrated to BitShares 2.0 on a 1:1 ratio. You collateral
+  Short orders will be migrated to DNA 2.0 on a 1:1 ratio. You collateral
   will be imported as a separated account (e.g. ``usd-collateral-holder-124``)
   under your control.
 * **Transaction History**:
-  Transaction histories of BitShares 1.0 will be inaccessible in BitShares 2.0.
+  Transaction histories of DNA 1.0 will be inaccessible in DNA 2.0.
 * **Vesting Balances**:
   Vesting balances will migrate under the existing terms, if two or more vesting
   balances were partially claimed as part of the same transaction prior to the
@@ -62,5 +62,5 @@ will be met:
   * Asset **description information** is no longer part of the blockchain state
     and will not be migrated
   * Account **public data** is deprecated and is no longer part of the blockchain state
-  * BitShares URL scheme: `bts://` will be deprecated due to migration to hosted
+  * DNA URL scheme: `bts://` will be deprecated due to migration to hosted
     web wallets

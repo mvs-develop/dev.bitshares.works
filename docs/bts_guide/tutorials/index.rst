@@ -30,7 +30,7 @@ Vesting Balance
 API
 ============
 
-* `How an Exchange can integrate their services to the BitShares UI Wallet - Gateway Integration Requirements <https://github.com/bitshares/bitshares-ui/wiki/Gateway-Integration-Requirements>`_ : from BitShares UI wiki
+* `How an Exchange can integrate their services to the DNA UI Wallet - Gateway Integration Requirements <https://github.com/bitshares/bitshares-ui/wiki/Gateway-Integration-Requirements>`_ : from DNA UI wiki
 * :ref:`How can I enable RPC Logging? <rpc-logging>`
 * :ref:`How to script Websockets by Python <websocket-script-support>`
 
@@ -89,7 +89,7 @@ Node
 * :ref:`How can a Let's Encrypt certificate be used with an API node to provide a secure web socket (wss) connection <api-node-wss-con>`
 
 * :ref:`How to run Node in the background by using GNU screen <manage-gun-screen>`
-* :ref:`How to run a BitShares API Node <run-api-node-guide>`		
+* :ref:`How to run a DNA API Node <run-api-node-guide>`		
 
 .. _witness-blockproducer-guide: 
 
@@ -115,7 +115,7 @@ Transfer / Transactions
 * :ref:`How to use the CLI wallet to perform Confidential Transfers  <confidential-transactions-guide>`
 * :ref:`Hot to Construct Any Transaction - Manually <manually-construct-transaction>`
 * :ref:`How to Crafting, Proposing, and Approving a Transaction <proposing-transaction>` - Proposed Transaction 
-* :ref:`How to use the CLI wallet to Perform Stealth Transfers in BitShares (wiki) <w-stealth-transfers>`  
+* :ref:`How to use the CLI wallet to Perform Stealth Transfers in DNA (wiki) <w-stealth-transfers>`  
 * :ref:`Proposed Transaction and  Multi-Signature <proposed-tran>`
 
 Wallet / CLI

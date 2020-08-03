@@ -6,7 +6,7 @@ Transfer - smart contract
 
 "The transfer of asset from one account to another is one operation and a smart contract."
 
-In this section, we examine how worker proposal  smart contract was constructed. There are items and helpful steps to construct a smart contract. We want to list those items by examining BitShares blockchain components.
+In this section, we examine how worker proposal  smart contract was constructed. There are items and helpful steps to construct a smart contract. We want to list those items by examining DNA blockchain components.
 
 * **Smart contract items**
 

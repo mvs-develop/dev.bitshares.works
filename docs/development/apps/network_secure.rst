@@ -10,7 +10,7 @@ Secure Network and Wallet Configuration
    
 -------
 
-.. Attention:: The ``delayed_node`` program is no longer supported after BitShares Core 4.0.0 is released. For the instruction, *How to configure a witness_node as a delayed_node*, check the following link:
+.. Attention:: The ``delayed_node`` program is no longer supported after DNA Core 4.0.0 is released. For the instruction, *How to configure a witness_node as a delayed_node*, check the following link:
 
    * `How to configure a witness_node as a delayed_node <https://github.com/bitshares/bitshares-core/wiki/Delayed-Node>`_
    
@@ -22,7 +22,7 @@ Set up
 ----------------
 
 .. image:: ../../../../_static/structures/secure-setup.png
-        :alt: BitShares Architecture
+        :alt: DNA Architecture
         :width: 650px
         :align: center
 		
@@ -53,7 +53,7 @@ Hence we will work with the following IPs and open the corresponding RPC ports
 Trusted Full Node
 ------------------------
 
-The trusted full node is your entry point to the BitShares P2P network. It will hold the blockchain, connect to other peers, and will receive new blocks in real-time.
+The trusted full node is your entry point to the DNA P2P network. It will hold the blockchain, connect to other peers, and will receive new blocks in real-time.
 
 ::
 

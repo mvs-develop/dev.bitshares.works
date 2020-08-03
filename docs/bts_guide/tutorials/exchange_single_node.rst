@@ -2,10 +2,10 @@
 .. _exchange-single-node:
 
 ***************************************************************
-How to prepare BitShares Exchange Guide (Single Node Edition)
+How to prepare DNA Exchange Guide (Single Node Edition)
 ***************************************************************
 
-The purpose of this article is to assist third-party exchanges to go online for BitShares transactions.
+The purpose of this article is to assist third-party exchanges to go online for DNA transactions.
 
 The scheme described in this section is a single node scheme. Compared to the two-node scenario described in another document, the single-node solution can save memory, hard disk, and synchronization time.
 
@@ -20,24 +20,24 @@ The scheme described in this section is a single node scheme. Compared to the tw
 
 **1.1 Consensus**
 
-The BitShares uses the DPOS consensus mechanism to vote for the block forge by the person holding the BTS. The standard block interval is 3 seconds.
+The DNA uses the DPOS consensus mechanism to vote for the block forge by the person holding the BTS. The standard block interval is 3 seconds.
 
 **1.2 Account**
 
-1) In BitShares, funds are stored in an account, unlike Bitcoin where there is an address. For the exchange, it is necessary to open an account for users to deposit.
+1) In DNA, funds are stored in an account, unlike Bitcoin where there is an address. For the exchange, it is necessary to open an account for users to deposit.
 
   - You can use a web wallet or light wallet to register a new account.
    
 .. Note:: For the exchange, please use the wallet mode (Local Wallet) instead of the account mode  (Cloud Wallet) for the registered account, because the exchange needs to use some advanced functions and there will be problems in the account mode.
 
-  - `BitShares-UI Release <https://github.com/bitshares/bitshares-ui/releases>`_
+  - `DNA-UI Release <https://github.com/bitshares/bitshares-ui/releases>`_
   - BitShare UI wallet:  https://wallet.bitshares.org
   - `Create an Account Guide <http://how.bitshares.works/en/latest/user_guide/create_account.html>`_
 
    
 - Not all accounts can be registered for free. Generally, a flat or numeric account can be registered for free, such as my-exchange, or myexchange2017.   
 
-- In the light wallet account page, a number is displayed below the account number. This number is the built-in ID of the account in the BitShares system, which will be used below.
+- In the light wallet account page, a number is displayed below the account number. This number is the built-in ID of the account in the DNA system, which will be used below.
 
 .. Hint:: You can go to the blockchain browser https://cryptofresh.com/ and enter the account name to get the account ID.   
 
@@ -76,7 +76,7 @@ The BitShares uses the DPOS consensus mechanism to vote for the block forge by t
 
 **1.3 Assets**
 
-1) There are various assets in the BitShares system, of which the core asset is the BTS. The approach of the exchange to other assets in the BitShares system is similar to that of the BTS.
+1) There are various assets in the DNA system, of which the core asset is the BTS. The approach of the exchange to other assets in the DNA system is similar to that of the BTS.
 2) Each account can have multiple assets at the same time.
 
 **1.4 BlockChain Structure**
@@ -108,11 +108,11 @@ Install 64-bit Ubuntu 16.04 LTS (it will not work on 32-bit Ubuntu), or 64-bit U
 3. Program Preparation
 ==============================================
 
-To start-off the BitShares system, you need to run these programs: normal node ``witness_node``, command line wallet ``cli_wallet``.
+To start-off the DNA system, you need to run these programs: normal node ``witness_node``, command line wallet ``cli_wallet``.
 
 **3.1 Architecture Description**
 
-- The ``witness_node`` is connected to the BitShares network in a P2P manner, receives the latest block from the network, and broadcasts the locally signed transaction packet to the network.
+- The ``witness_node`` is connected to the DNA network in a P2P manner, receives the latest block from the network, and broadcasts the locally signed transaction packet to the network.
 - The ``witness_node`` provides an API for other program calls (hereafter referred to as node APIs) via websocket + HTTP RPC.
 - ``Cli_wallet`` connects to ``witness_node`` via websocket.
 - ``Cli_wallet`` manages wallet files, which contain an encrypted user private key, and a wallet file can contain multiple private keys.
@@ -127,7 +127,7 @@ To start-off the BitShares system, you need to run these programs: normal node `
 
 The compiled Windows executable is available for download on Github, at https://github.com/bitshares/bitshares-core/releases/latest ,
 
-The file is `BitShares-Core-2.0.xxxxxx-x64-cli-tools.zip` and it can be unzipped. It contains three exe files and two dll files. Here is the :ref:`installation guide: CLI-Wallet on Windows (x64) <cli-tool>`
+The file is `DNA-Core-2.0.xxxxxx-x64-cli-tools.zip` and it can be unzipped. It contains three exe files and two dll files. Here is the :ref:`installation guide: CLI-Wallet on Windows (x64) <cli-tool>`
 
 
 **3.3 Linux**
@@ -510,7 +510,7 @@ If the execution is successful, the result will be result, otherwise there will 
 
 **9.1 Obtaining the Current *Unable to Return Block* Number**
 
-The possibility of using Bitcoin and others to use the confirmation number to reduce the probability of a fallback in the transaction is different. In the BitShares, the **unreturnable block** number can be used to determine whether the transaction can be rolled back.
+The possibility of using Bitcoin and others to use the confirmation number to reduce the probability of a fallback in the transaction is different. In the DNA, the **unreturnable block** number can be used to determine whether the transaction can be rolled back.
 
 **Unable to roll back** transactions in blocks and earlier blocks can be guaranteed not to roll back.
 
@@ -782,7 +782,7 @@ Therefore, if a transaction broadcast appears but does not appear in the account
   * If not resolved, use backup recovery
   * If there is no backup, re-synchronization may take longer
 
-* **Multi-signature**: BitShares natively supports account-level multi-signature, and there is a proposal-approval mechanism that can initiate multi-signature requests online and then confirm the completion of multi-signature transactions.  Read about: :ref:`bts-multi-sign`
+* **Multi-signature**: DNA natively supports account-level multi-signature, and there is a proposal-approval mechanism that can initiate multi-signature requests online and then confirm the completion of multi-signature transactions.  Read about: :ref:`bts-multi-sign`
 * Hardware Wallet: No Support
 * **Cold Storage**: Can be implemented, the steps are somewhat complicated, examples:
 

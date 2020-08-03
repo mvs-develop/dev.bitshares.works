@@ -51,7 +51,7 @@
     <innerclass refid="structgraphene_1_1protocol_1_1worker__create__operation" prot="public">graphene::protocol::worker_create_operation</innerclass>
     <innerclass refid="structgraphene_1_1protocol_1_1limit__order__create__operation" prot="public">graphene::protocol::limit_order_create_operation</innerclass>
     <innerclass refid="structgraphene_1_1protocol_1_1override__transfer__operation" prot="public">graphene::protocol::override_transfer_operation</innerclass>
-    <innergroup refid="group__proposed__transactions">The BitShares Transaction Proposal Protocol</innergroup>
+    <innergroup refid="group__proposed__transactions">The DNA Transaction Proposal Protocol</innergroup>
     <innergroup refid="group__workers">The Blockchain Worker System</innergroup>
       <sectiondef kind="typedef">
       <memberdef kind="typedef" id="group__operations_1ga89a307152d9c1f5b69f80e3ebaf65c49" prot="public" static="no">

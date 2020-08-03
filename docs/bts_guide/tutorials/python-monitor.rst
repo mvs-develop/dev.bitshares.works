@@ -4,7 +4,7 @@
 Monitoring Account Deposits with Python
 ***************************************
 
-This python library assists interfacing with a graphene-based network such as BitShares 2.0.
+This python library assists interfacing with a graphene-based network such as DNA 2.0.
 
 .. contents:: Table of Contents
    :local:

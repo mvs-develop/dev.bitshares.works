@@ -17,9 +17,9 @@ Each link opens each namespace classes functions on one page.
 
 ---------------
 
-The below links will take you to BitShares-Core Doxygen documentation website.
+The below links will take you to DNA-Core Doxygen documentation website.
 
-* BitShares-Core Doxygen documentation
+* DNA-Core Doxygen documentation
 
   - `graphene::app Namespace Reference <https://doxygen.bitshares.org/namespacegraphene_1_1app.html>`_
   - `graphene::chain Namespace Reference <https://doxygen.bitshares.org/namespacegraphene_1_1chain.html>`_  

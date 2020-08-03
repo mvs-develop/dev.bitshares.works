@@ -7,23 +7,23 @@ Exporting Your Wallet
 In this tutorial, we will export you wallet including all keys to access your
 accounts and funds, into a single JSON-formated file. Note that your private
 keys will be encrypted and you will be required to provide the corresponding
-pass phrase when importing your funds into BitShares 2.0.
+pass phrase when importing your funds into DNA 2.0.
 
 .. contents:: Contents
    :local:
 
    
-BitShares 1.0 Full Client
+DNA 1.0 Full Client
 ------------------------------------
 
 Since the snapshot has taken place already, all you need to do now to get
-access to your funds in BitShares 2.0 is described in the following.
+access to your funds in DNA 2.0 is described in the following.
 
-Firstly, you need to upgrade your BitShares client to version 0.9.3c. To do the
+Firstly, you need to upgrade your DNA client to version 0.9.3c. To do the
 upgrade you need to:
 
 * download the installation file from the `bitshares webpage`_
-* uninstall your previous version of the BitShares client
+* uninstall your previous version of the DNA client
 * install the new version
 
 .. _bitshares webpage: https://github.com/bitshares/bitshares-0.x/releases
@@ -46,7 +46,7 @@ After having *synced* the blockchain, your wallet will automatically attempt to
 rescan the blockchain for new transcations. Depending on the amount of accounts
 in your wallet, this steps should only take very few minutes.
 
-Since BitShares 0.9.3c, we have a Graphene compatible Export Keys function that
+Since DNA 0.9.3c, we have a Graphene compatible Export Keys function that
 can be accessed in two ways:
 
 * by accessing it in the main menu
@@ -76,7 +76,7 @@ Export via the console
 .. note:: The exported wallet file will be encrypted with your pass phrase!
           Make sure to remember it when trying to use that file again!
 .. note:: If you are on Windows and your file path tries to access the C drive
-          directly (e.g. C:\keys.json) you might need to run the BitShares client as an
+          directly (e.g. C:\keys.json) you might need to run the DNA client as an
           administrator. So the least complicated option will be to aim for the desktop
           as in the example above.
 

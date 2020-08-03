@@ -5,7 +5,7 @@
 Plugin - talk
 ********************************
 
-This section collects BitShares Plugin information
+This section collects DNA Plugin information
 
 * `Discussion about "Create plugin script" <https://github.com/bitshares/bitshares-core/pull/1302>`_
 

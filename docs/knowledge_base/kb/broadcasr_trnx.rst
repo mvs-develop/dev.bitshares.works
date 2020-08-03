@@ -9,18 +9,18 @@ Features: Broadcast and Transactions
 -------
 
 
-Clients and BitShares blockchain network
+Clients and DNA blockchain network
 ========================================
 
-In this section, we look into BitShares Blockchain transaction and the flow. The below image is simplified clients and nodes relations. And it shows two transactions occurred and nodes received the transactions. 
+In this section, we look into DNA Blockchain transaction and the flow. The below image is simplified clients and nodes relations. And it shows two transactions occurred and nodes received the transactions. 
 
 .. image:: ../../_static/output/net-broadcast2.png
-        :alt: BitShares 
+        :alt: DNA 
         :width: 700px
         :align: center
 
 
-On the BitShares blockchain, every node receives a transaction (1a&1b), locally validates its content and signature(2a&2b), and re-broadcasts to its connected peers(3a&3b). The connected peers could be another API node or witness node. 
+On the DNA blockchain, every node receives a transaction (1a&1b), locally validates its content and signature(2a&2b), and re-broadcasts to its connected peers(3a&3b). The connected peers could be another API node or witness node. 
 
 Block producer nodes (a.k.a. Active witness nodes) will sign blocks if it is their turn (time slot), produce a block(5b) and broadcast(6b) the block to its connected peers.
 
@@ -30,7 +30,7 @@ Block producing nodes provide the blockchain with signed (like to think about it
 
 Witnesses are selected based upon their commitment to remain neutral to blockchain policy.  Image, for extremely important contracts, a public notify is sometimes used. Neither witnesses nor notaries are party to the contract, but they serve a very important role of certifying the the contract was signed by the specified individuals at the specifies time. 
 
-In BitShares witnesses serve a similar role of validating signatures and time-stamping transactions by including them in blocks. 
+In DNA witnesses serve a similar role of validating signatures and time-stamping transactions by including them in blocks. 
 
 |
 
@@ -195,13 +195,13 @@ Blocks are produced by witnesses. Each block contains more than one transaction.
 
 You can see that each operation has own ``fee_parameter_type`` definition and calculates the fee.  About the "fee" is another big topic. We would like to visit it in another section. 
 
-What is a transaction in BitShares blockchain? Well, you might say "group of operations". That's true also. We have implemented almost fifty operation types.  You can find :ref:`BitShares blockchain operations list here <lib-operations>`. 
+What is a transaction in DNA blockchain? Well, you might say "group of operations". That's true also. We have implemented almost fifty operation types.  You can find :ref:`DNA blockchain operations list here <lib-operations>`. 
 
 
 Protocols (transactions)
 -------------------------
 
-There are protocols to build up BitShares blockchain components and systems. A protocol is a set of rules. It might be a good idea to know what types of protocols (rules) BitShares blockchain has. 
+There are protocols to build up DNA blockchain components and systems. A protocol is a set of rules. It might be a good idea to know what types of protocols (rules) DNA blockchain has. 
 
 
 :transaction: All transactions are sets of operations that must be applied atomically.

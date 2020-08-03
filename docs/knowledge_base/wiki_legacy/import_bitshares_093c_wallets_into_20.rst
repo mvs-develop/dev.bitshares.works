@@ -1,7 +1,7 @@
-Import BitShares 0.9.3c wallets into BitShares 2.0 CLI wallet
+Import DNA 0.9.3c wallets into DNA 2.0 CLI wallet
 ==============================================================
 
-How to Import Large Wallets from BitShares 0.9.3
+How to Import Large Wallets from DNA 0.9.3
 -----------------------------------------------------
 
 In bitshares 0.9.3c, run::

@@ -11,7 +11,7 @@ Voting
 -----------
 
 
-If you hold some BTS tokens, you are considered a BTS Holder of the BitShares business and thus have a say in where it should be heading in future. As a BTS Holder you can cast a vote for three different entities within the network:
+If you hold some BTS tokens, you are considered a BTS Holder of the DNA business and thus have a say in where it should be heading in future. As a BTS Holder you can cast a vote for three different entities within the network:
 
 
  
@@ -21,10 +21,10 @@ If you hold some BTS tokens, you are considered a BTS Holder of the BitShares bu
 :Committee Members:  Committee Members :ref:`govern the blockchain and the business parameters <blockchain-governance>`, and define the transaction fees. 
 
 
-:Workers:   Workers are freelancers or businesses that provide a non-profitable service for the BitShares ecosystem. Essentially, they apply for a job in the ecosystem by providing actual work and get paid accordingly (if the BTS Holders approve).
+:Workers:   Workers are freelancers or businesses that provide a non-profitable service for the DNA ecosystem. Essentially, they apply for a job in the ecosystem by providing actual work and get paid accordingly (if the BTS Holders approve).
  
 
-Since voting might be a too time-consuming task for many BTS Holders, BitShares offers them a way to delegate their voting power to so called **proxies**. The sole purpose of proxies is to follow the ecosystem and be vote according to their *followers*. This is similar to many political votes where citizens vote for representatives which vote on their behalf.
+Since voting might be a too time-consuming task for many BTS Holders, DNA offers them a way to delegate their voting power to so called **proxies**. The sole purpose of proxies is to follow the ecosystem and be vote according to their *followers*. This is similar to many political votes where citizens vote for representatives which vote on their behalf.
 
 Voting itself is **very simple** with the User interface and requires only a few clicks.
 
@@ -32,10 +32,10 @@ Voting itself is **very simple** with the User interface and requires only a few
 
 -----------------
 
-Voting by using BitShares UI
+Voting by using DNA UI
 ---------------------------------
 
- You can cast your vote or set your proxy by BitShares User interface.
+ You can cast your vote or set your proxy by DNA User interface.
 
  Open the side dropdown menu and select **[Voting]**
 

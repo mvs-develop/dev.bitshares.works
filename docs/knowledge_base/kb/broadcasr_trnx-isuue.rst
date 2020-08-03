@@ -11,7 +11,7 @@ issue: Broadcast and Transactions
 
 
 .. image:: ../../_static/output/net-broadcast-tx1.png
-        :alt: BitShares 
+        :alt: DNA 
         :width: 700px
         :align: center
 

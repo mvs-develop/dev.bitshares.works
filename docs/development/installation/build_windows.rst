@@ -1,7 +1,7 @@
 .. _build-windows:
 
 ************************************************
-Build BitShares-Core with Visual Studio 2015
+Build DNA-Core with Visual Studio 2015
 ************************************************
 
 .. contents:: Table of Contents
@@ -62,7 +62,7 @@ Download Software and Tools
 
 * **OpenSSL**
 
- BitShares Core depends on OpenSSL version 1.0.1 or 1.0.2, and you must build this from source. This article uses 1.0.1u as an example. Cannot use OpenSSL 1.1.0.
+ DNA Core depends on OpenSSL version 1.0.1 or 1.0.2, and you must build this from source. This article uses 1.0.1u as an example. Cannot use OpenSSL 1.1.0.
 
  *References*::
 
@@ -86,7 +86,7 @@ Download Software and Tools
 
 * **Boost**
 
- BitShares Core depends on the Boost libraries, only version 1.57 ~ 1.60. 1.57.0 is used here. ( 1.60 encountered a command line parameter parsing problem)
+ DNA Core depends on the Boost libraries, only version 1.57 ~ 1.60. 1.57.0 is used here. ( 1.60 encountered a command line parameter parsing problem)
 
 
  - Download OpenSSL Source Code from;::
@@ -173,10 +173,10 @@ Build the Library Dependencies
        Https://git-scm.com/download/win
 
 
-BitShares-Core
+DNA-Core
 ----------------------------------------
 
-* **Download and Install BitShares-Core Source code**
+* **Download and Install DNA-Core Source code**
 
  Find and run `Git Bash` from the Start menu. In the open command line interface, execute the following command::
 
@@ -189,7 +189,7 @@ BitShares-Core
  **Note:**
 
  * Please modify the specific directory according to the actual situation
- * Please replace `<LATEST_RELEASE_TAG>` by the latest release version of bitshares-core. If you need to compile other versions, modify accordingly. Find [BitShares Core latest release](https://github.com/bitshares/bitshares-core/releases).
+ * Please replace `<LATEST_RELEASE_TAG>` by the latest release version of bitshares-core. If you need to compile other versions, modify accordingly. Find [DNA Core latest release](https://github.com/bitshares/bitshares-core/releases).
 
  **At the end of this, your base directory should look like this**::
 

@@ -2,7 +2,7 @@
 Vesting Balances 
 ===================
 
-In BitShares 2.0, some balances are vesting over time. This feature has been introduced initially in BitShares 1 when merging several blockchain businesses into one blockchain.
+In DNA 2.0, some balances are vesting over time. This feature has been introduced initially in DNA 1 when merging several blockchain businesses into one blockchain.
 
 
 
@@ -48,7 +48,7 @@ For instance, a worker can define for how long he would like his pay to vest to 
 Claiming A Vesting Balance
 -----------------------------
 
- You can claim vesting balances by using BitShares User interface. (You might need to wait certain days to claim.)
+ You can claim vesting balances by using DNA User interface. (You might need to wait certain days to claim.)
 
  Open the side dropdown menu and select **[Vesting Balances]**
 

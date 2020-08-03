@@ -32,7 +32,7 @@ Development of new Smart Contracts
 
 You would need... 
 
-* C++ skills for BitShares-Core development
+* C++ skills for DNA-Core development
 * Have your idea and Business Plan
 * Consider codebase is different among graphene blockchains.
 * Knowledge

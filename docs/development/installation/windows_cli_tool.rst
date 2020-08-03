@@ -13,19 +13,19 @@ Windows x64 CLI Tool
 
 In this section, we will show you how to install cli-wallet tools for Windows and try several methods to get the data from blockchain. 
 
-How to install BitShares-Core CLI Tool
+How to install DNA-Core CLI Tool
 ===========================================================
 
 CLI-Wallet on Windows (x64)
 -------------------------------------------
 
-1. Download the BitShares-Core-*-x64-cli-tools.zip file from https://github.com/bitshares/bitshares-core/releases
-2. Unzip the file to your workstation. (e.g., d:\BitShares\)
+1. Download the DNA-Core-*-x64-cli-tools.zip file from https://github.com/bitshares/bitshares-core/releases
+2. Unzip the file to your workstation. (e.g., d:\DNA\)
 3. Download the **cacer.pem** file from Mozilla: https://curl.haxx.se/docs/caextract.html
-4. Save the file to the same folder you extracted the cli-tools. (e.g. d:\BitShares\)
+4. Save the file to the same folder you extracted the cli-tools. (e.g. d:\DNA\)
 5. Open a Windows command prompt (cmd.exe)
-6. Navigate to your install directory. (e.g. d:\BitShares\)
-7. Set an environment variable by typing: `set SSL_CERT_FILE=d:/BitShares/cacert.pem`
+6. Navigate to your install directory. (e.g. d:\DNA\)
+7. Set an environment variable by typing: `set SSL_CERT_FILE=d:/DNA/cacert.pem`
 8. Start the wallet: `cli_wallet -s wss://{ANY VALID AUTHORITY}/ws`. For example, `cli_wallet -s wss://bitshares.openledger.info/ws`
 
 

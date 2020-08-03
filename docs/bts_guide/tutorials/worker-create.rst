@@ -16,17 +16,17 @@ How to create a Worker
 By using the UI
 ^^^^^^^^^^^^^^^^^^^^^^
 
-You can create a Worker Proposal by using BitShares UI form. Go to *Voting* page. There are three tabs: "Witnesses", "Committee", and "Workers". In the "Worker" tab, you will find *CREATE A NEW WORKER* button. 
+You can create a Worker Proposal by using DNA UI form. Go to *Voting* page. There are three tabs: "Witnesses", "Committee", and "Workers". In the "Worker" tab, you will find *CREATE A NEW WORKER* button. 
 
 .. image:: ../../../../_static/imgs/ui-worker-create3.png
-        :alt: BitShares 
+        :alt: DNA 
         :width: 600px
         :align: center
 
 **a worker proposal form**
 		
 .. image:: ../../../../_static/imgs/ui-worker-create.png
-        :alt: BitShares 
+        :alt: DNA 
         :width: 550px
         :align: center
 
@@ -89,11 +89,11 @@ How to see Proposals on the Chain
 By using the UI 
 ^^^^^^^^^^^^^^^^^^
 
-You can check the Worker Proposals by BitShares UI form. Go to *Voting* page. There are three tabs: "Witnesses", "Committee", and "Workers". In the "Worker" tab, you will find all Worker Proposals list. 
+You can check the Worker Proposals by DNA UI form. Go to *Voting* page. There are three tabs: "Witnesses", "Committee", and "Workers". In the "Worker" tab, you will find all Worker Proposals list. 
 
 
 .. image:: ../../../../_static/imgs/ui-voting-worker.png
-        :alt: BitShares 
+        :alt: DNA 
         :width: 600px
         :align: center
 		
@@ -137,7 +137,7 @@ Voting is important. You have the UI form for voting. It's very easy to use. Go 
 
 
 .. image:: ../../../../_static/imgs/ui-voting-worker-2.png
-        :alt: BitShares 
+        :alt: DNA 
         :width: 600px
         :align: center
 		

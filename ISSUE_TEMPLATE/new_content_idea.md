@@ -1,6 +1,6 @@
 ---
 name:  New content
-about: Create a request to inform your idea to improve the BitShares Developers Documentation.
+about: Create a request to inform your idea to improve the DNA Developers Documentation.
 
 ---
 

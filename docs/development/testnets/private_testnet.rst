@@ -5,7 +5,7 @@
 Private Testnet Set up
 ************************
 
-Some developers may want to deploy their own BitShares blockchain locally for governance, and speed reasons. This section explains how to prepare the private testnet environment and what steps to take to be a block producing node (witness node). 
+Some developers may want to deploy their own DNA blockchain locally for governance, and speed reasons. This section explains how to prepare the private testnet environment and what steps to take to be a block producing node (witness node). 
 
 .. contents:: Table of Contents
    :local:
@@ -358,7 +358,7 @@ Fist you need to create a new password for your wallet. This password is used to
 7-2. Gain Access to the Genesis Stake
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In BitShares, balances are contained in accounts. To import an account that exists in the BitShares genesis into your wallet, all you need to know its **name** and its **private key**. 
+In DNA, balances are contained in accounts. To import an account that exists in the DNA genesis into your wallet, all you need to know its **name** and its **private key**. 
 
 In this section, we use an account name ``nathan`` We will now import into the wallet an account called ``nathan`` (a general purpose test account) by using the ``import_key`` command:
 

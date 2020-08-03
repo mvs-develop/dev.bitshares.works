@@ -15,7 +15,7 @@ The proposal system allows for arbitrarily complex or recursively nested authori
 
 
 .. image:: ../_images/trn-proposed1.png
-        :alt: BitShares 
+        :alt: DNA 
         :width: 700px
         :align: center
 

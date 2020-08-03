@@ -10,10 +10,10 @@ Objects and IDs
    
 -------
 
-In contrast to most cryptocurrency wallets, the BitShares 2.0 has a different
+In contrast to most cryptocurrency wallets, the DNA 2.0 has a different
 model to represent the blockchain, its transactions and accounts. This chapter
 wants to given an introduction to the concepts of *objects* as they are used by
-the BitShares 2.0 client. Furthermore, we will briefly introduce the API and
+the DNA 2.0 client. Furthermore, we will briefly introduce the API and
 show how to subscribe to object changes (such as new blocks or incoming
 deposits). Afterwards, we will show how exchange may monitor their accounts and
 credit incoming funds to their corresponding users.
@@ -21,7 +21,7 @@ credit incoming funds to their corresponding users.
 Objects
 --------------
 
-On the BitShares blockchains there are no addresses, but objects identified by a
+On the DNA blockchains there are no addresses, but objects identified by a
 unique *id*, an *type* and a *space* in the form:::
 
     space.type.id
@@ -132,7 +132,7 @@ exemplary objects.
 Examples - Accounts
 ^^^^^^^^^^^^^^^^^^^
 
-The BitShares blockchain users are requires to register each account with a unique username and a public key on the blockchain. The blockchain assigns an incremental user id and offers to resolve the name-to-id pair. 
+The DNA blockchain users are requires to register each account with a unique username and a public key on the blockchain. The blockchain assigns an incremental user id and offers to resolve the name-to-id pair. 
 
 +-------------+---------------------------------------------------------+ 
 | Object ID   | Translates to                                           |

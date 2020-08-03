@@ -16,7 +16,7 @@ Components
 P2P Network
 ------------
 
-The BitShares client uses a peer-to-peer network to connect and broadcasts transactions there. A block producing full node will eventually catch your transcaction and validates it by adding it into a new block.
+The DNA client uses a peer-to-peer network to connect and broadcasts transactions there. A block producing full node will eventually catch your transcaction and validates it by adding it into a new block.
 
 Trusted Full Node
 ------------------

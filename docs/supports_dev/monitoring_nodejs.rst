@@ -5,7 +5,7 @@
 Monitoring the Balance History - NodeJs
 *********************************************
 
-This nodejs script monitors the balance history of an account in a graphene-based network such as BitShares 2.0.
+This nodejs script monitors the balance history of an account in a graphene-based network such as DNA 2.0.
 
 Installation
 ====================

@@ -5,11 +5,11 @@
 Confidential Transfers
 -----------------------
 
-**How to use the CLI wallet to perform confidential transfers in BitShares**
+**How to use the CLI wallet to perform confidential transfers in DNA**
 
    
 This tutorial shows how to use the CLI wallet to perform confidential transfers
-in BitShares. A confidential transfer is one that hides both the amount being
+in DNA. A confidential transfer is one that hides both the amount being
 sent and the parties involved in the trade. Confidential transfers are also
 referred to as blinded transfers. When privacy is important no account should
 ever be used twice, and coupled with diligent measures to backup and protect the
@@ -27,7 +27,7 @@ admonition out of the way let's get started.
 We will illustrate the CLI commands required to complete every step in this
 tutorial. You must be familiar with the witness_node and cli_wallet software to
 follow this guide. For further information on how to build and use that software
-consult the `readme file <https://github.com/bitshares/bitshares-2>`_ on github or the BitShares wiki. I will be using
+consult the `readme file <https://github.com/bitshares/bitshares-2>`_ on github or the DNA wiki. I will be using
 simple passwords and account names to simplify the presentation. You should
 change these to more secure values to provide a higher level of security. Also
 note that the CLI wallet echos the command entered which is not reflected in the
@@ -45,7 +45,7 @@ Step 1: Create a Blind Account
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Blind Accounts are not registered on the blockchain like the named accounts of
-BitShares. Instead a blind account is nothing more than a labeled public key.
+DNA. Instead a blind account is nothing more than a labeled public key.
 The label assigned to the key is only known to your *wallet*. Thus it is
 crucial that you create a new wallet for the blind account and back it up after
 completing the balance transfer. 
@@ -53,7 +53,7 @@ completing the balance transfer.
 The first step in creating a blind account is to create a new wallet and set a
 good quality password for it that would be difficult to crack. Then, using this
 wallet we'll create a labeled account and protect it with a "brainkey". The
-"brainkey" is effectively the private key used by your account. All BitShares
+"brainkey" is effectively the private key used by your account. All DNA
 cryptography is based on public / private key pairs, one public which can be
 shared the other private known only to you. 
 
@@ -207,7 +207,7 @@ of the funds.  The ability to make inferences about the contents and origin of
 blind balances by analyzing the transactions that created them is known as
 "traceability".  A privacy scheme which is resistant to tracing is known as
 "untraceable," and it is important to bear in mind that the "blind transfers"
-feature as currently implemented in BitShares *DOES NOT POSSESS* the property of
+feature as currently implemented in DNA *DOES NOT POSSESS* the property of
 untraceability, and so to protect privacy, it is very important to be aware of
 one's usage patterns, and what records are left behind.
 
@@ -308,7 +308,7 @@ First, be sure that the 'bobby' account has imported the blind receipt from Alic
 
 Next, Bobby will use the `transfer_from_blind` operation to transfer a blind balance
 to a public account.  Note that in the following command form the first name argument
-(`bobby`) is a key label, but the second (`peter`) is a registered public BitShares
+(`bobby`) is a key label, but the second (`peter`) is a registered public DNA
 account.
 
 ::
@@ -372,7 +372,7 @@ or who is in control of each one, only that together they all add up to 4800 BTS
 Summary
 ^^^^^^^
 
-We covered several steps and several operations with Confidential Transactions, a.k.a. "blind" transfers, in BitShares, using the CLI (command line) wallet.  A brief summary of the wallet commands:
+We covered several steps and several operations with Confidential Transactions, a.k.a. "blind" transfers, in DNA, using the CLI (command line) wallet.  A brief summary of the wallet commands:
 
 * **transfer_to_blind** - (Public --> Blind) - This was used to create blind balances from a public source.  Note that the resulting balances, while they do not reveal their contents directly, are trivially traceable and simple blockchain analysis can reveal their contents.  (The transaction which created them is permanently stored in the blockchain.)
 * **blind_transfer** - (Blind --> Blind) - This spends from a blind balance to one or more new blind balances, by "consuming" the outputs of previous blind transactions and producing new blind outputs.  Note that the blockchain will record which old outputs were consumed and which new outputs are created, however details of *who* is doing the transaction, and how much is in each output, are obscured. Be sure that you send the *blind receipt* to the party that will receive the transfer.  (They will need it to detect the incoming transaction.)

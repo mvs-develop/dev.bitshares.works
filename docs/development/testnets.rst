@@ -3,9 +3,9 @@
 Testnets
 **************
 
-BitShares offers an Open Public Testnet that has been deployed and is fully functional for anyone to join and test without using real BTS.  Instead, you will receive Testnet Core asset TEST.  The Open Public Testnet is a great space to start learning about BitShares-Core features and BitShares-UI wallet. 
+DNA offers an Open Public Testnet that has been deployed and is fully functional for anyone to join and test without using real BTS.  Instead, you will receive Testnet Core asset TEST.  The Open Public Testnet is a great space to start learning about DNA-Core features and DNA-UI wallet. 
 
-For the BitShares Testnet preparation, you should download a **testnet** branch from the BitShares-Core repository. The testnet branch files are for the Testnets to use.
+For the DNA Testnet preparation, you should download a **testnet** branch from the DNA-Core repository. The testnet branch files are for the Testnets to use.
 
 
 .. note:: The testnet branch files: include bug fixes or new features
@@ -16,9 +16,9 @@ For the BitShares Testnet preparation, you should download a **testnet** branch 
 Public Testnets
 -------------------------
 
-If you want to prepare a Public Testnet, you can simply download and use BitShares-Core's testnet branch. The testnet branch files have been prepared for the Public Testnet environment. 
+If you want to prepare a Public Testnet, you can simply download and use DNA-Core's testnet branch. The testnet branch files have been prepared for the Public Testnet environment. 
 
-If you want to register a public testnet account, go to this link (http://testnet.bitshares.eu/) to create BitShares Public UI wallet for the public testnet.
+If you want to register a public testnet account, go to this link (http://testnet.bitshares.eu/) to create DNA Public UI wallet for the public testnet.
 
 
 .. toctree::

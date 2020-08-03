@@ -24,7 +24,7 @@ Setting Smartcoin Parameters
 
 This paragraph shows how the committee account can act using the proposed
 transaction system. Specifically, as an example I'm using the creation of
-BitShares proposal 1.10.21, a proposal to update a committee-controlled BitAsset
+DNA proposal 1.10.21, a proposal to update a committee-controlled BitAsset
 to reduce ``maximum_force_settlement_volume`` for asset ``CNY`` from 2000 (20%)
 to 200 (2%).
 
