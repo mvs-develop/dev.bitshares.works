@@ -5,7 +5,7 @@ description = ""
 authors = ["Corfucinas <53630064+Corfucinas@users.noreply.github.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.9"
 
 [tool.poetry.dev-dependencies]
 Sphinx = "^3.4.1"
@@ -33,6 +33,9 @@ exclude = '''
   )/
 )
 '''
+
+[tool.poetry.extras]
+docs = ["sphinx", "sphinx_rtd_theme"]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
