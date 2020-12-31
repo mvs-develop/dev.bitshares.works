@@ -1,5 +1,3 @@
-
-
 .. _lib-pybitshares:
 
 Python - DNA
@@ -25,7 +23,3 @@ Python - DNA
 * :ref:`websocket-script-support`
 
   - Ptython - websocket-client interact with the Core API
-
-
-
-

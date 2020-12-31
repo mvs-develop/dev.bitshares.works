@@ -1,4 +1,3 @@
-
 .. _explorer-wrappers:
 
 ******************************************************
@@ -51,5 +50,3 @@ If you are interested to have own DNA Explorer API up and running for a producti
 
 
 Contributor: @oxarbitrage
-
-

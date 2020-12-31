@@ -1,4 +1,3 @@
-
 .. _elastic-search-plugin:
 
 ***********************
@@ -467,5 +466,3 @@ Elasticsearch database will listen in localhost and the wrapper in the same mach
 |
 
 Contributor: @oxarbitrage
-
-

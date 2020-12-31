@@ -1,4 +1,3 @@
-
 .. _support-and-optim:
 
 

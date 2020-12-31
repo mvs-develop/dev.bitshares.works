@@ -1,4 +1,3 @@
-
 .. _resource-external:
 
 External Links
@@ -38,5 +37,3 @@ Websites
 
 
 * https://zephyr.bitspark.io/ : PROJECT ZEPHYR
-
-

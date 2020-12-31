@@ -1,4 +1,3 @@
-
 .. _monitor-balance-nodejs:
 
 *********************************************
@@ -59,4 +58,3 @@ The script can be executed simply by::
 
 
 |
-

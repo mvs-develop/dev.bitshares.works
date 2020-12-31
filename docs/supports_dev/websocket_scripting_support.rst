@@ -1,4 +1,3 @@
-
 .. _websocket-script-support:
 
 ********************************
@@ -78,4 +77,3 @@ Check the "Long-lived connection" sample of the websocket-client documentation i
 
 
 |
-

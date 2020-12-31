@@ -1,4 +1,3 @@
-
 .. _monitor-account-python:
 
 ***************************************
@@ -53,4 +52,3 @@ The monitoring script can be executed via::
 
 
 |
-

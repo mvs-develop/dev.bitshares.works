@@ -1,6 +1,3 @@
-
-
-
 Developments
 *********************************
 
@@ -69,6 +66,3 @@ Developments
   4. etc.
 
 6. Other Related Software
-
-
-
