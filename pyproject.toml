@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "dev.dna.works"
+version = "0.1.0"
+description = ""
+authors = ["Corfucinas <53630064+Corfucinas@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+Sphinx = "^3.4.1"
+wemake-python-styleguide = "^0.14.1"
+nox = "^2020.8.22"
+pre-commit = "^2.9.3"
+black = "^20.8b1"
+safety = "^1.10.0"
+
+[tool.black]
+line-length = 79
+exclude = '''
+(
+  /(
+      \.eggs
+    | \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
+
+[tool.poetry.extras]
+docs = ["sphinx", "sphinx_rtd_theme"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
