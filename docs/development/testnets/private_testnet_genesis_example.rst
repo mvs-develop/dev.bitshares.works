@@ -1,37 +1,37 @@
 
 .. _private-testnet-genesis-example:
 
-Private Testnet Genesis file 
+Private Testnet Genesis file
 ===================================
 
-As you know, each blockchain starts with a genesis block that definitions are in a genesis file. 
+As you know, each blockchain starts with a genesis block that definitions are in a genesis file.
 
-If you want to test the feature set of current mainnet without connecting to mainnet, you must start a new (**private**) network.  
+If you want to test the feature set of current mainnet without connecting to mainnet, you must start a new (**private**) network.
 
-In a private testnet, you **MUST** create and configure own genesis file by creating a subdirectory named **genesis** and create a file within it named ``my-genesis.json``. This file dictates the initial state of the network.  
+In a private testnet, you **MUST** create and configure own genesis file by creating a subdirectory named **genesis** and create a file within it named ``my-genesis.json``. This file dictates the initial state of the network.
 
 
 For the use of private testnet, you must put an account into the genesis file with keys that you have generated yourself. In a configuration ``config.ini`` file, you can set a genesis.json path parameter value (i.e.,  genesis-json = genesis/my-genesis.json ).  Before you start a ``witness_node``, make sure if you set your **my-genesis.json** file name in a ``config.ini`` file.
 
 
-.. tip:: If you want to generate new keys pairs, you can use 
-   - ``suggest_brain_key``  in cli_wallet. Or  ``./get_dev_key``  in the ``programs/genesis_util/`` by using the corresponding network prefix("BTS", "TEST", "MY", etc). 
+.. tip:: If you want to generate new keys pairs, you can use
+   - ``suggest_brain_key``  in cli_wallet. Or  ``./get_dev_key``  in the ``programs/genesis_util/`` by using the corresponding network prefix("BTS", "TEST", "MY", etc).
 
 
 * :ref:`how-to-get-key-pairs`
-  
+
 |
 
 -----
 
-Sample private testnet genesis file 
+Sample private testnet genesis file
 ------------------------------------------
 
 **Notes and Tips::**
 
 - For the private testnet, each public key (key pairs) should be generated. You use different keys to set up the private testnet genesis file ``active_key`` and ``owner_key`` for each **initX** account. You can use your own "name" settings.
 
-- "initial_accounts": The names "initx"..."initxx" can be chosen freely. **Note::** the "initial_witness_candidates"- ``owner_name`` and "initial_committee_candidates"- ``owner_name`` refer the the "initial_account" by ``name``.  
+- "initial_accounts": The names "initx"..."initxx" can be chosen freely. **Note::** the "initial_witness_candidates"- ``owner_name`` and "initial_committee_candidates"- ``owner_name`` refer the the "initial_account" by ``name``.
 
 - ``name``: There is no direct connection between the account ``name`` and keys, so you can change the name and insert keys from ``get_dev_key`` results. If you import the corresponding private keys into cli_wallet, then cli_wallet will recognize the accounts as its own.
 
@@ -39,9 +39,9 @@ Sample private testnet genesis file
 
 - "max_core_supply" refers to **TEST** in testnet, and to **BTS** in mainnet.
 
-- "initial_balances": the ``owner`` is an **address** displayed by ``get_dev_key``; which is basically a shortened hash of a public key. These initial balances can be claimed into an account using the private key corresponding to the owner address. 
+- "initial_balances": the ``owner`` is an **address** displayed by ``get_dev_key``; which is basically a shortened hash of a public key. These initial balances can be claimed into an account using the private key corresponding to the owner address.
 
-- For example, if you create twelve ``name`` for ``initial_accounts``, you should generate 12 accounts * 2 different keys = 24 key pairs (owner_key and active_key) to set up the genesis file parameters. 
+- For example, if you create twelve ``name`` for ``initial_accounts``, you should generate 12 accounts * 2 different keys = 24 key pairs (owner_key and active_key) to set up the genesis file parameters.
 
 - The memo key is always the same as the active key. The “active_key equals to the memo_key” applies to genesis accounts, it’s not a general rule.
 
@@ -409,7 +409,7 @@ Sample private testnet genesis file
 		  "owner_name": "init10"
 		}
 	  ],
-	  "initial_worker_candidates": [],	 
+	  "initial_worker_candidates": [],
 	  "immutable_parameters": {
 		"min_committee_member_count": 11,
 		"min_witness_count": 11,

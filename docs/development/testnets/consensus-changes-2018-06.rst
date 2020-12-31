@@ -7,7 +7,7 @@ BSIP38: Add target collateral ratio option to short positions
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 Motivation

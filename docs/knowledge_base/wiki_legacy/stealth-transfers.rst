@@ -7,9 +7,9 @@ Stealth Transfers
 
 .. contents:: Table of Contents
    :local:
-   
--------	
-		
+
+-------
+
 
 Stealth Transfers
 -----------------------
@@ -31,9 +31,9 @@ For the purpose of this test we will create two blind accounts in two different 
 .. code-block:: json
 
     >>> create_blind_account bob "bob-brain-key"
-        "BTS8HosMbp7tL614bFgqtXXownHykqASxwmnH9NrhAnvtTuVWRf1X"  
+        "BTS8HosMbp7tL614bFgqtXXownHykqASxwmnH9NrhAnvtTuVWRf1X"
 
-		
+
 Alice and Bob now each have their own account in their own wallet that isn't known to anyone else in the world. They can view their blind accounts with the following command:
 
 .. code-block:: json
@@ -44,7 +44,7 @@ Alice and Bob now each have their own account in their own wallet that isn't kno
     "BTS7vbxtK1WaZqXsiCHPcjVFBewVj8HFRd5Z5XZDpN6Pvb2dZcMqK"
     ]]
 
-	
+
 Adding a Contact
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -55,7 +55,7 @@ Suppose Alice wishes to make a payment to Bob, she must first ask Bob for his ac
 
     >>> set_key_label BTS8HosMbp7tL614bFgqtXXownHykqASxwmnH9NrhAnvtTuVWRf1X bobby
 
-	
+
 Transferring to a Stealth Balance
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -67,10 +67,10 @@ All balances must come from somewhere and initially all balances are held by som
     alicepub sent 3000 BTS to 2 blinded balances fee: 15 BTS
     1000 BTS to  alice
       receipt: 2Dif6AK9AqYGDLDLYcpcwBmzA36dZRmuXXJR8tTQsXg32nBGs6AetDT2E4u4GSVbMKEiTi54sqYu1Bc23cPvzSAyPGEJTLkVpihaot4e1FUDnNPz41uFfu2G6rug1hcRf2Qp5kkRm4ucsAi4Fzb2M3MSfw4r56ucztRisk9JJjLdqFjUPuiAiTdM99JdfKZy8WTkKF2npd
-	  
+
 	2000 BTS to  alice
 	  receipt: 28HrgG1nzkGEDNnL1eZmNvN9JmTVQp7X88nf7rfayjM7sACY8yA7FjV1cW5QXHi1sqv1ywCqfnGiNBqDQWMwpcGB1KdRwDcJPaTMZ5gZpw7Vw4BhdnVeZHY88GV5n8j3uGmZuGBEq18zgHDCFiLJ6WAYvs5PiFvjaNjwQmvBXaC6CqAJWJKXeKCCgmoVJ3CQCw2ErocfVH
-	  
+
 
 In this case the only thing the public sees is that account 'alicepub' sent 3000 BTS to two different places. The outside world has no idea how much is in each output, only that they add up to 3000 BTS.
 
@@ -97,7 +97,7 @@ Alice can now transfer to "Bob" which she has labeled 'bobby' in her wallet via 
     500 BTS to  bobby
       receipt: iLrPEY61BQsrKSVLLhuJBB6axkjpp2YA1EUq8k8tdQNfbgmWNQD9tWnAciMpPuLhanv4j8nhvUE1ZjD3WNZPoxdiekTCraMir7xx5rbZsGCogF6YfPbCnZCapMDkC8Zsgs5bZWCB2oRvB1wCjYmsQaji6SQcax5Sii4MY93Q1HGPvehcS7jBvLDz5e1GQmAzoWhnPZqoCuDSvL521CSCCxRvLXoHK1Rih5kX72tJYdAXCECUL3xZ2cd2CA8eegfTiC7f7XkTd75f
 
-	  
+
 The output shows that 500 BTS was sent to bobby and 485 BTS sent back to alice as change after paying a 15 BTS fee. If we check the balance of alice we will see::
 
     >>> get_blind_balances alice
@@ -118,24 +118,24 @@ At this point Bob has not actually received any funds because his wallet has no 
     >>> get_blind_balances bob
     500 BTS
 
-	
+
 The call to receive a blind transfer takes two optional arguments, "from" and "memo" which will be used to label alice's public key in bob's wallet. This helps bob to make sense of his transfer history.
 
 .. code-block:: json
 
-    >>> blind_history bob 
+    >>> blind_history bob
 
     WHEN           AMOUNT  FROM  =>  TO  MEMO
     ====================================================================================
     19 seconds ago  500 BTS  alice  =>  bob  memo
 
-	
+
 Transferring back to Public
 ------------------------------
 
 Eventually every blind balance needs to convert back to a public balance which can be achieved with the following command::
 
-    >>> transfer_from_blind alice alicepub 1000 BTS true 
+    >>> transfer_from_blind alice alicepub 1000 BTS true
     { ... }
 
 In this case alice returned some of her remaining blind balances back to her public balance.

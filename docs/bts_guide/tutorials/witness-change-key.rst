@@ -13,7 +13,7 @@ By replacing ``false`` with ``true``, the signed transaction will be broadcast a
 You can get a new public key by calling::
 
    >>> suggest_brain_key
-		
+
 |
 
 --------------------

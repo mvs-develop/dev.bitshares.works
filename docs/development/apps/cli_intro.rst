@@ -3,7 +3,7 @@
 .. _cli-wallet-intro:
 
 *********************************
-Cli Wallet and the Connectivity 
+Cli Wallet and the Connectivity
 *********************************
 
 CLI Client and Wallet
@@ -16,9 +16,9 @@ Architecture
         :alt: DNA Architecture
         :width: 750px
         :align: center
-		
 
-The Nodes are connected to the network and verify all transactions and block produces. The **cli_wallet** does not offer P2P or blockchain capabilities.  
+
+The Nodes are connected to the network and verify all transactions and block produces. The **cli_wallet** does not offer P2P or blockchain capabilities.
 
 Launching the cli_wallet requires a trusted Full Node to interact with the blockchain. You might use a localhost or own node to connect. Also, you can select one of `DNA Public Full Nodes <https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js>`_, or use API Server that runs by **businesses** or **individuals**.
 
@@ -32,11 +32,11 @@ Outputs - wallet.json
 
 **Example 1: wallet.json**
 
-- The example below, 
-  - we imported ``nathan`` account (*our Test account) to a cli wallet, 
-  - upgraded ``nathan`` account to a LifeTime Member account, and 
+- The example below,
+  - we imported ``nathan`` account (*our Test account) to a cli wallet,
+  - upgraded ``nathan`` account to a LifeTime Member account, and
   - tried to cerate new account ``my-account`` by using ``nathan`` account as both the referrer and registrar.
-  
+
 
 .. code-block:: json
 
@@ -115,7 +115,7 @@ Outputs - wallet.json
 	  "ws_server": "ws://localhost:8090",
 	  "ws_user": "",
 	  "ws_password": ""
-	} 
+	}
 
 
 

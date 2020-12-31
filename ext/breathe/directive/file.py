@@ -1,11 +1,12 @@
+# -*- coding: utf-8 -*-
+from docutils.parsers.rst.directives import flag, unchanged_required
+
+from ..directive.base import BaseDirective
+from ..project import ProjectError
 from ..renderer import DoxygenToRstRendererFactory
 from ..renderer.base import RenderContext
 from ..renderer.mask import NullMaskFactory
-from ..directive.base import BaseDirective
-from ..project import ProjectError
 from .base import create_warning
-
-from docutils.parsers.rst.directives import unchanged_required, flag
 
 
 class BaseFileDirective(BaseDirective):

@@ -17,46 +17,46 @@ As a default, most parameters have been commented. You have to uncomment to set 
 ::
 
 	# Endpoint for P2P node to listen on
-	# p2p-endpoint = 
+	# p2p-endpoint =
 
 	# P2P nodes to connect to on startup (may specify multiple times)
-	# seed-node = 
+	# seed-node =
 
 	# JSON array of P2P nodes to connect to on startup
-	# seed-nodes = 
+	# seed-nodes =
 
 	# Pairs of [BLOCK_NUM,BLOCK_ID] that should be enforced as checkpoints.
 	checkpoint = ["22668518", "0159e4e600cb149e22ef960442ca331159914617"]
 
 	# Endpoint for websocket RPC to listen on
-	# rpc-endpoint = 
+	# rpc-endpoint =
 
 	# Endpoint for TLS websocket RPC to listen on
-	# rpc-tls-endpoint = 
+	# rpc-tls-endpoint =
 
 	# The TLS certificate file for this server
-	# server-pem = 
+	# server-pem =
 
 	# Password for this certificate
-	# server-pem-password = 
+	# server-pem-password =
 
 	# File to read Genesis State from
-	# genesis-json = 
+	# genesis-json =
 
 	# Block signing key to use for init witnesses, overrides genesis file
-	# dbg-init-key = 
+	# dbg-init-key =
 
 	# JSON file specifying API permissions
-	# api-access = 
+	# api-access =
 
 	# Number of IO threads, default to 0 for auto-configuration
-	# io-threads = 
+	# io-threads =
 
 	# Whether allow API clients to subscribe to universal object creation and removal events
-	# enable-subscribe-to-all = 
+	# enable-subscribe-to-all =
 
 	# Whether to enable tracking of votes of standby witnesses and committee members. Set it to true to provide accurate data to API clients, set to false for slightly better performance.
-	# enable-standby-votes-tracking = 
+	# enable-standby-votes-tracking =
 
 	# For history_api::get_account_history_operations to set its default limit value as 100
 	api-limit-get-account-history-operations = 100
@@ -118,7 +118,7 @@ As a default, most parameters have been commented. You have to uncomment to set 
 	required-participation = 33
 
 	# ID of witness controlled by this node (e.g. "1.6.5", quotes are required, may specify multiple times)
-	# witness-id = 
+	# witness-id =
 
 	# Tuple of [PublicKey, WIF private key] (may specify multiple times)
 	private-key = ["TEST6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV","5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3"]
@@ -137,7 +137,7 @@ As a default, most parameters have been commented. You have to uncomment to set 
 	# ==============================================================================
 
 	# Account ID to track history for (may specify multiple times)
-	# track-account = 
+	# track-account =
 
 	# Keep only those operations in memory that are related to account history tracking
 	partial-operations = 1
@@ -151,28 +151,28 @@ As a default, most parameters have been commented. You have to uncomment to set 
 	# ==============================================================================
 
 	# Elastic Search database node url(http://localhost:9200/)
-	# elasticsearch-node-url = 
+	# elasticsearch-node-url =
 
 	# Number of bulk documents to index on replay(10000)
-	# elasticsearch-bulk-replay = 
+	# elasticsearch-bulk-replay =
 
 	# Number of bulk documents to index on a syncronied chain(100)
-	# elasticsearch-bulk-sync = 
+	# elasticsearch-bulk-sync =
 
 	# Use visitor to index additional data(slows down the replay(false))
-	# elasticsearch-visitor = 
+	# elasticsearch-visitor =
 
 	# Pass basic auth to elasticsearch database('')
-	# elasticsearch-basic-auth = 
+	# elasticsearch-basic-auth =
 
 	# Add a prefix to the index(bitshares-)
-	# elasticsearch-index-prefix = 
+	# elasticsearch-index-prefix =
 
 	# Save operation as object(false)
-	# elasticsearch-operation-object = 
+	# elasticsearch-operation-object =
 
 	# Start doing ES job after block(0)
-	# elasticsearch-start-es-after-block = 
+	# elasticsearch-start-es-after-block =
 
 
 	# ==============================================================================
@@ -197,7 +197,7 @@ As a default, most parameters have been commented. You have to uncomment to set 
 	# ==============================================================================
 
 	# RPC endpoint of a trusted validating node (required for delayed_node)
-	# trusted-node = 
+	# trusted-node =
 
 
 	# ==============================================================================
@@ -205,13 +205,13 @@ As a default, most parameters have been commented. You have to uncomment to set 
 	# ==============================================================================
 
 	# Block number after which to do a snapshot
-	# snapshot-at-block = 
+	# snapshot-at-block =
 
 	# Block time (ISO format) after which to do a snapshot
-	# snapshot-at-time = 
+	# snapshot-at-time =
 
 	# Pathname of JSON file where to store the snapshot
-	# snapshot-to = 
+	# snapshot-to =
 
 
 	# ==============================================================================
@@ -219,50 +219,50 @@ As a default, most parameters have been commented. You have to uncomment to set 
 	# ==============================================================================
 
 	# Elasticsearch node url(http://localhost:9200/)
-	# es-objects-elasticsearch-url = 
+	# es-objects-elasticsearch-url =
 
 	# Basic auth username:password('')
-	# es-objects-auth = 
+	# es-objects-auth =
 
 	# Number of bulk documents to index on replay(10000)
-	# es-objects-bulk-replay = 
+	# es-objects-bulk-replay =
 
 	# Number of bulk documents to index on a synchronized chain(100)
-	# es-objects-bulk-sync = 
+	# es-objects-bulk-sync =
 
 	# Store proposal objects(true)
-	# es-objects-proposals = 
+	# es-objects-proposals =
 
 	# Store account objects(true)
-	# es-objects-accounts = 
+	# es-objects-accounts =
 
 	# Store asset objects(true)
-	# es-objects-assets = 
+	# es-objects-assets =
 
 	# Store balances objects(true)
-	# es-objects-balances = 
+	# es-objects-balances =
 
 	# Store limit order objects(true)
-	# es-objects-limit-orders = 
+	# es-objects-limit-orders =
 
 	# Store feed data(true)
-	# es-objects-asset-bitasset = 
+	# es-objects-asset-bitasset =
 
 	# Add a prefix to the index(objects-)
-	# es-objects-index-prefix = 
+	# es-objects-index-prefix =
 
 	# Keep only current state of the objects(true)
-	# es-objects-keep-only-current = 
+	# es-objects-keep-only-current =
 
 	# Start doing ES job after block(0)
-	# es-objects-start-es-after-block = 
+	# es-objects-start-es-after-block =
 
 
 	# ==============================================================================
 	# grouped_orders plugin options
 	# ==============================================================================
 
-	# Group orders by percentage increase on price. Specify a JSON array of numbers here, each number is a group, number 1 means 0.01%. 
+	# Group orders by percentage increase on price. Specify a JSON array of numbers here, each number is a group, number 1 means 0.01%.
 	tracked-groups = [10,100]
 
 
@@ -275,7 +275,7 @@ As a default, most parameters have been commented. You have to uncomment to set 
 
 	#(-- updated: 20190715)
 
-	
+
 Example - logging.ini
 ---------------------
 
@@ -332,5 +332,5 @@ Example - logging.ini
 
 
 
-	
+
 

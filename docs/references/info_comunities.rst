@@ -3,19 +3,19 @@
 
 ********************
 DNA Community
-********************      
-	  
-Join Us!	  
+********************
+
+Join Us!
 ======================
-	 
+
 * `DNA Community <https://t.me/bitshares_community>`_
-* `Forum - BitSharesTalk`_ 
+* `Forum - BitSharesTalk`_
 * `Telegram - BitSharesDEX`_
 * `Telegram - DNA Traders`_
 * `Discord - DNA`_
 * `DNA on Steemit`_
 * `Twitter`_
-* `Reddit`_	
+* `Reddit`_
 * `BitSharesTalk.io`_
 * (*will be added more*)
 

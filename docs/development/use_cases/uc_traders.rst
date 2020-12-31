@@ -14,18 +14,18 @@ API**.
 
 For exchanges we recommend to also read...
 
-* :ref:`CLI Wallet and the Connectivity <cli-wallet-intro>` 
+* :ref:`CLI Wallet and the Connectivity <cli-wallet-intro>`
 * `What is different DNA <http://how.bitshares.works/en/latest/technology/difference_bitshares.html>`_
 * :ref:`often-used-calls`
 * `User Guide : DNA Decentralized Exchange (DEX) <https://how.bitshares.works/en/latest/bts_holders/dex.html>`_
 
   1. `Trading <https://how.bitshares.works/en/latest/bts_holders/dex_trading.html>`_
-  2. `Short Selling BitAssets <https://how.bitshares.works/en/latest/bts_holders/dex_short.html>`_ 
-  3. `MarginCall Mechanics <https://how.bitshares.works/en/latest/bts_holders/dex_margin_mechanics.html>`_ 
+  2. `Short Selling BitAssets <https://how.bitshares.works/en/latest/bts_holders/dex_short.html>`_
+  3. `MarginCall Mechanics <https://how.bitshares.works/en/latest/bts_holders/dex_margin_mechanics.html>`_
 
-   
+
 ----------
-  
+
 Public API
 =================================================================
 
@@ -37,17 +37,17 @@ to a public full-node which provides traders with
 * trade history
 * and more.
 
-Here is a latest list of `DNA Public Full Nodes <https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js>`_ 
+Here is a latest list of `DNA Public Full Nodes <https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js>`_
 
-A detailed description of how to interface with Graphene-based blockchain (e.g. DNA) and a list of available calls can be found here: 
- 
+A detailed description of how to interface with Graphene-based blockchain (e.g. DNA) and a list of available calls can be found here:
+
 * :ref:`websocket-calls`
 
 * :ref:`blockchain-api`
 
 -------------------------
 
-   
+
 Private API
 =================================================================
 
@@ -59,9 +59,9 @@ As briefly mentioned above, trading in the DEX programmatically requires that yo
 After installation and configuration of the private API, we can use RPC to create orders, cancel orders, create and adjust call orders, and more.  The CLI wallet offers a wide range of calls that can be used to
 mange your account and trade in the DEX.
 
-* :ref:`wallet-api-calls` 
-* :ref:`CLI Wallet Guide <wallet-cli-tutorials>` 
-   
+* :ref:`wallet-api-calls`
+* :ref:`CLI Wallet Guide <wallet-cli-tutorials>`
+
 
 Libraries have been developed that simply the interaction with both, the full node and the CLI wallet and make interactions with the blockchain and the DEX very easy.
 

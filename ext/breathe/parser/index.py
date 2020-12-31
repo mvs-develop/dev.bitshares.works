@@ -1,10 +1,10 @@
+# -*- coding: utf-8 -*-
 """
 Generated Mon Feb  9 19:08:05 2009 by generateDS.py.
 """
 
 from xml.dom import minidom
 from xml.parsers.expat import ExpatError
-
 
 from . import indexsuper as supermod
 

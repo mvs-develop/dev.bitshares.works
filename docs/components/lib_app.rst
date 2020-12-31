@@ -2,13 +2,13 @@
 .. _lib-app:
 
 ********************************
-libraries - app 
+libraries - app
 ********************************
 
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 
@@ -23,28 +23,28 @@ For detail information: `graphene::app::plugin Class Reference <https://bitshare
 
 * ../libraries/app/
 
-  - api.cpp 
-  - application.cpp 
-  - database_api.cpp 
-  - plugin.cpp 
-  - util/cpp  
-  
+  - api.cpp
+  - application.cpp
+  - database_api.cpp
+  - plugin.cpp
+  - util/cpp
+
 
 * ../libraries/app/include/graphene/app/
 
   - api.hpp
-  - api_access.hpp  
+  - api_access.hpp
   - application.hpp
   - database_api.hpp
   - full_account.hpp
   - plugin.hpp
   - util.hpp
-  
+
 
 --------------------------------------
 
 **xxxxx.hpp**
-   
+
 api.hpp
 =========================================
 
@@ -55,20 +55,20 @@ verify_range_result
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: cpp
-   
+
    struct verify_range_result
    {
       bool        success;
       uint64_t    min_val;
       uint64_t    max_val;
    };
-   
- 
+
+
 verify_range_proof_rewind_result
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: cpp
-    
+
    struct verify_range_proof_rewind_result
    {
       bool                          success;
@@ -79,49 +79,49 @@ verify_range_proof_rewind_result
       string                        message_out;
    };
 
- 
+
 account_asset_balance
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: cpp
- 
+
    struct account_asset_balance
    {
       string          name;
       account_id_type account_id;
       share_type      amount;
    };
- 
- 
-asset_holders  
+
+
+asset_holders
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: cpp
-    
+
    struct asset_holders
    {
       asset_id_type   asset_id;
       int             count;
    };
 
-   
-history_operation_detail   
+
+history_operation_detail
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: cpp
-    
+
    struct history_operation_detail {
       uint32_t total_count = 0;
       vector<operation_history_object> operation_history_objs;
    };
 
-   
-limit_order_group   
+
+limit_order_group
 ^^^^^^^^^^^^^^^^^^^^^^^^
 * summary data of a group of limit orders
 
 .. code-block:: cpp
-    
+
    struct limit_order_group
    {
       limit_order_group( const std::pair<limit_order_group_key,limit_order_group_data>& p )
@@ -135,7 +135,7 @@ limit_order_group
       price         max_price; ///< possible highest price in the group
       share_type    total_for_sale; ///< total amount of asset for sale, asset id is min_price.base.asset_id
    };
-   
+
 class
 ---------------------------------
 
@@ -151,7 +151,7 @@ For detail information, please check: `graphene::app Namespace Reference <https:
 * login_api
 
 
- 
+
 |
 
 --------------
@@ -162,11 +162,11 @@ api_access.hpp
 struct
 ------------------
 
-api_access_info   
+api_access_info
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: cpp
- 
+
 	struct api_access_info
 	{
 	   std::string password_hash_b64;
@@ -175,11 +175,11 @@ api_access_info
 	};
 
 
-api_access   
+api_access
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: cpp
- 
+
 	struct api_access
 	{
 	   std::map< std::string, api_access_info > permission_map;
@@ -188,7 +188,7 @@ api_access
 |
 
 --------------
-	
+
 application.hpp
 =========================================
 
@@ -219,7 +219,7 @@ order
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: cpp
- 
+
 	struct order
 	{
 	   string                     price;
@@ -227,11 +227,11 @@ order
 	   string                     base;
 	};
 
-order_book	
+order_book
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: cpp
- 	
+
 	struct order_book
 	{
 	  string                      base;
@@ -245,7 +245,7 @@ market_ticker
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: cpp
- 
+
 	struct market_ticker
 	{
 	   time_point_sec             time;
@@ -264,7 +264,7 @@ market_volume
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: cpp
- 
+
 	struct market_volume
 	{
 	   time_point_sec             time;
@@ -279,7 +279,7 @@ market_trade
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: cpp
- 
+
 	struct market_trade
 	{
 	   int64_t                    sequence = 0;
@@ -304,7 +304,7 @@ For detail information, please check: `graphene::app Namespace Reference <https:
 
 --------------
 
-full_account.hpp 
+full_account.hpp
 =========================================
 
 struct
@@ -314,7 +314,7 @@ full_account
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: cpp
- 
+
    struct full_account
    {
       account_object                   account;
@@ -339,7 +339,7 @@ full_account
 
 --------------
 
-plugin.hpp                 
+plugin.hpp
 =========================================
 
 class
@@ -357,7 +357,7 @@ For detail information: `graphene::app::plugin Class Reference <https://bitshare
 --------------
 
 
-util.hpp 
+util.hpp
 =========================================
 
 
@@ -372,8 +372,8 @@ util.hpp
    string price_diff_percent_string( const price& old_price, const price& new_price );
 
 
-   
-   
+
+
 
 
 

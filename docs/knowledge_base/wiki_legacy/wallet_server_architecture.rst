@@ -13,7 +13,7 @@ The syntax below is shorthand for JSON-RPC requests sent to/from the server:
 
 Then the user can store data on the server like so:
 
-    server.createWallet( code, encrypted_data, signature ) 
+    server.createWallet( code, encrypted_data, signature )
 
 The wallet will be saved on the server using the public_key derived from encrypted_data and signature. The code contains a irreversible hash of the email. This is used in a unique constraint effectively limiting users to one wallet per email. The original email address is not stored in the database.
 

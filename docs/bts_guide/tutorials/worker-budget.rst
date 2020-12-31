@@ -23,7 +23,7 @@ First find how many BTS have not been distributed:
 
 ::
 
-    # get max_supply from 
+    # get max_supply from
     get_object 1.3.0
     # get current_supply from
     get_object 2.3.0
@@ -31,7 +31,7 @@ First find how many BTS have not been distributed:
     ==> from_initial_reserve = max_supply - current supply of BTS
 
 Then modify it by adding the accumulated fees and witness budget remaining
-(i.e., 1.5 BTS per block is budgeted, so budget remaining is 
+(i.e., 1.5 BTS per block is budgeted, so budget remaining is
 
 ::
 

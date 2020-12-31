@@ -7,10 +7,10 @@ Creating a new UIA (GUI)
 
 .. contents:: Table of Contents
    :local:
-   
--------	
-		
-Create Asset Feature 
+
+-------
+
+Create Asset Feature
 -----------------------
 
 Go to **[Settings]** - **[Create Asset]**
@@ -23,15 +23,15 @@ Go to **[Settings]** - **[Create Asset]**
         :width: 150px
         :align: center
 
-		
-		
+
+
 .. image:: uia-ui-2.png
         :alt: DNA
         :width: 600px
         :align: center
 
-		
-	
+
+
 Primary Settings
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -39,21 +39,21 @@ Primary Settings
         :alt: DNA
         :width: 600px
         :align: center
-		
-To allow transaction fees to be paid in the native asset, a core exchange rate is required at which a customer can implicitly trade the UIA into BTS from the asset’s *fee pool*. 
+
+To allow transaction fees to be paid in the native asset, a core exchange rate is required at which a customer can implicitly trade the UIA into BTS from the asset’s *fee pool*.
 
 This also requires that the fee pool is funded (e.g. by the issuer). Since all prices in DNA are internally represented as *fractions* (i.e. a/b), we need to define a ratio between quote (the UIA) and base (BTS), i.e. the numerator and denominator for price = a/b
-	
+
 :Symbol:   The Symbol defined here will be reserved in the system for your assets. One the asset is created, the symbol cannot be changed again.
-:Maximum Supply:  This is also a permanent setting and denotes the maximum amount of shares that can ever exist at the same time.  	Please consult the Networks fees in the explorer! 
+:Maximum Supply:  This is also a permanent setting and denotes the maximum amount of shares that can ever exist at the same time.  	Please consult the Networks fees in the explorer!
 :Number of Decimal Points:  This is used to denoted the number of decimal places. A 0 will result in an asset that cannot be separated below integer amounts (e.g. 1, 2, ..)
-:SmartCoin:   -- 
-:Quote Asset Amount:   Core exchange rate  
+:SmartCoin:   --
+:Quote Asset Amount:   Core exchange rate
 :Base Asset Amount:   Core exchange rate
-	
+
 .. note:: Symbols with less than 5 characters are very expense. Please consult the Networks fees in the explorer!
 
-	
+
 
 Description
 ^^^^^^^^^^^^^^^^^^
@@ -63,15 +63,15 @@ Description
         :alt: DNA
         :width: 600px
         :align: center
-		
-		
-	
+
+
+
 :Description:  description can be used to let everyone know the purpose of the asset, or an internet address for further information.
 :Short Name:  Short Name is also a permanent setting and denotes the maximum amount.
 :Preferred Market Pairing:  --
 :Asset Name:  --
 
-	
+
 Permissions (Optional)
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -79,10 +79,10 @@ Permissions (Optional)
         :alt: DNA
         :width: 600px
         :align: center
-			
-		
+
+
 Even though the default settings should be fine for most UIAs, we have the option to opt-out of some available features. (By default, or permissions are enabled).
-	
+
 .. Note:: Once a permission has been set to false, the permission cannot be reactivated!
 
 We have the options to opt-out of:
@@ -95,12 +95,12 @@ We have the options to opt-out of:
 
 .. Note:: that setting these permissions does not imply that the features is enabled. To do so, we would also require to enable the corresponding flag(s). (See below)
 
-	
+
 Flags (Optional)
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 The flags are used to actually enable a particular features, such as market fees or confidential transfers.
-	
+
 If we have set the permission to have a market fee, we can enable the market fees here and set a percentage and max. fee.
 
 We here also can enable the requirements for users to be white-listed, enable confidential transfers and give the issuer the power to withdraw its asset from customer accounts.
@@ -110,7 +110,7 @@ We here also can enable the requirements for users to be white-listed, enable co
         :alt: DNA
         :width: 600px
         :align: center
-			
+
 
 The asset creation fee
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -122,19 +122,19 @@ The asset creation fee depends on the length of your symbol. 3 Character Symbols
 
 ------------------
 
-	
-View existing Asset 
+
+View existing Asset
 ---------------------------------
-	
-		
+
+
 Go to **[Explore]** - **[Asset]** - **[User Issues Assets]**
-		
+
 .. image:: uia-ui-7.png
         :alt: DNA
         :width: 600px
         :align: center
-			
-			
+
+
 
 |
 

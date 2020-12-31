@@ -1,5 +1,6 @@
-from . import index as indexfinder
+# -*- coding: utf-8 -*-
 from . import compound as compoundfinder
+from . import index as indexfinder
 
 
 class CreateCompoundTypeSubFinder(object):

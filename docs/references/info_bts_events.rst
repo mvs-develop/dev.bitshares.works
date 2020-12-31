@@ -4,7 +4,7 @@
 *****************************************
 DNA Community Events
 *****************************************
-	 
+
 ------------
 
 
@@ -19,7 +19,7 @@ BitFest Amsterdam 2018
 
 
 ------------
- 
+
 2018 Global Graphene DevCon
 ====================================
 2018 Global Graphene Blockchain Developer Conference in Shanghai (May 2018)
@@ -32,7 +32,7 @@ BitFest Amsterdam 2018
 
 ------------
 
-** We've so far gathered the above presentation materials for the DNA community members who could not attend and listen to the presentations. 
+** We've so far gathered the above presentation materials for the DNA community members who could not attend and listen to the presentations.
 
 
 

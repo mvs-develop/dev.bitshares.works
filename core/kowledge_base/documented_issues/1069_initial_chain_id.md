@@ -22,18 +22,18 @@ In bitshares-core/libraries/app/application.cpp, [`void application_impl::startu
 
 ### namespace detail - application.cpp
 
-In the namespace has the function [`create_example_genesis()`](https://github.com/bitshares/bitshares-core/blob/35ec65b130f63c594afe2c9ab7f931b42be08cdc/libraries/app/application.cpp#L79).  
+In the namespace has the function [`create_example_genesis()`](https://github.com/bitshares/bitshares-core/blob/35ec65b130f63c594afe2c9ab7f931b42be08cdc/libraries/app/application.cpp#L79).
 If the aplication gets in there, it will get `initial_state.initial_chain_id = fc::sha256::hash( "BOGUS" );`
 
 - `initial_state.initial_chain_id = fc::sha256::hash( "BOGUS" );`
 
 ***
 *Extended research:*
-To understand during those processes how `chain_id` has been handled. 
+To understand during those processes how `chain_id` has been handled.
 
 ### when start witness_node
 
-In the process, only uses `get_chain_id()` to show the value to a user. 
+In the process, only uses `get_chain_id()` to show the value to a user.
 - [Code flow (pdf: page8)](../knowledge_base/shared_files/witness_node_ex-codeflows.pdf)
 
 

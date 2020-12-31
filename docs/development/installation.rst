@@ -1,19 +1,19 @@
 
 ***********************
-Getting Started 
+Getting Started
 ***********************
 
 .. _installation-guide:
 
 .. contents:: Table of Contents
    :local:
-   
+
 -----------------
-   
+
 Installation
 ========================
 
-.. Tip::  
+.. Tip::
    - We recommend building on Ubuntu 16.04 LTS (64-bit)
    - DNA requires a 64-bit operating system to build, and will not build on a 32-bit OS.
    - DNA now supports Ubuntu 18.04 LTS
@@ -25,7 +25,7 @@ Installation
 Download and Build
 -----------------------
 
-.. toctree:: 
+.. toctree::
     :maxdepth: 1
 
     installation/build_ubuntu
@@ -35,22 +35,22 @@ Download and Build
 
 |
 
-	
-Dependencies 
+
+Dependencies
 -----------------------------
 
 
-.. toctree:: 
+.. toctree::
     :maxdepth: 1
 
     installation/openssl_libs
     installation/boost_versions
 
 |
-	
+
 Use Windows SubSystem for Linux
 ---------------------------------
-.. toctree:: 
+.. toctree::
     :maxdepth: 1
 
     installation/wsl
@@ -69,7 +69,7 @@ Use Windows SubSystem for Linux
 Installed directories and files
 ========================================
 
-.. toctree:: 
+.. toctree::
     :maxdepth: 2
 
     apps/after_install

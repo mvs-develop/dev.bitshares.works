@@ -28,7 +28,7 @@ instead of::
 
 	$ make
 
-	
+
 
 Run a Full Node
 ===============================
@@ -37,14 +37,14 @@ In order to run a full node that we can connect to, we need to open the RPC inte
 
 ./programs/witness_node/witness_node --rpc-endpoint="0.0.0.0:8090"
 
-This will open port 8090 and make it available over the internet (unless you run behind a router/firewall). 
+This will open port 8090 and make it available over the internet (unless you run behind a router/firewall).
 
 If you want to open only your (local) machine, replace 0.0.0.0 by localhost (e.g., --rpc-endpoint="127.0.0.1:8090" ).
 
 
 .. Note:: Full node needs to synchronize the blockchain with the network first, which might take a few hours or days.
 
-	
+
 ------------------------------
 
 |
@@ -61,20 +61,20 @@ In your wallet (may it be the light wallet or a hosted wallet) you can can defin
 3. If **Automatically select node is ``ON``, click to ``OFF`` the switch.
 
 .. image:: ../../_static/imgs/nodes-1.png
-        :alt: DNA 
+        :alt: DNA
         :width: 650px
         :align: center
-		
-There are four tabs. [AVAILABLE], [PERSONSL], [HIDDEN], and [TESTNET]. 
+
+There are four tabs. [AVAILABLE], [PERSONSL], [HIDDEN], and [TESTNET].
 
 4. Click [**PERSONAL**] and [**ADD NODE**]
-		
+
 .. image:: ../../_static/imgs/nodes-2.png
-        :alt: DNA 
+        :alt: DNA
         :width: 650px
         :align: center
-				
-5. An Add Node form opens. Type, 
+
+5. An Add Node form opens. Type,
 
 * **NAME**: (a node name )
 * **ADDRESS**: (a node address)
@@ -83,12 +83,12 @@ For your own full nodes address, type::
 
    ws://localhost:8090
 
-   
+
 .. image:: ../../_static/imgs/nodes-3.png
-        :alt: DNA 
+        :alt: DNA
         :width: 600px
         :align: center
-		
+
 6. Click [**CONFIRM**].
 
 Congratulation, you are now connected to the network via your own full node.

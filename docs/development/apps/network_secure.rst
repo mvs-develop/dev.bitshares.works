@@ -1,21 +1,21 @@
 
 .. _secure-network-configuration:
 
-Secure Network and Wallet Configuration 
+Secure Network and Wallet Configuration
 ===============================================
 
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 .. Attention:: The ``delayed_node`` program is no longer supported after DNA Core 4.0.0 is released. For the instruction, *How to configure a witness_node as a delayed_node*, check the following link:
 
    * `How to configure a witness_node as a delayed_node <https://github.com/bitshares/bitshares-core/wiki/Delayed-Node>`_
-   
-   
-   
+
+
+
 For high security, we provide a so called **delayed** full node which accepts the parameter `trusted-node` for an RPC endpoint of a trusted validating node. The trusted-node is a regular full node directly connected to the P2P network that works as a proxy. The delayed node will delay blocks until they are **irreversible**. Depending on the block interval and the number of witnesses, this may lead to a few minutes of delay.
 
 Set up
@@ -25,7 +25,7 @@ Set up
         :alt: DNA Architecture
         :width: 650px
         :align: center
-		
+
 
 .. Note:: The delayed full node should be in the same *local* network as the trusted full node is in the same network and has internet access.
 
@@ -36,20 +36,20 @@ Hence we will work with the following IPs and open the corresponding RPC ports
   - extern: internet access **required**
   - intern: `192.168.0.100`
   - port: `8090`
-   
+
 * Delayed Full Node:
 
   - extern: **no** internet access required
   - intern: `192.168.0.101`
   - port: `8090`
-   
+
 * Wallet:
 
   - extern: **no** internet access required
   - intern: `192.168.0.102`
   - port: `8092`
 
-   
+
 Trusted Full Node
 ------------------------
 
@@ -58,7 +58,7 @@ The trusted full node is your entry point to the DNA P2P network. It will hold t
 ::
 
     ./programs/witness_node/witness_node --rpc-endpoint="192.168.0.100:8090"
- 
+
 .. Note:: A _witness_ node is identical to a full node if no authorized block-signing private key is provided.
 
 
@@ -89,8 +89,8 @@ We could now connect via RPC:
 For obvious reasons, the trusted full node is should be running before attempting to start the delayed full node.
 
 **For customer deposits, we will interface to the delayed node’s API using 192.168.0.101:8090.**
- 
- 
+
+
 Wallet
 ------------
 

@@ -9,7 +9,7 @@ a transaction to become valid.
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 
@@ -159,7 +159,7 @@ We add a fee payed in BTS, sign and broadcast the transaction (if valid):
 
     >>> set_fees_on_builder_transaction 0 BTS
     >>> sign_builder_transaction 0 true
-		
+
 |
 
 --------------------

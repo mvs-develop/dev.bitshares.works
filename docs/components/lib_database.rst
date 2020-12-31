@@ -1,12 +1,12 @@
 
 .. _lib-database:
 
-Database 
+Database
 =========================
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 
@@ -14,7 +14,7 @@ config.hpp
 -----------------
 The blockchain parameters can be modified in the `libraries/chain/include/graphene/chain/config.hpp <https://github.com/bitshares/bitshares-core/blob/release/libraries/chain/include/graphene/chain/config.hpp>`_ file:
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	#define GRAPHENE_SYMBOL "BTS"
 	#define GRAPHENE_ADDRESS_PREFIX "BTS"
@@ -152,9 +152,9 @@ Database
 
 (/libraries/chain/include/graphene/chain/database.hpp)
 
-- `graphene::chain::database Class Reference (opens doxygen) <https://bitshares.org/doxygen/classgraphene_1_1chain_1_1database.html>`_ 
+- `graphene::chain::database Class Reference (opens doxygen) <https://bitshares.org/doxygen/classgraphene_1_1chain_1_1database.html>`_
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	namespace graphene { namespace chain {
 	   using graphene::db::abstract_object;
@@ -429,7 +429,7 @@ Database
 			  * to newly created VBID and return it.
 			  *
 			  * Otherwise, credit amount to ovbid.
-			  * 
+			  *
 			  * @return ID of newly created VBO, but only if VBO was created.
 			  */
 			 optional< vesting_balance_id_type > deposit_lazy_vesting(

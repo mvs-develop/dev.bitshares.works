@@ -1,12 +1,12 @@
 
 .. _bts-referral:
 
-Referral Program 
+Referral Program
 =====================
 
 The purpose of the referral program is to incentivize people to bring in more people. It compares to a Multi-Level-Marketing (MLM) scheme with the difference of having only **1 level** where referred individuals can opt-out by upgrading their account to a Life-Time Member (LTM). Every lifetime member can get a cut of the fees based on child accounts linked to ours via referral.
 
- 
+
 .. contents:: Table of Contents
 
 -----------
@@ -14,7 +14,7 @@ The purpose of the referral program is to incentivize people to bring in more pe
 Participation
 ----------------------
 
-Every BTS Holder can become a Lifetime Member and participate in the Referral Program. In this program: 
+Every BTS Holder can become a Lifetime Member and participate in the Referral Program. In this program:
 
 .. Attention::
 
@@ -34,7 +34,7 @@ The referral fees are controlled by the blockchain and are distributed like this
 
 ---------------------
 
-  
+
 How can I do?
 -------------------
 **If you want to participate in the referral program, you need to have a life-time member account, first! Then you can bring in new users by**
@@ -53,14 +53,14 @@ How can I do?
  .. note:: If you want link to pages with in the wallet(e.g., a particular decentralized market), you need to have the ``?r=`` parameter **before** the ``#``. Example :  ``https://<url>/?r=<your-account>#/market/USD_BTC``
 
 
- 
+
  * (3)- **or sending your referral link to people you want to refer to DNA, your referral link would be**::
-		
+
 		https://wallet.bitshares.org/?r=<your-account-name>
-		
+
 		(*You might want to use yow wallet address instead of "wallet.bitshares.org"*)
-		
-		
+
+
 **Example:**
 
  When an Basic Account pays $100 to become a Lifetime Member, $50 is paid to their Referrer, $30 is paid to the nearest Lifetime Member, and $20 is paid to the Network. After this point the Lifetime Member becomes its own referrer and nearest Lifetime Member and its prior Referrers no longer get any revenue from this user.
@@ -75,7 +75,7 @@ Fee Division
 
 .. Tip:: Every time an account you referred pays a transaction fee, that fee is divided among several different accounts. The network takes a cut, and the Lifetime Member who referred the account gets a cut.
 
-The **registrar** is the account that paid the transaction fee to register the account with the network. The registrar gets to decide how to divide the remaining fee between themselves and their affiliate. 
+The **registrar** is the account that paid the transaction fee to register the account with the network. The registrar gets to decide how to divide the remaining fee between themselves and their affiliate.
 
 Fee status
 ^^^^^^^^^^^^^^
@@ -93,7 +93,7 @@ To see your vesting balances, open the side menu and select **Vesting balance**.
 Claiming Referral Bonus and Cashback
 -------------------------------------
 
- If you have a Lifetime Member (LTM) account and 
+ If you have a Lifetime Member (LTM) account and
 
  * already paid some fees, or
  * have referred people that paid some fees,

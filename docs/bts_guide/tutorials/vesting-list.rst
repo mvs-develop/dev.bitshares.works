@@ -39,7 +39,7 @@ The ``balance`` gives the total vesting balance (amount plus asset),
 whereas ``allowed_withdraw`` shows the balance that can be withdrawn
 already. The object also tells us that the vesting policy is
 in terms of coin-days accrued (in contrast to linear vesting).
-		
+
 |
 
 --------------------

@@ -33,7 +33,7 @@ the blockchain by asking them for approval with ::
   >>> approve_proposal <committee_member> "1.10.1" {"active_approvals_to_add" : ["<MY-COMMITTEE-MEMBER>"]} true
 
 where ``1.10.1`` is the id of the proposal in question.
-		
+
 |
 
 --------------------

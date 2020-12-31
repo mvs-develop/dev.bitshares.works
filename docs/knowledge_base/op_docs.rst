@@ -10,7 +10,7 @@ OPs
    :local:
 
 -------------
-   
+
 Ge
 -----------------------------
 .. doxygenfunction:: graphene::chain::assert_operation
@@ -26,7 +26,7 @@ Ge
       <member refid="classgraphene_1_1wallet_1_1wallet__api_1aab0ebcb387c74f6d733c32bc5e17131e" prot="public" virt="non-virtual"><scope>graphene::wallet::wallet_api</scope><name>about</name></member>
       <member refid="classgraphene_1_1wallet_1_1wallet__api_1ab5cd568be3fd1c283e0ed2c1fd3c5469" prot="public" virt="non-virtual"><scope>graphene::wallet::wallet_api</scope><name>add_operation_to_builder_transaction</name></member>
       <member refid="classgraphene_1_1wallet_1_1wallet__api_1a4d550262671c5d2a3ca8ea76b41722ca" prot="public" virt
-	  
+
 ****
 
       <memberdef kind="function" id="classgraphene_1_1wallet_1_1wallet__api_1aab0ebcb387c74f6d733c32bc5e17131e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
@@ -43,12 +43,12 @@ Ge
         </inbodydescription>
         <location file="libraries/wallet/include/graphene/wallet/wallet.hpp" line="325" column="1" bodyfile="libraries/wallet/wallet.cpp" bodystart="3405" bodyend="3408"/>
       </memberdef>
-	  
+
 --------------------------
 
 
-	  
-	  
+
+
 op2
 -----------------------------
 .. doxygenfunction:: graphene::chain::asset_update_bitasset_operation

@@ -17,10 +17,10 @@ The below information are a collection of the DNA Protocols. Sometimes it's diff
 
 .. contents:: Table of Contents
    :local:
-   
+
 ------
 
-Components and Descriptions 
+Components and Descriptions
 ============================
 
 *graphene::chain::*
@@ -33,8 +33,8 @@ Components and Descriptions
 
 Base
 =========
-   
-base 
+
+base
 ---------------
 
 
@@ -53,7 +53,7 @@ Operations have been carefully designed to include all of the information necess
 @subsection balance_calculation Balance Calculation Principle
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 We have stipulated that the current account balance may be entirely calculated from just the subset of operations that are relevant to that account.  There should be no need to process the entire blockchain inorder to know your account's balance.
-		
+
 @subsection fee_calculation Explicit Fee Principle
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -68,7 +68,7 @@ Each operation shall contain enough information to know which accounts must auth
 
 Each operation contains enough information to enumerate all accounts for which the operation should apear in its account history.  This principle enables us to easily define and enforce the @balance_calculation. This is superset of the @ref defined_authority
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	struct void_result{};
 	typedef fc::static_variant<void_result,object_id_type,asset> operation_result;
@@ -87,29 +87,29 @@ Each operation contains enough information to enumerate all accounts for which t
 
 		static uint64_t calculate_data_fee( uint64_t bytes, uint64_t price_per_kbyte );
 	};
-	
 
-- For future expansion many structus include a single member of type extensions_type that can be changed when updating a protocol.  You can always add new types to a static_variant without breaking backward compatibility.  
+
+- For future expansion many structus include a single member of type extensions_type that can be changed when updating a protocol.  You can always add new types to a static_variant without breaking backward compatibility.
 
 ::
 
 	typedef static_variant<void_t>      future_extensions;
 
 
-- A flat_set is used to make sure that only one extension of each type is added and that they are added in order.  
+- A flat_set is used to make sure that only one extension of each type is added and that they are added in order.
 - **Note** static_variant compares only the type tag and not the  content
 
 ::
- 
+
 	typedef flat_set<future_extensions> extensions_type;
 
 
 block
---------------------- 
+---------------------
 
 *See listed :ref:`block`information section <lib-block>`
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	struct block_header{  };
 	struct signed_block_header : public block_header{  }
@@ -117,13 +117,13 @@ block
 
 
 
-address 
+address
 ---------------
 
 .. code-block:: cpp
 
 	namespace fc { namespace ecc {
-	  class  public_key; 
+	  class  public_key;
 	  typedef fc::array<char,33>  public_key_data;
 	} } // fc::ecc
 
@@ -156,7 +156,7 @@ address
 
 		explicit operator std::string()const; ///< converts to base58 + checksum
 
-		friend size_t hash_value( const address& v ) { 
+		friend size_t hash_value( const address& v ) {
 		  const void* tmp = static_cast<const void*>(v.addr._hash+2);
 
 		  const size_t* tmp2 = reinterpret_cast<const size_t*>(tmp);
@@ -192,7 +192,7 @@ address
 	}
 
 
-authority 
+authority
 ---------------
 
 - class authority
@@ -274,7 +274,7 @@ authority
 			 return (a.weight_threshold == b.weight_threshold) &&
 							(a.account_auths == b.account_auths) &&
 							(a.key_auths == b.key_auths) &&
-							(a.address_auths == b.address_auths); 
+							(a.address_auths == b.address_auths);
 		}
 		uint32_t num_auths()const { return account_auths.size() + key_auths.size() + address_auths.size(); }
 		void     clear() { account_auths.clear(); key_auths.clear(); }
@@ -291,22 +291,22 @@ authority
 		flat_map<address,weight_type>         address_auths;
 	};
 
- 
+
 add_authority_accounts
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-	
+
 - Add all account members of the given authority to the given flat_set.
 
 .. code-block:: cpp
-	 
+
 	void add_authority_accounts(
 	   flat_set<account_id_type>& result,
 	   const authority& a
 	   );
 
 
-special_authority 
---------------------- 
+special_authority
+---------------------
 
 .. code-block:: cpp
 
@@ -324,49 +324,49 @@ special_authority
 	   > special_authority;
 
 	void validate_special_authority( const special_authority& auth );
-	
-	
-.. _protocol-chain-param: 
 
-chain_parameters 
---------------------- 
+
+.. _protocol-chain-param:
+
+chain_parameters
+---------------------
 
 .. code-block:: cpp
 
 	struct fee_schedule;
 
-	typedef static_variant<>  parameter_extension; 
+	typedef static_variant<>  parameter_extension;
 	struct chain_parameters
 	{
 		/** using a smart ref breaks the circular dependency created between operations and the fee schedule */
 		smart_ref<fee_schedule> current_fees;                       ///< current schedule of fees
-		uint8_t                 block_interval                      = GRAPHENE_DEFAULT_BLOCK_INTERVAL; 
-		uint32_t                maintenance_interval                = GRAPHENE_DEFAULT_MAINTENANCE_INTERVAL; 
-		uint8_t                 maintenance_skip_slots              = GRAPHENE_DEFAULT_MAINTENANCE_SKIP_SLOTS; 
-		uint32_t                committee_proposal_review_period    = GRAPHENE_DEFAULT_COMMITTEE_PROPOSAL_REVIEW_PERIOD_SEC; 
-		uint32_t                maximum_transaction_size            = GRAPHENE_DEFAULT_MAX_TRANSACTION_SIZE; 
-		uint32_t                maximum_block_size                  = GRAPHENE_DEFAULT_MAX_BLOCK_SIZE; 
-		uint32_t                maximum_time_until_expiration       = GRAPHENE_DEFAULT_MAX_TIME_UNTIL_EXPIRATION; 
-		uint32_t                maximum_proposal_lifetime           = GRAPHENE_DEFAULT_MAX_PROPOSAL_LIFETIME_SEC; 
-		uint8_t                 maximum_asset_whitelist_authorities = GRAPHENE_DEFAULT_MAX_ASSET_WHITELIST_AUTHORITIES; 
-		uint8_t                 maximum_asset_feed_publishers       = GRAPHENE_DEFAULT_MAX_ASSET_FEED_PUBLISHERS; 
-		uint16_t                maximum_witness_count               = GRAPHENE_DEFAULT_MAX_WITNESSES; 
-		uint16_t                maximum_committee_count             = GRAPHENE_DEFAULT_MAX_COMMITTEE; 
-		uint16_t                maximum_authority_membership        = GRAPHENE_DEFAULT_MAX_AUTHORITY_MEMBERSHIP; 
-		uint16_t                reserve_percent_of_fee              = GRAPHENE_DEFAULT_BURN_PERCENT_OF_FEE; 
-		uint16_t                network_percent_of_fee              = GRAPHENE_DEFAULT_NETWORK_PERCENT_OF_FEE; 
+		uint8_t                 block_interval                      = GRAPHENE_DEFAULT_BLOCK_INTERVAL;
+		uint32_t                maintenance_interval                = GRAPHENE_DEFAULT_MAINTENANCE_INTERVAL;
+		uint8_t                 maintenance_skip_slots              = GRAPHENE_DEFAULT_MAINTENANCE_SKIP_SLOTS;
+		uint32_t                committee_proposal_review_period    = GRAPHENE_DEFAULT_COMMITTEE_PROPOSAL_REVIEW_PERIOD_SEC;
+		uint32_t                maximum_transaction_size            = GRAPHENE_DEFAULT_MAX_TRANSACTION_SIZE;
+		uint32_t                maximum_block_size                  = GRAPHENE_DEFAULT_MAX_BLOCK_SIZE;
+		uint32_t                maximum_time_until_expiration       = GRAPHENE_DEFAULT_MAX_TIME_UNTIL_EXPIRATION;
+		uint32_t                maximum_proposal_lifetime           = GRAPHENE_DEFAULT_MAX_PROPOSAL_LIFETIME_SEC;
+		uint8_t                 maximum_asset_whitelist_authorities = GRAPHENE_DEFAULT_MAX_ASSET_WHITELIST_AUTHORITIES;
+		uint8_t                 maximum_asset_feed_publishers       = GRAPHENE_DEFAULT_MAX_ASSET_FEED_PUBLISHERS;
+		uint16_t                maximum_witness_count               = GRAPHENE_DEFAULT_MAX_WITNESSES;
+		uint16_t                maximum_committee_count             = GRAPHENE_DEFAULT_MAX_COMMITTEE;
+		uint16_t                maximum_authority_membership        = GRAPHENE_DEFAULT_MAX_AUTHORITY_MEMBERSHIP;
+		uint16_t                reserve_percent_of_fee              = GRAPHENE_DEFAULT_BURN_PERCENT_OF_FEE;
+		uint16_t                network_percent_of_fee              = GRAPHENE_DEFAULT_NETWORK_PERCENT_OF_FEE;
 		uint16_t                lifetime_referrer_percent_of_fee    = GRAPHENE_DEFAULT_LIFETIME_REFERRER_PERCENT_OF_FEE;
-		uint32_t                cashback_vesting_period_seconds     = GRAPHENE_DEFAULT_CASHBACK_VESTING_PERIOD_SEC; 
-		share_type              cashback_vesting_threshold          = GRAPHENE_DEFAULT_CASHBACK_VESTING_THRESHOLD; 
+		uint32_t                cashback_vesting_period_seconds     = GRAPHENE_DEFAULT_CASHBACK_VESTING_PERIOD_SEC;
+		share_type              cashback_vesting_threshold          = GRAPHENE_DEFAULT_CASHBACK_VESTING_THRESHOLD;
 		bool                    count_non_member_votes              = true; ///< set to false to restrict voting privlegages to member accounts
 		bool                    allow_non_member_whitelists         = false; ///< true if non-member accounts may set whitelists and blacklists; false otherwise
-		share_type              witness_pay_per_block               = GRAPHENE_DEFAULT_WITNESS_PAY_PER_BLOCK; 
-		uint32_t                witness_pay_vesting_seconds         = GRAPHENE_DEFAULT_WITNESS_PAY_VESTING_SECONDS; 
-		share_type              worker_budget_per_day               = GRAPHENE_DEFAULT_WORKER_BUDGET_PER_DAY; 
-		uint16_t                max_predicate_opcode                = GRAPHENE_DEFAULT_MAX_ASSERT_OPCODE; 
-		share_type              fee_liquidation_threshold           = GRAPHENE_DEFAULT_FEE_LIQUIDATION_THRESHOLD; 
-		uint16_t                accounts_per_fee_scale              = GRAPHENE_DEFAULT_ACCOUNTS_PER_FEE_SCALE; 
-		uint8_t                 account_fee_scale_bitshifts         = GRAPHENE_DEFAULT_ACCOUNT_FEE_SCALE_BITSHIFTS; 
+		share_type              witness_pay_per_block               = GRAPHENE_DEFAULT_WITNESS_PAY_PER_BLOCK;
+		uint32_t                witness_pay_vesting_seconds         = GRAPHENE_DEFAULT_WITNESS_PAY_VESTING_SECONDS;
+		share_type              worker_budget_per_day               = GRAPHENE_DEFAULT_WORKER_BUDGET_PER_DAY;
+		uint16_t                max_predicate_opcode                = GRAPHENE_DEFAULT_MAX_ASSERT_OPCODE;
+		share_type              fee_liquidation_threshold           = GRAPHENE_DEFAULT_FEE_LIQUIDATION_THRESHOLD;
+		uint16_t                accounts_per_fee_scale              = GRAPHENE_DEFAULT_ACCOUNTS_PER_FEE_SCALE;
+		uint8_t                 account_fee_scale_bitshifts         = GRAPHENE_DEFAULT_ACCOUNT_FEE_SCALE_BITSHIFTS;
 		uint8_t                 max_authority_depth                 = GRAPHENE_MAX_SIG_CHECK_DEPTH;
 		extensions_type         extensions;
 
@@ -377,38 +377,38 @@ chain_parameters
 
 **The descriptions of valuables**
 
-:GRAPHENE_DEFAULT_BLOCK_INTERVAL:  interval in seconds between blocks   
-:GRAPHENE_DEFAULT_MAINTENANCE_INTERVAL:  interval in sections between blockchain maintenance events 
-:GRAPHENE_DEFAULT_MAINTENANCE_SKIP_SLOTS: number of block_intervals to skip at maintenance time 
-:GRAPHENE_DEFAULT_COMMITTEE_PROPOSAL_REVIEW_PERIOD_SEC: minimum time in seconds that a proposed transaction requiring committee authority may not be signed, prior to expiration 
+:GRAPHENE_DEFAULT_BLOCK_INTERVAL:  interval in seconds between blocks
+:GRAPHENE_DEFAULT_MAINTENANCE_INTERVAL:  interval in sections between blockchain maintenance events
+:GRAPHENE_DEFAULT_MAINTENANCE_SKIP_SLOTS: number of block_intervals to skip at maintenance time
+:GRAPHENE_DEFAULT_COMMITTEE_PROPOSAL_REVIEW_PERIOD_SEC: minimum time in seconds that a proposed transaction requiring committee authority may not be signed, prior to expiration
 :GRAPHENE_DEFAULT_MAX_TRANSACTION_SIZE: maximum allowable size in bytes for a transaction
-:GRAPHENE_DEFAULT_MAX_BLOCK_SIZE: aximum allowable size in bytes for a block 
-:GRAPHENE_DEFAULT_MAX_TIME_UNTIL_EXPIRATION: maximum lifetime in seconds for transactions to be valid, before expiring 
-:GRAPHENE_DEFAULT_MAX_PROPOSAL_LIFETIME_SEC: maximum lifetime in seconds for proposed transactions to be kept, before expiring 
-:GRAPHENE_DEFAULT_MAX_ASSET_WHITELIST_AUTHORITIES: maximum number of accounts which an asset may list as authorities for its whitelist OR blacklist 
-:GRAPHENE_DEFAULT_MAX_ASSET_FEED_PUBLISHERS: the maximum number of feed publishers for a given asset 
-:GRAPHENE_DEFAULT_MAX_WITNESSES: maximum number of active witnesses 
-:GRAPHENE_DEFAULT_MAX_COMMITTEE: aximum number of active committee_members 
-:GRAPHENE_DEFAULT_MAX_AUTHORITY_MEMBERSHIP: largest number of keys/accounts an authority can have 
-:GRAPHENE_DEFAULT_BURN_PERCENT_OF_FEE:   the percentage of the network's allocation of a fee that is taken out of circulation  
-:GRAPHENE_DEFAULT_NETWORK_PERCENT_OF_FEE: percent of transaction fees paid to network 
-:GRAPHENE_DEFAULT_LIFETIME_REFERRER_PERCENT_OF_FEE: percent of transaction fees paid to network 
-:GRAPHENE_DEFAULT_CASHBACK_VESTING_PERIOD_SEC: time after cashback rewards are accrued before they become liquid 
-:GRAPHENE_DEFAULT_CASHBACK_VESTING_THRESHOLD: the maximum cashback that can be received without vesting 
-:GRAPHENE_DEFAULT_WITNESS_PAY_PER_BLOCK:   CORE to be allocated to witnesses (per block)  
-:GRAPHENE_DEFAULT_WITNESS_PAY_VESTING_SECONDS: vesting_seconds parameter for witness VBO's 
-:GRAPHENE_DEFAULT_WORKER_BUDGET_PER_DAY: CORE to be allocated to workers (per day) 
-:GRAPHENE_DEFAULT_MAX_ASSERT_OPCODE: predicate_opcode must be less than this number 
-:GRAPHENE_DEFAULT_FEE_LIQUIDATION_THRESHOLD: value in CORE at which accumulated fees in blockchain-issued market assets should be liquidated 
-:GRAPHENE_DEFAULT_ACCOUNTS_PER_FEE_SCALE: number of accounts between fee scalings 
-:GRAPHENE_DEFAULT_ACCOUNT_FEE_SCALE_BITSHIFTS: number of times to left bitshift account registration fee at each scaling 
-:GRAPHENE_MAX_SIG_CHECK_DEPTH:    
+:GRAPHENE_DEFAULT_MAX_BLOCK_SIZE: aximum allowable size in bytes for a block
+:GRAPHENE_DEFAULT_MAX_TIME_UNTIL_EXPIRATION: maximum lifetime in seconds for transactions to be valid, before expiring
+:GRAPHENE_DEFAULT_MAX_PROPOSAL_LIFETIME_SEC: maximum lifetime in seconds for proposed transactions to be kept, before expiring
+:GRAPHENE_DEFAULT_MAX_ASSET_WHITELIST_AUTHORITIES: maximum number of accounts which an asset may list as authorities for its whitelist OR blacklist
+:GRAPHENE_DEFAULT_MAX_ASSET_FEED_PUBLISHERS: the maximum number of feed publishers for a given asset
+:GRAPHENE_DEFAULT_MAX_WITNESSES: maximum number of active witnesses
+:GRAPHENE_DEFAULT_MAX_COMMITTEE: aximum number of active committee_members
+:GRAPHENE_DEFAULT_MAX_AUTHORITY_MEMBERSHIP: largest number of keys/accounts an authority can have
+:GRAPHENE_DEFAULT_BURN_PERCENT_OF_FEE:   the percentage of the network's allocation of a fee that is taken out of circulation
+:GRAPHENE_DEFAULT_NETWORK_PERCENT_OF_FEE: percent of transaction fees paid to network
+:GRAPHENE_DEFAULT_LIFETIME_REFERRER_PERCENT_OF_FEE: percent of transaction fees paid to network
+:GRAPHENE_DEFAULT_CASHBACK_VESTING_PERIOD_SEC: time after cashback rewards are accrued before they become liquid
+:GRAPHENE_DEFAULT_CASHBACK_VESTING_THRESHOLD: the maximum cashback that can be received without vesting
+:GRAPHENE_DEFAULT_WITNESS_PAY_PER_BLOCK:   CORE to be allocated to witnesses (per block)
+:GRAPHENE_DEFAULT_WITNESS_PAY_VESTING_SECONDS: vesting_seconds parameter for witness VBO's
+:GRAPHENE_DEFAULT_WORKER_BUDGET_PER_DAY: CORE to be allocated to workers (per day)
+:GRAPHENE_DEFAULT_MAX_ASSERT_OPCODE: predicate_opcode must be less than this number
+:GRAPHENE_DEFAULT_FEE_LIQUIDATION_THRESHOLD: value in CORE at which accumulated fees in blockchain-issued market assets should be liquidated
+:GRAPHENE_DEFAULT_ACCOUNTS_PER_FEE_SCALE: number of accounts between fee scalings
+:GRAPHENE_DEFAULT_ACCOUNT_FEE_SCALE_BITSHIFTS: number of times to left bitshift account registration fee at each scaling
+:GRAPHENE_MAX_SIG_CHECK_DEPTH:
 
 
 
 
-types 
---------------------- 
+types
+---------------------
 
 .. code-block:: cpp
 
@@ -466,7 +466,7 @@ types
 
 	const static uint32_t ASSET_ISSUER_PERMISSION_MASK = charge_market_fee|white_list|override_authority|transfer_restricted|disable_force_settle|global_settle|disable_confidential
 	  |witness_fed_asset|committee_fed_asset;
-	  
+
 	const static uint32_t UIA_ASSET_ISSUER_PERMISSION_MASK = charge_market_fee|white_list|override_authority|transfer_restricted|disable_confidential;
 
 	enum reserved_spaces
@@ -477,7 +477,7 @@ types
 	};
 
 	inline bool is_relative( object_id_type o ){ return o.space() == 0; }
-	
+
 
 - List all object types from all namespaces here so they can be easily reflected and displayed in debug output.  If a 3rd party  wants to extend the core code then they will have to change the packed_object::type field from enum_type to uint16 to avoid warnings when converting packed_objects to/from json.
 
@@ -636,9 +636,9 @@ types
 		 uint32_t                   check = 0;
 		 fc::ecc::extended_key_data data;
 	  };
-	  
+
 	  fc::ecc::extended_key_data key_data;
-	   
+
 	  extended_public_key_type();
 	  extended_public_key_type( const fc::ecc::extended_key_data& data );
 	  extended_public_key_type( const fc::ecc::extended_public_key& extpubkey );
@@ -658,9 +658,9 @@ types
 		 uint32_t                   check = 0;
 		 fc::ecc::extended_key_data data;
 	  };
-	  
+
 	  fc::ecc::extended_key_data key_data;
-	   
+
 	  extended_private_key_type();
 	  extended_private_key_type( const fc::ecc::extended_key_data& data );
 	  extended_private_key_type( const fc::ecc::extended_private_key& extprivkey );
@@ -684,11 +684,11 @@ types
 		void to_variant( const graphene::chain::extended_private_key_type& var, fc::variant& vo, uint32_t max_depth = 2 );
 		void from_variant( const fc::variant& var, graphene::chain::extended_private_key_type& vo, uint32_t max_depth = 2 );
 	}
-	
 
 
-operations 
---------------------- 
+
+operations
+---------------------
 
 - operations
 - Defines the set of valid operations as a discriminated union type.
@@ -746,20 +746,20 @@ operations
 		asset_claim_pool_operation,
 		asset_update_issuer_operation
 		> operation;
-	
 
-- Appends required authorities to the result vector.  The authorities appended are not the same as those returned by get_required_auth 
-- Return a set of required authorities for @ref op. 
-	
+
+- Appends required authorities to the result vector.  The authorities appended are not the same as those returned by get_required_auth
+- Return a set of required authorities for @ref op.
+
 .. code-block:: cpp
 
-	void operation_get_required_authorities( const operation& op, 
+	void operation_get_required_authorities( const operation& op,
 		 flat_set<account_id_type>& active,
 		 flat_set<account_id_type>& owner,
 		 vector<authority>&  other );
 
 	void operation_validate( const operation& op );
-	
+
 
 - necessary to support nested operations inside the `proposal_create_operation`
 
@@ -778,7 +778,7 @@ Account
 ===============
 
 
-account 
+account
 ---------------
 
 .. code-block:: cpp
@@ -788,8 +788,8 @@ account
 
 
 account_options
-^^^^^^^^^^^^^^^^^	
-	
+^^^^^^^^^^^^^^^^^
+
 - These are the fields which can be updated by the active authority.
 
 .. code-block:: cpp
@@ -864,11 +864,11 @@ account_options
 |   | - account_transfer_operation   |
 +---+--------------------------------+
 
-	
-	
 
-memo 
---------------------- 
+
+
+memo
+---------------------
 
 memo_data
 ^^^^^^^^^^^^^^
@@ -898,7 +898,7 @@ memo_data
 		 * of entropy for generating private keys.
 		 */
 		uint64_t nonce = 0;
-		
+
 		/** This field contains the AES encrypted packed @ref memo_message */
 		vector<char> message;
 
@@ -910,13 +910,13 @@ memo_data
 		const fc::ecc::public_key& pub)const;
 	}
 
-	
+
 memo_message
 ^^^^^^^^^^^^^^^^^^^
-	
+
 - defines a message and checksum to enable validation of successful decryption
 - When encrypting/decrypting a checksum is required to determine whether or not decryption was successful.
- 
+
 .. code-block:: cpp
 
 	struct memo_message
@@ -933,7 +933,7 @@ memo_message
 	};
 
 
-balance 
+balance
 ---------------
 
 +---+--------------------------------+
@@ -943,8 +943,8 @@ balance
 +---+--------------------------------+
 
 
-transfer 
---------------------- 
+transfer
+---------------------
 
 +---+--------------------------------+
 |   | (Operations)                   |
@@ -955,8 +955,8 @@ transfer
 +---+--------------------------------+
 
 
-confidential 
---------------------- 
+confidential
+---------------------
 
 .. code-block:: cpp
 
@@ -970,8 +970,8 @@ confidential
   - 1. Public Balance - everyone can see the balance changes and the parties involved
   - 2. Blinded Balance - everyone can see who is transacting but not the amounts involved
   - 3. Stealth Balance - both the amounts and parties involved are obscured
-  
-- Account owners may set a flag that allows their account to receive(or not) transfers of these kinds. Asset issuers can enable or disable the use of each of these types of accounts.  
+
+- Account owners may set a flag that allows their account to receive(or not) transfers of these kinds. Asset issuers can enable or disable the use of each of these types of accounts.
 - Using the "temp account" which has no permissions required, users can transfer a stealth balance to the temp account and then use the temp account to register a new account.  In this way users can use stealth funds to create anonymous accounts with which they can perform other actions that are not compatible with blinded balances (such as market orders)
 
 section referral_program Referral Progam
@@ -1019,7 +1019,7 @@ blind_input
 
 stealth_confirmation
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-	
+
 -  When sending a stealth tranfer we assume users are unable to scan the full blockchain; therefore, payments require confirmation data to be passed out of band.   We assume this out-of-band channel is not secure and therefore the contents of the confirmation must be encrypted
 
 .. code-block:: cpp
@@ -1034,9 +1034,9 @@ stealth_confirmation
 		  fc::ecc::commitment_type  commitment;
 		  uint32_t                  check = 0;
 	   };
-	  
+
 	   operator string()const; /** Packs *this then encodes as base58 encoded string. */
-	   
+
 	   stealth_confirmation( const std::string& base58 ); /** Unpacks from a base58 string */
 	   stealth_confirmation(){}
 
@@ -1048,7 +1048,7 @@ stealth_confirmation
 
 blind_output
 ^^^^^^^^^^^^^^^^
-	
+
 - class blind_output
 - Defines data required to create a new blind commitment
 - stealth
@@ -1058,12 +1058,12 @@ blind_output
 
 	struct blind_output
 	{
-	   fc::ecc::commitment_type                commitment;   
+	   fc::ecc::commitment_type                commitment;
 	   range_proof_type                        range_proof;  /** only required if there is more than one blind output */
 	   authority                               owner;
 	   optional<stealth_confirmation>          stealth_memo;
 	};
-	
+
 
 
 +---+---------------------------------+
@@ -1077,8 +1077,8 @@ blind_output
 +---+---------------------------------+
 
 
-custom 
---------------------- 
+custom
+---------------------
 
 +---+--------------------------------+
 |   | (Operations)                   |
@@ -1086,13 +1086,13 @@ custom
 |   | - custom_operation             |
 +---+--------------------------------+
 
-	
 
-Assert 
+
+Assert
 =================
 
 
-assert 
+assert
 ---------------
 
 account_name_eq_lit_predicate
@@ -1114,11 +1114,11 @@ account_name_eq_lit_predicate
 	   */
 	  bool validate()const;
 	};
-	
+
 
 asset_symbol_eq_lit_predicate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-	
+
 - Used to verify that asset_id->symbol is equal to the given string literal.
 - Perform state independent checks.  Verify symbol is a valid asset symbol.
 
@@ -1139,7 +1139,7 @@ asset_symbol_eq_lit_predicate
 
 block_id_predicate
 ^^^^^^^^^^^^^^^^^^^^^
-	
+
 - Used to verify that a specific block is part of the blockchain history.  This helps protect some high-value transactions to newly created IDs.
 - The block ID must be within the last 2^16 blocks.
 
@@ -1171,11 +1171,11 @@ block_id_predicate
 +---+--------------------------------+
 
 
-Asset 
+Asset
 =================
 
 
-asset 
+asset
 ---------------
 
 
@@ -1310,17 +1310,17 @@ price
 	{ return p = p * r; }
 	inline price& operator /=  ( price& p, const ratio_type& r )
 	{ return p = p / r; }
-	
+
 
 price_feed
-^^^^^^^^^^^^^^^^	
-	
+^^^^^^^^^^^^^^^^
+
 - class price_feed
 - defines market parameters for margin positions
 - Required maintenance collateral is defined as a fixed point number with a maximum value of 10.000 and a minimum value of 1.000.  (denominated in GRAPHENE_COLLATERAL_RATIO_DENOM)
 - A black swan event occurs when value_of_collateral equals value_of_debt, to avoid a black swan a margin call is executed when value_of_debt * required_maintenance_collateral equals value_of_collateral using rate.
--  Default requirement is $1.75 of collateral per $1 of debt       
--  BlackSwan ---> SQR ---> MCR ----> SP 
+-  Default requirement is $1.75 of collateral per $1 of debt
+-  BlackSwan ---> SQR ---> MCR ----> SP
 
 .. code-block:: cpp
 
@@ -1369,11 +1369,11 @@ price_feed
 	  bool is_for( asset_id_type asset_id ) const;
 	};
 
-	
-	
 
-	 
-asset_ops 
+
+
+
+asset_ops
 ---------------
 
 .. code-block:: cpp
@@ -1407,22 +1407,22 @@ asset_ops
 
 		void            validate()const;
 	};
-	
+
 
 *The descriptions of `asset_options` elements*
 
-:max_supply = GRAPHENE_MAX_SHARE_SUPPLY;:    The maximum supply of this asset which may exist at any given time. This can be as large as GRAPHENE_MAX_SHARE_SUPPLY 
-:market_fee_percent = 0;:    When this asset is traded on the markets, this percentage of the total traded will be exacted and paid to the issuer. This is a fixed point value, representing hundredths of a percent, i.e. a value of 100 in this field means a 1% fee is charged on market trades of this asset. 
-:max_market_fee = GRAPHENE_MAX_SHARE_SUPPLY;:    Market fees calculated as @ref market_fee_percent of the traded volume are capped to this value 
-:issuer_permissions = UIA_ASSET_ISSUER_PERMISSION_MASK;:    The flags which the issuer has permission to update. See @ref asset_issuer_permission_flags 
-:flags = 0;:    The currently active flags on this permission. See @ref asset_issuer_permission_flags 
-:core_exchange_rate = price(asset(), asset(0, asset_id_type(1)));:    When a non-core asset is used to pay a fee, the blockchain must convert that asset to core asset in order to accept the fee. If this asset's fee pool is funded, the chain will automatically deposite fees in this asset to its accumulated fees, and withdraw from the fee pool the same amount as converted at the core exchange rate. 
-:whitelist_authorities;:    A set of accounts which maintain whitelists to consult for this asset. If whitelist_authorities is non-empty, then only accounts in whitelist_authorities are allowed to hold, use, or transfer the asset. 
-:blacklist_authorities;:    A set of accounts which maintain blacklists to consult for this asset. If flags & white_list is set, an account may only send, receive, trade, etc. in this asset if none of these accounts appears in its account_object::blacklisting_accounts field. If the account is blacklisted, it may not transact in this asset even if it is also whitelisted. 
-:whitelist_markets;:     defines the assets that this asset may be traded against in the market 
-:blacklist_markets;:   defines the assets that this asset may not be traded against in the market, must not overlap whitelist 
-:description:    data that describes the meaning/purpose of this asset, fee will be charged proportional to size of description. 
-:extensions;:   
+:max_supply = GRAPHENE_MAX_SHARE_SUPPLY;:    The maximum supply of this asset which may exist at any given time. This can be as large as GRAPHENE_MAX_SHARE_SUPPLY
+:market_fee_percent = 0;:    When this asset is traded on the markets, this percentage of the total traded will be exacted and paid to the issuer. This is a fixed point value, representing hundredths of a percent, i.e. a value of 100 in this field means a 1% fee is charged on market trades of this asset.
+:max_market_fee = GRAPHENE_MAX_SHARE_SUPPLY;:    Market fees calculated as @ref market_fee_percent of the traded volume are capped to this value
+:issuer_permissions = UIA_ASSET_ISSUER_PERMISSION_MASK;:    The flags which the issuer has permission to update. See @ref asset_issuer_permission_flags
+:flags = 0;:    The currently active flags on this permission. See @ref asset_issuer_permission_flags
+:core_exchange_rate = price(asset(), asset(0, asset_id_type(1)));:    When a non-core asset is used to pay a fee, the blockchain must convert that asset to core asset in order to accept the fee. If this asset's fee pool is funded, the chain will automatically deposite fees in this asset to its accumulated fees, and withdraw from the fee pool the same amount as converted at the core exchange rate.
+:whitelist_authorities;:    A set of accounts which maintain whitelists to consult for this asset. If whitelist_authorities is non-empty, then only accounts in whitelist_authorities are allowed to hold, use, or transfer the asset.
+:blacklist_authorities;:    A set of accounts which maintain blacklists to consult for this asset. If flags & white_list is set, an account may only send, receive, trade, etc. in this asset if none of these accounts appears in its account_object::blacklisting_accounts field. If the account is blacklisted, it may not transact in this asset even if it is also whitelisted.
+:whitelist_markets;:     defines the assets that this asset may be traded against in the market
+:blacklist_markets;:   defines the assets that this asset may not be traded against in the market, must not overlap whitelist
+:description:    data that describes the meaning/purpose of this asset, fee will be charged proportional to size of description.
+:extensions;:
 :validate()const;:   Perform internal consistency checks. @throws fc::exception if any check fails |
 
 
@@ -1449,14 +1449,14 @@ bitasset_options
 
 *The descriptions of ``bitasset_options`` elements*
 
-:feed_lifetime_sec = GRAPHENE_DEFAULT_PRICE_FEED_LIFETIME:    Time before a price feed expires 
-:minimum_feeds = 1;:    Minimum number of unexpired feeds required to extract a median feed from 
-:force_settlement_delay_sec = GRAPHENE_DEFAULT_FORCE_SETTLEMENT_DELAY;:    This is the delay between the time a long requests settlement and the chain evaluates the settlement 
-:force_settlement_offset_percent = GRAPHENE_DEFAULT_FORCE_SETTLEMENT_OFFSET;:   This is the percent to adjust the feed price in the short's favor in the event of a forced settlement 
-:maximum_force_settlement_volume = GRAPHENE_DEFAULT_FORCE_SETTLEMENT_MAX_VOLUME;:    Force settlement volume can be limited such that only a certain percentage of the total existing supply of the asset may be force-settled within any given chain maintenance interval. This field stores the percentage of the current supply which may be force settled within the current maintenance interval. If force settlements come due in an interval in which the maximum volume has already been settled, the new settlements will be enqueued and processed at the beginning of the next maintenance interval. 
-:short_backing_asset;:    This specifies which asset type is used to collateralize short sales. This field may only be updated if the current supply of the asset is zero 
-:extensions;:   
-:validate()const;:   Perform internal consistency checks. @throws fc::exception if any check fails 
+:feed_lifetime_sec = GRAPHENE_DEFAULT_PRICE_FEED_LIFETIME:    Time before a price feed expires
+:minimum_feeds = 1;:    Minimum number of unexpired feeds required to extract a median feed from
+:force_settlement_delay_sec = GRAPHENE_DEFAULT_FORCE_SETTLEMENT_DELAY;:    This is the delay between the time a long requests settlement and the chain evaluates the settlement
+:force_settlement_offset_percent = GRAPHENE_DEFAULT_FORCE_SETTLEMENT_OFFSET;:   This is the percent to adjust the feed price in the short's favor in the event of a forced settlement
+:maximum_force_settlement_volume = GRAPHENE_DEFAULT_FORCE_SETTLEMENT_MAX_VOLUME;:    Force settlement volume can be limited such that only a certain percentage of the total existing supply of the asset may be force-settled within any given chain maintenance interval. This field stores the percentage of the current supply which may be force settled within the current maintenance interval. If force settlements come due in an interval in which the maximum volume has already been settled, the new settlements will be enqueued and processed at the beginning of the next maintenance interval.
+:short_backing_asset;:    This specifies which asset type is used to collateralize short sales. This field may only be updated if the current supply of the asset is zero
+:extensions;:
+:validate()const;:   Perform internal consistency checks. @throws fc::exception if any check fails
 
 
 +---+------------------------------------------+
@@ -1495,8 +1495,8 @@ bitasset_options
 
 
 
-fba 
---------------------- 
+fba
+---------------------
 
 
 +---+--------------------------------+
@@ -1507,8 +1507,8 @@ fba
 
 
 
-buyback 
---------------------- 
+buyback
+---------------------
 
 buyback_account_options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1539,8 +1539,8 @@ Transaction
 =======================
 
 
-market 
---------------------- 
+market
+---------------------
 
 +---+------------------------------------------+
 |   | (Operations)                             |
@@ -1559,21 +1559,21 @@ market
 +---+------------------------------------------+
 
 
-proposal 
---------------------- 
+proposal
+---------------------
 
 
 - ``proposed_transactions``  The Graphene Transaction Proposal Protocol
 - Graphene allows users to propose a transaction which requires approval of multiple accounts in order to execute.
 
 - The user proposes a transaction using ``proposal_create_operation``, then signatory accounts use ``proposal_update_operations`` to add or remove their approvals from this operation. When a sufficient number of approvals have been granted, the operations in the proposal are used to create a virtual transaction which is subsequently evaluated. Even if the transaction fails, the proposal will be kept until the expiration time, at which point, if sufficient approval is granted, the transaction will be evaluated a final time. This allows transactions which will not execute successfully until a given time to still be executed through the proposal mechanism. The first time the proposed transaction succeeds, the proposal will be regarded as resolved, and all future updates will be invalid.
--  The proposal system allows for arbitrarily complex or recursively nested authorities. If a recursive authority (i.e. an authority which requires approval of 'nested' authorities on other accounts) is required for a proposal, then a second proposal can be used to grant the nested authority's approval. That is, a second proposal can be created which, when sufficiently approved, adds the approval of a nested authority to the first proposal. This multiple-proposal scheme can be used to acquire approval for an arbitrarily deep authority tree. 
+-  The proposal system allows for arbitrarily complex or recursively nested authorities. If a recursive authority (i.e. an authority which requires approval of 'nested' authorities on other accounts) is required for a proposal, then a second proposal can be used to grant the nested authority's approval. That is, a second proposal can be created which, when sufficiently approved, adds the approval of a nested authority to the first proposal. This multiple-proposal scheme can be used to acquire approval for an arbitrarily deep authority tree.
 - **Note** that at any time, a proposal can be approved in a single transaction if sufficient signatures are available on the ``proposal_update_operation``, as long as the authority tree to approve the proposal does not exceed the maximum recursion depth. In practice, however, it is easier to use proposals to acquire all approvals, as this leverages on-chain notification of all relevant parties that their approval is required. Off-chain multi-signature approval requires some off-chain mechanism for acquiring several signatures on a single transaction. This off-chain synchronization can be avoided using proposals.
-  
+
 
 op_wrapper
 ^^^^^^^^^^^^^^^
-  
+
 * op_wrapper is used to get around the circular definition of operation and proposals that contain them.
 
 .. code-block:: cpp
@@ -1590,13 +1590,13 @@ op_wrapper
 |   | - proposal_update_operation              |
 +---+------------------------------------------+
 |   | -  proposal_delete_operation             |
-+---+------------------------------------------+	
++---+------------------------------------------+
 
 
 .. _lib-transaction-anchor:
 
-transaction 
---------------------- 
+transaction
+---------------------
 
 - All transactions are sets of operations that must be applied atomically. Transactions must refer to a recent block that defines the context of the operation so that they assert a known binding to the object id's referenced in the transaction.
 - Rather than specify a full block number, we only specify the lower 16 bits of the block number which means you can reference any block within the last 65,536 blocks which is 3.5 days with a 5 second block interval or 18 hours with a 1 second interval.
@@ -1607,7 +1607,7 @@ transaction
 
 
 .. Note:: It is not recommended to set the @ref ref_block_num, @ref ref_block_prefix, and @ref expiration fields manually. Call the appropriate overload of @ref set_expiration instead.
-   
+
 **groups operations that should be applied atomically**
 
 .. code-block:: cpp
@@ -1666,10 +1666,10 @@ transaction
 	};
 
 
-	
+
 signed_transaction
 ^^^^^^^^^^^^^^^^^^^^^^
-	
+
 **adds a signature to a transaction**
 
 .. code-block:: cpp
@@ -1729,10 +1729,10 @@ signed_transaction
 	  void clear() { operations.clear(); signatures.clear(); }
 	};
 
-	
+
 verify_authority
-^^^^^^^^^^^^^^^^^^^^^^^	
-	
+^^^^^^^^^^^^^^^^^^^^^^^
+
 .. code-block:: cpp
 
 	void verify_authority( const vector<operation>& ops, const flat_set<public_key_type>& sigs,
@@ -1742,11 +1742,11 @@ verify_authority
 						  bool allow_committe = false,
 						  const flat_set<account_id_type>& active_aprovals = flat_set<account_id_type>(),
 						  const flat_set<account_id_type>& owner_approvals = flat_set<account_id_type>());
-	
+
 
 processed_transaction
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^	
-	
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 - captures the result of evaluating the operations contained in the transaction
 - When processing a transaction some operations generate new object IDs and these IDs cannot be known until the transaction is actually included into a block.  When a block is produced these new ids are captured and included with every transaction.  The index in operation_results should correspond to the same index in operations.
 - If an operation did not create any new object IDs then 0 should be returned.
@@ -1762,11 +1762,11 @@ processed_transaction
 
 	  digest_type merkle_digest()const;
 	};
-	
 
 
-withdraw_permission 
---------------------- 
+
+withdraw_permission
+---------------------
 
 - Create a new withdrawal permission
 - This operation creates a withdrawal permission, which allows some authorized account to withdraw from an authorizing account. This operation is primarily useful for scheduling recurring payments.
@@ -1793,8 +1793,8 @@ Fee
 
 > See: ..\libraries\chain\include\graphene\chain\protocol\fee_schedule.hpp
 
-fee_helper 
---------------------- 
+fee_helper
+---------------------
 
 .. code-block:: cpp
 
@@ -1878,11 +1878,11 @@ fee_helper
          return asset_claim_pool_dummy;
       }
    };
-	
 
 
-fee_schedule 
---------------------- 
+
+fee_schedule
+---------------------
 
 *contains all of the parameters necessary to calculate the fee for any operation*
 
@@ -1922,14 +1922,14 @@ fee_schedule
 	typedef fee_schedule fee_schedule_type;
 
 
-	
+
 
 Vote
 ====================
 
 
-vesting 
---------------------- 
+vesting
+---------------------
 
 linear_vesting_policy_initializer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1944,10 +1944,10 @@ linear_vesting_policy_initializer
 	  uint32_t           vesting_duration_seconds = 0;
 	};
 
-	
+
 cdd_vesting_policy_initializer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-	
+
 .. code-block:: cpp
 
 	struct cdd_vesting_policy_initializer
@@ -1959,7 +1959,7 @@ cdd_vesting_policy_initializer
 	};
 
 	typedef fc::static_variant<linear_vesting_policy_initializer, cdd_vesting_policy_initializer> vesting_policy_initializer;
-	
+
 
 +---+------------------------------------------+
 |   | (Operations)                             |
@@ -1969,14 +1969,14 @@ cdd_vesting_policy_initializer
 |   | - vesting_balance_withdraw_operation     |
 +---+------------------------------------------+
 
-vote 
---------------------- 
+vote
+---------------------
 
 - An ID for some votable object
 - This class stores an ID for a votable object. The ID is comprised of two fields: **a type, and an instance**. The ``type`` field stores which kind of object is being voted on, and the ``instance`` stores which specific object of that type is being referenced by this ID.
 - A value of ``vote_id_type`` is implicitly convertible to an unsigned 32-bit integer containing only the instance. It may also be implicitly assigned from a uint32_t, which will update the instance. It may not, however, be implicitly constructed from a uint32_t, as in this case, the type would be unknown.
-- On the wire, a ``vote_id_type`` is represented as a 32-bit integer with the type in the lower 8 bits and the instance in the upper 24 bits. This means that types may never exceed 8 bits, and instances may never exceed 24 bits. 
-- In JSON, a ``vote_id_type`` is represented as a string ``type:instance``, i.e. "1:5" would be type 1 and instance 5. 
+- On the wire, a ``vote_id_type`` is represented as a 32-bit integer with the type in the lower 8 bits and the instance in the upper 24 bits. This means that types may never exceed 8 bits, and instances may never exceed 24 bits.
+- In JSON, a ``vote_id_type`` is represented as a string ``type:instance``, i.e. "1:5" would be type 1 and instance 5.
 - **Note**: In the Graphene protocol, ``vote_id_type`` instances are unique across types; that is to say, if an object of type 1 has instance 4, an object of type 0 may not also have instance 4. In other words, the type is not a namespace for instances; it is only an informational field.
 
 
@@ -2061,14 +2061,14 @@ vote_id_type
 		  return std::to_string(type()) + ":" + std::to_string(instance());
 	   }
 	};
-	
+
 
 .. code-block:: cpp
 
 	class global_property_object;
 
 	vote_id_type get_next_vote_id( global_property_object& gpo, vote_id_type::vote_type type );
-	
+
 
 .. code-block:: cpp
 
@@ -2081,14 +2081,14 @@ vote_id_type
 	void from_variant( const fc::variant& var, graphene::chain::vote_id_type& vo, uint32_t max_depth = 1 );
 
 	}
-	
-	
-	
+
+
+
 BTS Holders
 ================
 
-committee_member 
---------------------- 
+committee_member
+---------------------
 
 +---+--------------------------------------------------------+
 |   | (Operations)                                           |
@@ -2101,13 +2101,13 @@ committee_member
 +---+--------------------------------------------------------+
 
 
-witness 
---------------------- 
+witness
+---------------------
 
 - operations
 - Create a witness object, as a bid to hold a witness position on the network.
 - Accounts which wish to become witnesses may use this operation to create a witness object which stakeholders may vote on to approve its position as a witness.
-	
+
 
 +---+------------------------------------------+
 |   | (Operations)                             |
@@ -2117,9 +2117,9 @@ witness
 |   | - witness_update_operation               |
 +---+------------------------------------------+
 
-	
-worker 
---------------------- 
+
+worker
+---------------------
 
 - operations
 - workers The Blockchain Worker System
@@ -2146,11 +2146,11 @@ vesting_balance_worker_initializer
 	struct refund_worker_initializer
 	{};
 
-	typedef static_variant< 
+	typedef static_variant<
 	  refund_worker_initializer,
 	  vesting_balance_worker_initializer,
 	  burn_worker_initializer > worker_initializer;
-	
+
 
 +---+--------------------------------+
 |   | (Operations)                   |
@@ -2162,17 +2162,17 @@ vesting_balance_worker_initializer
 Other
 =============
 
-config 
---------------------- 
+config
+---------------------
 
 
   #include <graphene/chain/config.hpp>
-  
+
   - `config.hpp <https://github.com/bitshares/bitshares-core/blob/release/libraries/chain/include/graphene/chain/config.hpp>`_
 
 
-ext 
---------------------- 
+ext
+---------------------
 
 .. code-block:: cpp
 
@@ -2278,8 +2278,8 @@ ext
 	   const uint32_t max_depth;
 	};
 
-	} } 
-	
+	} }
+
 
 .. code-block:: cpp
 
@@ -2312,7 +2312,7 @@ ext
 	   const uint32_t _max_depth;
 	   mutable uint32_t count_left = 0;
 	};
-		
+
 
 .. code-block:: cpp
 
@@ -2333,7 +2333,7 @@ ext
 	   FC_ASSERT( vtor.count_left == 0 );    // unrecognized extension throws here
 	}
 
-	
+
 	template< typename T >
 	struct graphene_extension_to_variant_visitor
 	{
@@ -2350,7 +2350,7 @@ ext
 	   mutable limited_mutable_variant_object mvo;
 	};
 
-	
+
 	template< typename T >
 	void to_variant( const graphene::chain::extension<T>& value, fc::variant& var, uint32_t max_depth )
 	{
@@ -2388,16 +2388,16 @@ ext
 	} // fc::raw
 
 	template<typename T> struct get_typename< graphene::chain::extension<T> >
-	{ 
+	{
 	   static const char* name()
-	   { 
-		  static std::string n = std::string("graphene::chain::extension<") 
+	   {
+		  static std::string n = std::string("graphene::chain::extension<")
 			 + fc::get_typename<T>::name() + std::string(">");
 		  return n.c_str();
-	   } 
+	   }
 	};
-	
-	
+
+
 -------------------------------
 
 |

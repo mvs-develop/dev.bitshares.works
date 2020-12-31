@@ -1,5 +1,7 @@
-import docutils.nodes
+# -*- coding: utf-8 -*-
 import collections
+
+import docutils.nodes
 import sphinx.addnodes
 import sphinx.ext.mathbase
 

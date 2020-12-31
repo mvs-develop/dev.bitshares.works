@@ -9,16 +9,16 @@ DNA Explorer API - Try it out!
 The below links take you to DNA API calls list page. They are ES Wrappers (i.e., Wrapper to expose **Elasticsearch** Bitshares node data to clients). On the page, you can select a call and set value(s) and try it out!
 
 
-* DNA Explorer API uses to query the **MAINNET** 
+* DNA Explorer API uses to query the **MAINNET**
 
-  - https://explorer.bitshares-kibana.info/apidocs/ 
+  - https://explorer.bitshares-kibana.info/apidocs/
 
 
- 
-* DNA Explorer Testnet API uses to query the **Public TESTNET** 
 
-  - http://148.251.10.231:5000/apidocs/ 
-  
+* DNA Explorer Testnet API uses to query the **Public TESTNET**
+
+  - http://148.251.10.231:5000/apidocs/
+
 
 ------------
 
@@ -40,7 +40,7 @@ The below links take you to DNA API calls list page. They are ES Wrappers (i.e.,
   - Response Body
   - Response Code
   - Response Headers
-  
+
 
 .. image:: ../../_static/structures/call-tryitout-2.png
         :alt: DNA API Call
@@ -52,7 +52,7 @@ The below links take you to DNA API calls list page. They are ES Wrappers (i.e.,
 
 This information also locates here - :ref:`explorer-wrappers`
 
-	
+
 |
 
 |

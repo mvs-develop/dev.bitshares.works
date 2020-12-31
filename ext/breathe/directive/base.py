@@ -1,9 +1,10 @@
-from ..renderer.base import RenderContext
-from ..renderer import format_parser_error, DoxygenToRstRendererFactory
-from ..parser import ParserError, FileIOError
-
+# -*- coding: utf-8 -*-
 from docutils import nodes
 from docutils.parsers import rst
+
+from ..parser import FileIOError, ParserError
+from ..renderer import DoxygenToRstRendererFactory, format_parser_error
+from ..renderer.base import RenderContext
 
 
 class WarningHandler(object):

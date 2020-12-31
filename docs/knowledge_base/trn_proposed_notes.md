@@ -24,7 +24,7 @@ Imo it's better to set a threshold equals to (total_weight - approve_threshold) 
 - The operation will delete the proposal from the database. text is here: https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/include/graphene/chain/protocol/proposal.hpp#L144-L154.
 - and actual delete is at: https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/proposal_evaluator.cpp#L206.
 
-*** 
+***
 
 ## Unable to propose a proposal with an `approve_proposal` operation #214, #658
 

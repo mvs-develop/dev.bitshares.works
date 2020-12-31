@@ -11,7 +11,7 @@ The scheme described in this section is a single node scheme. Compared to the tw
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 
@@ -27,19 +27,19 @@ The DNA uses the DPOS consensus mechanism to vote for the block forge by the per
 1) In DNA, funds are stored in an account, unlike Bitcoin where there is an address. For the exchange, it is necessary to open an account for users to deposit.
 
   - You can use a web wallet or light wallet to register a new account.
-   
+
 .. Note:: For the exchange, please use the wallet mode (Local Wallet) instead of the account mode  (Cloud Wallet) for the registered account, because the exchange needs to use some advanced functions and there will be problems in the account mode.
 
   - `DNA-UI Release <https://github.com/bitshares/bitshares-ui/releases>`_
   - BitShare UI wallet:  https://wallet.bitshares.org
   - `Create an Account Guide <http://how.bitshares.works/en/latest/user_guide/create_account.html>`_
 
-   
-- Not all accounts can be registered for free. Generally, a flat or numeric account can be registered for free, such as my-exchange, or myexchange2017.   
+
+- Not all accounts can be registered for free. Generally, a flat or numeric account can be registered for free, such as my-exchange, or myexchange2017.
 
 - In the light wallet account page, a number is displayed below the account number. This number is the built-in ID of the account in the DNA system, which will be used below.
 
-.. Hint:: You can go to the blockchain browser https://cryptofresh.com/ and enter the account name to get the account ID.   
+.. Hint:: You can go to the blockchain browser https://cryptofresh.com/ and enter the account name to get the account ID.
 
 - You can also use the command to obtain the ID in the wallet after the synchronization of the self-built node is completed, and you can obtain the command reference section *Checking the name of the account for withdrawal*.
 
@@ -48,11 +48,11 @@ The DNA uses the DPOS consensus mechanism to vote for the block forge by the per
 2) User's deposit is transferred from other accounts to the open account of the exchange.
 
 - The account name is the payment address.
-   
+
 - Each remittance can carry one Memo (note). The exchange uses this Memo to distinguish which user's deposit.
-   
+
 - The specific Memo are related to the exchange user's relationship, and the exchange must set it up.
-   
+
 - Memo are encrypted and only the memo (note) key with the sender or receiver can be decrypted.
 
 3) User withdrawals are transferred from the exchange account to the user account. The destination account name is provided by the user.
@@ -62,15 +62,15 @@ The DNA uses the DPOS consensus mechanism to vote for the block forge by the per
 4) The account registered using the web wallet is the basic account. Can be upgraded to a lifetime membership (LTM) account, after the upgrade, the subsequent transaction fee to save 80%.
 
 - Lifetime members can create new accounts.
-   
+
 - The current fee rate standard can be viewed in the wallet. From the interface, click [Explorer] - [Fee Schedule] tab to access.
 
 5) Each account has 3 pairs of keys by default, which can be viewed on a Permissions page from the side menu. They are: **Active**, **Owner**, and **Memo** keys.
 
 - Among them, the *active* authority key is used for daily operations such as transfer; the *owner* authority key is used to modify the key; the *memo* key is used to encrypt and decrypt the transfer Memo.
-   
+
 - By default, the active permission key is the same as the memo key, but it can be modified to be different.
-   
+
 - The above 3 pairs of keys can be modified. Among them, the owner (account privilege) is the highest privilege, and all keys can be modified; using the owner (active privilege) key, the owner (account privilege) key cannot be modified, but the other two keys can be modified.
 
 
@@ -88,8 +88,8 @@ The DNA uses the DPOS consensus mechanism to vote for the block forge by the per
 - Each transaction can contain multiple operations, stored in the *operations* field and stored in order;
   - Each operation also has an ID, which is a global number, generated internally during program execution, not a hash value.
 
-  Read: :ref:`Block Component information <lib-block>`  
-  
+  Read: :ref:`Block Component information <lib-block>`
+
 -----------------------
 
 2. Basic Software and Hardware Requirements
@@ -101,7 +101,7 @@ The DNA uses the DPOS consensus mechanism to vote for the block forge by the per
 
 Install 64-bit Ubuntu 16.04 LTS (it will not work on 32-bit Ubuntu), or 64-bit Ubuntu 14.04 LTS, or Windows Server.
 
-> See Also, :ref:`System Requirements <system-requirements-node>` 
+> See Also, :ref:`System Requirements <system-requirements-node>`
 
 ------------------
 
@@ -148,10 +148,10 @@ If you are using a Linux system, you need to compile several of these programs y
 	cmake -DCMAKE_BUILD_TYPE=Release ..
 	make witness_node cli_wallet
 
-	
-Read also: :ref:`Installation Guide <installation-guide>`	
-	
-.. Note:: In the above steps, replace <LATEST_RELEASE_TAG> with the latest release number. 
+
+Read also: :ref:`Installation Guide <installation-guide>`
+
+.. Note:: In the above steps, replace <LATEST_RELEASE_TAG> with the latest release number.
 
 After the compilation is complete, two executable programs are:
 
@@ -192,7 +192,7 @@ Ubuntu system is recommended to install NTP server by::
 	Sudo timedatectl set-ntp false
 	Sudo apt-get install ntp
 
-Depending on the deployment environment, you may need to modify the default ntp server address. 
+Depending on the deployment environment, you may need to modify the default ntp server address.
 
 If it is a Windows system, set the system time synchronization.
 
@@ -247,10 +247,10 @@ After this, the console log for the last 24 hours is kept under the ``witness_no
 
 	   plugins = witness account_history
 
-	   
+
 - Read more: :ref:`memory-nodes`
 
- 
+
 **Note:**
 
 * The default plugins in ``config.ini`` have a "#" symbol and need to be deleted;
@@ -306,11 +306,11 @@ To do this, press ``Ctrl + C`` to end the program and restart it with the ``--re
 
 Start ``witness_node`` again and start synchronizing data. Depending on the network conditions and server hardware conditions, initial synchronization may take several hours to several days.::
 
-	./witness_node -d witness_node_data_dir --rpc-endpoint 127.0.0.1:8090 
-	                                        --track-account "\"1.2.12345\"" 
-						--track-account "\"1.2.12346\"" 
-						--partial-operations true 
-						--max-ops-per-account 1000000 
+	./witness_node -d witness_node_data_dir --rpc-endpoint 127.0.0.1:8090
+	                                        --track-account "\"1.2.12345\""
+						--track-account "\"1.2.12346\""
+						--partial-operations true
+						--max-ops-per-account 1000000
 						--replay-blockchain
 
 In the above command, use ``--rpc-endpoint`` to enable the node API service so that you can use ``cli_wallet`` to connect with other programs.
@@ -338,8 +338,8 @@ Successful execution will show::
 
 	Please use the set_password method to initialize a new wallet before continuing
 	new >>>
-	
-	
+
+
 * **For more detailed instructions, see the tutorial on** :ref:`How to Set a password and Unlock a Cli Wallet <cli-wallet-setpwd-unlock>`
 
 
@@ -358,10 +358,10 @@ Use the info command to view the current synchronization::
 	  ...
 	}
 
-   
- 
 
-   
+
+
+
 **5.3 Run another cli_wallet to handle deposit**
 
 ::
@@ -384,7 +384,7 @@ Considering security, you can use **two accounts** to handle the deposit and wit
    Performing ``suggest_brain_key`` in any of the above ``cli_wallets`` will result in a pair of keys, an example of which is as follows:
 
 ::
-   
+
 	unlocked >>> suggest_brain_key
 	suggest_brain_key
 	{
@@ -400,9 +400,9 @@ In the light wallet, on the permission page, modify the memo (comment) key to `p
 1. Please pay attention to the backup light wallet after the change, otherwise the light wallet may not be able to decrypt the pre-modification comment.
 2. After the change, if you still need to use a light wallet to make a transfer with a memo (note), or read a new transfer/transfer transfer note,
 
- - You need to import the above ``wif_priv_key`` into the light wallet. 
+ - You need to import the above ``wif_priv_key`` into the light wallet.
  - You can make a new backup after importing.
- 
+
 3. This method can also be used to modify the account's active authority key and owner (account authority) key, which can be used when needed.
 
 
@@ -436,7 +436,7 @@ Reference: :ref:`User Guide - Permissions <acc-permission>`
 You can also make a backup of your wallet file.
 
 
-.. Note:: Check whether the active authority key and the memo key of the withdrawal account are the same. If they are different, the memo key must also be imported. Otherwise, withdrawals with memo cannot be processed. 
+.. Note:: Check whether the active authority key and the memo key of the withdrawal account are the same. If they are different, the memo key must also be imported. Otherwise, withdrawals with memo cannot be processed.
 
 The import command is still::
 
@@ -476,16 +476,16 @@ Return:
 		  "previous":"0000000000000000000000000000000000000000",
 		  "timestamp":"2015-10-13T14:12:24",
 		  "witness":"1.6.8",
-		  "transaction_merkle_root": "0000000000000000000000000000000000000000", 
+		  "transaction_merkle_root": "0000000000000000000000000000000000000000",
 		  "extensions": [],
-		  "witness_signature":"1f53542bb60f1f7a653bac70d6b1613e73b9adc952031e30e591e601dd60d493ba5c9a832e155ff0c40ea1dd53512e9f93bf65a8191497ea67d701bc2502f93af7", 
-		  "transactions": [], 
-		  "block_id": "00000001b656820f72f6b28cda811778632d4998", 
-		  "signing_key": "BTS6ZQEFsPmG6jWspNDdZHkehNmPpG7gkSHkphmRZQWaJ2LrcaVSi", 
+		  "witness_signature":"1f53542bb60f1f7a653bac70d6b1613e73b9adc952031e30e591e601dd60d493ba5c9a832e155ff0c40ea1dd53512e9f93bf65a8191497ea67d701bc2502f93af7",
+		  "transactions": [],
+		  "block_id": "00000001b656820f72f6b28cda811778632d4998",
+		  "signing_key": "BTS6ZQEFsPmG6jWspNDdZHkehNmPpG7gkSHkphmRZQWaJ2LrcaVSi",
 		  "transaction_ids": []
 		  }
 	}
-	
+
 
 
 
@@ -499,7 +499,7 @@ If the execution is successful, the result will be result, otherwise there will 
 
   * The ``asset_id`` can be found by the ``get_asset`` command. The ``asset_id`` of the BTS is 1.3.0. Other assets have other ids.
   * amount is the value after the decimal point is removed. For example, BTS is `5 decimal` places. In the above example, it is actually 4671.16432 BTS.
-  
+
 * The account is in the form of 1.2.xxxxx. Get account information via ``get_account``
 * Operation type (op) is a numeric format, such as 0 for transfer operation
 
@@ -530,8 +530,8 @@ Among them, ``head_block_number`` is the latest block number, and ``last_irrever
 
 **9.2 Querying Deposit Account History**
 
-Use the ``get_relative_account_history`` command to query the history of the deposit account and check for new deposits. 
-	
+Use the ``get_relative_account_history`` command to query the history of the deposit account and check for new deposits.
+
 Such as::
 
 	unlocked >>> get_relative_account_history deposit-account 1 100 100
@@ -600,12 +600,12 @@ Visible, the result does not explicitly include the number of each record, the n
 First of all, we must determine whether the block where the transaction is located cannot be rolled back.
 
 - Take result[N]["op"]["block_num"] is compared with ``last_irreversible_block_num``. If it can't be rolled back, continue processing. If you can roll back, skip skipping.
-  
+
 .. Note:: When the transaction does not enter the block, it may still appear in ``get_relative_account_history``, and the block number where it is located will always change, making it difficult to determine the status.
 
 So use ``last_irreversible_block_num`` to determine.
-  
-- Result[N]["op"]["op"] is an array format, taking the first element of the array result[N]["op"]["op"][0] , and if it is 0, it means transfer ;  
+
+- Result[N]["op"]["op"] is an array format, taking the first element of the array result[N]["op"]["op"][0] , and if it is 0, it means transfer ;
 - Then you can use the ``to`` field in the second element (i.e., result[N]["op"]["op"][1]["to"]) to determine if it is the same as the deposit-account ID. Whether to transfer;
 - If yes, then take the ``asset_id`` field result[N]["op"]["op"][1]["amount"]["asset_id"] in the ``amount`` field in the second field to determine if the asset is correct Types of,
 - Then take ``amount`` in `amount`, that is, result[N]["op"]["op"][1]["amount"]["amount"], add the decimal places, and get the amount of recharge ;
@@ -623,7 +623,7 @@ So use ``last_irreversible_block_num`` to determine.
 
 	curl -d '{"jsonrpc": "2.0", "method": "get_block", "params": [160000], "id": 1}' http://127.0.0.1:8093/rpc
 
-	
+
 Let the result block be result , according to the above `trx_in_block`,
 
 - Take result["transaction_ids"][trx_in_block] is the corresponding `transaction ID`;
@@ -637,7 +637,7 @@ Let the result block be result , according to the above `trx_in_block`,
 
   - It is certain that the combination of **blocknum + trx_in_block + op_in_trx + vitrual_op** is unique.
   - It is also worth noting here that the data of ``virtual_op``. If the parameters are not the same and replay every time you restart the device, and you check the historical data again, you will find that this value will be inconsistent.
-  
+
 4) Due to the "Proposal" function, it is possible to postpone execution. When using ``get_block`` and then positioning with ``trx_in_block``, the corresponding transaction may not be available, or the acquired transaction does not correspond to the recharge operation.
 
   - Delayed execution function is rarely used, but theoretically, please pay attention to error handling.
@@ -680,7 +680,7 @@ Use the ``list_account_balances`` command to check whether the withdrawal accoun
 
 	unlocked >>> list_account_balances withdrawal-account
 
-	
+
 **Note:**
 
 1) Pay attention to asset type
@@ -727,7 +727,7 @@ Use the ``get_relative_account_history`` command to obtain withdrawal history of
 
 And the transaction's block number is earlier than ``last_irreversible_block_num``, indicating that the transaction has entered the block and cannot be rolled back;
 
-**Note:** 
+**Note:**
 
 When the transaction does not enter the block, it may still appear in ``get_relative_account_history``, and the block number where it is located will always change, making it difficult to determine the status. So use ``last_irreversible_block_num`` to determine.
 
@@ -762,7 +762,7 @@ Therefore, if a transaction broadcast appears but does not appear in the account
 
   * It is likely that the ``witness_node`` has entered a short branching chain, or there is a problem with the network, and the transaction cannot be fully confirmed.
   * In this case, check if there is a new version of the ``witness_node`` to be upgraded or contact the development team.
-  
+
 * If the retransmission still cannot be packaged, you may encounter network abnormalities or congestion. This is relatively rare. Please contact the development team.
 
 
@@ -789,7 +789,7 @@ Therefore, if a transaction broadcast appears but does not appear in the account
   * On offline machines, start ``witness_node`` and ``cli_wallet`` and use the ``suggest_brain_key`` command to generate the key pair offline;
   * Then use the light wallet to change the account key to the above key, then the account goes into cold storage
   * When you need to use a cold deposit account,
-  
+
     * You can use the temporary heating method, that is, import the private key into the light wallet, use it and then replace it with a new one
     * Pure cold mode can also be achieved, but the current ``cli_wallet`` support is not good, if necessary, please contact alone
 
@@ -801,16 +801,16 @@ Therefore, if a transaction broadcast appears but does not appear in the account
   * Self-built node tutorial http://btsabc.org/article-477-1.html
   * Get account private key http://btsabc.org/article-761-1.html
 * English Docking Documents http://docs.bitshares.org/integration/exchanges/step-by-step.html
-* English API Documentation http://docs.bitshares.org/api/index.html	
+* English API Documentation http://docs.bitshares.org/api/index.html
 
 
 --------------
 
 - Contributor: @abit
 
-(ref) 
+(ref)
 
-This information originates [abitmore/bts-cn-docs](https://github.com/abitmore/bts-cn-docs/blob/master/BTS%E4%BA%A4%E6%98%93%E6%89%80%E5%AF%B9%E6%8E%A5%E6%8C%87%E5%8D%97%EF%BC%88%E5%8D%95%E8%8A%82%E7%82%B9%E7%89%88%EF%BC%89.txt) repository. 
+This information originates [abitmore/bts-cn-docs](https://github.com/abitmore/bts-cn-docs/blob/master/BTS%E4%BA%A4%E6%98%93%E6%89%80%E5%AF%B9%E6%8E%A5%E6%8C%87%E5%8D%97%EF%BC%88%E5%8D%95%E8%8A%82%E7%82%B9%E7%89%88%EF%BC%89.txt) repository.
 
 *(Translated by an application and adjusted by human. Some words might be not accurate.)*
 

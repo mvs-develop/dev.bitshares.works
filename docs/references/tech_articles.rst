@@ -3,10 +3,10 @@
 Articles
 *************
 
-DNA Related Articles 
+DNA Related Articles
 ==============================
 
-Technical 
+Technical
 -------------------------
 
 - `python-bitshares: How to derive transaction ids <https://steemit.com/bitshares/@xeroc/python-bitshares-how-to-derive-transaction-ids>`_  by @xeroc
@@ -15,13 +15,13 @@ Technical
 - `Bitshares ElasticSearch Wrapper and Swagger (05/2018) <https://steemit.com/bitshares/@oxarbitrage/bitshares-elasticsearch-wrapper-and-swagger>`_   by @oxarbitrage
 - `Slides How to create smart contracts in graphene blockchains (05/2018) <https://steemit.com/bitshares/@oxarbitrage/slides-how-to-create-smart-contracts-in-graphene-blockchains>`_   by @oxarbitrage
 - `DNA smart-coins and the pricefeed (05/2018) <https://steemit.com/bitshares/@clockwork/bitshares-smart-coins-and-the-pricefeed>`_  by @cloclwork
-- `Steem transaction signing in a nutshell (2016) <https://steemit.com/steem/@xeroc/steem-transaction-signing-in-a-nutshell>`_  by @xeroc 
+- `Steem transaction signing in a nutshell (2016) <https://steemit.com/steem/@xeroc/steem-transaction-signing-in-a-nutshell>`_  by @xeroc
 
 --------------
 
 - `Bitshares: Margin Trading and Swap contracts on the DEX discussion (2018) <https://medium.com/@George_harrap/bitshares-margin-trading-and-swap-contracts-on-the-dex-discussion-3856b00a8349>`_ : by George Harrap
 - `Detailed mechanism of global settlement (black swan) and reviving of bitAssets (2018) <https://steemit.com/bitshares/@haruka/detailed-mechanism-of-global-settlement-black-swan-and-reviving-of-bitassets>`_ : by @haruka
-- `DPOS Consensus Algorithm - The Missing White Paper (2017) <https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper>`_ : by dantheman 
+- `DPOS Consensus Algorithm - The Missing White Paper (2017) <https://steemit.com/dpos/@dantheman/dpos-consensus-algorithm-this-missing-white-paper>`_ : by dantheman
 - `How the issuer of an IOU/UIA can transfer assets back to himself (2016) <https://steemit.com/bitshares/@xeroc/how-the-issuer-of-an-iouuia-can-transfer-assets-back-to-himself>`_  : by xeroc
 - `Howto: An Introduction to Python-DNA (01/2018) <https://steemit.com/python/@full-steem-ahead/howto-an-introduction-to-python-bitshares>`_  : by @full-steem-ahead
 - `Howto: Using Nginx to Load Balance Servers Part 2 (08/2017) <https://steemit.com/witness-category/@full-steem-ahead/howto-using-nginx-to-load-balance-servers-part-2>`_  : by @full-steem-ahead
@@ -43,7 +43,7 @@ more...
 
 
 * `The total noobs guide to Bitshares <https://whaleshares.io/bitshares/@funkit/the-total-noobs-guide-to-bitshares>`_ : by @funkit
-* `Market Pegged Asset (MPA) backing collateral layers <https://bitsharestalk.io/btstalk-dev/@customminer/market-pegged-asset-mpa-backing-collateral-layers>`_ : by @customminer  
+* `Market Pegged Asset (MPA) backing collateral layers <https://bitsharestalk.io/btstalk-dev/@customminer/market-pegged-asset-mpa-backing-collateral-layers>`_ : by @customminer
 * `BITSHARES HELP DESK & SUPPORT RESOURCES - How to get answers fast! OpenLedger included! <https://steemit.com/bitshares/@intelliguy/bitshares-help-desk-and-support-resources-how-to-get-answers-fast-openledger-included>`_ : by intelliguy
 * `DNA Enterprise Alliance - Part 1 - Alice's Hero Hub <https://steemit.com/bitshares/@stan/bitshares-enterprise-alliance-part-1-alice-s-hero-hub>`_ : by @stan
 * `How IOUs like open.BTC work on the DEX .... and yesterday's half billion dollar CEX heist (01/2018) <https://steemit.com/bitshares/@apasia.tech/how-ious-like-open-btc-work-on-the-dex-and-yesterday-s-half-billion-dollar-cex-heist>`_ by @apasia.tech

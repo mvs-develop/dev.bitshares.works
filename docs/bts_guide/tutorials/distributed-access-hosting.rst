@@ -3,14 +3,14 @@
 
 Distributed Access to the DNA Decentralized  Exchange (DEX)
 =================================================================
-   
+
 I hope to encourage and promote more access points and backup WebSocket (wss) gateways for DNA. This is the logical progression from `Run your own decentralized
 exchange <https://steemit.com/bitshares/@ihashfury/run-your-own-decentralised-exchange>`__
 post.
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 DNA node setup
@@ -20,11 +20,11 @@ DNA node setup
 
 Once you have a full node setup, you can allow DNA shareholders
 secure access to your server to trade and check their accounts by
-following these steps. 
+following these steps.
 
-* A DNS Alias (CNAME) is required to point to your server ip address. 
-* See `dyn.com <http://dyn.com>`__ for DNS Alias setup. 
-* You may have to wait a few days for the DNS to work through the internet. 
+* A DNS Alias (CNAME) is required to point to your server ip address.
+* See `dyn.com <http://dyn.com>`__ for DNS Alias setup.
+* You may have to wait a few days for the DNS to work through the internet.
 * Please change `altcap.io <http://altcap.io>`__ to your DNS alias in the examples below.
 
 
@@ -381,8 +381,8 @@ You can also check how secure your new web server is compared to your bank. Add 
 
     https://www.ssllabs.com/ssltest/analyze.html?d=altcap.io
 
-Now change altcap.io to your local bank's domain name in the link and post the results below. 
-		
+Now change altcap.io to your local bank's domain name in the link and post the results below.
+
 |
 
 --------------------

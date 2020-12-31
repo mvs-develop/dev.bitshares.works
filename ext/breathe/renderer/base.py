@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 class RenderContext(object):
     def __init__(
         self, node_stack, mask_factory, directive_args, domain="", child=False

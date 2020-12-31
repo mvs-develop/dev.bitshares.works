@@ -7,9 +7,9 @@ DNA Development: Zero to Sixty in 30 Minutes or Less
 
 .. contents:: Table of Contents
    :local:
-   
+
 -----------------
-   
+
 Introduction to DNA
 ============================
 
@@ -19,8 +19,8 @@ DNA is a smart contracting platform specifically targeted at financial contracts
 
 This document is intended to give new DNA developers an introduction to the DNA software. Readers are expected to be familiar with C++ software development in general, but not with DNA specifically. This document will walk readers through the code repository structure and how to build the software; describe the individual libraries and executables and their purposes; provide a guide on starting a local testnet blockchain for development; and finally, examine how the contracts work and discuss how to create or modify DNA smart contracts.
 
-|  
-  
+|
+
 The DNA Repository
 ============================
 The official DNA repository can be found at https://github.com/bitshares/bitshares-core/

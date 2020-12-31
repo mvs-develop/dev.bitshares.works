@@ -16,12 +16,12 @@ Tools
 ===========================
 
 * `Template Plugin - (create a demo API hello) <https://github.com/bitshares/bitshares-core/blob/hello_plugin/libraries/plugins/hello/README.md>`_
- 
-  - A template for the use of the plugin system to create a new API. 
+
+  - A template for the use of the plugin system to create a new API.
 
 
 
 
-	
+
 |
 

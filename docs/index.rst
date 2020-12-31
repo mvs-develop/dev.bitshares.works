@@ -7,11 +7,11 @@
 
     intro/architectures
     intro/environments
-	
-    bts_guide/accounts/index_account	
+
+    bts_guide/accounts/index_account
     components/components
-	
----------	
+
+---------
 
 .. toctree::
     :caption: Development
@@ -22,7 +22,7 @@
     development/index_cli
     api/index_api
     development/testnets
-	
+
 -------
 
 .. toctree::
@@ -33,8 +33,8 @@
 
 ---------
 
-	
-	
+
+
 .. toctree::
     :maxdepth: 2
     :caption: References

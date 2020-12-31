@@ -5,14 +5,14 @@
 db folder - object/index
 *******************************************
 
-This section shows each (db object/index information) process file in the db folder.  
+This section shows each (db object/index information) process file in the db folder.
 
 File directory: (../ibraries/db/include/graphene/db/xxxxx.hhp)
 
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 
@@ -26,16 +26,16 @@ index.cpp
 save_undo
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    void base_primary_index::save_undo( const object& obj )
    { _db.save_undo( obj ); }
 
-on_add   
----------------------------------		
-		
-.. code-block:: cpp 
-   
+on_add
+---------------------------------
+
+.. code-block:: cpp
+
    void base_primary_index::on_add( const object& obj )
    {
       _db.save_undo_add( obj );
@@ -43,17 +43,17 @@ on_add
    }
 
 on_remove
----------------------------------		
-		
-.. code-block:: cpp 
+---------------------------------
+
+.. code-block:: cpp
 
    void base_primary_index::on_remove( const object& obj )
    { _db.save_undo_remove( obj ); for( auto ob : _observers ) ob->on_remove( obj ); }
 
-on_modify   
----------------------------------		
-		
-.. code-block:: cpp 
+on_modify
+---------------------------------
+
+.. code-block:: cpp
 
    void base_primary_index::on_modify( const object& obj )
    {for( auto ob : _observers ) ob->on_modify(  obj ); }
@@ -65,7 +65,7 @@ on_modify
 object_database.cpp
 ===============================
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	object_database::object_database()
 	:_undo_db(*this)
@@ -79,34 +79,34 @@ object_database.cpp
 	void object_database::close()
 	{
 	}
-	
-	
+
+
 **object_database**
 
 find_object
----------------------------------		
-		
-.. code-block:: cpp 
+---------------------------------
+
+.. code-block:: cpp
 
 	const object* object_database::find_object( object_id_type id )const
 	{
 	   return get_index(id.space(),id.type()).find( id );
 	}
 
-get_object	
----------------------------------		
-		
-.. code-block:: cpp 
-	
+get_object
+---------------------------------
+
+.. code-block:: cpp
+
 	const object& object_database::get_object( object_id_type id )const
 	{
 	   return get_index(id.space(),id.type()).get( id );
 	}
 
-get_index	
----------------------------------		
-		
-.. code-block:: cpp 
+get_index
+---------------------------------
+
+.. code-block:: cpp
 
 	const index& object_database::get_index(uint8_t space_id, uint8_t type_id)const
 	{
@@ -117,11 +117,11 @@ get_index
 	   return *tmp;
 	}
 
-	
-get_mutable_index	
----------------------------------		
-		
-.. code-block:: cpp 
+
+get_mutable_index
+---------------------------------
+
+.. code-block:: cpp
 
 	index& object_database::get_mutable_index(uint8_t space_id, uint8_t type_id)
 	{
@@ -132,11 +132,11 @@ get_mutable_index
 	   return *idx;
 	}
 
-flush	
----------------------------------		
-		
-.. code-block:: cpp 
-	
+flush
+---------------------------------
+
+.. code-block:: cpp
+
 	void object_database::flush()
 	{
 	//   ilog("Save object_database in ${d}", ("d", _data_dir));
@@ -156,11 +156,11 @@ flush
 	   fc::remove_all( _data_dir / "object_database.old" );
 	}
 
-wipe	
----------------------------------		
-		
-.. code-block:: cpp 
-	
+wipe
+---------------------------------
+
+.. code-block:: cpp
+
 	void object_database::wipe(const fc::path& data_dir)
 	{
 	   close();
@@ -169,11 +169,11 @@ wipe
 	   ilog("Done wiping object databse.");
 	}
 
-open	
----------------------------------		
-		
-.. code-block:: cpp 
-	
+open
+---------------------------------
+
+.. code-block:: cpp
+
 	void object_database::open(const fc::path& data_dir)
 	{ try {
 	   _data_dir = data_dir;
@@ -192,42 +192,42 @@ open
 	} FC_CAPTURE_AND_RETHROW( (data_dir) ) }
 
 
-pop_undo	
----------------------------------		
-		
-.. code-block:: cpp 
-	
+pop_undo
+---------------------------------
+
+.. code-block:: cpp
+
 	void object_database::pop_undo()
 	{ try {
 	   _undo_db.pop_commit();
 	} FC_CAPTURE_AND_RETHROW() }
 
-	
-save_undo	
----------------------------------		
-		
-.. code-block:: cpp 
-	
+
+save_undo
+---------------------------------
+
+.. code-block:: cpp
+
 	void object_database::save_undo( const object& obj )
 	{
 	   _undo_db.on_modify( obj );
 	}
 
-save_undo_add	
----------------------------------		
-		
-.. code-block:: cpp 
-	
+save_undo_add
+---------------------------------
+
+.. code-block:: cpp
+
 	void object_database::save_undo_add( const object& obj )
 	{
 	   _undo_db.on_create( obj );
 	}
 
-save_undo_remove	
----------------------------------		
-		
-.. code-block:: cpp 
-	
+save_undo_remove
+---------------------------------
+
+.. code-block:: cpp
+
 	void object_database::save_undo_remove(const object& obj)
 	{
 	   _undo_db.on_remove( obj );
@@ -241,7 +241,7 @@ save_undo_remove
 undo_database.cpp
 ===============================
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void undo_database::enable()  { _disabled = false; }
 	void undo_database::disable() { _disabled = true; }
@@ -250,7 +250,7 @@ undo_database.cpp
 	{
 	   if( _disabled && !force_enable ) return session(*this);
 	   bool disable_on_exit = _disabled  && force_enable;
-	   if( force_enable ) 
+	   if( force_enable )
 		  _disabled = false;
 
 	   while( size() > max_size() )
@@ -264,10 +264,10 @@ undo_database.cpp
 
 **undo_database**
 
-on_create	
+on_create
 -------------------------------------
-	
-.. code-block:: cpp 
+
+.. code-block:: cpp
 
 	void undo_database::on_create( const object& obj )
 	{
@@ -282,12 +282,12 @@ on_create
 		  state.old_index_next_ids[index_id] = obj.id;
 	   state.new_ids.insert(obj.id);
 	}
-	
-	
-on_modify	
+
+
+on_modify
 -------------------------------------
-	
-.. code-block:: cpp 
+
+.. code-block:: cpp
 
 	void undo_database::on_modify( const object& obj )
 	{
@@ -302,12 +302,12 @@ on_modify
 	   if( itr != state.old_values.end() ) return;
 	   state.old_values[obj.id] = obj.clone();
 	}
-	
-	
-on_remove	
+
+
+on_remove
 -------------------------------------
-	
-.. code-block:: cpp 
+
+.. code-block:: cpp
 
 	void undo_database::on_remove( const object& obj )
 	{
@@ -330,12 +330,12 @@ on_remove
 	   if( state.removed.count(obj.id) ) return;
 	   state.removed[obj.id] = obj.clone();
 	}
-	
-	
-undo	
+
+
+undo
 -------------------------------------
-	
-.. code-block:: cpp 
+
+.. code-block:: cpp
 
 	void undo_database::undo()
 	{ try {
@@ -366,12 +366,12 @@ undo
 	   enable();
 	   --_active_sessions;
 	} FC_CAPTURE_AND_RETHROW() }
-	
-	
-merge	
+
+
+merge
 -------------------------------------
-	
-.. code-block:: cpp 
+
+.. code-block:: cpp
 
 	void undo_database::merge()
 	{
@@ -493,24 +493,24 @@ merge
 	   _stack.pop_back();
 	   --_active_sessions;
 	}
-	
-	
-commit	
+
+
+commit
 -------------------------------------
-	
-.. code-block:: cpp 
-	
+
+.. code-block:: cpp
+
 	void undo_database::commit()
 	{
 	   FC_ASSERT( _active_sessions > 0 );
 	   --_active_sessions;
 	}
-	
-	
-pop_commit	
+
+
+pop_commit
 -------------------------------------
-	
-.. code-block:: cpp 
+
+.. code-block:: cpp
 
 	void undo_database::pop_commit()
 	{
@@ -549,13 +549,13 @@ pop_commit
 	   }
 	   enable();
 	}
-	
-	
+
+
 head
 -------------------------------------
-	
-.. code-block:: cpp 
-	
+
+.. code-block:: cpp
+
 	const undo_state& undo_database::head()const
 	{
 	   FC_ASSERT( !_stack.empty() );
@@ -567,7 +567,7 @@ head
 
 -------------------
 
-generic_index.hpp 
+generic_index.hpp
 ===============================
 
 
@@ -576,7 +576,7 @@ generic_index.hpp
 index.hpp
 ===============================
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class object_database;
    using fc::path;
@@ -586,7 +586,7 @@ index_observer
 
 * used to get callbacks when objects change
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class index_observer
    {
@@ -600,16 +600,16 @@ index_observer
          virtual void on_modify( const object& obj ){}
    };
 
-   
+
 index
 ----------------------------
 
 * abstract base class for accessing objects indexed in various ways.
 * All indexes assume that there exists an object ID space that will grow forever in a seqential manner.  These IDs are used to identify the index, type, and instance of the object.
-* Items in an index can only be modified via a call to modify and all references to objects outside of that callback are const references. 
+* Items in an index can only be modified via a call to modify and all references to objects outside of that callback are const references.
 * Most implementations will probably be some form of boost::multi_index_container which means that they can covnert a reference to an object to an iterator.  When at all possible save a pointer/reference to your objects rather than constantly looking them up by ID.
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class index
    {
@@ -679,12 +679,12 @@ index
          virtual void               object_from_variant( const fc::variant& var, object& obj, uint32_t max_depth )const = 0;
          virtual void               object_default( object& obj )const = 0;
    };
-   
+
 
 secondary_index
-------------------------------------   
-   
-.. code-block:: cpp 
+------------------------------------
+
+.. code-block:: cpp
 
    class secondary_index
    {
@@ -695,14 +695,14 @@ secondary_index
          virtual void about_to_modify( const object& before ){};
          virtual void object_modified( const object& after  ){};
    };
-  
-  
+
+
 base_primary_index
 ----------------------------------------------
-  
+
 * Defines the common implementation
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class base_primary_index
    {
@@ -750,11 +750,11 @@ base_primary_index
 primary_index
 --------------------------------------
 
-*  Wraps a derived index to intercept calls to create, modify, and remove so that callbacks may be fired and undo state saved. 
+*  Wraps a derived index to intercept calls to create, modify, and remove so that callbacks may be fired and undo state saved.
 * @see http://en.wikipedia.org/wiki/Curiously_recurring_template_pattern
- 
-.. code-block:: cpp 
- 
+
+.. code-block:: cpp
+
    template<typename DerivedIndex>
    class primary_index  : public DerivedIndex, public base_primary_index
    {
@@ -781,7 +781,7 @@ primary_index
          }
 
          virtual void open( const path& db )override
-         { 
+         {
             if( !fc::exists( db ) ) return;
             fc::file_mapping fm( db.generic_string().c_str(), fc::read_only );
             fc::mapped_region mr( fm, fc::read_only, 0, fc::file_size(db) );
@@ -793,7 +793,7 @@ primary_index
             FC_ASSERT( open_ver == get_object_version(), "Incompatible Version, the serialization of objects in this index has changed" );
             try {
                vector<char> tmp;
-               while( true ) 
+               while( true )
                {
                   fc::raw::unpack( ds, tmp );
                   load( tmp );
@@ -801,9 +801,9 @@ primary_index
             } catch ( const fc::exception&  ){}
          }
 
-         virtual void save( const path& db ) override 
+         virtual void save( const path& db ) override
          {
-            std::ofstream out( db.generic_string(), 
+            std::ofstream out( db.generic_string(),
                                std::ofstream::binary | std::ofstream::out | std::ofstream::trunc );
             FC_ASSERT( out );
             auto ver  = get_object_version();
@@ -889,9 +889,9 @@ primary_index
          object_id_type _next_id;
    };
 
-   
+
 -------------------------
- 
+
 object.hpp
 ===============================
 
@@ -905,7 +905,7 @@ object
 * Additionally all objects may be annotated by plugins which wish to maintain additional information to an object.  There can be at most one annotation  per id_space for each object.   An example of an annotation would be tracking extra data not required by validation such as the name and description of a user asset.  By carefully organizing how information is organized and tracked systems can minimize the workload to only that which is necessary to perform their function.
 * @note Do not use multiple inheritance with object because the code assumes a static_cast will work between object and derived types.
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class object
    {
@@ -927,15 +927,15 @@ object
          virtual vector<char>       pack()const = 0;
          virtual fc::uint128        hash()const = 0;
    };
-   
-   
+
+
 abstract_object
------------------------------------- 
-   
+------------------------------------
+
 * Use the Curiously Recurring Template Pattern to automatically add the ability to clone, serialize, and move objects polymorphically.
 * http://en.wikipedia.org/wiki/Curiously_recurring_template_pattern
-   
-.. code-block:: cpp 
+
+.. code-block:: cpp
 
    template<typename DerivedClass>
    class abstract_object : public object
@@ -952,21 +952,21 @@ abstract_object
          }
          virtual variant to_variant()const { return variant( static_cast<const DerivedClass&>(*this), MAX_NESTING ); }
          virtual vector<char> pack()const  { return fc::raw::pack( static_cast<const DerivedClass&>(*this) ); }
-         virtual fc::uint128  hash()const  {  
+         virtual fc::uint128  hash()const  {
              auto tmp = this->pack();
              return fc::city_hash_crc_128( tmp.data(), tmp.size() );
          }
    };
-   
+
    typedef flat_map<uint8_t, object_id_type> annotation_map;
- 
-   
+
+
 annotated_object
 -----------------------------------
 
 * An object that is easily extended by providing pointers to other objects, one for each space.
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    template<typename DerivedClass>
    class annotated_object : public abstract_object<DerivedClass>
@@ -990,7 +990,7 @@ annotated_object
           */
          annotation_map annotations;
    };
-  
+
 
 -------------------------
 
@@ -1001,7 +1001,7 @@ object_database
 -----------------------------------
 * maintains a set of indexed objects that can be modified with multi-level rollback support
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class object_database
    {
@@ -1125,9 +1125,9 @@ object_database
             return static_cast<IndexType&>( get_mutable_index( IndexType::object_type::space_id, IndexType::object_type::type_id ) );
          }
          template<typename T>
-         index& get_mutable_index()                  
+         index& get_mutable_index()
 		 { return get_mutable_index(T::space_id,T::type_id); }
-         index& get_mutable_index(object_id_type id) 
+         index& get_mutable_index(object_id_type id)
 		 { return get_mutable_index(id.space(),id.type());   }
          index& get_mutable_index(uint8_t space_id, uint8_t type_id);
 
@@ -1149,7 +1149,7 @@ object_database
 object_id.hpp
 ===============================
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    using  std::shared_ptr;
    using  std::unique_ptr;
@@ -1158,12 +1158,12 @@ object_id.hpp
    using  fc::variant;
    using  fc::unsigned_int;
    using  fc::signed_int;
-   
-   
+
+
 object_id_type
 -----------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    struct object_id_type
    {
@@ -1217,13 +1217,13 @@ object_id_type
 
       uint64_t       number;
    };
-   
+
 
 
 object_id
 ----------------------------------------
-   
-.. code-block:: cpp 
+
+.. code-block:: cpp
 
    class object;
    class object_database;
@@ -1281,9 +1281,9 @@ simple_index
 
 * A simple index uses a vector<unique_ptr<T>> to store data
 * This index is preferred in situations where the data will never be removed from main memory and when access by ID is the only kind of access that is necessary.
-   
-.. code-block:: cpp 
- 
+
+.. code-block:: cpp
+
    template<typename T>
    class simple_index : public index
    {
@@ -1395,17 +1395,17 @@ simple_index
       private:
          vector< unique_ptr<object> > _objects;
    };
- 
+
 
 -------------------------
- 
+
 undu_database.hpp
 ===============================
 
 undo_state
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    using std::unordered_map;
    using fc::flat_set;
@@ -1425,7 +1425,7 @@ undo_database
 * tracks changes to the state and allows changes to be undone
 
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class undo_database
    {
@@ -1524,8 +1524,8 @@ undo_database
          object_database&        _db;
          size_t                  _max_size = 256;
    };
-   
-   
+
+
 
 
 

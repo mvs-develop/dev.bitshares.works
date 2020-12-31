@@ -45,7 +45,7 @@ Producing a Feed
 ------------------------
 
 We have a distinct tutorial that describes how feed are can be published.
- 
+
 * :ref:`How can I publish a price feed (CLI)? <publish-feed>`
 
 |

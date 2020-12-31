@@ -4,13 +4,13 @@
 1.API Guide
 ========================
 
-DNA APIs are available by using Remote Procedure Calls (RPC) and WebSocket Calls & Notifications. All API calls are formatted in JSON and return JSON only. We look into the APIs' every feature. DNA-Core API references locate in the `Doxygen documentation. <https://bitshares.org/doxygen/index.html>`_  Also, you can find the APIs' classes, components, and elements information looking into "Graphene - Namespaces" section. 
+DNA APIs are available by using Remote Procedure Calls (RPC) and WebSocket Calls & Notifications. All API calls are formatted in JSON and return JSON only. We look into the APIs' every feature. DNA-Core API references locate in the `Doxygen documentation. <https://bitshares.org/doxygen/index.html>`_  Also, you can find the APIs' classes, components, and elements information looking into "Graphene - Namespaces" section.
 
 .. contents:: Table of Contents
    :local:
-   
+
 ------------
-   
+
 
 1.1. APIs Categories
 ------------------------------
@@ -19,7 +19,7 @@ APIs are separated into two categories, namely
 
 * **Blockchain APIs** -- It is used to query blockchain data (account, assets, trading history, etc). Besides data stores in the blockchain itself (blocks, transactions, etc. ..), higher level objects (such as accounts, balances, etc. …) can be retrieved through the full node’s database.
 
-* **Wallet API** -- It interact with the blockchain to operate. 
+* **Wallet API** -- It interact with the blockchain to operate.
 The wallet (cli-wallet)  has your private keyss and signing capabilities.  It requires a running full node (witness node) (not necessarily locally) and connects to it. Because the wallet does not offer P2P or blockchain capabilities directly.
 
 In contrast to many existing ecosystems, there is no centralized service that lets you access private API calls after successful authentication. Instead, your run your wallet (and optionally a full node) **locally** and are with **your own API service provider**. This obviously has the advantage that you don’t need to give access to your funds to any third party but has the slight disadvantage that you need to run a local `wallet application`, that however does not download the whole blockchain for verification. If you run a sensitive business, we recommend to also run a local full node to download and verify the blockchain and interface your wallet with your local full node.
@@ -27,7 +27,7 @@ In contrast to many existing ecosystems, there is no centralized service that le
 
 ----------------------------------
 
-1.2. Public Full Node information 
+1.2. Public Full Node information
 -----------------------------
 
 * Here is the latest list of `DNA Public Full Nodes (apiConfig) <https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js>`_
@@ -47,8 +47,8 @@ Which blockchain network you connect to depends on the configuration of the full
         :alt: DNA
         :width: 600px
         :align: center
-		
-		
+
+
 For sensitive businesses that want to ensure that deposits are irreversible, we recommend the use of the :ref:`High Security Setup <secure-network-configuration>`. That contains a **delayed node** to pass only irreversible transactions to the API.
 
 .. Note:: All API calls are formated in JSON and return JSON only.
@@ -80,19 +80,19 @@ For sensitive businesses that want to ensure that deposits are irreversible, we 
 
 **API Calls**
 
-  * All API calls are formatted in JSON and return JSON only. 
-  * The set of available calls depends on whether you connected to a full node (witness_node) or the wallet (CLI-wallet). Both support RPC-JSON.   
+  * All API calls are formatted in JSON and return JSON only.
+  * The set of available calls depends on whether you connected to a full node (witness_node) or the wallet (CLI-wallet). Both support RPC-JSON.
   * The full node also supports the websocket (statefull) protocol with notifications.
   * The full node offers a set of API(s), of which only the database calls are available via RPC. Calls that are restricted by default (i.e. ``network_node_api``) or have been restricted by configuration are not accessible via RPC because a statefull protocol (websocket) is required for login.
-  * The CLI- wallet can open a RPC port so that you can interface your application with it. You have the choices of 
+  * The CLI- wallet can open a RPC port so that you can interface your application with it. You have the choices of
 
-    - websocket RPC via the ``-r`` parameter, and 
+    - websocket RPC via the ``-r`` parameter, and
     - HTTP RPC via the ``-H`` parameter.
 
 **Call methods**
 
   * Remote Procedure Calls -- In Graphene, RPC calls are **state-less** and accessible via regular JSON formated RPC-HTTP-calls.
-  * Websocket Calls -- In Graphene, Websocket calls are **stateful** and accessible via regular JSON formated websocket connection. 
+  * Websocket Calls -- In Graphene, Websocket calls are **stateful** and accessible via regular JSON formated websocket connection.
 
 **API Access Restrictions**
 

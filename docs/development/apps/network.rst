@@ -2,14 +2,14 @@
 .. _network-setups:
 
 *****************************************
-Network and Wallet Configuration 
+Network and Wallet Configuration
 *****************************************
 
 .. contents:: Table of Contents
     :depth: 2
 
 --------------
-	
+
 Components
 ========================
 

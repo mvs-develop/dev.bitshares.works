@@ -10,7 +10,7 @@ is capable of maintaining price parity with a globally adopted currency
 resistant commerce. This can be achieved by DNA' market pegged
 assets (MPA), a new type of freely traded digital asset whose value is
 meant to track the value of a conventional underlying asset by means of
-contracts for difference (CFD). 
+contracts for difference (CFD).
 
 Instead of creating a UIA where the full control over supply is in the
 hands of the issuer, we can also create a **Market Pegged Asset** (MPA)

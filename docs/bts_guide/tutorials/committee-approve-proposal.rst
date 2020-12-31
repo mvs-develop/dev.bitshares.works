@@ -24,7 +24,7 @@ expired, executed or within the preview period. This is done by:::
   >>> approve_proposal <fee-paying-account> <proposal-id> {"active_approvals_to_remove" : ["<MY-COMMITTEE-MEMBER>"]} true
 
 Note that we now use ``active_approvals_to_remove`` instead of ``active_approvals_to_add``.
-		
+
 |
 
 --------------------

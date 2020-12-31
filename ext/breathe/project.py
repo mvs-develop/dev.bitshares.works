@@ -1,6 +1,7 @@
-from .exception import BreatheError
-
+# -*- coding: utf-8 -*-
 import os
+
+from .exception import BreatheError
 
 
 class ProjectError(BreatheError):

@@ -24,13 +24,13 @@ About Graphene Smart Contracts
   - Example 1: The transfer of asset from one account to another is one operation and a smart contract.
   - Example 2: An escrow smart contract is a group of operations(escrow_create, escrow_approve, escrow_dispute and escrow_release)
   - Example 3: A worker proposal is a smart contract consisting of several operations and make use of the maintence interval to automatically do stuff.
-  
-* Graphene blockchains as a whole have several things in common.  
+
+* Graphene blockchains as a whole have several things in common.
 
 Development of new Smart Contracts
 =====================================
 
-You would need... 
+You would need...
 
 * C++ skills for DNA-Core development
 * Have your idea and Business Plan
@@ -51,7 +51,7 @@ Sample: Escrow Smart Contract flow
 **Happy Path**
 
 .. image:: ../../_static/output/escrow-1.png
-        :alt: Happy Path 
+        :alt: Happy Path
         :width: 800px
         :align: center
 
@@ -60,7 +60,7 @@ Sample: Escrow Smart Contract flow
 **Dispute path**
 
 .. image:: ../../_static/output/escrow-2.png
-        :alt: Dispute path 
+        :alt: Dispute path
         :width: 800px
         :align: center
 
@@ -69,13 +69,13 @@ Sample: Escrow Smart Contract flow
 **Expiration path**
 
 .. image:: ../../_static/output/escrow-3.png
-        :alt: Expiration path 
+        :alt: Expiration path
         :width: 800px
         :align: center
 
-		
+
 -----------
-		
+
 Development Steps
 ========================
 
@@ -84,7 +84,7 @@ Development Steps
 ^^^^^^^^^^^^^^^^^^^
 
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	class escrow_object : public graphene::db::abstract_object<escrow_object> {
 	public:
@@ -106,7 +106,7 @@ Development Steps
 
 **Object Index**
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	struct by_from_id;
 	typedef multi_index_container<
@@ -124,12 +124,12 @@ Development Steps
 	typedef generic_index< escrow_object, escrow_object_index_type > escrow_index;
 
 
-	
+
 **Search Calls**
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
-	const escrow_object& database::get_escrow( account_id_type account, uint32_t escrow_id )const 
+	const escrow_object& database::get_escrow( account_id_type account, uint32_t escrow_id )const
 	{
 	   const auto& escrow_idx = get_index_type<escrow_index>().indices().get<by_from_id>();
 	   auto itr = escrow_idx.find( boost::make_tuple(account,escrow_id) );
@@ -137,20 +137,20 @@ Development Steps
 	   return *itr;
 	}
 
-|	
+|
 
 3. Define Operations
 ^^^^^^^^^^^^^^^^^^^
 
-* Smart contracts in graphene are 1 or a group of operations. 
+* Smart contracts in graphene are 1 or a group of operations.
 * In the case of the sample escrow contract we are talking about **four independent operations** that together make the escrow smart contract.
 
 
 **3a. Escrow Create Operation**
 
-.. code-block:: cpp 
-  
-	struct escrow_create_operation : public base_operation 
+.. code-block:: cpp
+
+	struct escrow_create_operation : public base_operation
 	{
 	   uint32_t                escrow_id;
 	   account_id_type         sender;
@@ -164,9 +164,9 @@ Development Steps
 
 
 **3b. Escrow Approve Operation**
-  
-.. code-block:: cpp 
-    
+
+.. code-block:: cpp
+
 	struct escrow_approve_operation : public base_operation
 	{
 	   account_id_type         sender;
@@ -178,12 +178,12 @@ Development Steps
 	   void validate()const;
 	};
 
- 
+
 **3c. Escrow Dispute Operation**
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
-	struct escrow_dispute_operation : public base_operation 
+	struct escrow_dispute_operation : public base_operation
 	{
 	   account_id_type         from;
 	   account_id_type         to;
@@ -192,13 +192,13 @@ Development Steps
 	   account_id_type         who;
 	   void  validate()const;
 	};
-		
- 
+
+
 **3d. Escrow Release Operation**
-  
-.. code-block:: cpp 
-		
-	struct escrow_release_operation : public base_operation 
+
+.. code-block:: cpp
+
+	struct escrow_release_operation : public base_operation
 	{
 	   account_id_type         sender;
 	   account_id_type         receiver;
@@ -217,26 +217,26 @@ Development Steps
 4. Create Validations
 ^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
-	void escrow_transfer_operation::validate()const 
+	void escrow_transfer_operation::validate()const
 	{
 	   FC_ASSERT( amount.amount > 0 );
 	   FC_ASSERT( sender != receiver );
-	   FC_ASSERT( sender != agent && receiver != agent );   
+	   FC_ASSERT( sender != agent && receiver != agent );
 	}
 
-	void escrow_approve_operation::validate()const 
+	void escrow_approve_operation::validate()const
 	{
 	   FC_ASSERT( who == sender || who == agent );
 	}
 
-	void escrow_dispute_operation::validate()const 
+	void escrow_dispute_operation::validate()const
 	{
 	   FC_ASSERT( who == sender || who == receiver );
 	}
 
-	void escrow_release_operation::validate()const 
+	void escrow_release_operation::validate()const
 	{
 	   FC_ASSERT( who == sender|| who == receiver|| who == agent);
 	   FC_ASSERT( release_receiver == from || release_receiver == to);
@@ -250,9 +250,9 @@ Development Steps
 5. Create Initialize Evaluators and Index
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
-	void 
+	void
 	database::initialize_evaluators()
 	{
 	   ...
@@ -262,7 +262,7 @@ Development Steps
 	   register_evaluator<escrow_release_evaluator>();
 	   ...
 	}
-	void 
+	void
 	database::initialize_indexes()
 	{
 	   ...
@@ -282,15 +282,15 @@ Development Steps
 
 
 .. image:: ../../_static/output/escrow-4.png
-        :alt: Create Evaluator 
+        :alt: Create Evaluator
         :width: 800px
         :align: center
 
-		
-		
+
+
 **6a. Escrow Create Evaluator**
-  
-.. code-block:: cpp 
+
+.. code-block:: cpp
 
 	void_result escrow_create_evaluator::do_evaluate(const escrow_create_operation& o)
 	{
@@ -300,7 +300,7 @@ Development Steps
 	}
 
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	object_id_type escrow_transfer_evaluator::do_apply(const escrow_transfer_operation& o)
 	{
@@ -312,17 +312,17 @@ Development Steps
 			 esc.receiver               = o.receiver;
 			 esc.agent                  = o.agent;
 			 esc.amount                 = o.amount;
-			 esc.escrow_expiration      = o.escrow_expiration;  
+			 esc.escrow_expiration      = o.escrow_expiration;
 	   });
 	   return  esc.id;
-	} 
+	}
 	FC_CAPTURE_AND_RETHROW( (o) )
 	}
-	  
-	  
+
+
 **6b. Escrow Approve Evaluator**
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void_result escrow_approve_evaluator::do_evaluate(const escrow_approve_operation& o)
 	{
@@ -331,8 +331,8 @@ Development Steps
 	   FC_ASSERT( escrow.agent == o.agent, "op 'agent' does not match escrow 'agent'" );
 	   return void_result();
 	}
-	  
-.. code-block:: cpp 
+
+.. code-block:: cpp
 
 	void_result escrow_approve_evaluator::do_apply(const escrow_approve_operation& o)
 	{
@@ -345,7 +345,7 @@ Development Steps
 			 if( !reject_escrow )
 			 {
 				db().modify( escrow, [&]( escrow_object& esc )
-				{  
+				{
 				   esc.receiver_approved = true;
 				});
 			  }
@@ -366,11 +366,11 @@ Development Steps
 	}
 
 
-	  
+
 **6c. Escrow Dispute Evaluator**
 
-.. code-block:: cpp 
-	  
+.. code-block:: cpp
+
 	void_result escrow_dispute_evaluator::do_evaluate(const escrow_dispute_operation& o)
 	{
 	   const auto& e = db().get_escrow( o.sender, o.escrow_id );
@@ -382,26 +382,26 @@ Development Steps
 	}
 
 
-.. code-block:: cpp 
-	
+.. code-block:: cpp
+
 	void_result escrow_dispute_evaluator::do_apply(const escrow_dispute_operation& o)
 	{
-	   try 
+	   try
 	   {
 		  const auto& e = db().get_escrow( o.sender, o.escrow_id );
 		  db().modify( e, [&]( escrow_object& esc ){
 			 esc.disputed = true;
 		  });
 		  return void_result();
-	} 
+	}
 	FC_CAPTURE_AND_RETHROW( (o) );
 	}
 
-  
+
 **6d. Escrow Release Evaluator**
 
-.. code-block:: cpp 
-	  
+.. code-block:: cpp
+
 	void_result escrow_release_evaluator::do_evaluate(const escrow_release_operation& o)
 	{
 	   const auto& e = db().get_escrow( o.sender, o.escrow_id );
@@ -435,8 +435,8 @@ Development Steps
 	}
 
 
-.. code-block:: cpp 
-	  
+.. code-block:: cpp
+
 	void_result escrow_release_evaluator::do_apply(const escrow_release_operation& o)
 	{
 	   try {
@@ -451,20 +451,20 @@ Development Steps
 			 db().remove( e );
 		  }
 		  return void_result();
-	} 
+	}
 	FC_CAPTURE_AND_RETHROW( (o) )
 	}
 
 
 ------------------------
 
-| 
- 
+|
+
 7. Create Automatic Actions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::perform_chain_maintenance(const signed_block& next_block, const global_property_object& global_props)
 	{
@@ -482,7 +482,7 @@ Development Steps
 8. Create Hardfork Guards
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void_result escrow_release_evaluator ::do_evaluate(const escrow_release_operation& o)
 	{
@@ -514,13 +514,13 @@ Development Steps
 	[100%] Built target cli_test
 	[100%] Linking CXX executable generate_empty_blocks
 	[100%] Built target generate_empty_blocks
-	$ 
+	$
 
 
 10. Prepare Test Cases
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	BOOST_AUTO_TEST_CASE( escrow_happypath )
 	{
@@ -539,8 +539,8 @@ Development Steps
 	}
 	..
 
-	
-	
+
+
 11. CLI Wallet Calls
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -571,7 +571,7 @@ Development Steps
 
 Contributor:  @oxarbitrage (Alfredo Garcia)
 
-(** :ref:`Resource page <bitshares-community-events>`) 
+(** :ref:`Resource page <bitshares-community-events>`)
 
 |
 

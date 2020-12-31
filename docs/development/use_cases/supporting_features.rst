@@ -1,6 +1,6 @@
 
 ***********************
-Supporting Features  
+Supporting Features
 ***********************
 
 DNA 2.0 offers some features that will make your integration easier and more secure:

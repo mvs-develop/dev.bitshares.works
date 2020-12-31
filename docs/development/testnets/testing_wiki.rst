@@ -9,7 +9,7 @@ Code Coverage Testing
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 * `DNA-Core Test folder on GitHub <https://github.com/bitshares/bitshares-core/tree/master/tests>`_

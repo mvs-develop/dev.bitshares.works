@@ -6,7 +6,7 @@ How to Set up the Faucet
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 In order to allow people who do not have funds yet to enter the system, we need to setup a faucet.
@@ -18,7 +18,7 @@ If you are interested Python-based faucet, check out `Tapin <https://github.com/
 
 
 ----------------
- 
+
 Here, we will also use *mina* as our **deployment tool** for a production installation.
 
 1. Installation of Dependencies
@@ -47,8 +47,8 @@ Also install a decently recent version of Ruby::
     sudo rbenv global 2.2.3
     sudo gem install bundle
 
-	
-2. Get the Source 
+
+2. Get the Source
 --------------------------------------------
 
 ::

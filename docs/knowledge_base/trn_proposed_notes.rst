@@ -51,13 +51,13 @@ Got this message while trying to propose a proposal with an `approve_proposal` o
         {}
         th_a  proposal_evaluator.cpp:54 do_evaluate
 
-		
+
 The issue is probably caused by lack of size checking on `auth.key_auths` before `this line in proposal.cpp <https://github.com/cryptonomex/graphene/blob/2.0.160328/libraries/chain/protocol/proposal.cpp#L92>`_, imo the code could be::
 
     if( auth.key_auths.size() > 0 )
        o.emplace_back( std::move(auth) );
 
-	   
+
 To fix this issue, a hard fork is needed.
 
 * Findings/Result

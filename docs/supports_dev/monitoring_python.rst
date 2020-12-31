@@ -2,7 +2,7 @@
 .. _monitor-account-python:
 
 ***************************************
- Monitoring Account Deposits - Python 
+ Monitoring Account Deposits - Python
 ***************************************
 
 Installation

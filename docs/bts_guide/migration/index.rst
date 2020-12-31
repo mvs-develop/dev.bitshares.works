@@ -16,14 +16,14 @@ assistance for claiming your funds in DNA 2.0.
    what-is-new
    what-changed
    blockchain-transition
-   
+
 For developers
 -----------------------
-   
+
 .. toctree:: 2
-   
+
    howto-exporting-wallet
    howto-importing-wallet
    howto-importing-wallet-remarks
-   
-|   
+
+|

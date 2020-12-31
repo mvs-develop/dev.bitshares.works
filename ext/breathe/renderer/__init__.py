@@ -1,9 +1,10 @@
+# -*- coding: utf-8 -*-
 import textwrap
+
+from docutils import nodes
 
 from ..node_factory import create_node_factory
 from . import sphinxrenderer
-
-from docutils import nodes
 
 
 class DoxygenToRstRendererFactory(object):

@@ -2,7 +2,7 @@
 .. _elastic-search-plugin:
 
 ***********************
-ElasticSearch Plugin 
+ElasticSearch Plugin
 ***********************
 
 ElasticSearch Plugin v1
@@ -13,7 +13,7 @@ The document explains motivations, technical challenges and sample use of a new 
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 Motivation
@@ -83,7 +83,7 @@ Still, a workaround the limitation is available. A ``visitor`` that can be turne
 
 As a poc we also added amount and asset_id of transfer operations to illustrate how easy is to index more data for any competent graphene developer.
 
- 
+
 Hardware needed
 ----------------------------------
 
@@ -134,7 +134,7 @@ in debian::
 
     add-apt-repository "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main"
 
-then:: 
+then::
 
     apt-get update
 
@@ -147,7 +147,7 @@ install java 8::
     apt-get install oracle-java8-installer
 
 
-	
+
 Install ES:
 ----------------
 
@@ -210,9 +210,9 @@ The ES plugin have the following parameters passed by command line::
 
 **parameter**
 
-:elasticsearch-node-url: The url od elasticsearch - default: http://localhost:9200/ 
-:elasticsearch-bulk-replay: The number of lines(ops * 2) to send to database in replay state - default: 10000 
-:elasticsearch-bulk-sync:  The number of lines(ops * 2) to send to database at syncronized state - default: 100 
+:elasticsearch-node-url: The url od elasticsearch - default: http://localhost:9200/
+:elasticsearch-bulk-replay: The number of lines(ops * 2) to send to database in replay state - default: 10000
+:elasticsearch-bulk-sync:  The number of lines(ops * 2) to send to database at syncronized state - default: 100
 :elasticsearch-visitor:   Index visitor additional inside op data - default: false
 :elasticsearch-basic-auth:   Send auth data i nthe form "username:password" - default: no auth ""
 :elasticsearch-index-prefix:   A prefix for your indexes - default: "bitshares-"
@@ -250,9 +250,9 @@ If you only have command line available you can query the database directly thro
 		"failed" : 0
 	  }
 	}
-	root@NC-PH-1346-07:~/bitshares/elastic/bitshares-core# 
+	root@NC-PH-1346-07:~/bitshares/elastic/bitshares-core#
 
-	
+
 360000 records are inserted at this point of the replay in ES, means it is working.
 
 .. Attention:: **Important:** Replay with ES plugin will be always slower than the "save to ram" ``account_history_plugin`` so expect to wait a lot more to be in sync than usual. With the recommended hardware the synchronization can take 30 hours.
@@ -276,9 +276,9 @@ A synchronized node will look like this(screen capture 02/08/2018)::
 		"failed" : 0
 	  }
 	}
-	root@NC-PH-1346-07:~# 
+	root@NC-PH-1346-07:~#
 
-	
+
 .. Attention::  **Important:** We have reports of the need of more than 250G of disk space at 2018-08-02 to save all the history and the logs for them. Please make sure you have enough disk before synchronizing.
 
 
@@ -289,7 +289,7 @@ The plugin creates monthly indexes in the ES database, index names are as ``grap
 
 List your indexes as::
 
-	NC-PH-1346-07:~# curl -X GET 'http://localhost:9200/_cat/indices' 
+	NC-PH-1346-07:~# curl -X GET 'http://localhost:9200/_cat/indices'
 	yellow open bitshares-2018-02 voS1uchzSxqxqkiaKNrEYg 5 1  18984984 0  10.8gb  10.8gb
 	yellow open bitshares-2018-06 D6wyX58lRyG3QOflmPwJZw 5 1  28514130 0  15.6gb  15.6gb
 	yellow open bitshares-2017-10 73xRTA-fSTm479H4kOENuw 5 1   9326346 0   5.2gb   5.2gb
@@ -325,7 +325,7 @@ List your indexes as::
 	yellow open bitshares-2017-04 S1h2eBGiS3quNJU7CqPR7Q 5 1   3316120 0   1.8gb   1.8gb
 	yellow open bitshares-2017-06 0HYkECRbSwGDrmDFof8nqA 5 1  10795239 0     6gb     6gb
 	yellow open bitshares-2015-10 XyKOlrTWSK6vQgdXm8SAtQ 5 1    161004 0  84.5mb  84.5mb
-	root@NC-PH-1346-07:~# 
+	root@NC-PH-1346-07:~#
 
 If you don't see any index here then something is wrong with the bitshares-core node setup with elasticsearch plugin.
 
@@ -337,7 +337,7 @@ By default data indexes will be created with default elasticsearch settings. Nod
 An example of a good index configuration is as follows::
 
   todo
-  
+
 
 Usage
 ==================
@@ -355,13 +355,13 @@ What client side apps can do with this new data is kind of unlimited to client d
 Get operations by account, time and operation type
 -----------------------------------------------------------
 
-References: 
+References:
 
 - https://github.com/bitshares/bitshares-core/issues/358
 - https://github.com/bitshares/bitshares-core/issues/413
-- https://github.com/bitshares/bitshares-core/pull/405 
-- https://github.com/bitshares/bitshares-core/pull/379 
-- https://github.com/bitshares/bitshares-core/pull/430 
+- https://github.com/bitshares/bitshares-core/pull/405
+- https://github.com/bitshares/bitshares-core/pull/379
+- https://github.com/bitshares/bitshares-core/pull/430
 - https://github.com/bitshares/bitshares-ui/issues/68
 
 This is one of the issues that has been requested constantly. It can be easily queried with ES plugin by calling the _search endpoint doing:::
@@ -387,8 +387,8 @@ https://github.com/bitshares/bitshares-core/issues/61
 	curl -X GET 'http://localhost:9200/bitshares-*/data/_search?pretty=true' -H 'Content-Type: application/json' -d '
 	{
 		"query" : {
-			"bool" : { "must" : [{"term": { "account_history.account.keyword": "1.2.356589"}}, {"range": {"block_data.block_num": {"gte": "17824289", "lte": "17824290"}                                                                                                                  
-	}}] }                                                          
+			"bool" : { "must" : [{"term": { "account_history.account.keyword": "1.2.356589"}}, {"range": {"block_data.block_num": {"gte": "17824289", "lte": "17824290"}
+	}}] }
 		}
 	}
 	'
@@ -434,11 +434,11 @@ Going forward
 
 The reader will need to learn more about elasticsearch and lucene query language in order to make more complex queries.
 
-.. Note:: 
+.. Note::
   - All needed can be found at https://www.elastic.co/guide/en/elasticsearch/reference/6.2/index.html
   - Install Elasticsearch with Debian Package:  https://www.elastic.co/guide/en/elasticsearch/reference/7.3/deb.html#deb
-  
-  
+
+
 By the same team of elasticsearch there is a front end named kibana (https://www.elastic.co/products/kibana). It is very easy to install and can do pretty good stuff like getting very detailed stats of the blockchain network.
 
 More visitor code = more indexed data = more filters to use
@@ -467,5 +467,5 @@ Elasticsearch database will listen in localhost and the wrapper in the same mach
 |
 
 Contributor: @oxarbitrage
-    
+
 

@@ -14,7 +14,7 @@ If you have not set up your wallet yet, you can find more information on the :re
    :local:
 
 -------------
-   
+
 General Calls
 ===========================
 help

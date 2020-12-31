@@ -19,8 +19,8 @@ statistics and budget records).
 .. include:: objects_ids.rst
 
 
-   
-   
+
+
 *(This information existed in Blockchain Specifications also)*
 
 The technical specifications of blockchain objects and their serialization is

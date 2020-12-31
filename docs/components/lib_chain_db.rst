@@ -10,7 +10,7 @@ Chain - db_xxx.cpp
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 
@@ -20,7 +20,7 @@ db_balance.cpp
 get_balance
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	asset database::get_balance(account_id_type owner, asset_id_type asset_id) const
 	{
@@ -30,34 +30,34 @@ get_balance
 		  return asset(0, asset_id);
 	   return itr->get_balance();
 	}
-	
-	
-get_balance	
+
+
+get_balance
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	asset database::get_balance(const account_object& owner, const asset_object& asset_obj) const
 	{
 	   return get_balance(owner.get_id(), asset_obj.get_id());
 	}
-	
-	
-to_pretty_string	
+
+
+to_pretty_string
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	string database::to_pretty_string( const asset& a )const
 	{
 	   return a.asset_id(*this).amount_to_pretty_string(a.amount);
 	}
-	
-	
-adjust_balance	
+
+
+adjust_balance
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::adjust_balance(account_id_type account, asset delta )
 	{ try {
@@ -68,7 +68,7 @@ adjust_balance
 	   auto itr = index.find(boost::make_tuple(account, delta.asset_id));
 	   if(itr == index.end())
 	   {
-		  FC_ASSERT( delta.amount > 0, "Insufficient Balance: ${a}'s balance of ${b} is less than required ${r}", 
+		  FC_ASSERT( delta.amount > 0, "Insufficient Balance: ${a}'s balance of ${b} is less than required ${r}",
 					 ("a",account(*this).name)
 					 ("b",to_pretty_string(asset(0,delta.asset_id)))
 					 ("r",to_pretty_string(-delta)));
@@ -88,12 +88,12 @@ adjust_balance
 	   }
 
 	} FC_CAPTURE_AND_RETHROW( (account)(delta) ) }
-	
-	
+
+
 deposit_lazy_vesting
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	optional< vesting_balance_id_type > database::deposit_lazy_vesting(
 	   const optional< vesting_balance_id_type >& ovbid,
@@ -142,12 +142,12 @@ deposit_lazy_vesting
 
 	   return vbo.id;
 	}
-	
-	
-deposit_cashback	
+
+
+deposit_cashback
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::deposit_cashback(const account_object& acct, share_type amount, bool require_vesting)
 	{
@@ -189,12 +189,12 @@ deposit_cashback
 
 	   return;
 	}
-	
-	
-deposit_witness_pay	
+
+
+deposit_witness_pay
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::deposit_witness_pay(const witness_object& wit, share_type amount)
 	{
@@ -234,21 +234,21 @@ db_block
 is_known_block
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	bool database::is_known_block( const block_id_type& id )const
 	{
 	   return _fork_db.is_known_block(id) || _block_id_to_block.contains(id);
 	}
-	
+
 
 
 is_known_transaction
 -------------------------
 * Only return true *if* the transaction has not expired or been invalidated. If this method is called with a VERY old transaction we will return false, they should query things by blocks if they are that old.
 
-.. code-block:: cpp 
-	
+.. code-block:: cpp
+
 	bool database::is_known_transaction( const transaction_id_type& id )const
 	{
 	   const auto& trx_idx = get_index_type<transaction_index>().indices().get<by_trx_id>();
@@ -260,8 +260,8 @@ is_known_transaction
 get_block_id_for_num
 -------------------------
 
-.. code-block:: cpp 
-	
+.. code-block:: cpp
+
 	block_id_type  database::get_block_id_for_num( uint32_t block_num )const
 	{ try {
 	   return _block_id_to_block.fetch_block_id( block_num );
@@ -271,8 +271,8 @@ get_block_id_for_num
 fetch_block_by_id
 -------------------------
 
-.. code-block:: cpp 
-	
+.. code-block:: cpp
+
 	optional<signed_block> database::fetch_block_by_id( const block_id_type& id )const
 	{
 	   auto b = _fork_db.fetch_block( id );
@@ -285,7 +285,7 @@ fetch_block_by_id
 fetch_block_by_number
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	optional<signed_block> database::fetch_block_by_number( uint32_t num )const
 	{
@@ -301,7 +301,7 @@ fetch_block_by_number
 get_recent_transaction
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	const signed_transaction& database::get_recent_transaction(const transaction_id_type& trx_id) const
 	{
@@ -315,7 +315,7 @@ get_recent_transaction
 get_block_ids_on_fork
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	std::vector<block_id_type> database::get_block_ids_on_fork(block_id_type head_of_fork) const
 	{
@@ -338,10 +338,10 @@ get_block_ids_on_fork
 
 push_block
 -------------------------
-* Push block "may fail" in which case every partial change is unwound.  After push block is successful the block is appended to the chain database on disk. 
+* Push block "may fail" in which case every partial change is unwound.  After push block is successful the block is appended to the chain database on disk.
 *  @return true if we switched forks as a result of this push.
-	 
-.. code-block:: cpp 
+
+.. code-block:: cpp
 
 	bool database::push_block(const signed_block& new_block, uint32_t skip)
 	{
@@ -358,8 +358,8 @@ push_block
 	   return result;
 	}
 
-	
-.. code-block:: cpp 
+
+.. code-block:: cpp
 
 	bool database::_push_block(const signed_block& new_block)
 	{ try {
@@ -457,7 +457,7 @@ push_transaction
 * Attempts to push the transaction into the pending queue When called to push a locally generated transaction, set the skip_block_size_check bit on the skip argument. This will allow the transaction to be pushed even if it causes the pending block size to exceed the maximum block size.
 * Although the transaction will probably not propagate further now, as the peers are likely to have their pending queues full as well, it will be kept in the queue to be propagated later when a new block flushes out the pending  queues.
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	processed_transaction database::push_transaction( const signed_transaction& trx, uint32_t skip )
 	{ try {
@@ -470,7 +470,7 @@ push_transaction
 	} FC_CAPTURE_AND_RETHROW( (trx) ) }
 
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	processed_transaction database::_push_transaction( const signed_transaction& trx )
 	{
@@ -501,7 +501,7 @@ push_transaction
 validate_transaction
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	processed_transaction database::validate_transaction( const signed_transaction& trx )
 	{
@@ -513,7 +513,7 @@ validate_transaction
 push_proposal_nesting_guard
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	class push_proposal_nesting_guard {
 	public:
@@ -537,7 +537,7 @@ push_proposal_nesting_guard
 push_proposal
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	processed_transaction database::push_proposal(const proposal_object& proposal)
 	{ try {
@@ -583,7 +583,7 @@ push_proposal
 generate_block
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	signed_block database::generate_block(
 	   fc::time_point_sec when,
@@ -601,8 +601,8 @@ generate_block
 	} FC_CAPTURE_AND_RETHROW() }
 
 
-.. code-block:: cpp 
-	
+.. code-block:: cpp
+
 	signed_block database::_generate_block(
 	   fc::time_point_sec when,
 	   witness_id_type witness_id,
@@ -725,8 +725,8 @@ generate_block
 pop_block
 -------------------------
 * Removes the most recent block from the database and undoes any changes it made.
-	 
-.. code-block:: cpp 
+
+.. code-block:: cpp
 
 	void database::pop_block()
 	{ try {
@@ -746,7 +746,7 @@ pop_block
 clear_pending
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::clear_pending()
 	{ try {
@@ -759,7 +759,7 @@ clear_pending
 push_applied_operation
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	uint32_t database::push_applied_operation( const operation& op )
 	{
@@ -776,8 +776,8 @@ push_applied_operation
 set_applied_operation_result
 ------------------------------
 
-.. code-block:: cpp 
-	
+.. code-block:: cpp
+
 	void database::set_applied_operation_result( uint32_t op_id, const operation_result& result )
 	{
 	   assert( op_id < _applied_ops.size() );
@@ -793,19 +793,19 @@ set_applied_operation_result
 get_applied_operations
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	const vector<optional< operation_history_object > >& database::get_applied_operations() const
 	{
 	   return _applied_ops;
 	}
 
-	
-	
-apply_block	
+
+
+apply_block
 ------------
-	
-.. code-block:: cpp 
+
+.. code-block:: cpp
 
      //////////////////// private methods ///////////////////
 
@@ -828,8 +828,8 @@ apply_block
 	   } );
 	   return;
 	}
-	
-.. code-block:: cpp 
+
+.. code-block:: cpp
 
 	void database::_apply_block( const signed_block& next_block )
 	{ try {
@@ -900,7 +900,7 @@ apply_block
 apply_transaction
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	processed_transaction database::apply_transaction(const signed_transaction& trx, uint32_t skip)
 	{
@@ -912,7 +912,7 @@ apply_transaction
 	   return result;
 	}
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	processed_transaction database::_apply_transaction(const signed_transaction& trx)
 	{ try {
@@ -995,7 +995,7 @@ apply_transaction
 apply_operation
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	operation_result database::apply_operation(transaction_evaluation_state& eval_state, const operation& op)
 	{ try {
@@ -1015,7 +1015,7 @@ apply_operation
 validate_block_header
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	const witness_object& database::validate_block_header( uint32_t skip, const signed_block& next_block )const
 	{
@@ -1023,7 +1023,7 @@ validate_block_header
 	   FC_ASSERT( head_block_time() < next_block.timestamp, "", ("head_block_time",head_block_time())("next",next_block.timestamp)("blocknum",next_block.block_num()) );
 	   const witness_object& witness = next_block.witness(*this);
 
-	   if( !(skip&skip_witness_signature) ) 
+	   if( !(skip&skip_witness_signature) )
 		  FC_ASSERT( next_block.validate_signee( witness.signing_key ) );
 
 	   if( !(skip&skip_witness_schedule_check) )
@@ -1045,7 +1045,7 @@ validate_block_header
 create_block_summary
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::create_block_summary(const signed_block& next_block)
 	{
@@ -1059,7 +1059,7 @@ create_block_summary
 add_checkpoints
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::add_checkpoints( const flat_map<uint32_t,block_id_type>& checkpts )
 	{
@@ -1071,7 +1071,7 @@ add_checkpoints
 before_last_checkpoint
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	bool database::before_last_checkpoint()const
 	{
@@ -1087,13 +1087,13 @@ before_last_checkpoint
 
 db_debug.cpp
 ================================
-* This method dumps the state of the blockchain in a semi-human readable form for the purpose of tracking down funds and mismatches in currency allocation 
+* This method dumps the state of the blockchain in a semi-human readable form for the purpose of tracking down funds and mismatches in currency allocation
 
 
 debug_dump
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::debug_dump()
 	{
@@ -1169,10 +1169,10 @@ debug_dump
 	}
 
 
-debug_apply_update	
+debug_apply_update
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void debug_apply_update( database& db, const fc::variant_object& vo )
 	{
@@ -1249,7 +1249,7 @@ debug_apply_update
 apply_debug_updates
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::apply_debug_updates()
 	{
@@ -1261,11 +1261,11 @@ apply_debug_updates
 		  debug_apply_update( *this, update );
 	}
 
-	
+
 debug_update
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::debug_update( const fc::variant_object& update )
 	{
@@ -1295,9 +1295,9 @@ db_getter.cpp
 
 
 ----------------------------------
-	
-.. code-block:: cpp 
-	
+
+.. code-block:: cpp
+
 	const asset_object& database::get_core_asset() const
 	{
 	   return *_p_core_asset_obj;
@@ -1396,7 +1396,7 @@ db_init.cpp
 * [1] http://stackoverflow.com/questions/8016780/undefined-reference-to-static-constexpr-char
 
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	const uint8_t account_object::space_id;
 	const uint8_t account_object::type_id;
@@ -1444,11 +1444,11 @@ db_init.cpp
 	const uint8_t worker_object::type_id;
 
 
-initialize_evaluators	
+initialize_evaluators
 ----------------------------------
-	
-.. code-block:: cpp 
-	
+
+.. code-block:: cpp
+
 	void database::initialize_evaluators()
 	{
 	   _operation_evaluators.resize(255);
@@ -1502,9 +1502,9 @@ initialize_evaluators
 
 initialize_indexes
 ----------------------------------
-	
-.. code-block:: cpp 
-	
+
+.. code-block:: cpp
+
 	void database::initialize_indexes()
 	{
 	   reset_indexes();
@@ -1551,12 +1551,12 @@ initialize_indexes
 	   add_index< primary_index< simple_index< fba_accumulator_object       > > >();
 	}
 
-	
-init_genesis	
+
+init_genesis
 ----------------------------------
-	
-.. code-block:: cpp 
-	
+
+.. code-block:: cpp
+
 	void database::init_genesis(const genesis_state_type& genesis_state)
 	{ try {
 	   FC_ASSERT( genesis_state.initial_timestamp != time_point_sec(), "Must initialize genesis timestamp." );
@@ -2061,7 +2061,7 @@ init_genesis
 
 		   _undo_db.enable();
 		} }
-      
+
 
 -------------------
 
@@ -2073,7 +2073,7 @@ db_maint.cpp
 sort_votable_objects
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	template<class Index>
 	vector<std::reference_wrapper<const typename Index::object_type>> database::sort_votable_objects(size_t count) const
@@ -2098,12 +2098,12 @@ sort_votable_objects
 	   refs.resize(count, refs.front());
 	   return refs;
 	}
-	
-	
-perform_account_maintenance	
+
+
+perform_account_maintenance
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	template<class Type>
 	void database::perform_account_maintenance(Type tally_helper)
@@ -2145,12 +2145,12 @@ perform_account_maintenance
 	   }
 
 	}
-	
-worker_pay_visitor	
+
+worker_pay_visitor
 -------------------------------
 * A visitor for @ref worker_type which calls pay_worker on the worker within
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	struct worker_pay_visitor
 	{
@@ -2169,11 +2169,11 @@ worker_pay_visitor
 			 worker.pay_worker(pay, db);
 		  }
 	};
-	
-update_worker_votes	
+
+update_worker_votes
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::update_worker_votes()
 	{
@@ -2191,12 +2191,12 @@ update_worker_votes
 		  ++itr;
 	   }
 	}
-	
+
 
 pay_workers
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::pay_workers( share_type& budget )
 	{
@@ -2246,11 +2246,11 @@ pay_workers
 		  budget -= actual_pay;
 	   }
 	}
-	
-update_active_witnesses	
+
+update_active_witnesses
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::update_active_witnesses()
 	{ try {
@@ -2260,7 +2260,7 @@ update_active_witnesses
 	   /// accounts that vote for 0 or 1 witness do not get to express an opinion on
 	   /// the number of witnesses to have (they abstain and are non-voting accounts)
 
-	   share_type stake_tally = 0; 
+	   share_type stake_tally = 0;
 
 	   size_t witness_count = 0;
 	   if( stake_target > 0 )
@@ -2353,12 +2353,12 @@ update_active_witnesses
 	   });
 
 	} FC_CAPTURE_AND_RETHROW() }
-	
-	
-update_active_committee_members	
+
+
+update_active_committee_members
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::update_active_committee_members()
 	{ try {
@@ -2460,12 +2460,12 @@ update_active_committee_members
 						 [](const committee_member_object& d) { return d.id; });
 	   });
 	} FC_CAPTURE_AND_RETHROW() }
-	
 
-initialize_budget_record	
+
+initialize_budget_record
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::initialize_budget_record( fc::time_point_sec now, budget_record& rec )const
 	{
@@ -2514,12 +2514,12 @@ initialize_budget_record
 	   return;
 	}
 
-	
-process_budget	
+
+process_budget
 -------------------------------
 * Update the budget for witnesses and workers.
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::process_budget()
 	{
@@ -2615,12 +2615,12 @@ process_budget
 	   }
 	   FC_CAPTURE_AND_RETHROW()
 	}
-	
-	
-visit_special_authorities	
+
+
+visit_special_authorities
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	template< typename Visitor >
 	void visit_special_authorities( const database& db, Visitor visit )
@@ -2640,12 +2640,12 @@ visit_special_authorities
 		  }
 	   }
 	}
-	
-	
-update_top_n_authorities	
+
+
+update_top_n_authorities
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void update_top_n_authorities( database& db )
 	{
@@ -2685,12 +2685,12 @@ update_top_n_authorities
 		  }
 	   } );
 	}
-	
-	
-split_fba_balance	
+
+
+split_fba_balance
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void split_fba_balance(
 	   database& db,
@@ -2771,11 +2771,11 @@ split_fba_balance
 	   } );
 	}
 
-	
-distribute_fba_balances	
+
+distribute_fba_balances
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void distribute_fba_balances( database& db )
 	{
@@ -2783,11 +2783,11 @@ distribute_fba_balances
 	   split_fba_balance( db, fba_accumulator_id_blind_transfer     , 20*GRAPHENE_1_PERCENT, 60*GRAPHENE_1_PERCENT, 20*GRAPHENE_1_PERCENT );
 	   split_fba_balance( db, fba_accumulator_id_transfer_from_blind, 20*GRAPHENE_1_PERCENT, 60*GRAPHENE_1_PERCENT, 20*GRAPHENE_1_PERCENT );
 	}
-	
-create_buyback_orders	
+
+create_buyback_orders
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void create_buyback_orders( database& db )
 	{
@@ -2864,11 +2864,11 @@ create_buyback_orders
 	   }
 	   return;
 	}
-	
-deprecate_annual_members	
+
+deprecate_annual_members
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void deprecate_annual_members( database& db )
 	{
@@ -2900,11 +2900,11 @@ deprecate_annual_members
 	   }
 	   return;
 	}
-	
-process_bids	
+
+process_bids
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::process_bids( const asset_bitasset_data_object& bad )
 	{
@@ -2955,11 +2955,11 @@ process_bids
 
 	   _cancel_bids_and_revive_mpa( to_revive, bad );
 	}
-	
-update_and_match_call_orders	
+
+update_and_match_call_orders
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void update_and_match_call_orders( database& db )
 	{
@@ -2994,12 +2994,12 @@ update_and_match_call_orders
 	   }
 	   wlog( "Done updating all call orders for hardfork core-343 at block ${n}", ("n",db.head_block_num()) );
 	}
-	
-	
-process_bitassets	
+
+
+process_bitassets
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::process_bitassets()
 	{
@@ -3038,11 +3038,11 @@ process_bitassets
 			 process_bids(d);
 	   }
 	}
-	
-process_hf_868_890	
+
+process_hf_868_890
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	/******
 	 * @brief one-time data process for hard fork core-868-890
@@ -3153,11 +3153,11 @@ process_hf_868_890
 	   } // for each market issued asset
 	   wlog( "Done processing hard fork core-868-890 at block ${n}", ("n",head_num) );
 	}
-	
-process_hf_935	
+
+process_hf_935
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	/******
 	 * @brief one-time data process for hard fork core-935
@@ -3204,12 +3204,12 @@ process_hf_935
 		  }
 	   }
 	}
-	
-	
-perform_chain_maintenance	
+
+
+perform_chain_maintenance
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::perform_chain_maintenance(const signed_block& next_block, const global_property_object& global_props)
 	{
@@ -3387,7 +3387,7 @@ db_management
 ================================
 
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	database::database()
 	{
@@ -3404,7 +3404,7 @@ db_management
 reindex
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::reindex( fc::path data_dir )
 	{ try {
@@ -3445,7 +3445,7 @@ reindex
 	   const auto& gpo = get_global_properties();
 	   for( uint32_t i = head_block_num() + 1; i <= last_block_num; ++i )
 	   {
-		  if( i % 10000 == 0 ) 
+		  if( i % 10000 == 0 )
 		  {
 			 total_processed_block_size = _block_id_to_block.blocks_current_position();
 
@@ -3505,7 +3505,7 @@ reindex
 wipe
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::wipe(const fc::path& data_dir, bool include_blocks)
 	{
@@ -3522,7 +3522,7 @@ wipe
 open
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::open(
 	   const fc::path& data_dir,
@@ -3582,7 +3582,7 @@ open
 close
 -------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::close(bool rewind)
 	{
@@ -3637,18 +3637,18 @@ close
 
 db_market
 ================================
-	
-	
-globally_settle_asset	
+
+
+globally_settle_asset
 -------------------------------
 
-* All margin positions are force closed at the swan price 
-* Collateral received goes into a force-settlement fund 
-* No new margin positions can be created for this asset 
+* All margin positions are force closed at the swan price
+* Collateral received goes into a force-settlement fund
+* No new margin positions can be created for this asset
 * Force settlement happens without delay at the swan price, deducting from force-settlement fund
 * No more asset updates may be issued.
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::globally_settle_asset( const asset_object& mia, const price& settlement_price )
 	{ try {
@@ -3715,11 +3715,11 @@ globally_settle_asset
 
 	} FC_CAPTURE_AND_RETHROW( (mia)(settlement_price) ) }
 
-	
+
 revive_bitasset
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::revive_bitasset( const asset_object& bitasset )
 	{ try {
@@ -3745,11 +3745,11 @@ revive_bitasset
 	   _cancel_bids_and_revive_mpa( bitasset, bad );
 	} FC_CAPTURE_AND_RETHROW( (bitasset) ) }
 
-	
+
 _cancel_bids_and_revive_mpa
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::_cancel_bids_and_revive_mpa( const asset_object& bitasset, const asset_bitasset_data_object& bad )
 	{ try {
@@ -3774,11 +3774,11 @@ _cancel_bids_and_revive_mpa
 			   });
 	} FC_CAPTURE_AND_RETHROW( (bitasset) ) }
 
-	
+
 cancel_bid
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::cancel_bid(const collateral_bid_object& bid, bool create_virtual_op)
 	{
@@ -3798,7 +3798,7 @@ cancel_bid
 execute_bid
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::execute_bid( const collateral_bid_object& bid, share_type debt_covered, share_type collateral_from_fund, const price_feed& current_feed )
 	{
@@ -3825,7 +3825,7 @@ execute_bid
 cancel_settle_order
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::cancel_settle_order(const force_settlement_object& order, bool create_virtual_op)
 	{
@@ -3845,7 +3845,7 @@ cancel_settle_order
 cancel_limit_order
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::cancel_limit_order( const limit_order_object& order, bool create_virtual_op, bool skip_cancel_fee )
 	{
@@ -3946,7 +3946,7 @@ cancel_limit_order
 maybe_cull_small_order
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	bool maybe_cull_small_order( database& db, const limit_order_object& order )
 	{
@@ -3977,7 +3977,7 @@ maybe_cull_small_order
 apply_order_before_hardfork_625
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	bool database::(const limit_order_object& new_order_object, bool allow_black_swan)
 	{
@@ -4033,7 +4033,7 @@ apply_order_before_hardfork_625
 apply_order
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	bool database::apply_order(const limit_order_object& new_order_object, bool allow_black_swan)
 	{
@@ -4165,7 +4165,7 @@ apply_order
 match (int database)
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	/**
 	 *  Matches the two orders, the first parameter is taker, the second is maker.
@@ -4245,7 +4245,7 @@ match (int database)
 	}
 
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	int database::match( const limit_order_object& bid, const call_order_object& ask, const price& match_price,
 						 const price& feed_price, const uint16_t maintenance_collateral_ratio )
@@ -4329,10 +4329,10 @@ match (int database)
 match (asset database)
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
-	asset database::match( const call_order_object& call, 
-						   const force_settlement_object& settle, 
+	asset database::match( const call_order_object& call,
+						   const force_settlement_object& settle,
 						   const price& match_price,
 						   asset max_settlement,
 						   const price& fill_price )
@@ -4412,8 +4412,8 @@ match (asset database)
 
 	   /**
 		*  If the least collateralized call position lacks sufficient
-		*  collateral to cover at the match price then this indicates a black 
-		*  swan event according to the price feed, but only the market 
+		*  collateral to cover at the match price then this indicates a black
+		*  swan event according to the price feed, but only the market
 		*  can trigger a black swan.  So now we must cancel the forced settlement
 		*  object.
 		*/
@@ -4440,7 +4440,7 @@ match (asset database)
 fill_limit_order
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	bool database::fill_limit_order( const limit_order_object& order, const asset& pays, const asset& receives, bool cull_if_small,
 							   const price& fill_price, const bool is_maker )
@@ -4498,7 +4498,7 @@ fill_limit_order
 fill_call_order
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	bool database::fill_call_order( const call_order_object& order, const asset& pays, const asset& receives,
 									const price& fill_price, const bool is_maker )
@@ -4559,11 +4559,11 @@ fill_call_order
 	   return collateral_freed.valid();
 	} FC_CAPTURE_AND_RETHROW( (order)(pays)(receives) ) }
 
-	
+
 fill_settle_order
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	bool database::fill_settle_order( const force_settlement_object& settle, const asset& pays, const asset& receives,
 									  const price& fill_price, const bool is_maker )
@@ -4592,11 +4592,11 @@ fill_settle_order
 	   return filled;
 	} FC_CAPTURE_AND_RETHROW( (settle)(pays)(receives) ) }
 
-	
+
 check_call_orders
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	/**
 	 *  Starting with the least collateralized orders, fill them if their
@@ -4793,7 +4793,7 @@ check_call_orders
 pay_order
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::pay_order( const account_object& receiver, const asset& receives, const asset& pays )
 	{
@@ -4811,7 +4811,7 @@ pay_order
 calculate_market_fee
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	asset database::calculate_market_fee( const asset_object& trade_asset, const asset& trade_amount )
 	{
@@ -4836,7 +4836,7 @@ calculate_market_fee
 pay_market_fees
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	asset database::pay_market_fees( const asset_object& recv_asset, const asset& receives )
 	{
@@ -4871,7 +4871,7 @@ db_notify
 get_impacted_account_visitor
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	struct get_impacted_account_visitor
 	{
@@ -5115,7 +5115,7 @@ get_impacted_account_visitor
 operation_get_impacted_accounts
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void graphene::chain::operation_get_impacted_accounts( const operation& op, flat_set<account_id_type>& result )
 	{
@@ -5127,7 +5127,7 @@ operation_get_impacted_accounts
 transaction_get_impacted_accounts
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void graphene::chain::transaction_get_impacted_accounts( const transaction& tx, flat_set<account_id_type>& result )
 	{
@@ -5139,7 +5139,7 @@ transaction_get_impacted_accounts
 get_relevant_accounts
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void get_relevant_accounts( const object* obj, flat_set<account_id_type>& accounts )
 	{
@@ -5286,7 +5286,7 @@ get_relevant_accounts
 notify_applied_block
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::notify_applied_block( const signed_block& block )
 	{
@@ -5297,7 +5297,7 @@ notify_applied_block
 notify_on_pending_transaction
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::notify_on_pending_transaction( const signed_transaction& tx )
 	{
@@ -5308,11 +5308,11 @@ notify_on_pending_transaction
 notify_changed_objects
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::notify_changed_objects()
 	{ try {
-	   if( _undo_db.enabled() ) 
+	   if( _undo_db.enabled() )
 	   {
 		  const auto& head_undo = _undo_db.head();
 
@@ -5387,7 +5387,7 @@ db_update
 update_global_dynamic_data
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::update_global_dynamic_data( const signed_block& b, const uint32_t missed_blocks )
 	{
@@ -5434,7 +5434,7 @@ update_global_dynamic_data
 update_signing_witness
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::update_signing_witness(const witness_object& signing_witness, const signed_block& new_block)
 	{
@@ -5462,7 +5462,7 @@ update_signing_witness
 update_last_irreversible_block
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::update_last_irreversible_block()
 	{
@@ -5504,7 +5504,7 @@ update_last_irreversible_block
 clear_expired_transactions
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::clear_expired_transactions()
 	{ try {
@@ -5520,7 +5520,7 @@ clear_expired_transactions
 clear_expired_proposals
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::clear_expired_proposals()
 	{
@@ -5548,11 +5548,11 @@ clear_expired_proposals
 check_for_blackswan
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	/**
 	 *  let HB = the highest bid for the collateral  (aka who will pay the most DEBT for the least collateral)
-	 *  let SP = current median feed's Settlement Price 
+	 *  let SP = current median feed's Settlement Price
 	 *  let LC = the least collateralized call order's swan price (debt/collateral)
 	 *
 	 *  If there is no valid price feed or no bids then there is no black swan.
@@ -5606,7 +5606,7 @@ check_for_blackswan
 		}
 
 		auto least_collateral = call_itr->collateralization();
-		if( ~least_collateral >= highest  ) 
+		if( ~least_collateral >= highest  )
 		{
 		   wdump( (*call_itr) );
 		   elog( "Black Swan detected on asset ${symbol} (${id}) at block ${b}: \n"
@@ -5627,7 +5627,7 @@ check_for_blackswan
 		   else
 			  globally_settle_asset(mia, ~least_collateral );
 		   return true;
-		} 
+		}
 		return false;
 	}
 
@@ -5635,7 +5635,7 @@ check_for_blackswan
 clear_expired_orders
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::clear_expired_orders()
 	{ try {
@@ -5822,8 +5822,8 @@ clear_expired_orders
 				   // * settle order is completely filled (thus find_object(order_id) will be false so will break out), or
 				   // * reached max_settlement_volume limit, but it's possible that new_settled < max_settlement,
 				   //   in this case, new_settled will be zero in next iteration of the loop, so no need to check here.
-				} 
-				catch ( const black_swan_exception& e ) { 
+				}
+				catch ( const black_swan_exception& e ) {
 				   wlog( "Cancelling a settle_order since it may trigger a black swan: ${o}, ${e}",
 						 ("o", order)("e", e.to_detail_string()) );
 				   cancel_settle_order( order );
@@ -5844,7 +5844,7 @@ clear_expired_orders
 update_expired_feeds
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::update_expired_feeds()
 	{
@@ -5908,7 +5908,7 @@ update_expired_feeds
 update_core_exchange_rates
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::update_core_exchange_rates()
 	{
@@ -5939,7 +5939,7 @@ update_core_exchange_rates
 update_maintenance_flag
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::update_maintenance_flag( bool new_maintenance_flag )
 	{
@@ -5957,7 +5957,7 @@ update_maintenance_flag
 update_withdraw_permissions
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::update_withdraw_permissions()
 	{
@@ -5974,15 +5974,15 @@ db_witness_schedule.cpp
 ================================
 
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	using boost::container::flat_set;
 
-	
-get_scheduled_witness	
+
+get_scheduled_witness
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	witness_id_type database::get_scheduled_witness( uint32_t slot_num )const
 	{
@@ -5992,10 +5992,10 @@ get_scheduled_witness
 	   return wso.current_shuffled_witnesses[ current_aslot % wso.current_shuffled_witnesses.size() ];
 	}
 
-get_slot_time	
+get_slot_time
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	fc::time_point_sec database::get_slot_time(uint32_t slot_num)const
 	{
@@ -6027,11 +6027,11 @@ get_slot_time
 	   return head_slot_time + (slot_num * interval);
 	}
 
-	
+
 get_slot_at_time
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	uint32_t database::get_slot_at_time(fc::time_point_sec when)const
 	{
@@ -6041,11 +6041,11 @@ get_slot_at_time
 	   return (when - first_slot_time).to_seconds() / block_interval() + 1;
 	}
 
-	
-update_witness_missed_blocks	
+
+update_witness_missed_blocks
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	uint32_t database::update_witness_missed_blocks( const signed_block& b )
 	{
@@ -6063,10 +6063,10 @@ update_witness_missed_blocks
 	   return missed_blocks;
 	}
 
-witness_participation_rate	
+witness_participation_rate
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	uint32_t database::witness_participation_rate()const
 	{
@@ -6077,8 +6077,8 @@ witness_participation_rate
 update_witness_schedule
 ---------------------------------------
 
-.. code-block:: cpp 
-	
+.. code-block:: cpp
+
 	void database::update_witness_schedule()
 	{
 	   const witness_schedule_object& wso = get_witness_schedule_object();

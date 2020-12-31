@@ -12,16 +12,16 @@ File directory: (..\libraries/chain/include/graphene/chain/xxx.hpp)
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
-account_evaluator 
+account_evaluator
 ===============================
 
-account_create_evaluator 
+account_create_evaluator
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	class account_create_evaluator : public evaluator<account_create_evaluator>
 	{
@@ -36,7 +36,7 @@ account_create_evaluator
 account_update_evaluator
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	class account_update_evaluator : public evaluator<account_update_evaluator>
 	{
@@ -53,7 +53,7 @@ account_update_evaluator
 account_upgrade_evaluator
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	class account_upgrade_evaluator : public evaluator<account_upgrade_evaluator>
 	{
@@ -69,7 +69,7 @@ account_upgrade_evaluator
 account_whitelist_evaluator
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	class account_whitelist_evaluator : public evaluator<account_whitelist_evaluator>
 	{
@@ -86,13 +86,13 @@ account_whitelist_evaluator
 
 ---------
 
-assert_evaluator 
+assert_evaluator
 ===============================
 
-assert_evaluator 
+assert_evaluator
 ---------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	class assert_evaluator : public evaluator<assert_evaluator>
 	{
@@ -114,7 +114,7 @@ asset_evaluator
 asset_create_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class asset_create_evaluator : public evaluator<asset_create_evaluator>
    {
@@ -135,7 +135,7 @@ asset_create_evaluator
 asset_issue_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class asset_issue_evaluator : public evaluator<asset_issue_evaluator>
    {
@@ -152,7 +152,7 @@ asset_issue_evaluator
 asset_reserve_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class asset_reserve_evaluator : public evaluator<asset_reserve_evaluator>
    {
@@ -165,11 +165,11 @@ asset_reserve_evaluator
          const account_object*            from_account = nullptr;
    };
 
-   
+
 asset_update_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class asset_update_evaluator : public evaluator<asset_update_evaluator>
    {
@@ -185,7 +185,7 @@ asset_update_evaluator
 asset_update_issuer_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class asset_update_issuer_evaluator : public evaluator<asset_update_issuer_evaluator>
    {
@@ -197,11 +197,11 @@ asset_update_issuer_evaluator
 
          const asset_object* asset_to_update = nullptr;
    };
-   
+
 asset_update_bitasset_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class asset_update_bitasset_evaluator : public evaluator<asset_update_bitasset_evaluator>
    {
@@ -214,12 +214,12 @@ asset_update_bitasset_evaluator
          const asset_bitasset_data_object* bitasset_to_update = nullptr;
          const asset_object* asset_to_update = nullptr;
    };
-   
+
 
 asset_update_feed_producers_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class asset_update_feed_producers_evaluator : public evaluator<asset_update_feed_producers_evaluator>
    {
@@ -235,7 +235,7 @@ asset_update_feed_producers_evaluator
 asset_fund_fee_pool_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class asset_fund_fee_pool_evaluator : public evaluator<asset_fund_fee_pool_evaluator>
    {
@@ -251,7 +251,7 @@ asset_fund_fee_pool_evaluator
 asset_global_settle_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class asset_global_settle_evaluator : public evaluator<asset_global_settle_evaluator>
    {
@@ -263,12 +263,12 @@ asset_global_settle_evaluator
 
          const asset_object* asset_to_settle = nullptr;
    };
-   
+
 
 asset_settle_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class asset_settle_evaluator : public evaluator<asset_settle_evaluator>
    {
@@ -281,11 +281,11 @@ asset_settle_evaluator
          const asset_object* asset_to_settle = nullptr;
    };
 
-   
+
 asset_publish_feeds_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class asset_publish_feeds_evaluator : public evaluator<asset_publish_feeds_evaluator>
    {
@@ -298,11 +298,11 @@ asset_publish_feeds_evaluator
          const asset_object* asset_ptr = nullptr;
          const asset_bitasset_data_object* bitasset_ptr = nullptr;
    };
-  
-  
+
+
 asset_claim_fees_evaluator
 ----------------------------------------------
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class asset_claim_fees_evaluator : public evaluator<asset_claim_fees_evaluator>
    {
@@ -316,7 +316,7 @@ asset_claim_fees_evaluator
 asset_claim_pool_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
  class asset_claim_pool_evaluator : public evaluator<asset_claim_pool_evaluator>
    {
@@ -326,20 +326,20 @@ asset_claim_pool_evaluator
          void_result do_evaluate( const asset_claim_pool_operation& o );
          void_result do_apply( const asset_claim_pool_operation& o );
    };
-   
- 
+
+
 |
 
 ---------
-  
-   
+
+
 balance_evaluator
 =====================================
 
 balance_claim_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	class balance_claim_evaluator : public evaluator<balance_claim_evaluator>
 	{
@@ -370,7 +370,7 @@ committee_member_evaluator
 committee_member_create_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class committee_member_create_evaluator : public evaluator<committee_member_create_evaluator>
    {
@@ -385,7 +385,7 @@ committee_member_create_evaluator
 committee_member_update_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class committee_member_update_evaluator : public evaluator<committee_member_update_evaluator>
    {
@@ -395,13 +395,13 @@ committee_member_update_evaluator
          void_result do_evaluate( const committee_member_update_operation& o );
          void_result do_apply( const committee_member_update_operation& o );
    };
-   
+
 
 
 committee_member_update_global_parameters_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class committee_member_update_global_parameters_evaluator : public evaluator<committee_member_update_global_parameters_evaluator>
    {
@@ -421,7 +421,7 @@ committee_member_update_global_parameters_evaluator
 confidential_evalustor
 ======================================
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	struct transfer_to_blind_operation;
 	struct transfer_from_blind_operation;
@@ -431,7 +431,7 @@ confidential_evalustor
 transfer_to_blind_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	class transfer_to_blind_evaluator : public evaluator<transfer_to_blind_evaluator>
 	{
@@ -447,7 +447,7 @@ transfer_to_blind_evaluator
 transfer_from_blind_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	class transfer_from_blind_evaluator : public evaluator<transfer_from_blind_evaluator>
 	{
@@ -464,7 +464,7 @@ transfer_from_blind_evaluator
 blind_transfer_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	class blind_transfer_evaluator : public evaluator<blind_transfer_evaluator>
 	{
@@ -488,7 +488,7 @@ custom_evaluator
 custom_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class custom_evaluator : public evaluator<custom_evaluator>
    {
@@ -507,17 +507,17 @@ custom_evaluator
 evaluator
 ==================================
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class database;
    struct signed_transaction;
    class generic_evaluator;
    class transaction_evaluation_state;
-   
+
 generic_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class generic_evaluator
    {
@@ -588,7 +588,7 @@ generic_evaluator
        */
       void pay_fba_fee( uint64_t fba_id );
 
-      // the next two functions are helpers that allow template functions declared in this 
+      // the next two functions are helpers that allow template functions declared in this
       // header to call db() without including database.hpp, which would
       // cause a circular dependency
       share_type calculate_fee_for_operation(const operation& op) const;
@@ -603,11 +603,11 @@ generic_evaluator
       transaction_evaluation_state*    trx_state;
    };
 
-   
+
 op_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class op_evaluator
    {
@@ -625,7 +625,7 @@ op_evaluator
 market_evaluator
 =============================
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class account_object;
    class asset_object;
@@ -635,12 +635,12 @@ market_evaluator
    struct call_order_update_operation;
    struct limit_order_cancel_operation;
    struct limit_order_create_operation;
-   
+
 
 limit_order_create_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class limit_order_create_evaluator : public evaluator<limit_order_create_evaluator>
    {
@@ -668,12 +668,12 @@ limit_order_create_evaluator
          const asset_object*                 _sell_asset    = nullptr;
          const asset_object*                 _receive_asset = nullptr;
    }
-   
-   
+
+
 limit_order_cancel_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class limit_order_cancel_evaluator : public evaluator<limit_order_cancel_evaluator>
    {
@@ -690,7 +690,7 @@ limit_order_cancel_evaluator
 call_order_update_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class call_order_update_evaluator : public evaluator<call_order_update_evaluator>
    {
@@ -707,12 +707,12 @@ call_order_update_evaluator
          const asset_bitasset_data_object* _bitasset_data = nullptr;
    };
 
-   
-   
+
+
 bid_collateral_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class bid_collateral_evaluator : public evaluator<bid_collateral_evaluator>
    {
@@ -739,7 +739,7 @@ proposal_evaluator
 proposal_create_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class proposal_create_evaluator : public evaluator<proposal_create_evaluator>
    {
@@ -756,7 +756,7 @@ proposal_create_evaluator
 proposal_update_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class proposal_update_evaluator : public evaluator<proposal_update_evaluator>
    {
@@ -776,7 +776,7 @@ proposal_update_evaluator
 proposal_delete_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class proposal_delete_evaluator : public evaluator<proposal_delete_evaluator>
    {
@@ -802,8 +802,8 @@ transaction_evaluation_state
 ----------------------------------------------
 
 - Place holder for state tracked while processing a transaction. This class provides helper methods that are common to many different operations and also tracks which keys have signed the transaction.
-	
-.. code-block:: cpp 
+
+.. code-block:: cpp
 
    class database;
    struct signed_transaction;
@@ -835,7 +835,7 @@ transfer_evaluator
 transfer_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class transfer_evaluator : public evaluator<transfer_evaluator>
    {
@@ -850,7 +850,7 @@ transfer_evaluator
 override_transfer_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class override_transfer_evaluator : public evaluator<override_transfer_evaluator>
    {
@@ -869,7 +869,7 @@ override_transfer_evaluator
 vesting_balance_evaluator
 ==============================
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	class vesting_balance_create_evaluator;
 	class vesting_balance_withdraw_evaluator;
@@ -877,7 +877,7 @@ vesting_balance_evaluator
 vesting_balance_create_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	class vesting_balance_create_evaluator : public evaluator<vesting_balance_create_evaluator>
 	{
@@ -891,7 +891,7 @@ vesting_balance_create_evaluator
 vesting_balance_withdraw_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	class vesting_balance_withdraw_evaluator : public evaluator<vesting_balance_withdraw_evaluator>
 	{
@@ -914,7 +914,7 @@ withdraw_permission_evaluator
 withdraw_permission_create_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	class withdraw_permission_create_evaluator : public evaluator<withdraw_permission_create_evaluator>
 	{
@@ -929,7 +929,7 @@ withdraw_permission_create_evaluator
 withdraw_permission_claim_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	class withdraw_permission_claim_evaluator : public evaluator<withdraw_permission_claim_evaluator>
 	{
@@ -945,7 +945,7 @@ withdraw_permission_claim_evaluator
 withdraw_permission_update_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	class withdraw_permission_update_evaluator : public evaluator<withdraw_permission_update_evaluator>
 	{
@@ -960,7 +960,7 @@ withdraw_permission_update_evaluator
 withdraw_permission_delete_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	class withdraw_permission_delete_evaluator : public evaluator<withdraw_permission_delete_evaluator>
 	{
@@ -983,7 +983,7 @@ witness_evaluator
 witness_create_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class witness_create_evaluator : public evaluator<witness_create_evaluator>
    {
@@ -998,7 +998,7 @@ witness_create_evaluator
 witness_update_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class witness_update_evaluator : public evaluator<witness_update_evaluator>
    {
@@ -1021,7 +1021,7 @@ worker_evaluator
 worker_create_evaluator
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class worker_create_evaluator : public evaluator<worker_create_evaluator>
    {

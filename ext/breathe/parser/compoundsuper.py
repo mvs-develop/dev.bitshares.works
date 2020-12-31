@@ -1,11 +1,11 @@
+# -*- coding: utf-8 -*-
 #
 # Generated Thu Jun 11 18:44:25 2009 by generateDS.py.
 #
 
-import sys
 import getopt
-from xml.dom import minidom
-from xml.dom import Node
+import sys
+from xml.dom import Node, minidom
 
 #
 # User methods

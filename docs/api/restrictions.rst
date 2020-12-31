@@ -2,13 +2,13 @@
 .. _api-access-and-restrictions:
 
 ****************************
-API Access and Restrictions 
+API Access and Restrictions
 ****************************
 
 .. contents:: Table of Contents
    :local:
-   
----------------   
+
+---------------
 
 Using the API
 =================
@@ -33,7 +33,7 @@ using wscat package from npm for websockets:
   > {"id":1, "method":"call", "params":[0,"get_accounts",[["1.2.0"]]]}
   < {"id":1,"result":[{"id":"1.2.0","annotations":[],"membership_expiration_date":"1969-12-31T23:59:59","registrar":"1.2.0","referrer":"1.2.0","lifetime_referrer":"1.2.0","network_fee_percentage":2000,"lifetime_referrer_fee_percentage":8000,"referrer_rewards_percentage":0,"name":"committee-account","owner":{"weight_threshold":1,"account_auths":[],"key_auths":[],"address_auths":[]},"active":{"weight_threshold":6,"account_auths":[["1.2.5",1],["1.2.6",1],["1.2.7",1],["1.2.8",1],["1.2.9",1],["1.2.10",1],["1.2.11",1],["1.2.12",1],["1.2.13",1],["1.2.14",1]],"key_auths":[],"address_auths":[]},"options":{"memo_key":"GPH1111111111111111111111111111111114T1Anm","voting_account":"1.2.0","num_witness":0,"num_committee":0,"votes":[],"extensions":[]},"statistics":"2.7.0","whitelisting_accounts":[],"blacklisting_accounts":[]}]}
 
-	  
+
 the same thing using an HTTP client such as curl for API's which do not require login or other session state:
 
 ::
@@ -56,10 +56,10 @@ Since restricted APIs require login, they are **only** accessible over the webso
 
 .. _api-access-json:
 
-Accessing Restricted API's 
+Accessing Restricted API's
 ==============================
 
-You can restrict API’s to particular users by specifying an ``api-access`` in a :ref:`configuration <bts-config-ini-eg>` file or by using the ``--api-access /full/path/to/api-access.json`` startup node command. 
+You can restrict API’s to particular users by specifying an ``api-access`` in a :ref:`configuration <bts-config-ini-eg>` file or by using the ``--api-access /full/path/to/api-access.json`` startup node command.
 
 **Example:**
 
@@ -90,8 +90,8 @@ You can restrict API’s to particular users by specifying an ``api-access`` in 
        ]
     }
 
-- Passwords are stored in ``ase64`` as as salted `sha256` hashes. 
-- A simple Python script, ``saltpass.py`` is avaliable `[click here] <https://github.com/bitshares/bitshares-core/blob/master/programs/witness_node/saltpass.py>`_ to obtain hash and salt values from a password. 
+- Passwords are stored in ``ase64`` as as salted `sha256` hashes.
+- A simple Python script, ``saltpass.py`` is avaliable `[click here] <https://github.com/bitshares/bitshares-core/blob/master/programs/witness_node/saltpass.py>`_ to obtain hash and salt values from a password.
 - A single asterisk ``*`` may be specified as username or password hash to accept any value.
 
 With the above configuration, how to call `add_node` from the `network_node` API
@@ -102,12 +102,12 @@ With the above configuration, how to call `add_node` from the `network_node` API
     {"id":2, "method":"call", "params":[1,"network_node",[]]}
     {"id":3, "method":"call", "params":[2,"add_node",["127.0.0.1:9090"]]}
 
-	
+
 .. Note:: the call to `network_node` is necessary to obtain the correct API identifier for the network API. It is not guaranteed that the network API identifier will always be ``2``.
 
 The full node offers a set of API(s), of which only the database calls are avaiable via RPC. Calls that are restricted by default (i.e. ``network_node_api``) or have been restricted by configuration are not accessible via RPC because a statefull protocol (websocket) is required for login.
 
-The `network_node API <https://bitshares.org/doxygen/classgraphene_1_1app_1_1network__node__api.html>`_ requires login, it is only accessible over the websocket RPC. 
+The `network_node API <https://bitshares.org/doxygen/classgraphene_1_1app_1_1network__node__api.html>`_ requires login, it is only accessible over the websocket RPC.
 
 Please check. Our `doxygen <https://bitshares.org/doxygen/>`_ documentation contains the most up-to-date information about APIs.
 

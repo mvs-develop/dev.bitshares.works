@@ -10,7 +10,7 @@ article <websocket>`.
 
 .. contents:: Table of Contents
    :local:
-   
+
 ----------------
 
 Transactions

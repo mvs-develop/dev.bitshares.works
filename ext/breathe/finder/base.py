@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 class ItemFinder(object):
     def __init__(self, project_info, data_object, item_finder_factory):
 

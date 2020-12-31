@@ -2,13 +2,13 @@
 .. _lib-wallet:
 
 ********************************
-libraries - wallet 
+libraries - wallet
 ********************************
 
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 
@@ -19,13 +19,13 @@ For more information: `graphene::wallet Namespace Reference <https://bitshares.o
 
 
 
-wallet.hpp	
+wallet.hpp
 ===========================
 
 **namespace fc**
 
 .. code-block:: cpp
-   
+
 	namespace fc
 	{
 	   void to_variant( const account_multi_index_type& accts, variant& vo, uint32_t max_depth );
@@ -37,7 +37,7 @@ wallet.hpp
 **namespace graphene - namespace wallet**
 
 .. code-block:: cpp
-   
+
 	typedef uint16_t transaction_handle_type;
 
 	/**
@@ -47,15 +47,15 @@ wallet.hpp
 
 	object* create_object( const variant& v );
 
-	
-struct	
+
+struct
 ---------------------
 
 plain_keys
 ^^^^^^^^^^^^^^
 
 .. code-block:: cpp
-   	
+
 	struct plain_keys
 	{
 	   map<public_key_type, string>  keys;
@@ -66,8 +66,8 @@ plain_keys
 brain_key_info
 ^^^^^^^^^^^^^^
 
-.. code-block:: cpp 
- 
+.. code-block:: cpp
+
 	struct brain_key_info
 	{
 	   string brain_priv_key;
@@ -77,13 +77,13 @@ brain_key_info
 
 
 
-blind_confirmation	
+blind_confirmation
 ^^^^^^^^^^^^^^
 * Contains the confirmation receipt the sender must give the receiver and the meta data about the receipt that helps the sender identify which receipt is for the receiver and which is for the change address.
 
 .. code-block:: cpp
- 
-	struct blind_confirmation 
+
+	struct blind_confirmation
 	{
 	   struct output
 	   {
@@ -99,13 +99,13 @@ blind_confirmation
 	   vector<output>         outputs;
 	};
 
-	
+
 
 blind_balance
 ^^^^^^^^^^^^^^
 
 .. code-block:: cpp
- 
+
 	struct blind_balance
 	{
 	   asset                     amount;
@@ -116,7 +116,7 @@ blind_balance
 	   fc::ecc::commitment_type  commitment;
 	   bool                      used = false;
 	};
-	
+
 
 blind_receipt
 ^^^^^^^^^^^^^^
@@ -144,7 +144,7 @@ blind_receipt
 	};
 
 
-struct (one line1)	
+struct (one line1)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: cpp
@@ -153,9 +153,9 @@ struct (one line1)
 	struct by_to;
 	struct by_to_asset_used;
 	struct by_commitment;
-	
 
-typedef: multi_index_container 
+
+typedef: multi_index_container
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: cpp
@@ -170,7 +170,7 @@ typedef: multi_index_container
 	> blind_receipt_index_type;
 
 
-key_label	
+key_label
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: cpp
@@ -182,15 +182,15 @@ key_label
 	};
 
 
-struct (one line2)	
+struct (one line2)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: cpp
 
 	struct by_label;
 	struct by_key;
-	
-	
+
+
 typedef: multi_index_container
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -205,8 +205,8 @@ typedef: multi_index_container
 	> key_label_index_type;
 
 
-	
-wallet_data	
+
+wallet_data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: cpp
@@ -272,9 +272,9 @@ exported_account_keys
 		vector<public_key_type> public_keys;
 	};
 
-	
-	
-exported_keys	
+
+
+exported_keys
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: cpp
@@ -392,7 +392,7 @@ account_history_operation_detail
 -----------------------
 
 |
-	
+
 class
 ------------------------------
 

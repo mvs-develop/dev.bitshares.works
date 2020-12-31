@@ -7,7 +7,7 @@ How to Set up Python Library for the Public Testnet
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 1. Requirements
@@ -20,7 +20,7 @@ Install pip3 which will deal with the packages dependencies::
 2. Installation
 -------------------------------------
 
-Afterwards, we can fetch the python libraries from github and install it: 
+Afterwards, we can fetch the python libraries from github and install it:
 
 .. code-block:: sh
 
@@ -43,14 +43,14 @@ Create MPAs/UIAs with Python
 
 We now create some Market Pegged assets and construct the price feed.
 
-* Create Market Pegged Assets: 
+* Create Market Pegged Assets:
 
   - https://github.com/BitSharesEurope/testnet-pythonscripts/blob/master/create_mpa.py
-   
-* Fund init* witnessses: 
+
+* Fund init* witnessses:
 
   - https://github.com/BitSharesEurope/testnet-pythonscripts/blob/master/fund-inits.py
-   
+
 * Price feed scripts:
 
   - https://github.com/BitSharesEurope/testnet-pythonscripts/blob/master/feed.last.py

@@ -37,4 +37,4 @@ This method returns a JSON object representing the state of the wallet. It is on
 
 This method is used to update the wallet state. If the wallet is configured to keep synchronized with the remote wallet then the server will refer to a copy of the wallets revision history to ensure that no version is overwritten. If the local wallet ever falls on a fork any attempt to upload that wallet will cause the API call to fail. The user should be alerted so they can reconcile manually. After successfully storing the state on the server, save the state to local memory, and optionally disk.
 
-    wallet.setState( state ) 
+    wallet.setState( state )

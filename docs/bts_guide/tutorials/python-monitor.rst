@@ -8,7 +8,7 @@ This python library assists interfacing with a graphene-based network such as DN
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 
@@ -75,4 +75,3 @@ The monitoring script can be executed via
 |
 
 |
-	

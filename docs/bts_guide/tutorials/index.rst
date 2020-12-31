@@ -26,7 +26,7 @@ Vesting Balance
 
   - vesting_balance_create_operation
   - vesting_balance_withdraw_operation
- 
+
 API
 ============
 
@@ -44,7 +44,7 @@ Assets
   5. Fee Backed Asset
   6. Prediction Markets
 
-	
+
 * :ref:`How can I create a UIA manually (CLI)? <uia-create-manual>`
 * :ref:`How can I create a MPA manually (CLI)? <mpa-create-manual>`
 * :ref:`How can I update/change an existing UIA (CLI)? <uia-update-manual>`
@@ -61,7 +61,7 @@ Committee Guide
 * :ref:`How to approve/disapprove a Proposal <committee-approve-proposal>`
 * :ref:`How to Propose Committee Actions <committee-propose-action>`
 
-Delegated Proof of Stake 
+Delegated Proof of Stake
 ============================
 * Read" User Guide `(DPOS) <https://how.bitshares.works/en/latest/technology/dpos.html#>`_
 
@@ -70,7 +70,7 @@ Keys
 =====================
 * :ref:`How can I import a GUI-wallet account into CLI-wallet? <howto-import-gui-wallet-account-cli>`
 * :ref:`how-to-get-key-pairs`
-  
+
 
 .. _monitoring_support:
 
@@ -81,17 +81,17 @@ Monitoring
 * :ref:`How to monitor Balance History of an Account  - NodeJS <nodejs-example>`
 
 
-.. _witness-node-guide-tutorials: 
-  
-Node  
+.. _witness-node-guide-tutorials:
+
+Node
 ==============================
 
 * :ref:`How can a Let's Encrypt certificate be used with an API node to provide a secure web socket (wss) connection <api-node-wss-con>`
 
 * :ref:`How to run Node in the background by using GNU screen <manage-gun-screen>`
-* :ref:`How to run a DNA API Node <run-api-node-guide>`		
+* :ref:`How to run a DNA API Node <run-api-node-guide>`
 
-.. _witness-blockproducer-guide: 
+.. _witness-blockproducer-guide:
 
 
 Testnets
@@ -114,8 +114,8 @@ Transfer / Transactions
 * :ref:`How Multi-signature' works <bts-multi-sign>`
 * :ref:`How to use the CLI wallet to perform Confidential Transfers  <confidential-transactions-guide>`
 * :ref:`Hot to Construct Any Transaction - Manually <manually-construct-transaction>`
-* :ref:`How to Crafting, Proposing, and Approving a Transaction <proposing-transaction>` - Proposed Transaction 
-* :ref:`How to use the CLI wallet to Perform Stealth Transfers in DNA (wiki) <w-stealth-transfers>`  
+* :ref:`How to Crafting, Proposing, and Approving a Transaction <proposing-transaction>` - Proposed Transaction
+* :ref:`How to use the CLI wallet to Perform Stealth Transfers in DNA (wiki) <w-stealth-transfers>`
 * :ref:`Proposed Transaction and  Multi-Signature <proposed-tran>`
 
 Wallet / CLI
@@ -131,4 +131,3 @@ Wallet / CLI
 
 ----------------------
 
- 

@@ -12,7 +12,7 @@ pass phrase when importing your funds into DNA 2.0.
 .. contents:: Contents
    :local:
 
-   
+
 DNA 1.0 Full Client
 ------------------------------------
 
@@ -56,7 +56,7 @@ Export via the main menu
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Just select ``File Menu -> Export Wallet``  and you'll be asked to select a
-file location where the keys will be exported. 
+file location where the keys will be exported.
 
 .. note:: Due to a known bug, if you are on Windows the only option that will
         work for you is the console command - the file exported using the menu will not
@@ -89,7 +89,7 @@ wallet.bitshares.org
 =========================
 
 The keys of the `web wallet`_ can be exported simply by downloading a backup
-wallet. It can be obtained from the web wallet's preferences: 
+wallet. It can be obtained from the web wallet's preferences:
 (`Account List->Advanced Settings->Wallet`).
 
 .. image:: export-wallet-backup-webwallet.png

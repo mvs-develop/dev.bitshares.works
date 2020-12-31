@@ -10,16 +10,16 @@ The DNA Open Public Testnet has been deployed and is fully functional for anyone
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 Use a UI Wallet on Public Testnet
 =======================================
 
-- Go to a Web Wallet - Public testnet: (http://testnet.bitshares.eu/) 
+- Go to a Web Wallet - Public testnet: (http://testnet.bitshares.eu/)
 - If you need to create an account, set the testnet faucet address
    - Faucet: (https://faucet.testnet.bitshares.eu/)
-   - Go to [Setting] menu - [Faucet] and set the above Faucet address 
+   - Go to [Setting] menu - [Faucet] and set the above Faucet address
 - Create an account
    - For a CLOUD Wallet: Use a [CREATE ACCOUNT] button
    - For a LOCAL Wallet: Use an [advanced form] button
@@ -48,7 +48,7 @@ To see more options: Go to :ref:`Installation Guide <installation-guide>`.
 *In order to run a full node, get the sources (branch* **testnet** *) and compile*::
 
 	 git clone https://github.com/bitshares/bitshares-core.git bitshares-core-testnet
-	 cd bitshares-core-testnet    
+	 cd bitshares-core-testnet
 	 git checkout testnet
 	 cmake
 

@@ -12,7 +12,7 @@ Web Wallet
 -----------------------
 
 The web wallet of DNA 2.0 has a **Wallet management Console.** that will
-help you import your funds. It can be access via `DNA 2.0: Settings -> Wallets` 
+help you import your funds. It can be access via `DNA 2.0: Settings -> Wallets`
 
 .. image:: wallet-management-console.png
         :alt: Wallet Management Console in DNA 2.0
@@ -20,7 +20,7 @@ help you import your funds. It can be access via `DNA 2.0: Settings -> Wallets`
         :align: center
 
 |
-		
+
 In order to import your existing accounts and claim all your funds you need to
 choose ``Import Keys``.
 
@@ -45,7 +45,7 @@ some time to auto-complete. Please be patient.
         :align: center
 
 |
-		
+
 The wallet will list all of your accounts including the number of private keys
 stored in the account names accordingly. The more often you have used your
 account, the higher this number should be. Confirm by pressing ``Import``.
@@ -92,7 +92,7 @@ The wallet backup file can be imported by ::
 
     >>> import_accounts <path to exported json> <password of wallet you exported from>
 
-Note that this doesn't automatically claim the balances. 
+Note that this doesn't automatically claim the balances.
 
 Claiming Balances
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -105,7 +105,7 @@ For each account ``<my_account_name>`` in your wallet (run ``list_my_accounts`` 
    If you have thousands of keys, this is quite slow and also takes up a lot of disk space.
    Monitor your free disk space during the import and, if necessary,
    periodically erase the backups to avoid filling your disk. The latest code
-   only saves your wallet after all keys have been imported.  
+   only saves your wallet after all keys have been imported.
 
 The command above will only import your keys into the wallet and will **not**
 claim your funds. In order to claim the funds you need to execute:::

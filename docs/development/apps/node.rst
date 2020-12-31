@@ -41,7 +41,7 @@ Although you would get default parameters in your config file for better memory 
 
 * :ref:`Memory Reduction for Nodes: <memory-nodes>`
 
-  - Help to reduce RAM usage significantly by using witness_node executable options 
+  - Help to reduce RAM usage significantly by using witness_node executable options
 
 .. note:: Find more information about Node, check :ref:`Node Tutorials <witness-node-guide-tutorials>`.
 
@@ -53,7 +53,7 @@ Although you would get default parameters in your config file for better memory 
 Restart the Witness Node
 ================================
 
-When restarting the witness node, it may be required to append the ``--replay-blockchain`` parameter to regenerate the local (in-memory) blockchain state. 
+When restarting the witness node, it may be required to append the ``--replay-blockchain`` parameter to regenerate the local (in-memory) blockchain state.
 
 .. tip:: If you want to close the Witness Node in a clean way, use ``Ctrl-C`` in Windows.
 
@@ -64,20 +64,20 @@ When restarting the witness node, it may be required to append the ``--replay-bl
 .. _bts-nodes-info:
 
 ---------------
-	
-Public Full Node Information 
+
+Public Full Node Information
 ================================
 
 * `DNA Public Full Nodes (apiConfig) <https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js>`_
 * `Global DNA Node Distribution Map <https://bitshares.eu/network/>`_
-* `Seed Nodes information (application.cpp) <https://github.com/bitshares/bitshares-core/blob/master/libraries/app/application.cpp>`_ 
+* `Seed Nodes information (application.cpp) <https://github.com/bitshares/bitshares-core/blob/master/libraries/app/application.cpp>`_
 
 
 |
 
 ---------------
 
- 
+
 .. _api-node-wss-con:
 
 API Node Secure Web Socket Connection
@@ -91,9 +91,9 @@ API Node Secure Web Socket Connection
 
     2. In the node's configuration file, point the TLS certificate to combined.pem, and leave the TLS certificate password as blank.
 
- 
- 
- 
+
+
+
 
 |
 

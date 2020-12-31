@@ -6,8 +6,8 @@ Knowledge Base
 ***********************
 
 
-	
-	
+
+
 ---------------
 
 * :ref:`Graphene Smart Contract - concepts and steps <pre-graphene-smart-contract>`
@@ -26,7 +26,7 @@ Knowledge Base
 * :ref:`Wiki Legacy list <wiki-legacy-indx>`
 
 
----------------------  
+---------------------
 
 
 * :ref:`v1 <view-code-samples>`
@@ -51,7 +51,7 @@ publishing feed
 ---------
 "witness_fed_asset" : false,
  "committee_fed_asset" : true
- 
+
 Talking ``price_feed``
 
 * :ref:`How can I create a Prediction Market (CLI)? <pm-create-manual>`
@@ -64,8 +64,8 @@ Active Witness Duties
     Maintain a public seednode
     Publish accurate, frequently updated (check 1-2 times per hour), price feeds for the Smart Coins & Market Pegged Assets
 
-	
-	
+
+
 |
 
 |

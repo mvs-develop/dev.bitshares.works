@@ -2,9 +2,9 @@
 .. _what-if-test:
 
 ************************************
-debug_node : what-if test tool 
+debug_node : what-if test tool
 ************************************
- 
+
 
 
 Introduction
@@ -34,11 +34,11 @@ Set up a new datadir with the following :ref: ``config.ini`` settings::
     seed-nodes = []
     # set apiaccess.json so we can set up
     api-access = "data/debug_datadir/api-access.json"
-	
 
-* Example of :ref:`configuration file parameters <bts-config-ini-eg>`  	
-	
-	
+
+* Example of :ref:`configuration file parameters <bts-config-ini-eg>`
+
+
 Then set up ``data/debug_datadir/api-access.json`` to allow access to the debug API like this:
 
 
@@ -66,7 +66,7 @@ Then set up ``data/debug_datadir/api-access.json`` to allow access to the debug 
        ]
     }
 
-	
+
 See :ref:`api-access-json` for more detail on the ``api-access.json`` format.
 
 Once that is set up, run ``debug_node`` against your newly prepared datadir::

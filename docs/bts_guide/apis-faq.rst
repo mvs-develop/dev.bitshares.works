@@ -5,7 +5,7 @@ API - FAQ
 ===============
 
 .. _api-core-faq-1:
- 
+
 How do I get the network_add_nodes command to work? Why is it so complicated?
 ---------------------------------------------------------------------------------------
 

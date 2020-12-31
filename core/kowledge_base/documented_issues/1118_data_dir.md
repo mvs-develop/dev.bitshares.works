@@ -35,7 +35,7 @@ The genesis.json is the initial state of the network. We create a new genesis js
 
     ./witness_node --create-genesis-json=my-genesis.json
 
-The `my-genesis.json` file will be created in the `[Testnet-Home]` folder. Once this task is done, the witness node will terminate on its own. 
+The `my-genesis.json` file will be created in the `[Testnet-Home]` folder. Once this task is done, the witness node will terminate on its own.
 
 > **Note:** `witness_node` startup will create a `witness_node_data_dir` as a default data directory (with config.ini). If you want to use a different folder name and directory for the data, you have to use `--data-dir` in a startup command line and set your data directory folder path. Otherwise, the `witness_node_data_dir` folder will be created and use a default config.ini file to start the witness_node.
 
@@ -51,5 +51,5 @@ Now run witness_node again:
 > **warning:** If you want to use a different folder name and directory for the data, you have to use `--data-dir` in a startup command line and set your data directory folder path. Otherwise, the `witness_node_data_dir` folder will be created and used a default config.ini file to start the witness_node!!
 
 ***
-  
+
 (*created:7/9/2018*)

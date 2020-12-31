@@ -32,50 +32,50 @@ Object
 
 Object Index and Search Call
 ---------------------------------------------
-- 
+-
 
 Operations
 ---------------------------------------------
-- 
+-
 
 Validations
 ---------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 
 
 Initialize Evaluators and Index
 ---------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::initialize_evaluators()
 	{
 	   _operation_evaluators.resize(255);
 	   register_evaluator<account_create_evaluator>()
 	   .......
-	}   
+	}
 
 
-.. code-block:: cpp 
-	
+.. code-block:: cpp
+
 	void database::initialize_indexes()
 	{
 	   reset_indexes();
-	   _undo_db.set_max_size( GRAPHENE_MIN_UNDO_HISTORY );    
+	   _undo_db.set_max_size( GRAPHENE_MIN_UNDO_HISTORY );
 
-	   .....   
-	}  
+	   .....
+	}
 
 
 	void database::init_genesis(const genesis_state_type& genesis_state)
 	{ try {
 	.....
 
-	}}	
-	
-   
+	}}
+
+
 Evaluators
 ---------------------------------------------
 
@@ -87,7 +87,7 @@ Evaluators
 
 CLI Wallet Calls
 ---------------------------------------------
-- 
+-
 
 API calls
 ---------------------------------------------

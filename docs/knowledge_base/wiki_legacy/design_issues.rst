@@ -4,7 +4,7 @@ design issues
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 Purpose
@@ -32,7 +32,7 @@ We have this:
 
 .. code-block:: cpp
 
-    struct transaction 
+    struct transaction
     {
         fc::time_point_sec expiration;
         uint32_t           ref_block_num    = 0;

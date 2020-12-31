@@ -2,7 +2,7 @@
 .. _websocket-script-support:
 
 ********************************
-Websockets Scripting Support  
+Websockets Scripting Support
 ********************************
 
 The Bitshares developer community use different ways to interact with the Core API mainly by the use of the Websocket.
@@ -63,7 +63,7 @@ Create a python script that will execute the commands one after the other and ge
 
 Execute as::
 
-    root@NC-PH-1346-07:~# python testws.py 
+    root@NC-PH-1346-07:~# python testws.py
     {"id":2,"result":true}
     {"id":3,"result":2}
     {"id":4,"result":[{"id":"1.11.8799012","op":[14,{"fee":{"amount":281946,"asset_id":"1.3.0"},"issuer":"1.2.89940","asset_to_issue":{"amount":100,"asset_id":"1.3.1

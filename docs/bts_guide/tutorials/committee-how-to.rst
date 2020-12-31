@@ -9,7 +9,7 @@ We can create a new committee member with:::
 
   >>> create_committee_member account "url" true
 
-		
+
 |
 
 --------------------
@@ -115,7 +115,7 @@ Notes:
    set review period to at least ``committee_proposal_review_period``
 -  Much of this could be automated by a better wallet command.
 
-		
+
 |
 
 --------------------
@@ -145,7 +145,7 @@ expired, executed or within the preview period. This is done by:::
   >>> approve_proposal <fee-paying-account> <proposal-id> {"active_approvals_to_remove" : ["<MY-COMMITTEE-MEMBER>"]} true
 
 Note that we now use ``active_approvals_to_remove`` instead of ``active_approvals_to_add``.
-		
+
 |
 
 --------------------
@@ -184,7 +184,7 @@ the blockchain by asking them for approval with ::
   >>> approve_proposal <committee_member> "1.10.1" {"active_approvals_to_add" : ["<MY-COMMITTEE-MEMBER>"]} true
 
 where ``1.10.1`` is the id of the proposal in question.
-		
+
 |
 
 --------------------

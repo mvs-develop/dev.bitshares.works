@@ -5,7 +5,7 @@ Build DNA-Core with Visual Studio 2015
 ************************************************
 
 .. contents:: Table of Contents
-   :local: 
+   :local:
 
 ----
 
@@ -28,10 +28,10 @@ Setup Visual Studio 2015 with Update 1
 	Visual Studio Community 2015 with Update 1 (x86 and x64) - DVD (English)
 	SHA1: FB5AE6B57BDC495AFB29646AFCA088756363A263
 
-* **Virtual Drive Software to Load the above iso Files** 
+* **Virtual Drive Software to Load the above iso Files**
 
  If you do not have a virtual drive software, you can use WinCDEmu;
- 
+
  - Download from here: http://wincdemu.sysprogs.org/download/
 
 * **Installing Visual Studio 2015 Update 1**
@@ -42,15 +42,15 @@ Setup Visual Studio 2015 with Update 1
 Download Software and Tools
 ----------------------------------------
 
-* **Active perl** 
+* **Active perl**
 
- - Download and install 
+ - Download and install
 
  If you do not have `perl` software in your machine, install it. You'll need it later.::
 
         https://www.activestate.com/activeperl/downloads
 
-* **NASM** 
+* **NASM**
 
  - Download and install NASM
 
@@ -119,10 +119,10 @@ Build the Library Dependencies
  - Run **VS2015 x64 Native Tools Command Prompt**
 
  **Note:** It is actually a shortcut, here: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Visual Studio 2015\Visual Studio Tools\Windows Desktop Command Prompts.  Content is::
-    
+
     %comspec% /k ""C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat"" amd64
 
- - Execute the following command in the open command line interface 
+ - Execute the following command in the open command line interface
 
  **Please modify the actual directory according to the actual situation.**::
 
@@ -216,13 +216,13 @@ Set up the Environment for Build
 	Set OPENSSL_INCLUDE_DIR=%OPENSSL_ROOT%\include
 	Set BOOST_ROOT=%GRA_ROOT%\boost_1_57_0
 	Set CMAKE_ROOT=%GRA_ROOT%\cmake-3.9.4-win64-x64
-	
+
 	Set DOXYGEN_ROOT=%GRA_ROOT%\doxygen-1.8.13.windows.x64.bin
-	
+
 	Set PATH=%BOOST_ROOT%\lib;%CMAKE_ROOT%\BIN;%DOXYGEN_ROOT%;%PATH%
 
 
- - Run **VS2015 x64 Native Tools Command Prompt** 
+ - Run **VS2015 x64 Native Tools Command Prompt**
 
  - Execute the below commands::
 
@@ -253,12 +253,12 @@ Set up the Environment for Build
 Visual Studio
 ----------------------------------------
 
-* **Build** 
+* **Build**
 
  - Compile Bitshares-core
    - The default is `Debug` in the upper toolbar, modified to `Release`
    - another option mode is `x64` by default and does not require modification
- - Build two executable 
+ - Build two executable
    - In the Solution Explorer on the right side of the interface, scroll down to find **cli_wallet** and **witness_node**. Right-click and select build.
 
  After the compilation is complete, an executable file is generated::
@@ -278,7 +278,7 @@ Others
 
  * If you use `cli_wallet.exe` to connect to an API server that uses wss, you need to specify the PEM file that contains the server root certificate.
    - Refer this page - [CLI-Wallet on Windows (x64)](../installation/windows_cli_tool.md#cli-wallet-on-windows-x64)
-       
+
 --------
 
 

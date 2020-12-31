@@ -7,7 +7,7 @@ Confidential Transfers
 
 **How to use the CLI wallet to perform confidential transfers in DNA**
 
-   
+
 This tutorial shows how to use the CLI wallet to perform confidential transfers
 in DNA. A confidential transfer is one that hides both the amount being
 sent and the parties involved in the trade. Confidential transfers are also
@@ -37,7 +37,7 @@ quoted session logs in the examples that follow.
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 
@@ -48,14 +48,14 @@ Blind Accounts are not registered on the blockchain like the named accounts of
 DNA. Instead a blind account is nothing more than a labeled public key.
 The label assigned to the key is only known to your *wallet*. Thus it is
 crucial that you create a new wallet for the blind account and back it up after
-completing the balance transfer. 
+completing the balance transfer.
 
 The first step in creating a blind account is to create a new wallet and set a
 good quality password for it that would be difficult to crack. Then, using this
 wallet we'll create a labeled account and protect it with a "brainkey". The
 "brainkey" is effectively the private key used by your account. All DNA
 cryptography is based on public / private key pairs, one public which can be
-shared the other private known only to you. 
+shared the other private known only to you.
 
 For confidential accounts the "brainkey" is only stored in the wallet, so if the
 wallet file is lost or destroyed and you have not recorded the "brainkey" on
@@ -68,8 +68,8 @@ impossibility it would be if you lost the wallet and failed to record the
 "brainkey".
 
 ::
-          
-    >>> create_blind_account alice "alice-brain-key which is a series of words that are usually very long"                                                                   
+
+    >>> create_blind_account alice "alice-brain-key which is a series of words that are usually very long"
     1483572ms th_a       wallet.cpp:743                save_wallet_file     ] saving wallet to file /home/admin/BitShares2/blindAliceWallet
     BTS5Qmr9H9SM39EHmVgXtsVjUGn2xBUtqbF6MdQ6RpnxUWNak7mse
     true
@@ -101,7 +101,7 @@ then we'll use that label to transfer assets into the alice blind account.
 
 ::
 
-    >>> list_account_balances "peters-public-registered-account"                                                        
+    >>> list_account_balances "peters-public-registered-account"
     5000 BTS
 
     >>> set_key_label "BTS5Qmr9H9SM39EHmVgXtsVjUGn2xBUtqbF6MdQ6RpnxUWNak7mse" "Alice-is-Blind"
@@ -113,7 +113,7 @@ then we'll use that label to transfer assets into the alice blind account.
     100 BTS to  Alice-is-Blind
               receipt: 2B2vTjJ19hgqzGp8qdc8MEWmsgEUGECNJcoQTYNQqMU8bRofmbQYemXs56FoUc4Z5PdVM65nsySZgwJMq9Z SkpWQFhEqLGuZi1N3jQm8yBwaLD2DQzwY5AEW1rSK9HWJbfqNLtx8U4kc3o9xKtJoED2SgHW6jDQ7igBTcVhuUiKSwFu3DFa6LTeS5 Wm5khjgy1LrR5uhmp
 
-    >>> list_account_balances "peters-public-registered-account"                                                       
+    >>> list_account_balances "peters-public-registered-account"
     4860 BTS
 
 The above 2 steps transmit BTS assets from a public, registered account named
@@ -122,7 +122,7 @@ named alice using a label to refer to it named "Alice-is-Blind".  It is
 important to note that these labels are NOT persistent from one CLI session to
 the next, so every time you transfer assets from a source account such as
 "peters-public-registered-account" used here to a blind account you will need to
-set a label to refer to the blind account. 
+set a label to refer to the blind account.
 
 **Adding a Contact**
 
@@ -153,7 +153,7 @@ Step 2, now lets see what it takes to complete the transfer and verify we have
 the correct balance:
 
 ::
-          
+
     >>> receive_blind_transfer "2B2vTjJ19hgqzGp8qdc8MEWmsgEUGECNJcoQTYNQqMU8bRofmbQYemXs56FoUc4Z5PdVM65nsySZgwJMq9ZSkpWQFhEqLGuZi1N3jQm8yBwaLD2DQzwY5AEW1rSK9HWJbfqNLtx8U4kc3o9xKtJoED2SgHW6jDQ7igBTcVhuUiKSwFu3DFa6LTeS5Wm5khjgy1LrR5uhmp "peter" "from Peter"
     100 BTS  peter  =>  alice   "from Peter"
 
@@ -175,14 +175,14 @@ accounts present using the "get_my_blind_accounts" CLI command, and use the
 accounts returned from that to obtain their balances:
 
 ::
-          
-    >>> get_my_blind_accounts                                                                  
+
+    >>> get_my_blind_accounts
     [[
     "alice",
     "BTS5Qmr9H9SM39EHmVgXtsVjUGn2xBUtqbF6MdQ6RpnxUWNak7mse"
     ]]
 
-    >>> get_blind_balances "alice"                                                                
+    >>> get_blind_balances "alice"
     100 BTS
 
 To review, you have learned how to:
@@ -244,7 +244,7 @@ before you continue.
 
 ::
 
-    >>> create_blind_account bobby "bobby-brain-key which is a series of words that are usually very long"                                                                   
+    >>> create_blind_account bobby "bobby-brain-key which is a series of words that are usually very long"
     1434971ms th_a       wallet.cpp:743                save_wallet_file     ] saving wallet to file /home/admin/BitShares2/blindBobWallet
     BTS6V829H9SM39EHmVgXtsVjUGn2xBUtqbF6MdQ6RpnxUWNakaV26
     true
@@ -253,7 +253,7 @@ We need to restart the CLI wallet with the alice account, where we have a 100
 BTS balance. We will create a label to refer to Bob's confidential account
 (bobby) and transfer some BTS assets from alice to bobby. Note that the process
 is the same as before, and we need to set a label for the bobby (destination)
-account to do the transfer. 
+account to do the transfer.
 
 ::
 
@@ -277,7 +277,7 @@ in Part 1) to the bobby confidential account and provided 2 balance receipts:
 the first for 5 BTS coming back to the alice account as returned change
 (leftover funds), and the second which is the receipt for the 80 BTS being sent
 to the bobby account, which we will need in order to receive the transfer in the
-bobby account contained in the blindBobWallet file. 
+bobby account contained in the blindBobWallet file.
 
 As you can see using confidential in the CLI wallet is a rather tedious "manual"
 process. Do note however that you do not need to do a "receive_blind_transfer"
@@ -313,7 +313,7 @@ account.
 
 ::
 
-    >>> transfer_from_blind bobby peter 50 BTS true                                                      
+    >>> transfer_from_blind bobby peter 50 BTS true
     2263915ms th_a       wallet.cpp:743                save_wallet_file     ] saving wallet to file /home/admin/BitShares2/blindBobWallet
     blind_transfer_operation temp-account fee: 15 BTS
     15 BTS to  bobby
@@ -322,7 +322,7 @@ account.
     50 BTS to  peter
               receipt: boqRZqyKaZW6bExrystPwFdXvzUBJSjGeaqy482NxBJ6S9VPCqArXCypszWZnpCeG7jfS3oUnbtmn5bmmVH5HCXJg9QxCmn4pocbJ8ipRHfzgeq1mLMewQNn6HGrkb5WbosSntj3o4LcSEMpw2etsR2GjnBxcdxN879rBwxm6inhbpsoYn1nGwS4H o3SqoCF43MRDK3ouYrFBcAK2TTPXfnnvAU3r1UvhNHpxuNaS1cexbd88Nn6BTxSifKdJ8ysFft98e88Cbek
 
-    >>> get_blind_balances bobby                                                                  
+    >>> get_blind_balances bobby
     get_blind_balances bobby
     15 BTS
 
@@ -332,14 +332,14 @@ role in the transfer process are the same.  Also, Peter's public account will no
 show (publicly) that it has received 50 BTS from an "unknown" source.
 
 One last example demonstrates how to split a balance between multiple
-confidential accounts when initially blinding a public balance. 
+confidential accounts when initially blinding a public balance.
 This is very useful because it not only saves on transfer
 fees it also obscures what amounts end up where. The point of showing this is
-primarily to illustrate the syntax of the command. 
+primarily to illustrate the syntax of the command.
 
 ::
 
-    >>> list_account_balances "peters-public-registered-account"                                                        
+    >>> list_account_balances "peters-public-registered-account"
     4860 BTS
 
     >>> set_key_label "BTS5Qmr9H9SM39EHmVgXtsVjUGn2xBUtqbF6MdQ6RpnxUWNak7mse" "alice"
@@ -367,7 +367,7 @@ since the balance was initially public.)
 
 **Conclusion**: The outside world has no idea *how much* is in each individual blinded output,
 or who is in control of each one, only that together they all add up to 4800 BTS.
-		
+
 
 Summary
 ^^^^^^^

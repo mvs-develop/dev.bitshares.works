@@ -27,11 +27,11 @@ Developments
   2. Specific small Task 2
   3. etc.
 
-  
+
 3. FAQ/ELI5
 ================
 
-  
+
 4. Use Cases
 =================
 
@@ -41,7 +41,7 @@ Developments
 
     1. Payment Plugins (e.g. woocommerce)
 
-	 
+
 5. References
 =================
 
@@ -62,12 +62,12 @@ Developments
 3. REST API Server (TBD. see: https://github.com/bitshares/bitshares-core/issues/870)
 4. Reference UI
 5. SDKs
- 
+
   1. JS SDK
   2. Python SDK
   3. JAVA SDK
   4. etc.
-  
+
 6. Other Related Software
 
 

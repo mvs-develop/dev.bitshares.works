@@ -8,7 +8,7 @@ Often used API Calls
    :depth: 3
 
 ------------
-   
+
 Overview
 ==================
 
@@ -17,7 +17,7 @@ in the following table. They are compared to their corresponding API calls in
 DNA 1.0.
 
 We will now take a look at some sample ouputs for some of the API calls in the
-table above. We recommend to read the following articles: 
+table above. We recommend to read the following articles:
 
 * :ref:`blockchain-objects-ids`
 * :ref:`wallet-api-calls`
@@ -33,9 +33,10 @@ table above. We recommend to read the following articles:
 
     import json
     from grapheneapi import GrapheneAPI
+
     client = GrapheneAPI("localhost", 8092, "", "")
     res = client.list_account_balances("dan")
-    print(json.dumps(res,indent=4))
+    print(json.dumps(res, indent=4))
 
 **Result**
 
@@ -75,9 +76,10 @@ table above. We recommend to read the following articles:
 
     import json
     from grapheneapi import GrapheneAPI
+
     client = GrapheneAPI("localhost", 8092, "", "")
-    res = client.transfer("fromaccount","toaccount","10", "USD", "$10 gift", True);
-    print(json.dumps(res,indent=4))
+    res = client.transfer("fromaccount", "toaccount", "10", "USD", "$10 gift", True)
+    print(json.dumps(res, indent=4))
 
 The final parameter ``True`` states that the signed transaction will be
 broadcast. If this parameter is ``False`` the transaction will be signed but
@@ -134,9 +136,10 @@ not broadcast, hence not executed.
 
     import json
     from grapheneapi import GrapheneAPI
+
     client = GrapheneAPI("localhost", 8092, "", "")
-    res = client.transfer2("fromaccount","toaccount","10", "USD", "$10 gift");
-    print(json.dumps(res,indent=4))
+    res = client.transfer2("fromaccount", "toaccount", "10", "USD", "$10 gift")
+    print(json.dumps(res, indent=4))
 
 This method works just like transfer, except it always broadcasts and returns
 the transaction ID along with the signed transaction.
@@ -193,9 +196,10 @@ the transaction ID along with the signed transaction.
 
     import json
     from grapheneapi import GrapheneAPI
+
     client = GrapheneAPI("localhost", 8092, "", "")
     res = client.get_account_history("dan", 1)
-    print(json.dumps(res,indent=4))
+    print(json.dumps(res, indent=4))
 
 **Result**
 
@@ -253,9 +257,10 @@ the transaction ID along with the signed transaction.
 
     import json
     from grapheneapi import GrapheneAPI
+
     client = GrapheneAPI("localhost", 8092, "", "")
     res = client.get_object("1.11.213277")
-    print(json.dumps(res,indent=4))
+    print(json.dumps(res, indent=4))
 
 **Result**
 
@@ -307,9 +312,10 @@ the transaction ID along with the signed transaction.
 
     import json
     from grapheneapi import GrapheneAPI
+
     client = GrapheneAPI("localhost", 8092, "", "")
     res = client.get_asset("USD")
-    print(json.dumps(res,indent=4))
+    print(json.dumps(res, indent=4))
 
 **Result**
 

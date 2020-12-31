@@ -1,16 +1,16 @@
 .. role:: strike
     :class: strike
-	
+
 **************************
 Development Environments
 **************************
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------------------
 
-DNA Code and Files 
+DNA Code and Files
 ===============================
 
 * Open Source program
@@ -18,68 +18,68 @@ DNA Code and Files
 * `DNA GitHub <https://github.com/bitshares>`_
 
    - **DNA-Core (C++)** - DNA Blockchain implementation and command-line interface.
-   
-    + `Programs <https://github.com/bitshares/bitshares-core/tree/master/programs#bitshares-programs>`_ : The bitshares programs are a collection of binaries to run the blockchain, interact with it or utilities.	 
-	   
+
+    + `Programs <https://github.com/bitshares/bitshares-core/tree/master/programs#bitshares-programs>`_ : The bitshares programs are a collection of binaries to run the blockchain, interact with it or utilities.
+
     + `Libraries <https://github.com/bitshares/bitshares-core/tree/master/libraries#bitshares-libraries>`_ : The libraries are the core of the project and defines everything where applications can build on top.
-	 
-   - **Bitshares-FC** - Fast-compiling C++ library 
+
+   - **Bitshares-FC** - Fast-compiling C++ library
    - **DNA python** - Fully featured client-side library for the DNA Blockchain - written entirely in python.
    - **DNA-UI** - Fully featured Graphical User Interface / Reference Wallet for the DNA Blockchain.
    - **BSIPs** - DNA Improvement Proposals and Protocols. These technical documents describe the process of updating and improving the DNA blockchain and technical ecosystem.
    - **BitSharesjs** - JavaScript tools for DNA Encryption and Serialization.
-   - **BitSharesjs-ws** - Javascript websocket interface for Bitshares 
+   - **BitSharesjs-ws** - Javascript websocket interface for Bitshares
    - **Beet** - Beet is a stand-alone key/identity-manager and signing app for DNA, heavily influenced by Scatter
    - **Bitshares Mobile App** - The mobile app for bitshares blockchain
    - (more...)
 
 ----------
-   
+
 What's your interests?
 ========================
 
-What would you like to know more about DNA Blockchain? DNA Core is the DNA blockchain implementation and command-line interface. If you are interested to know about DNA blockchain background, history, and features, please visit `how.bitshares.works <http://how.bitshares.works/en/latest/#>`_ and `bitshares.org <https://bitshares.org/>`_ to read more information. 
+What would you like to know more about DNA Blockchain? DNA Core is the DNA blockchain implementation and command-line interface. If you are interested to know about DNA blockchain background, history, and features, please visit `how.bitshares.works <http://how.bitshares.works/en/latest/#>`_ and `bitshares.org <https://bitshares.org/>`_ to read more information.
 
-If yo do not have a DNA account yet, you can use DNA UI wallet (`wallet.bitshares.org <https://wallet.bitshares.org>`_ ) or download a `Light Client Wallet <https://bitshares.org/download>`_  to create your DNA account. Here is the latest `DNA-UI – Release <https://github.com/bitshares/bitshares-ui/releases>`_ information. 
+If yo do not have a DNA account yet, you can use DNA UI wallet (`wallet.bitshares.org <https://wallet.bitshares.org>`_ ) or download a `Light Client Wallet <https://bitshares.org/download>`_  to create your DNA account. Here is the latest `DNA-UI – Release <https://github.com/bitshares/bitshares-ui/releases>`_ information.
 
 If your interests are trying and learning DNA features, you might want to use DNA TestNet to experience them. If you are a developer who is interested to contribute to the DNA Core team, you could download a developer branch and learn more about DNA-Core current Project might be a good start. Select an appropriate branch when you install DNA-Core.
 
-After you know which branch to download, your next step is the installation of DNA-Core. Check the :ref:`DNA Installation Guide <installation-guide>` and select your Operation System to follow the installation steps. 
+After you know which branch to download, your next step is the installation of DNA-Core. Check the :ref:`DNA Installation Guide <installation-guide>` and select your Operation System to follow the installation steps.
 
 .. image:: ../../_static/imgs/your-interests.png
         :alt: DNA
         :width: 750px
         :align: center
-  
-BitSharea has great communities to support others and have discussions. Check out the :ref:`DNA communities <bitshares-communities>` and join to meet other BTS holders!     
-  
+
+BitSharea has great communities to support others and have discussions. Check out the :ref:`DNA communities <bitshares-communities>` and join to meet other BTS holders!
+
 For security issues and bug bounty program, please visit `Hack the DEX <https://hackthedex.io/>`_ .
-  
+
 |
-  
-----------------   
-   
-   
-   
-DNA Core: Projects Guide 
+
+----------------
+
+
+
+DNA Core: Projects Guide
 ==================================
 
-If you are interested to know or involve DNA-Core developments, you will find the contribution guide, current project, issues and plans in this section. 
+If you are interested to know or involve DNA-Core developments, you will find the contribution guide, current project, issues and plans in this section.
 
-Project Guide and Milestones 
+Project Guide and Milestones
 ------------------------------
 
 - `Contribution Guide [DRAFT] <https://github.com/bitshares/bitshares-core/wiki/Contribution-Guide>`_
 - `Project <https://github.com/bitshares/bitshares-core/projects/6>`_
-- `DNA-Core: current issues and requests <https://github.com/bitshares/bitshares-core/issues>`_ 
-- `Milestones and Plans <https://github.com/bitshares/bitshares-core/milestones>`_ 
-- `DNA-Core Releases <https://github.com/bitshares/bitshares-core/releases>`_ 
+- `DNA-Core: current issues and requests <https://github.com/bitshares/bitshares-core/issues>`_
+- `Milestones and Plans <https://github.com/bitshares/bitshares-core/milestones>`_
+- `DNA-Core Releases <https://github.com/bitshares/bitshares-core/releases>`_
 
 
-DNA-Core (Team) 
+DNA-Core (Team)
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-The DNA-Core team is a team of developers who manage the DNA-Core repository code and handle the issues that are submitted by other developers. The team creates project plans for next release(s) and delivers the result to the Bitshares community. 
+The DNA-Core team is a team of developers who manage the DNA-Core repository code and handle the issues that are submitted by other developers. The team creates project plans for next release(s) and delivers the result to the Bitshares community.
 
 * Roles
 
@@ -87,12 +87,12 @@ The DNA-Core team is a team of developers who manage the DNA-Core repository cod
   - maintaining
   - upgrading protocol if needed
   - making Project plans for the future release
-  - creating/ announcing  Release 
+  - creating/ announcing  Release
   - supporting the DNA community/ answering questions
-  
-	
-------------------	
-	
+
+
+------------------
+
 DNA Core: GitFlow
 =========================
 
@@ -119,7 +119,7 @@ Consensus: Development / Release / Bugfix Workflows
 ------------------------------------------------------
 
 .. image:: ../../_static/structures/bts-concensus.png
-        :alt: DNA 
+        :alt: DNA
         :width: 750px
         :align: center
 
@@ -141,7 +141,7 @@ Basic Rules
   - **Completed** features that are consensus-related are merged into the **hardfork** branch, with a hardfork date in the far future.
   - All merges into **develop** or **hardfork** are performed via github PR's and require review and approval from core source (if the PR is created by a core dev at least one other core dev must review and approve).
   - To maintain a clean history and make reviewing and merging easier, feature branches must be rebased onto current **develop** (or **hardfork**) before creating a PR.
-  - Merges are always done as real merges, not as fast-forwards, and not squashed. 
+  - Merges are always done as real merges, not as fast-forwards, and not squashed.
 3. Core devs coordinate regular merges from **develop** into **hardfork**.
 4. Both **develop** and **hardfork** should always remain compatible with mainnet, i. e. a full replay must be possible.
 
@@ -155,8 +155,8 @@ How To Create a Release
 For a release,
 
 0. Bump stuff
- 1) Check whether need to bump ``DB_VERSION`` to force a replay after upgraded: if there is a data schema change, or logic change that affects historical data, the answer is yes.  
- 2) FC version usually has been bumped already during development, but it doesn't harm if check again.  
+ 1) Check whether need to bump ``DB_VERSION`` to force a replay after upgraded: if there is a data schema change, or logic change that affects historical data, the answer is yes.
+ 2) FC version usually has been bumped already during development, but it doesn't harm if check again.
  3) Bump docs sub-module which links to wiki.
 1. A **release** branch is created based on **develop** or **hardfork**.
 2. Update Doxyfile with the last version tag in **release** branch.
@@ -173,15 +173,15 @@ For a release,
 13. Update date of last core download page of bitshares.org site.
 14. Create binaries for linux, macos and windows. Once the tag name is known create binaries for this 3 OS. Attach them to release notes.
 **Example**: https://github.com/bitshares/bitshares-core/releases/tag/3.0.0 Binaries names for this release:
-  
+
   - Linux: DNA-core-3.0.0-Linux-cli-tools.tar.gz
   - Windows: DNA-Core-3.0.0-Windows-x64-cli-tools.zip
   - macOS: DNA-Core-3.0.0-macOS-cli-tools.tar.gz
-	
+
 **Note:** Solving conflicts by github(web) will merge branches in unintended directions. Avoid solving this way, merge and resolve conflicts manually through the git command line. Conflicts generally occur when merging release to testnet.
 
-  - How to: `Snapshot Comparison in Bitshares <https://github.com/oxarbitrage/documentation/blob/master/snapshot.md>`_ 
-  
+  - How to: `Snapshot Comparison in Bitshares <https://github.com/oxarbitrage/documentation/blob/master/snapshot.md>`_
+
 
 **Note 2:** Follow command line github suggestion to resolve conflicts but at the end of the process you will not have permission to merge directly to ``testnet``, never push the fix to ``release``. Create a new branch and push there, then create a new pull request between ``testnet`` and ``new_branch``, merge ``new_branch`` to ``testnet`` and ``release`` will be automatically added to the merge.
 
@@ -211,7 +211,7 @@ Emergency Fix Workflows
         :alt: DNA
         :width: 750px
         :align: center
-		
+
 
 1. The fix is applied to the version of the **release** branch that was merged into ``master`` when creating the broken release version.
 2. The ``release`` branch is merged into ``master``, and a version tag is created on ``master``.
@@ -234,7 +234,7 @@ In general we want changes in the README to be visible fast in ``master``.
 3. Merge back ``release`` to ``develop``.
 4. Merge develop into ``hardfork`` and ``testnet`` if changes need to be visible in all the branches or wait until this merges occur naturally.
 
-	
+
 
 |
 

@@ -12,13 +12,13 @@ Net
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 config
 ==================================================
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	#pragma once
 
@@ -64,7 +64,7 @@ config
 	 * our peers and save a copy in a cache were we will find it if
 	 * a peer requests it.  We expire out old items out of the cache
 	 * after this number of blocks go by.
-	 * 
+	 *
 	 * Recently lowered from 30 to match the default expiration time
 	 * the web wallet imposes on transactions.
 	 */
@@ -89,12 +89,12 @@ config
 	 * is being flooded -- typically transactions will be fetched as soon
 	 * as we find out about them, so only one item will be requested
 	 * at a time.
-	 * 
+	 *
 	 * No tests have been done to find the optimal value for this
 	 * parameter, so consider increasing or decreasing it if performance
 	 * during flooding is lacking.
 	 */
-	#define GRAPHENE_NET_MAX_ITEMS_PER_PEER_DURING_NORMAL_OPERATION  1 
+	#define GRAPHENE_NET_MAX_ITEMS_PER_PEER_DURING_NORMAL_OPERATION  1
 
 	/**
 	 * Instead of fetching all item IDs from a peer, then fetching all blocks
@@ -118,14 +118,14 @@ config
 core_messages
 ==================================================
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
   using graphene::chain::signed_transaction;
   using graphene::chain::block_id_type;
   using graphene::chain::transaction_id_type;
   using graphene::chain::signed_block;
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
   typedef fc::ecc::public_key_data node_id_t;
   typedef fc::ripemd160 item_hash_t;
@@ -144,10 +144,10 @@ core_messages
         return item_type == other.item_type &&
                item_hash == other.item_hash;
       }
-  };  
+  };
 
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
   enum core_message_type_enum
   {
@@ -180,7 +180,7 @@ core_messages
 trx_message
 ---------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    struct trx_message
    {
@@ -191,12 +191,12 @@ trx_message
       trx_message(signed_transaction transaction) :
         trx(std::move(transaction))
       {}
-   }; 
-  
+   };
+
 block_message
 -------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    struct block_message
    {
@@ -215,7 +215,7 @@ block_message
 item_ids_inventory_message
 ------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
   struct item_ids_inventory_message
   {
@@ -235,7 +235,7 @@ item_ids_inventory_message
 blockchain_item_ids_inventory_message
 -----------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
   struct blockchain_item_ids_inventory_message
   {
@@ -259,8 +259,8 @@ blockchain_item_ids_inventory_message
 
 fetch_blockchain_item_ids_message
 ---------------------------------------
-  
-.. code-block:: cpp 
+
+.. code-block:: cpp
 
   struct fetch_blockchain_item_ids_message
   {
@@ -275,13 +275,13 @@ fetch_blockchain_item_ids_message
       blockchain_synopsis(blockchain_synopsis)
     {}
   };
-  
-  
-  
+
+
+
 fetch_items_message
------------------------------------------------  
-  
-.. code-block:: cpp 
+-----------------------------------------------
+
+.. code-block:: cpp
 
   struct fetch_items_message
   {
@@ -296,11 +296,11 @@ fetch_items_message
       items_to_fetch(items_to_fetch)
     {}
   };
-  
-item_not_available_message  
------------------------------------------------  
-  
-.. code-block:: cpp 
+
+item_not_available_message
+-----------------------------------------------
+
+.. code-block:: cpp
 
   struct item_not_available_message
   {
@@ -313,11 +313,11 @@ item_not_available_message
       requested_item(requested_item)
     {}
   };
-  
-hello_message  
------------------------------------------------  
-  
-.. code-block:: cpp 
+
+hello_message
+-----------------------------------------------
+
+.. code-block:: cpp
 
   struct hello_message
   {
@@ -354,11 +354,11 @@ hello_message
       user_data(user_data)
     {}
   };
-  
-connection_accepted_message  
------------------------------------------------  
-  
-.. code-block:: cpp 
+
+connection_accepted_message
+-----------------------------------------------
+
+.. code-block:: cpp
 
   struct connection_accepted_message
   {
@@ -375,11 +375,11 @@ connection_accepted_message
                                      blocked,
                                      invalid_hello_message,
                                      client_too_old };
-  
+
 connection_rejected_message
------------------------------------------------  
-  
-.. code-block:: cpp 
+-----------------------------------------------
+
+.. code-block:: cpp
 
   struct connection_rejected_message
   {
@@ -402,11 +402,11 @@ connection_rejected_message
       reason_code(reason_code)
     {}
   };
-  
-address_request_message  
------------------------------------------------  
-  
-.. code-block:: cpp 
+
+address_request_message
+-----------------------------------------------
+
+.. code-block:: cpp
 
   struct address_request_message
   {
@@ -417,11 +417,11 @@ address_request_message
 
   enum class peer_connection_direction { unknown, inbound, outbound };
   enum class firewalled_state { unknown, firewalled, not_firewalled };
-  
-address_info  
------------------------------------------------  
-  
-.. code-block:: cpp 
+
+address_info
+-----------------------------------------------
+
+.. code-block:: cpp
 
   struct address_info
   {
@@ -447,11 +447,11 @@ address_info
       firewalled(firewalled)
     {}
   };
-  
-address_message  
------------------------------------------------  
-  
-.. code-block:: cpp 
+
+address_message
+-----------------------------------------------
+
+.. code-block:: cpp
 
   struct address_message
   {
@@ -459,11 +459,11 @@ address_message
 
     std::vector<address_info> addresses;
   };
-  
+
 closing_connection_message
------------------------------------------------  
-  
-.. code-block:: cpp 
+-----------------------------------------------
+
+.. code-block:: cpp
 
   struct closing_connection_message
   {
@@ -483,11 +483,11 @@ closing_connection_message
     {}
   };
 
-  
-current_time_request_message 
------------------------------------------------  
-  
-.. code-block:: cpp 
+
+current_time_request_message
+-----------------------------------------------
+
+.. code-block:: cpp
 
   struct current_time_request_message
   {
@@ -499,11 +499,11 @@ current_time_request_message
       request_sent_time(request_sent_time)
     {}
   };
-  
-current_time_reply_message  
------------------------------------------------  
-  
-.. code-block:: cpp 
+
+current_time_reply_message
+-----------------------------------------------
+
+.. code-block:: cpp
 
   struct current_time_reply_message
   {
@@ -521,11 +521,11 @@ current_time_reply_message
       reply_transmitted_time(reply_transmitted_time)
     {}
   };
-  
-check_firewall_message  
------------------------------------------------  
-  
-.. code-block:: cpp 
+
+check_firewall_message
+-----------------------------------------------
+
+.. code-block:: cpp
 
   struct check_firewall_message
   {
@@ -540,11 +540,11 @@ check_firewall_message
     unable_to_connect,
     connection_successful
   };
-  
+
 check_firewall_reply_message
------------------------------------------------  
-  
-.. code-block:: cpp 
+-----------------------------------------------
+
+.. code-block:: cpp
 
   struct check_firewall_reply_message
   {
@@ -553,21 +553,21 @@ check_firewall_reply_message
     fc::ip::endpoint endpoint_checked;
     fc::enum_type<uint8_t, firewall_check_result> result;
   };
-  
-get_current_connections_request_message 
------------------------------------------------  
-  
-.. code-block:: cpp 
+
+get_current_connections_request_message
+-----------------------------------------------
+
+.. code-block:: cpp
 
   struct get_current_connections_request_message
   {
     static const core_message_type_enum type;
   };
-  
+
 current_connection_data
------------------------------------------------  
-  
-.. code-block:: cpp 
+-----------------------------------------------
+
+.. code-block:: cpp
 
   struct current_connection_data
   {
@@ -580,12 +580,12 @@ current_connection_data
     fc::enum_type<uint8_t, firewalled_state> firewalled;
     fc::variant_object user_data;
   };
-  
-  
-get_current_connections_reply_message  
------------------------------------------------  
-  
-.. code-block:: cpp 
+
+
+get_current_connections_reply_message
+-----------------------------------------------
+
+.. code-block:: cpp
 
   struct get_current_connections_reply_message
   {
@@ -601,18 +601,18 @@ get_current_connections_reply_message
 
 
 
- 
+
 ---------------
 
 exceptions
 ==================================================
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
-   // registered in node.cpp 
-   
-   FC_DECLARE_EXCEPTION( net_exception, 90000, "P2P Networking Exception" ); 
-   FC_DECLARE_DERIVED_EXCEPTION( send_queue_overflow,                   graphene::net::net_exception, 90001, "send queue for this peer exceeded maximum size" ); 
+   // registered in node.cpp
+
+   FC_DECLARE_EXCEPTION( net_exception, 90000, "P2P Networking Exception" );
+   FC_DECLARE_DERIVED_EXCEPTION( send_queue_overflow,                   graphene::net::net_exception, 90001, "send queue for this peer exceeded maximum size" );
    FC_DECLARE_DERIVED_EXCEPTION( insufficient_relay_fee,                graphene::net::net_exception, 90002, "insufficient relay fee" );
    FC_DECLARE_DERIVED_EXCEPTION( already_connected_to_requested_peer,   graphene::net::net_exception, 90003, "already connected to requested peer" );
    FC_DECLARE_DERIVED_EXCEPTION( block_older_than_undo_history,         graphene::net::net_exception, 90004, "block is older than our undo history allows us to process" );
@@ -629,7 +629,7 @@ message_header
 
 * Defines an 8 byte header that is always present because the minimum encrypted packet size is 8 bytes (blowfish).  The maximum message size is defined in config.hpp. The channel, and message type is also included because almost every channel will have a message type field and we might as well include it in the 8 byte header to save space.
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
   struct message_header
   {
@@ -644,7 +644,7 @@ message
 --------------------------
 *  Abstracts the process of packing/unpacking a message for a particular channel.
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
   struct message : public message_header
   {
@@ -662,7 +662,7 @@ message
       *  Assumes that T::type specifies the message type
       */
      template<typename T>
-     message( const T& m ) 
+     message( const T& m )
      {
         msg_type = T::type;
         data     = fc::raw::pack(m);
@@ -679,7 +679,7 @@ message
       *  opposite process from the constructor.
       */
      template<typename T>
-     T as()const 
+     T as()const
      {
          try {
           FC_ASSERT( msg_type == T::type );
@@ -696,8 +696,8 @@ message
              fc::raw::unpack( ds, tmp );
           }
           return tmp;
-         } FC_RETHROW_EXCEPTIONS( warn, 
-              "error unpacking network message as a '${type}'  ${x} !=? ${msg_type}", 
+         } FC_RETHROW_EXCEPTIONS( warn,
+              "error unpacking network message as a '${type}'  ${x} !=? ${msg_type}",
               ("type", fc::get_typename<T>::name() )
               ("x", T::type)
               ("msg_type", msg_type)
@@ -712,26 +712,26 @@ message
 message_oriented_connection
 ==================================================
 
-  
+
 message_oriented_connection_delegate
 ----------------------------------------
-* receives incoming messages from a message_oriented_connection object 
+* receives incoming messages from a message_oriented_connection object
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
-  class message_oriented_connection_delegate 
+  class message_oriented_connection_delegate
   {
   public:
     virtual void on_message(message_oriented_connection* originating_connection, const message& received_message) = 0;
     virtual void on_connection_closed(message_oriented_connection* originating_connection) = 0;
   };
-  
-  
-message_oriented_connection
---------------------------------------  
-* uses a secure socket to create a connection that reads and writes a stream of ``fc::net::message`` objects 
 
-.. code-block:: cpp 
+
+message_oriented_connection
+--------------------------------------
+* uses a secure socket to create a connection that reads and writes a stream of ``fc::net::message`` objects
+
+.. code-block:: cpp
 
   class message_oriented_connection
   {
@@ -771,7 +771,7 @@ message_propagation_data
 -------------------------------------------
 * during network development, we need to track message propagation across the network using a structure like this:
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
   struct message_propagation_data
   {
@@ -785,7 +785,7 @@ node_delegate
 ----------------------------------------
 * used by node reports status to client or fetch data from client
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class node_delegate
    {
@@ -806,9 +806,9 @@ node_delegate
           *  @throws exception if error validating the item, otherwise the item is
           *          safe to broadcast on.
           */
-         virtual bool handle_block( const graphene::net::block_message& blk_msg, bool sync_mode, 
+         virtual bool handle_block( const graphene::net::block_message& blk_msg, bool sync_mode,
                                     std::vector<fc::uint160_t>& contained_transaction_message_ids ) = 0;
-         
+
          /**
           *  @brief Called when a new transaction comes in from the network
           *
@@ -819,7 +819,7 @@ node_delegate
 
          /**
           *  @brief Called when a new message comes in from the network other than a
-          *         block or a transaction.  Currently there are no other possible 
+          *         block or a transaction.  Currently there are no other possible
           *         messages, so this should never be called.
           *
           *  @throws exception if error validating the item, otherwise the item is
@@ -862,7 +862,7 @@ node_delegate
           *     &c.
           *   the last item in the list will be the hash of the most recent block on our preferred chain
           */
-         virtual std::vector<item_hash_t> get_blockchain_synopsis(const item_hash_t& reference_point, 
+         virtual std::vector<item_hash_t> get_blockchain_synopsis(const item_hash_t& reference_point,
                                                                   uint32_t number_of_blocks_after_reference_point) = 0;
 
          /**
@@ -901,7 +901,7 @@ peer_status
 -----------------------------------------
 * Information about connected peers that the client may want to make available to the user.
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    struct peer_status
    {
@@ -917,7 +917,7 @@ node
 -----------------------------------------------------
 * provides application independent P2P broadcast and data synchronization
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
    class node : public std::enable_shared_from_this<node>
    {
@@ -1025,12 +1025,12 @@ node
       private:
         std::unique_ptr<detail::node_impl, detail::node_impl_deleter> my;
    };
-   
-   
+
+
 simulated_network
----------------------------------------------   
-   
-.. code-block:: cpp 
+---------------------------------------------
+
+.. code-block:: cpp
 
    class simulated_network : public node
     {
@@ -1056,8 +1056,8 @@ simulated_network
 
 
    typedef std::shared_ptr<node> node_ptr;
-   typedef std::shared_ptr<simulated_network> simulated_network_ptr;  
-   
+   typedef std::shared_ptr<simulated_network> simulated_network_ptr;
+
 
 ---------------
 
@@ -1066,8 +1066,8 @@ peer_connection
 
 firewall_check_state_data
 ------------------------------------
-   
-.. code-block:: cpp 
+
+.. code-block:: cpp
 
     struct firewall_check_state_data
     {
@@ -1083,12 +1083,12 @@ firewall_check_state_data
       // when we have a result
       node_id_t        requesting_peer;
     };
-	
+
 peer_connection
 ---------------------------------------
-   
-.. code-block:: cpp 
-	
+
+.. code-block:: cpp
+
 	    class peer_connection;
     class peer_connection_delegate
     {
@@ -1099,12 +1099,12 @@ peer_connection
       virtual message get_message_for_item(const item_id& item) = 0;
     };
 
-	
-.. code-block:: cpp 
-	
+
+.. code-block:: cpp
+
     class peer_connection;
     typedef std::shared_ptr<peer_connection> peer_connection_ptr;
-	
+
     class peer_connection : public message_oriented_connection_delegate,
                             public std::enable_shared_from_this<peer_connection>
     {
@@ -1282,9 +1282,9 @@ peer_connection
                                            std::hash<item_id> >,
                                            boost::multi_index::ordered_non_unique<boost::multi_index::tag<timestamp_index>,
                                            boost::multi_index::member<timestamped_item_id,
-										   fc::time_point_sec, 
+										   fc::time_point_sec,
 										   &timestamped_item_id::timestamp> > > > timestamped_items_set_type;
-										   
+
       timestamped_items_set_type inventory_peer_advertised_to_us;
       timestamped_items_set_type inventory_advertised_to_peer;
 
@@ -1300,12 +1300,12 @@ peer_connection
       fc::future<void> accept_or_connect_task_done;
 
       firewall_check_state_data *firewall_check_state;
-	  
+
 	#ifndef NDEBUG
     private:
       fc::thread* _thread;
       unsigned _send_message_queue_tasks_running; // temporary debugging
-	  
+
 	#endif
       bool _currently_handling_message; // true while we're in the middle of handling a message from the remote system
     private:
@@ -1355,7 +1355,7 @@ peer_connection
       void connect_to_task(const fc::ip::endpoint& remote_endpoint);
     };
     typedef std::shared_ptr<peer_connection> peer_connection_ptr;
-	
+
 
 ---------------
 
@@ -1365,7 +1365,7 @@ peer_database
 potential_peer_last_connection_disposition
 ----------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
   enum potential_peer_last_connection_disposition
   {
@@ -1379,8 +1379,8 @@ potential_peer_last_connection_disposition
 potential_peer_record
 ------------------------------------------
 
-.. code-block:: cpp 
-  
+.. code-block:: cpp
+
   struct potential_peer_record
   {
     fc::ip::endpoint                  endpoint;
@@ -1403,12 +1403,12 @@ potential_peer_record
       last_connection_disposition(last_connection_disposition),
       number_of_successful_connection_attempts(0),
       number_of_failed_connection_attempts(0)
-    {}  
+    {}
   };
 
-  
-  
-.. code-block:: cpp 
+
+
+.. code-block:: cpp
 
   namespace detail
   {
@@ -1428,18 +1428,18 @@ potential_peer_record
       void increment();
       bool equal(const peer_database_iterator& other) const;
       const potential_peer_record& dereference() const;
-    private:      
+    private:
       std::unique_ptr<peer_database_iterator_impl> my;
     };
   }
-  
-  
-  
+
+
+
 peer_database
 ------------------------------------
-  
-.. code-block:: cpp 
-  
+
+.. code-block:: cpp
+
   class peer_database
   {
   public:
@@ -1463,10 +1463,10 @@ peer_database
   private:
     std::unique_ptr<detail::peer_database_impl> my;
   };
-  
-  
-  
-  
+
+
+
+
 
 
 ---------------
@@ -1479,8 +1479,8 @@ stcp_socket
 stcp_socket
 ------------------------------
 
-.. code-block:: cpp 
-  
+.. code-block:: cpp
+
 	class stcp_socket : public virtual fc::iostream
 	{
 	  public:

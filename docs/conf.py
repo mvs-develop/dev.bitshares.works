@@ -11,9 +11,12 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import sys
 import os
 import subprocess
+import sys
+
+from sphinx.locale import _
+from sphinx_rtd_theme import __version__
 
 ##import sphinx_rtd_theme
 
@@ -22,8 +25,6 @@ sys.path.append(os.path.abspath("./docs/"))
 # sys.path.append( "./ext/breathe/" )
 sys.path.append(os.path.abspath("./ext/breathe/"))
 
-from sphinx.locale import _
-from sphinx_rtd_theme import __version__
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the

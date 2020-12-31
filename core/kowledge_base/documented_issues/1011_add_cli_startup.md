@@ -7,7 +7,7 @@
 **User Story:** As a user I want to generate public/private key pairs without connecting to a node.
 
 I often use the suggest_brain_key API of the cli_wallet to generate a new signing key pair. It would be helpful to call a command line app with this parameter to achieve the same result on an offline workstation.
- 
+
 ***
 
 *This document purpose: as a result, we made changes. The below shows those changes.*
@@ -45,7 +45,7 @@ libraries/wallet/wallet.cpp
        {
           return graphene::wallet::utility::suggest_brain_key();
        }
-     
+
 (3)
 libraries/wallet/wallet.cpp
 - `brain_key_info utility::suggest_brain_key()` was added
@@ -105,13 +105,13 @@ libraries/wallet/wallet.cpp
          }
       }}
 
-     
+
 (4) programs/cli_wallet/main.cpp
 - added the below
 - `Tree:4a2f333444`
-     
+
       ("suggest-brain-key", "Suggest a safe brain key to use for creaing your account")
- 
+
     ...
 
       if( options.count("suggest-brain-key") )

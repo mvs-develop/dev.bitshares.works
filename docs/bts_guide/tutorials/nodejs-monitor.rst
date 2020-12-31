@@ -8,7 +8,7 @@ This nodejs script monitors the balance history of an account in a graphene-base
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 

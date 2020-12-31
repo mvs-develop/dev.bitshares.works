@@ -7,11 +7,11 @@ Windows x64 CLI Tool
 
 
 .. contents:: Table of Contents
-   :local: 
+   :local:
 
 ------------------
 
-In this section, we will show you how to install cli-wallet tools for Windows and try several methods to get the data from blockchain. 
+In this section, we will show you how to install cli-wallet tools for Windows and try several methods to get the data from blockchain.
 
 How to install DNA-Core CLI Tool
 ===========================================================
@@ -52,7 +52,7 @@ If you open the cli-wallet successfully, you will see similar messages and recei
     2029128ms th_a       main.cpp:188                  main                 ] wdata.ws_server:   wss://bitshares.openledger.info/ws
     2029807ms th_a       main.cpp:193                  main                 ] wdata.ws_user:  wdata.ws_password:
     Please use the set_password method to initialize a new wallet before continuing
-    new >>> 
+    new >>>
 
 - ``set_password``
 
@@ -159,10 +159,10 @@ General
 ::
 
     unlocked >>> gethelp "list_accounts"
-    
+
     Lists all accounts registered in the blockchain. This returns a list of all account names and their account ids, sorted by account name.
     Use the 'lowerbound' and limit parameters to page through the list. To retrieve all accounts, start by setting 'lowerbound' to the empty string '""', and then each iteration, pass the last account name returned as the 'lowerbound' for the next 'list_accounts()' call.
-    
+
     Parameters:
         lowerbound: the name of the first account to return. If the named account does not exist, the list will start at the account that comes after 'lowerbound' (type: const string &) limit: the maximum number of accounts to return (max: 1000) (type: uint32_t)
 
@@ -170,7 +170,7 @@ General
         a list of accounts mapping account names to account ids
 
     unlocked >>>
-	
+
 
 - ``gethelp``  - "save_wallet_file"
 
@@ -178,9 +178,9 @@ General
 
     unlocked >>> gethelp "save_wallet_file"
     gethelp "save_wallet_file"
-    
+
     Saves the current wallet to the given filename.
-    
+
     Parameters:
         wallet_filename: the filename of the new wallet JSON file to create or overwrite. If 'wallet_filename' is empty, save to the current filename. (type: string)
 
@@ -208,7 +208,7 @@ Wallet Calls
     false
     unlocked >>>
 
-	
+
 Account Calls
 -----------------
 
@@ -223,7 +223,7 @@ _ ``list_account_balances``  _(e.g. an existing user account "cedar036)_
 
     unlocked >>>
 
-	
+
 - ``get_acount``
 
 ::
@@ -283,7 +283,7 @@ _ ``list_account_balances``  _(e.g. an existing user account "cedar036)_
     }
     unlocked >>>
 
-	
+
 - ``get_account_id``
 
 ::
@@ -299,7 +299,7 @@ _ ``list_account_balances``  _(e.g. an existing user account "cedar036)_
 
     unlocked >>> get_account_history "cedar036" "4"
     get_account_history "cedar036" "4"
-    2018-01-12T23:48:57 Transfer 40.46468 BTS from blocktrades to cedar036   (Fee: 0.01662 BTS)    
+    2018-01-12T23:48:57 Transfer 40.46468 BTS from blocktrades to cedar036   (Fee: 0.01662 BTS)
     2018-01-12T22:31:00 Transfer 3 OPEN.STEEM from tsugimoto0105 to cedar036   (Fee: 0.01662 BTS)
     2017-12-25T18:56:03 Transfer 0.00100 BTS from cedar036 to sharebits17 -- could not decrypt memo   (Fee: 0.23700 BTS)
     2017-12-25T17:44:15 Transfer 35 BTS from bitshares-users to cedar036   (Fee: 0.21851 BTS)
@@ -387,7 +387,7 @@ Asset Calls
     ]
     unlocked >>>
 
-	
+
 > Note: To list all assets, pass the empty string "" for the lowerbound to start at the beginning of the list, and iterate as necessary.
 
 - ``get_asset``::

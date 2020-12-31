@@ -4,7 +4,7 @@
 
 Verifying Block Production
 ================================
-  
+
 
 
 If you monitor the output of the ``witness_node`` and you have been voted in the top list of block producing witnesses, you should see it generate blocks signed by your witness::

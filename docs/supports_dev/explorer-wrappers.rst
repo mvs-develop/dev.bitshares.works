@@ -2,7 +2,7 @@
 .. _explorer-wrappers:
 
 ******************************************************
-Bitshares Blockchain Explorer and the Wrappers 
+Bitshares Blockchain Explorer and the Wrappers
 ******************************************************
 
 BliShares Blockchain Explorer
@@ -12,28 +12,28 @@ This tool allows you to check DNA blockchain health. You can observe the DNA blo
 
 
 * Bitshares Blockchain Open Explore for Mainnet: http://open-explorer.io
-* Bitshares Blockchain Open Explorer for Public Testnet: http://bitshares-testnet.xyz/ 
+* Bitshares Blockchain Open Explorer for Public Testnet: http://bitshares-testnet.xyz/
 
 |
 
 APIs to Query DNA Blockchain
 =====================================
 
-The below API tools allow you to try DNA APIs. You can set value(s) and click [Try it out!] (:ref:`*see, how it works <bis-explorer-api-tryitout>`), then, you will get a return. The return include an example Curl command path, Request URL, Response Body, Response Code, and Response Headers. Those information are very valuable to learn DNA Blockchain. 
+The below API tools allow you to try DNA APIs. You can set value(s) and click [Try it out!] (:ref:`*see, how it works <bis-explorer-api-tryitout>`), then, you will get a return. The return include an example Curl command path, Request URL, Response Body, Response Code, and Response Headers. Those information are very valuable to learn DNA Blockchain.
 
 * DNA Explorer API uses to query the Mainnet  - *Try it out!*
 
-  - https://explorer.bitshares-kibana.info/apidocs/  
+  - https://explorer.bitshares-kibana.info/apidocs/
 
     - ES Wrapper : Wrapper to expose **Elasticsearch** Bitshares node data to clients
 
 
 * DNA Explorer Testnet API uses to query the Public Testnet   - *Try it out!*
 
-  - http://148.251.10.231:5000/apidocs/ 
-  
+  - http://148.251.10.231:5000/apidocs/
+
     - ES Wrapper : Wrapper to expose **Elasticsearch** Bitshares node data to clients
- 
+
 
 -----------------
 

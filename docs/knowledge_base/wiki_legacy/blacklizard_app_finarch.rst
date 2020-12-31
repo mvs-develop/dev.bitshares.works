@@ -99,7 +99,7 @@ Since Black Lizard ops maintain all chain invariants, I think we should allow `s
         break;
     }
 
-	
+
 This is basically an escrow system. We can add an expiration time and a `fail_to_reach_consensus` case, however this doesn't quite work -- Alice can end up with both BTC and BitBTC if the Bitcoin network is too slow confirming Bob's transaction! Instead, before Alice publishes the above Black Lizard transaction, she should require Bob to send her a cancellation transaction locked in the future (while Bitcoin doesn't have the ability to expire transactions, it does have a field called `nLockTime` which makes a transaction invalid until some point in the future). The cancellation transaction simply sends coins from `btc_bob_addr` to some other address `btc_bob_addr2` presumably controlled by Bob. If Alice doesn't receive the BTC in time, she is able to broadcast the cancellation transaction, which triggers case 1 and unlocks Alice's BitBTC while returning the BTC to Bob. (If the cancellation transaction travels over a broadcast medium, the transaction should be encrypted to Alice's public key. This way, Alice has the option to give Bob an extension of time; she can simply wait to publish the cancellation transaction. If the cancellation transaction was broadcast to e.g. the whole Black Lizard network unencrypted, arbitrary third parties can take away Alice's option by publishing the cancellation transaction to the Bitcoin network themselves.)
 
 N.b. the `op_invoke_oracle` is instructions to the bridge app, the platform does not need to know how to interpret it. All the platform "knows" is that the oracle now has the ability to create a transaction saying either "the result of the `op_invoke_asset` in block , transaction <tx_index>, operation <op_index> is 0" or "the result is 1", which causes the platform to run the respective case. The locked balance goes into a special account-like object belonging to this transaction, which is destroyed when the transaction finishes. We should validate that if control reaches the end of the transaction, no locked assets remain (i.e. every control path results in spending all locked assets). This is actually possible since operations establishing or disposing of locked balances always use literal amounts (i.e. you can't send an amount determined by a computation).
@@ -154,7 +154,7 @@ A platform-level transaction is said to invoke an app if it contains an `invoke_
         pair<asset_id, amount> app_fee_on_accept;
     };
 
-	
+
 
 An operational account has one or more app delegates which approve an app state using DPOS.
 

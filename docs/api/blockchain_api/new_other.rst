@@ -2,7 +2,7 @@
 Block API
 ***********************
 
-Block 
+Block
 ==================
 get_blocks
 -------------------------------
@@ -16,7 +16,7 @@ get_blocks
 Asset API
 ***********************
 
-Asset 
+Asset
 ==================
 get_asset_holders
 -------------------------------
@@ -34,7 +34,7 @@ get_all_asset_holders
 Orders API
 ***********************
 
-Orders 
+Orders
 ==================
 get_grouped_limit_orders
 -------------------------------

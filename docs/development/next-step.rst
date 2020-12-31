@@ -21,21 +21,21 @@ Create a DNA GUI wallet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Check `DNA-UI Release <https://github.com/bitshares/bitshares-ui/releases>`_
-- Read how to create `DNA UI Wallet  <http://how.bitshares.works/en/latest/user_guide/create_account.html>`_ steps 
-- Understand `DNA Client and Login Mode <http://how.bitshares.works/en/latest/user_guide/bitshares-client.html>`_ 
+- Read how to create `DNA UI Wallet  <http://how.bitshares.works/en/latest/user_guide/create_account.html>`_ steps
+- Understand `DNA Client and Login Mode <http://how.bitshares.works/en/latest/user_guide/bitshares-client.html>`_
 - Know :ref:`where to find public/private keys (GUI) <where-pub-prv-keys>`
 
-Know how to Backup/Restore (GUI) 
+Know how to Backup/Restore (GUI)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- 
-- Understand `How to Backup and Restore your wallet <http://how.bitshares.works/en/latest/user_guide/backup_local_wallet.html>`_ 
+
+- Understand `How to Backup and Restore your wallet <http://how.bitshares.works/en/latest/user_guide/backup_local_wallet.html>`_
 
 
 Create and launch a CLI wallet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- 
+
 - Understand `CLI Client and Wallet -  Connectivity <https://dev.bitshares.works/en/master/development/apps/cli_intro.html>`_
-- Learn how to `Connecte a CLI wallet <https://dev.bitshares.works/en/master/development/apps/cli_wallet.html>`_  
+- Learn how to `Connecte a CLI wallet <https://dev.bitshares.works/en/master/development/apps/cli_wallet.html>`_
 - Learn how to :ref:`set up Secure Network and Wallet Configuration <secure-network-configuration>`
 - Know how to :ref:`import a GUI-wallet account into CLI-wallet <howto-import-gui-wallet-account-cli>`
 
@@ -52,12 +52,12 @@ Run a node
 - Try it in a :ref:`DNA Public TestNet <public-testnet-details>`
 
 
-Use DNA API 
+Use DNA API
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Learn :ref:`API Restrictions <api-access-and-restrictions>`
 - Understand Bitshares :ref:`Objects and IDs and the format <objects-ids>`
-- Understand DNA :ref:`Remote Procedure Calls (RPC) <rpc>` 
+- Understand DNA :ref:`Remote Procedure Calls (RPC) <rpc>`
 - Understand DNA :ref:`Websocket Calls & Notifications <websocket-calls>`
 - Try :ref:`bis-explorer-api-tryitout`
 - Look into DNA APIs
@@ -80,14 +80,14 @@ Know DNA other languages' supports
 
 - Check :ref:`Python DNA information links <lib-python>`
 - Check  `BitSharesjs: JavaScript Bitshares library <https://bitsharesjs.bitshares.org/>`_
- 
+
 
 
 Know about BSIPs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Read about :ref:`DNA Improvement Proposals and Protocols (BSIPs) <about-bsips>`
-- Check the `BSIP Repository <https://github.com/bitshares/bsips>`_ 
+- Check the `BSIP Repository <https://github.com/bitshares/bsips>`_
 
   - In the repository, you will find submitted technical documents. They describe the process of updating and improving the DNA blockchain and technical ecosystem.
 
@@ -96,13 +96,13 @@ Know about BSIPs
 
 
 
-	
-	
-	
-	
-	
-	
-	 
-	
+
+
+
+
+
+
+
+
 |
 

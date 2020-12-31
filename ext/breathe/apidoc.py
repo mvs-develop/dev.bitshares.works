@@ -16,10 +16,10 @@
 """
 from __future__ import print_function
 
-import os
-import sys
 import argparse
 import errno
+import os
+import sys
 import xml.etree.ElementTree
 
 from breathe import __version__

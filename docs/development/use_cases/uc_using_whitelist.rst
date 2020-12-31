@@ -7,7 +7,7 @@ Using Whitelists and Blacklists
 
 .. contents:: Table of Contents
    :local:
-   
+
 --------------------
 
 
@@ -48,7 +48,7 @@ It expects a `new_listing_status` from
 -------------
 
 
-Asset Market Whitelists 
+Asset Market Whitelists
 ========================
 
 An issuer of an user-issued-asset may want to restrict trading partners for his
@@ -91,7 +91,7 @@ Asset Market white-lists work with the following API call:
 
 .. _asset-user-whitelists:
 
-Asset User Whitelists 
+Asset User Whitelists
 ======================
 
 Asset User white- and black-lists serve the need for companies to restrict
@@ -116,7 +116,7 @@ providers.
 
 Let's assume user ``alice`` wants to own a gateways IOUs called ``G.USD`` which are
 restricted by a whitelists. Before being able to own ``G.USD``, ``alice`` needs
-to be white-listed by one of the authorities of ``G.USD``. 
+to be white-listed by one of the authorities of ``G.USD``.
 
 Defining an asset's list authorities
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

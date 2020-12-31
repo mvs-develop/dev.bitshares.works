@@ -82,7 +82,7 @@ Notes:
 -  Remember to transfer enough to cover the fee to committee account and set review period to at least ``committee_proposal_review_period``
 -  Much of this could be automated by a better wallet command.
 
-		
+
 |
 
 --------------------

@@ -1,5 +1,5 @@
-from . import index
-from . import compound
+# -*- coding: utf-8 -*-
+from . import compound, index
 
 
 class ParserError(Exception):

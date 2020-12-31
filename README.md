@@ -14,7 +14,7 @@ Welcome to the documentation portal for the DNA Blockchain. The content on this 
 
 ***
 
-### Contributing 
+### Contributing
 
 - [How to Contribute to DNA Documentation Project](https://github.com/bitshares/dev.bitshares.works/blob/master/CONTRIBUTING.md)
 

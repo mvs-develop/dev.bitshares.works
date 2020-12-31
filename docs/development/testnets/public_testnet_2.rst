@@ -8,16 +8,16 @@ Public Testnet : witness
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 
- 
-									  
+
+
 1. Set up Block Production (Option)
 ------------------------------------------
 
-If you want to produce blocks, you need to modify the data configulation file ``config.ini``. 
+If you want to produce blocks, you need to modify the data configulation file ``config.ini``.
 
 All we put into the configuration file is the ids and the keys for the witnesses so that we can start producing blocks ::
 
@@ -47,7 +47,7 @@ All we put into the configuration file is the ids and the keys for the witnesses
 This authorizes the ``witness_node`` to produce blocks on behalf of the listed **witness-id's**, and specifies the private key needed to sign those blocks.  Normally each witness would be on a different node, but for the purposes of this testnet, we will start out with all witnesses signing blocks on a single node.
 
 |
-	  
+
 ----------
 
 2. Establish a Committee (Option - Block Production)
@@ -93,7 +93,7 @@ Since only lifetime members can be committee members, we need to fund these acco
     upgrade_account com5 true
     upgrade_account com6 true
 
-	
+
 2.3 Registering as committee member
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -130,7 +130,7 @@ All we need to do know is vote for our own committee members:
     vote_for_committee_member faucet com6 true true
 
 -------------
-	
+
 
 
 |

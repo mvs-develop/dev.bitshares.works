@@ -1,6 +1,6 @@
 .. role:: strike
     :class: strike
-	
+
 .. _openssl-and-lib:
 
 *********************
@@ -10,7 +10,7 @@ OpenSSL and another Library
 
 .. contents:: Table of Contents
    :local:
-   
+
 -----------------
 
 Supported OpenSSL Versions
@@ -24,30 +24,30 @@ If your system OpenSSL version is newer than OpenSSL 1.1.0, then you will have t
 
         cmake -DOPENSSL_INCLUDE_DIR=/usr/include/openssl-1.0 -DOPENSSL_SSL_LIBRARY=/usr/lib/openssl-1.0/libssl.so -DOPENSSL_CRYPTO_LIBRARY=/usr/lib/openssl-1.0/libcrypto.so .
 
-		
+
 |
 
 
 Build with another Library
 ===========================
 
-In DNA-Core, the OpenSSL is linked statically. One of reasons, when we distribute binaries (Windows and also macOS), the libraries need to be statically linked. 
+In DNA-Core, the OpenSSL is linked statically. One of reasons, when we distribute binaries (Windows and also macOS), the libraries need to be statically linked.
 
 
 We received a question "Is there any reason for not linking the openssl dynamically? The openssl is linked statically which is causing us troubles when building witness_node for an embedded Linux (RPi)."
 
-* Finding: in order to force dynamic linking on Linux systems which allow both static and dynamic linking, `CMAKE_FIND_LIBRARY_SUFFIXES` must set correct order like this: 
-  
-   - `SET(CMAKE_FIND_LIBRARY_SUFFIXES .so .a)` - in original CMakeLists.txt it is 
+* Finding: in order to force dynamic linking on Linux systems which allow both static and dynamic linking, `CMAKE_FIND_LIBRARY_SUFFIXES` must set correct order like this:
+
+   - `SET(CMAKE_FIND_LIBRARY_SUFFIXES .so .a)` - in original CMakeLists.txt it is
    - `SET(CMAKE_FIND_LIBRARY_SUFFIXES ".a;.so")` that's why the libs are tried to link statically first.
 
-   
+
 |
 
 --------------------
 
 
-Linking OpenSSL Statically or Dynamically? 
+Linking OpenSSL Statically or Dynamically?
 --------------------------------------------
 
 Background Knowledge
@@ -72,7 +72,7 @@ cUrl needs the OpenSSL library. DNA needs OpenSSL and cUrl. When DNA needs to be
 
 When Bitshares is compiled, and is using the same OpenSSL components that cUrl did when it was compiled, everyone is happy. There is only 1 version of each OpenSSL function to choose from. The linker is happy, and the application gets built.
 
-.. Note:: 
+.. Note::
  - 1: This applies to Windows users as well, although the terminology is a bit different. They call "shared libraries" "DLLs".
  - 2: All of the above should not be taken as rules. There can be some "bending" to make things work, but things will probably be more smooth if you can match all your pieces (versions, products, static/dynamic, etc.).
 
@@ -82,8 +82,8 @@ When Bitshares is compiled, and is using the same OpenSSL components that cUrl d
 Related Issues & Discussions
 ------------------------------
 
-- `#1304: dynamically linking openssl <https://github.com/bitshares/bitshares-core/issues/1304>`_ 
-- `#1297: make witness_node cli_wallet error <https://github.com/bitshares/bitshares-core/issues/1297>`_ 
+- `#1304: dynamically linking openssl <https://github.com/bitshares/bitshares-core/issues/1304>`_
+- `#1297: make witness_node cli_wallet error <https://github.com/bitshares/bitshares-core/issues/1297>`_
 
 
 

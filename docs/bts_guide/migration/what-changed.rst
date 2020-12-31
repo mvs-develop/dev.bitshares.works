@@ -41,13 +41,13 @@ What has Changed since DNA 0.9?
 * **Explicit Privacy**:
   The *TITAN* technology in DNA 2.0 slowed down blockchain processing
   significantly. Because of this and because TITAN did not really offer good
-  privacy, we eliminated TITAN as a default transaction feature. 
+  privacy, we eliminated TITAN as a default transaction feature.
   Hence: **Account transactions are public now as well.**
   However, since we recognize the value of financial privacy, we offer
   *blinded* transactions that hide the transferred *amount*, and *stealth*
   transactions that hide the sender and receiver. A combination of both is also
   possible.
- 
+
 * **Prices are Fractions**:
   To circumvent rounding errors, all prices in DNA 2.0 are represented as
   fractions.

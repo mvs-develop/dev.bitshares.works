@@ -1,4 +1,4 @@
-### how.bitshares.works & dev.bitshares.works 
+### how.bitshares.works & dev.bitshares.works
 
 To be filled.
 

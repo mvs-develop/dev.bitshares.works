@@ -2,12 +2,12 @@
 .. _run-api-node-guide:
 
 *****************************
-Running a DNA API Node 
+Running a DNA API Node
 *****************************
 
 .. contents:: Table of Contents
    :local:
-   
+
 --------------------
 
 Introduction
@@ -66,7 +66,7 @@ Running a Production API Node
 GNU screen
 --------------
 
-This is the easier way, start a screen terminal and run your node on it. 
+This is the easier way, start a screen terminal and run your node on it.
 
 - Read more about: :ref:`manage-gun-screen`
 
@@ -103,7 +103,7 @@ Docker
    - "0.0.0.0:8091:8090"
   volumes:
   - "bitshares-fullnode:/var/lib/bitshares"
-    #  links: 
+    #  links:
     #- fullnode
 
  volumes:

@@ -1,15 +1,15 @@
 .. role:: strike
     :class: strike
-	
+
 .. _build-ubuntu:
 
 
 ********************
 Building on Ubuntu
-******************** 
- 
+********************
+
 .. contents:: Table of Contents
-   :local: 
+   :local:
 
 --------
 
@@ -44,7 +44,7 @@ Ubuntu 16.04 LTS (64-bit)
 	cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo .
 	make
 
-	
+
 **Upgrade Script (prepend to the Build Script above if you built a prior release)**
 
 ::
@@ -70,13 +70,13 @@ We recommend building on Ubuntu 16.04 LTS (64-bit), and the build dependencies m
 
 - Ubuntu 18.04 LTS (**64-bit**)
 - Ubuntu 16.04 LTS (**64-bit**)
- 
+
 .. Note:: DNA requires a 64-bit operating system to build, and will not build on a 32-bit OS.
 
 
 ---------------
 
-Known issue: 
+Known issue:
 ------------
 
 Error ``{"message":"Timer Expired"}`` in Ubuntu 16.04 LTS
@@ -84,14 +84,14 @@ Error ``{"message":"Timer Expired"}`` in Ubuntu 16.04 LTS
 
 If error ``{"message":"Timer Expired"}`` dropped then it could be issue with websocketpp in linux kernel > 4.4.
 
-Details `here <https://github.com/DECENTfoundation/DECENT-Network/issues/194>`_ 
+Details `here <https://github.com/DECENTfoundation/DECENT-Network/issues/194>`_
 
 Steps to fix::
 
     cd ~/bitshares-core/libraries/fc/vendor/websocketpp
     git remote set-url origin https://github.com/DECENTfoundation/websocketpp.git
     git fetch
-    git checkout 
+    git checkout
 
 And then build DNA Core.
 

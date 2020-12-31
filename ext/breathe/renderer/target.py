@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 class TargetHandler(object):
     def __init__(self, project_info, node_factory, document):
 

@@ -53,7 +53,7 @@ The following API calls will be impacted with the proposed change:
 
 Note: This feature will slightly impact performance but will greatly improve usability.
 
-(e.g.) The change... 
+(e.g.) The change...
 - from    `get_account_balances( id, assets );`
 - to(new) `get_account_balances( account_name_or_id, assets );`
 

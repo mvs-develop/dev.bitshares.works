@@ -11,9 +11,9 @@ article <websocket>`.
 
 .. contents:: Table of Contents
    :local:
-   
+
 ----------------
-   
+
 
 Account History
 =======================

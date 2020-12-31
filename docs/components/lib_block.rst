@@ -9,17 +9,17 @@ This section shows how each block is constructed and what kinds of elements are 
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
-Block 
+Block
 ==========
 
-The below is simple blockchain structure image. 
+The below is simple blockchain structure image.
 
-- Each block has a block_id and refers a previous block_id. And each block has more than one transaction(s). 
-- Each transaction has more than one operation(s). 
-- Each operation has "fee" and element(s). Each operation has different elements (processes). 
+- Each block has a block_id and refers a previous block_id. And each block has more than one transaction(s).
+- Each transaction has more than one operation(s).
+- Each operation has "fee" and element(s). Each operation has different elements (processes).
 
 
 .. image:: ../../_static/structures/block_structure_si1.png
@@ -28,17 +28,17 @@ The below is simple blockchain structure image.
         :align: center
 
 
-  
-Block Header - inheritance 
+
+Block Header - inheritance
 ================================
 
 
 block_header
 ----------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
-	// *Block Header Inheritance* (i.e.) 1.0.0.0 
+	// *Block Header Inheritance* (i.e.) 1.0.0.0
 	// graphene::chain
 
 	struct block_header
@@ -60,7 +60,7 @@ block_header
 
 .. Note:: when we need to add data to `extensions`, remember to review ``database::_generate_block()``.
   - More info in https://github.com/bitshares/bitshares-core/issues/1136
-      
+
 signed_block_header
 ---------------------
 
@@ -95,11 +95,11 @@ signed_block
 		vector<processed_transaction> transactions;
 	};
 
- 
+
 signed_block_with_info
 -----------------------
 
-.. code-block:: cpp  
+.. code-block:: cpp
 
 	// *Block Header Inheritance* (i.e.) 1.1.1.1
 	// graphene::wallet
@@ -113,13 +113,13 @@ signed_block_with_info
 		public_key_type                signing_key;
 		vector< transaction_id_type >  transaction_ids;
 	};
-	 
+
 ----------------------------
 
 
 Block (detail image)
 ===========================
-		
+
 .. image:: ../../_static/structures/block_structure_detail1.png
         :alt: DNA Architecture
         :width: 700px
@@ -133,13 +133,13 @@ Block (detail image)
 
 block_database
 ==========================
-			
-.. code-block:: cpp  
+
+.. code-block:: cpp
 
 	namespace graphene { namespace chain {
 	   struct index_entry;
 
-	   class block_database 
+	   class block_database
 	   {
 		  public:
 			 void open( const fc::path& dbdir );
@@ -168,7 +168,7 @@ block_database
     //(11/27/2018)
 
 
-	
+
 
 |
 

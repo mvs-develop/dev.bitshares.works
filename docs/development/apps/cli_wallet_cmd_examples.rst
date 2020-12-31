@@ -3,14 +3,14 @@
 .. _cli-wallet-cmd-examples:
 
 ****************************************************************
-A Collection of command lines - Node, Wallet, and Witness 
+A Collection of command lines - Node, Wallet, and Witness
 ****************************************************************
 
 This page is a collection of command lines to connect Node, Wallet, and Witness. You can compare their differences to understand the patterns and how they are used.
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 **Note:** The *CLI client* is unable to run on its own (i.e. without being connected to the witness node). Successfully to run the CLI client...
@@ -23,14 +23,14 @@ This page is a collection of command lines to connect Node, Wallet, and Witness.
 ***
 <E.g. 1: [(source)](../nodes_full_witness/full_nodes.md#full-nodes-witness-nodes)>
 
-Launch the full node:  
+Launch the full node:
 ========================
 
 ::
 
     ./programs/witness_node/witness_node
 
-- Read about [witness_node: **config.ini** settings](../nodes_full_witness/full_nodes.md#how-to-launch-the-full-node).  
+- Read about [witness_node: **config.ini** settings](../nodes_full_witness/full_nodes.md#how-to-launch-the-full-node).
 
 At this point, you can try queries to the blockchain. (i.e., Database APIs. *exclude wallet APIs*)
 
@@ -47,17 +47,17 @@ Run the witness as a node in the network (localhost):
 ::
 
     ./programs/witness_node/witness_node --rpc-endpoint 127.0.0.1:8090
-    
+
 **Create a Wallet (2a)**:
 
-This will open the port 8090 for local queries only. 
+This will open the port 8090 for local queries only.
 
 ::
 
     ./programs/cli_wallet/cli_wallet -s ws://127.0.0.1:8090
 
 
-**Create a Wallet (2b)**: 
+**Create a Wallet (2b)**:
 
 This will open the port 8091 for HTTP-RPC requests and has the capabilities to handle accounts while the witness_node can only answer queries to the blockchain.
 
@@ -79,19 +79,19 @@ Run the witness as a node in the network:
 
     ./programs/witness_node/witness_node --rpc-endpoint="0.0.0.0:8090"
 
-This will open port 8090 and make it available over the internet (unless you run behind a router/firewall). 
+This will open port 8090 and make it available over the internet (unless you run behind a router/firewall).
 If you want it to be open for your machine only, replace 0.0.0.0 by localhost.
 
 ------------------------
 
 <E.g. 4>
 
-Use the Public API node 
+Use the Public API node
 ============================
 
 - Here is the latest list of [Public Full Node](https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js#L67) information
 
-**Create a Wallet (4a)**: 
+**Create a Wallet (4a)**:
 
 This pattern uses the Public API node of *OpenLedger* and connect via secured websocket(wss) connection. Open the cli-wallet,
 
@@ -103,13 +103,13 @@ This pattern uses the Public API node of *OpenLedger* and connect via secured we
 
 Cli-wallet Open a Remote Procedure Call (RPC) Port for Wallet Operation (spend, buy, sell...).
 
-You can choose between Websocket RPC or RPC-HTTP requests. You can also set both ports together (*below example*) and interface your application with it. 
+You can choose between Websocket RPC or RPC-HTTP requests. You can also set both ports together (*below example*) and interface your application with it.
 
 ::
 
-    ./programs/cli_wallet/cli_wallet -s wss://bitshares.openledger.info/ws 
-                                     -H 127.0.0.1:8092 
-                                     -r 127.0.0.1:8093                                                                        
+    ./programs/cli_wallet/cli_wallet -s wss://bitshares.openledger.info/ws
+                                     -H 127.0.0.1:8092
+                                     -r 127.0.0.1:8093
 
 - Websocket RPC via the `-r` parameter, and
 - HTTP RPC via the `-H` parameter
@@ -125,26 +125,26 @@ In order to create a wallet (on Public Testnet), you must specify the previously
 
 ::
 
-    ./programs/cli_wallet/cli_wallet --wallet-file my-wallet.json 
-                                    -s ws://127.0.0.1:11011 
-                                    -H 127.0.0.1:8090 
+    ./programs/cli_wallet/cli_wallet --wallet-file my-wallet.json
+                                    -s ws://127.0.0.1:11011
+                                    -H 127.0.0.1:8090
                                     -r 127.0.0.1:8099
-                                   
+
 **Note:** The parameter `-H` is required so that we can interface with the cli-wallet via `RPC-HTTP-JSON`, later while `-r` will open a port for the websocket RPC.
 
 ----------------------
 
 <E.g. 6 [(source)](../testnets/private_testnet.md#10-creating-a-new-wallet)>
 
-Private Testnet 
+Private Testnet
 ========================
 
 This connects the cli client to your testnet witness node. Keep your witness node running and in another Command Prompt window run this command:
 
 ::
 
-    ./programs/cli_wallet/cli_wallet --wallet-file=my-wallet.json 
-                 	--chain-id=8b7bd36a146a03d0e5d0a971e286098f41230b209d96f92465cd62bd64294824 
+    ./programs/cli_wallet/cli_wallet --wallet-file=my-wallet.json
+                 	--chain-id=8b7bd36a146a03d0e5d0a971e286098f41230b209d96f92465cd62bd64294824
                     --server-rpc-endpoint=ws://127.0.0.1:8090
 
 Depending on the actual chain that you want to connect to your may need to specifiy –chain-id.
@@ -155,10 +155,10 @@ Depending on the actual chain that you want to connect to your may need to speci
 
 <E.g. 7 [(source)](../wallet/wallet_network.md#general-network-and-wallet-configuration)>
 
-General Network and Wallet Configuration 
+General Network and Wallet Configuration
 =============================================
 
-**settings** 
+**settings**
 
 - Trusted Full Node:
   - extern: internet access **required**
@@ -192,16 +192,16 @@ We open up a RPC-JSON-HTTP port to be able to interface with API requests. The w
 
 <E.g. 8 [(source)](../wallet/wallet_network.md#secure-network-and-wallet-configuration)>
 
-Secure Network and Wallet 
+Secure Network and Wallet
 ==================================
 
-**settings** 
+**settings**
 
 - Trusted Full Node:
   - extern: internet access **required**
   - intern: 192.168.0.100
-  - port: 8090 
-  
+  - port: 8090
+
 - Delayed Full Node:
   - extern: **no** internet access required
   - intern: 192.168.0.101
@@ -210,10 +210,10 @@ Secure Network and Wallet
 - Wallet:
   - extern: **no** internet access required
   - intern: 192.168.0.102
-  - port: 8092 
- 
+  - port: 8092
+
 **Trusted Full Node**
- 
+
 For the trusted full node, the default settings can be used. For later, we will need to open the RPC port and listen to an IP address to connect the delayed full node to.
 
 ::
@@ -221,7 +221,7 @@ For the trusted full node, the default settings can be used. For later, we will 
     ./programs/witness_node/witness_node --rpc-endpoint="192.168.0.100:8090"
 
 **Delayed Full Node**
- 
+
 The delayed full node will need the IP address and port of the p2p-endpoint from the trusted full node and the number of blocks that should be delayed. We also need to open the RPC/Websocket port (to the local network!) so that we can interface using RPC-JSON calls.
 
 ::
@@ -231,7 +231,7 @@ The delayed full node will need the IP address and port of the p2p-endpoint from
                                         -s "0.0.0.0:0" \
                                         --p2p-endpoint="0.0.0.0:0" \
                                         --seed-nodes "[]"
-                                     
+
 We could now connect via RPC:
 
 - `192.168.0.100:8090` : The trusted full node exposed to the internet

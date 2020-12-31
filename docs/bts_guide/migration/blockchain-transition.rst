@@ -26,10 +26,10 @@ will be met:
   on or after 2015-06-08 (US Eastern time) will be given the prefix “bts-“ or
   similar after the migration. All account names registered on or after
   2015-06-18 (US Eastern time) will be prefixed with "bts-" unless they were
-  registered using the DNA Faucet. 
+  registered using the DNA Faucet.
 
-  * **Premium Name**:  No numbers and has vowles 
-  * **Cheap Name**:    Has numbers or no vowels 
+  * **Premium Name**:  No numbers and has vowles
+  * **Cheap Name**:    Has numbers or no vowels
 
   All other account names will be migrated with their corresponding
   owner/active keys.

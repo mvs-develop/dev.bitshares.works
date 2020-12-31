@@ -8,7 +8,7 @@ A prediction market is a specialized BitAsset such that total debt and total col
 
 .. contents:: Table of Contents
    :local:
-   
+
 .. note:: In the following, we denote a *positive outcome* as a predication market that resolves to `true` (i.e. a price feed
           of `1`) and a *negative outcome* to resolve to `false` (i.e., a price feed of `0`)
 

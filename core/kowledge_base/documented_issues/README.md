@@ -1,6 +1,6 @@
 ## Documented Issues
 
-This *documented_issues* folder is for closed or proceeding issues that we would like to save the information as a document. 
+This *documented_issues* folder is for closed or proceeding issues that we would like to save the information as a document.
 
 This location might be temporary for some of the documents. When we find a proper place for the information, we will add or update the documentation. (We will leave the created original document in this folder with a note.)
 

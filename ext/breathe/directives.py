@@ -1,28 +1,27 @@
-from .finder.core import FinderFactory
+# -*- coding: utf-8 -*-
+import fnmatch
+import os
+import re
+import subprocess
+
+from docutils.parsers.rst.directives import flag, unchanged, unchanged_required
+from sphinx.builders.text import TextBuilder
+from sphinx.writers.text import TextWriter
+
+from .directive.base import BaseDirective, create_warning
+from .directive.file import AutoDoxygenFileDirective, DoxygenFileDirective
+from .directive.index import AutoDoxygenIndexDirective, DoxygenIndexDirective
+from .exception import BreatheError
+from .finder.core import DoxygenItemFinderFactoryCreator, FinderFactory
+from .node_factory import create_node_factory
 from .parser import DoxygenParserFactory
+from .process import AutoDoxygenProcessHandle
+from .project import ProjectError, ProjectInfoFactory
 from .renderer import DoxygenToRstRendererFactory
 from .renderer.base import RenderContext
 from .renderer.filter import FilterFactory
+from .renderer.mask import MaskFactory, NoParameterNamesMask, NullMaskFactory
 from .renderer.target import TargetHandlerFactory
-from .renderer.mask import MaskFactory, NullMaskFactory, NoParameterNamesMask
-
-from .finder.core import DoxygenItemFinderFactoryCreator
-from .directive.base import BaseDirective, create_warning
-from .directive.index import DoxygenIndexDirective, AutoDoxygenIndexDirective
-from .directive.file import DoxygenFileDirective, AutoDoxygenFileDirective
-from .process import AutoDoxygenProcessHandle
-from .exception import BreatheError
-from .project import ProjectInfoFactory, ProjectError
-from .node_factory import create_node_factory
-
-from docutils.parsers.rst.directives import unchanged_required, unchanged, flag
-from sphinx.writers.text import TextWriter
-from sphinx.builders.text import TextBuilder
-
-import os
-import fnmatch
-import re
-import subprocess
 
 
 class NoMatchingFunctionError(BreatheError):

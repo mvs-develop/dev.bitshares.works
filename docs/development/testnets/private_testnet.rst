@@ -5,11 +5,11 @@
 Private Testnet Set up
 ************************
 
-Some developers may want to deploy their own DNA blockchain locally for governance, and speed reasons. This section explains how to prepare the private testnet environment and what steps to take to be a block producing node (witness node). 
+Some developers may want to deploy their own DNA blockchain locally for governance, and speed reasons. This section explains how to prepare the private testnet environment and what steps to take to be a block producing node (witness node).
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 .. warning:: For the private testnet, you **MUST** create and set up own genesis file and also, set parameters' values into a database configuration file (config.ini).  You should not connect to the mainnet nor the public testnet.
@@ -26,7 +26,7 @@ Depending on your OS, we have the Installation guides available. To see more Ins
 Let's get started, open a **new command line interface (CLI) window** and go to a directory you want to download the ``testnet`` branch files. And run the following command lines. In this example, you create a ``bitshares-testnet`` directory.
 
  ::
- 
+
     git clone https://github.com/bitshares/bitshares-core.git bitshares-testnet
     cd bitshares-testnet/
     git checkout testnet
@@ -36,27 +36,27 @@ Let's get started, open a **new command line interface (CLI) window** and go to 
 1-2. Initial Compilation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-After you download a testnet branch files in a ``bitshares-testnet`` directory, let's build the programs. Run the following commands. This command will create two program files (witness_node and cli_wallet). 
+After you download a testnet branch files in a ``bitshares-testnet`` directory, let's build the programs. Run the following commands. This command will create two program files (witness_node and cli_wallet).
 
  ::
 
    cmake .
     make
 
-You will find the compiled program files in the below folders. 
+You will find the compiled program files in the below folders.
 
 .. list-table::
    :widths: 20 80
    :header-rows: 1
-   
+
    * - program name
      - directory and folder
-   * - witness_node 
+   * - witness_node
      - ../bitshares-testnet/programs/witness_node/
-   * - cli_wallet 
+   * - cli_wallet
      - ../bitshares-testnet/programs/cli_wallet/
 
-	 
+
 The above installation steps are the same with the public testnet installation.
 
 |
@@ -66,7 +66,7 @@ The above installation steps are the same with the public testnet installation.
 2. Create a Testnet Folder
 -------------------------------------------
 
-Create a new folder (e.g., ``[Testnet-Home]``) in any location you like and copy a `witness_node` program and a `cli_wallet` program there. 
+Create a new folder (e.g., ``[Testnet-Home]``) in any location you like and copy a `witness_node` program and a `cli_wallet` program there.
 
 Open a **command prompt window** and switch the current directory to ``[Testnet-Home]``. Your folder structure should look like the below.
 
@@ -75,28 +75,28 @@ Open a **command prompt window** and switch the current directory to ``[Testnet-
    ../[Testnet-Home]
        - witness_node          // program
        - cli_wallet            // program
- 
-	 
+
+
 |
 
 ------------------
 
-3. Genesis File 
+3. Genesis File
 -------------------------------------------
 
-.. attention:: **Discussion:** `#1591:Add genesis-dev.json and move genesis jsons out of root source directory. <https://github.com/bitshares/bitshares-core/issues/1591>`_  
- - For a Private Testnet setup, we have a discussion about a ``genesis-dev.json`` file. This genesis-dev file can be used with no modification to create a private testnet and produce blocks on it with the init* accounts. 
- 
- 
+.. attention:: **Discussion:** `#1591:Add genesis-dev.json and move genesis jsons out of root source directory. <https://github.com/bitshares/bitshares-core/issues/1591>`_
+ - For a Private Testnet setup, we have a discussion about a ``genesis-dev.json`` file. This genesis-dev file can be used with no modification to create a private testnet and produce blocks on it with the init* accounts.
+
+
 **Note:** The ``--create-example-genesis`` option will be removed by Feature Release (201902). Read more: `#1536 Remove "create-genesis-json" startup option from witness_node <https://github.com/bitshares/bitshares-core/issues/1536>`_
 
- 
+
 |
 
 3-1. Create a Genesis File for a Private Testnet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The genesis file is the initial state of the network. We want to create a subdirectory named ``genesis`` and create a file within it named ``my-genesis.json``.  In the private testnet, we have to generate each active and owner private key. Here is a sample private testnet genesis file template, copy and past into your my-genesis.json file. 
+The genesis file is the initial state of the network. We want to create a subdirectory named ``genesis`` and create a file within it named ``my-genesis.json``.  In the private testnet, we have to generate each active and owner private key. Here is a sample private testnet genesis file template, copy and past into your my-genesis.json file.
 
 ::
 
@@ -104,7 +104,7 @@ The genesis file is the initial state of the network. We want to create a subdir
        - witness_node          // program
        - cli_wallet            // program
        + /[genesis]            // folder
-          - my-genesis.json   // your private testnet genesis file. You MUST set own parameter values. 
+          - my-genesis.json   // your private testnet genesis file. You MUST set own parameter values.
 
 
 3-12 Customization of the private testnet - :ref:`Genesis File <private-testnet-genesis-example>`
@@ -131,7 +131,7 @@ The graphene code base has a default genesis block integrated that has all witne
 
     5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
 
-	
+
 3-3. Embed Genesis (optional)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -165,17 +165,17 @@ Embedded genesis is a feature designed to make life easier for consumers of pre-
 4-1. Create a Data Directory
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-``witness_node`` startup will create a ``witness_node_data_dir`` as a default data directory. And you will find a configuration ``config.ini`` file in the data directory. 
+``witness_node`` startup will create a ``witness_node_data_dir`` as a default data directory. And you will find a configuration ``config.ini`` file in the data directory.
 
-.. Note::  If you want to use a different folder name and directory for the data, you have to use ``--data-dir`` option in a startup command line and set your data directory folder path, **every time** when you start the witness_node. Otherwise, the ``witness_node_data_dir`` folder and another ``config.ini`` file will be created (if it's not existed) and the witness_node will use the data directory. 
+.. Note::  If you want to use a different folder name and directory for the data, you have to use ``--data-dir`` option in a startup command line and set your data directory folder path, **every time** when you start the witness_node. Otherwise, the ``witness_node_data_dir`` folder and another ``config.ini`` file will be created (if it's not existed) and the witness_node will use the data directory.
 
 
 We create a new data directory for our witness.::
 
-    ./witness_node --data-dir data/my-blocktestnet --genesis-json my-genesis.json --seed-nodes "[]"   
-	
+    ./witness_node --data-dir data/my-blocktestnet --genesis-json my-genesis.json --seed-nodes "[]"
+
 	  // or
-    
+
     ./witness_node --data-dir=data/my-blocktestnet --genesis-json=my-genesis.json --seed-nodes "[]"
 
 
@@ -183,10 +183,10 @@ We create a new data directory for our witness.::
 * **Note:**
 
   - A ``data/my-blocktestnet`` directory does not exist, it will be created by starting a witness node.
-  - ``seed-nodes = []`` creates a list of empty seed nodes to avoid connecting to default hardcoded seeds.  
+  - ``seed-nodes = []`` creates a list of empty seed nodes to avoid connecting to default hardcoded seeds.
   - **Known issue:** Missing ``=`` sign between input parameter and value. --> This is due to a bug of a boost 1.60. If you compile with boost 1.58, the ``=`` sign can be omitted.
- 
- 
+
+
 The below message means the initialization is complete. It will complete nearly instantaneously with the tiny example genesis, unless you added a ton of balances. Use ``ctrl + c`` to close the witness node. ::
 
     3501235ms th_a main.cpp:165 main] Started witness node on a chain with 0 blocks.
@@ -204,15 +204,15 @@ As a result, you should get two items:
        - witness_node         // program
        - cli_wallet           // program
        + /[genesis]           // folder
-          - my-genesis.json // your private testnet genesis file. You have to set own parameter values. 
-       + /[data]              // data folder	
+          - my-genesis.json // your private testnet genesis file. You have to set own parameter values.
+       + /[data]              // data folder
           + /[my-blocktestnet]/
              + /[blockchain]
              + /[logs]
              + /[p2p]
              - config.ini     // configuration file
              - logging.ini
-			  
+
 
 4-2. Set up Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -225,22 +225,22 @@ Open the ``[Testnet-Home]/data/my-blocktestnet/config.ini`` file and set the fol
 
 	# Endpoint for P2P node to listen on
 	p2p-endpoint = 127.0.0.1:11010
-	
+
 	# Endpoint for websocket RPC to listen on
 	rpc-endpoint = 127.0.0.1:11011
-	                
+
 	###--> For Private Testnet, add a seed node of your own
 	# P2P nodes to connect to on startup (may specify multiple times)
-	# seed_node =  
-	
+	# seed_node =
+
 	###--> For Private Testnet, this value set needs to overwrite default checkpoint.
 	checkpoint = []
 	# Pairs of [BLOCK_NUM,BLOCK_ID] that should be enforced as checkpoints.
 	## checkpoint = ["22668518", "0159e4e600cb149e22ef960442ca331159914617"]
-	
+
 	# File to read Genesis State from
 	genesis-json = genesis/my-genesis.json
-		
+
 	# ==============================================================================
 	# witness plugin options
 	# ==============================================================================
@@ -249,11 +249,11 @@ Open the ``[Testnet-Home]/data/my-blocktestnet/config.ini`` file and set the fol
 	enable-stale-production = false
 
 	# Percent of witnesses (0-100) that must be participating in order to produce blocks
-	# required-participation = 33 
-	# If start a private testnet with the default number 33, the node won't produce blocks	
-	####--> For Private testnet, set 0 
-	required-participation = 0 
-	
+	# required-participation = 33
+	# If start a private testnet with the default number 33, the node won't produce blocks
+	####--> For Private testnet, set 0
+	required-participation = 0
+
 	###--> For Private Testnet, set own key pairs
 	# Tuple of [PublicKey, WIF private key] (may specify multiple times)
 	private-key = ["-- generated key --","5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3"]
@@ -271,7 +271,7 @@ Open the ``[Testnet-Home]/data/my-blocktestnet/config.ini`` file and set the fol
 	witness-id = "1.6.9"
 	witness-id = "1.6.10"
 	witness-id = "1.6.11"
-	
+
 
 This authorizes the ``witness_node`` to produce blocks on behalf of the listed **witness-id's**, and specifies the private key needed to sign those blocks. Normally each witness would be on a different node, but for the purposes of this testnet, we will start out with all witnesses signing blocks on a single node.
 
@@ -295,12 +295,12 @@ Now run witness_node again::
 
 * **Note**
 
-  - We did not set ``--genesis-json my-genesis.json`` in a command line above. Because we set the genesis file name ``my-genesis.json`` for the private testnet in a configuration ``config.ini`` file. 
-  - The ``--enable-stale-production`` flag tells the ``witness_node`` to produce on a chain with zero blocks or very old blocks. We specify the ``--enable-stale-production`` parameter on the command line as we will not normally need it (although it can also be specified in the configuration file). 
+  - We did not set ``--genesis-json my-genesis.json`` in a command line above. Because we set the genesis file name ``my-genesis.json`` for the private testnet in a configuration ``config.ini`` file.
+  - The ``--enable-stale-production`` flag tells the ``witness_node`` to produce on a chain with zero blocks or very old blocks. We specify the ``--enable-stale-production`` parameter on the command line as we will not normally need it (although it can also be specified in the configuration file).
   - The empty ``--seed-nodes`` is added to avoid connecting to the default seed nodes hardcoded for production.  (i.e., # seed-node =   )
   -  Subsequent runs which connect to an existing witness node over the p2p network, or which get blockchain state from an existing data directory, do not need to have the ``--enable-stale-production`` flag.
 
-  
+
 |
 
 --------------
@@ -328,7 +328,7 @@ This ``curl`` command will return a short JSON object including the ``chain_id``
 
 -----------------
 
-7. CLI wallet 
+7. CLI wallet
 -----------------------
 
 7-1. Create a new Wallet
@@ -338,27 +338,27 @@ We are now ready to connect a new wallet to your private testnet witness node. Y
 
 .. code-block:: json
 
-    ./cli_wallet --wallet-file my-wallet.json 
-               --chain-id cf30711----USE-OWN-CHAIN-ID---68d9888d86b458d16e6c36aa74b 
+    ./cli_wallet --wallet-file my-wallet.json
+               --chain-id cf30711----USE-OWN-CHAIN-ID---68d9888d86b458d16e6c36aa74b
                --server-rpc-endpoint ws://127.0.0.1:11011 -u '' -p ''
 
 .. Note::
   - Make sure to replace the above chain ID (i.e., blockchain id) ``cf307110d0...36aa74b`` with **your chain ID** reported by your ``witness_node``. The chain-id passed to the CLI-wallet needs to match the id generated and used by the ``witness node``.
   - ``--server-rpc-endpoint`` - The port number is how you defined (opened) ``--rpc-endpoint`` for the witness_node.
 
-  
+
 If you receive the ``new >>>`` prompt, it means your wallet has been executed successfully.
 
 Fist you need to create a new password for your wallet. This password is used to encrypt all the private keys in the wallet. **For more detailed instructions, see the tutorial on** :ref:`How to Set a password and Unlock a Cli Wallet <cli-wallet-setpwd-unlock>`
 
-  
-   
+
+
 |
-	
+
 7-2. Gain Access to the Genesis Stake
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In DNA, balances are contained in accounts. To import an account that exists in the DNA genesis into your wallet, all you need to know its **name** and its **private key**. 
+In DNA, balances are contained in accounts. To import an account that exists in the DNA genesis into your wallet, all you need to know its **name** and its **private key**.
 
 In this section, we use an account name ``nathan`` We will now import into the wallet an account called ``nathan`` (a general purpose test account) by using the ``import_key`` command:
 
@@ -426,7 +426,7 @@ Transfer funds between accounts
     list_account_balances alpha
 
 The text ``here is some cash`` is an arbitrary memo you can attatch to a transfer. If you don’t need it, just use ``""`` instead.
-    
+
 We can now open a new wallet for alpha user::
 
     import_key alpha 5JDh3XmHK8CDaQSxQZHh5PUV3zwzG68uVcrTfmg9yQ9idNisYnE
@@ -435,8 +435,8 @@ We can now open a new wallet for alpha user::
 
 
 * Use a private key ``wif_priv_key`` which you just created by ``suggest_brain_key``.
- 
- 
+
+
 The ``get_private_key`` command allows us to obtain the **WIF private key** corresponding to a public key. The private key must already be in the wallet::
 
     get_private_key BTS78CuY47Vds2nfw2t88ckjTaggPkw16tLhcmg4ReVx1WPr1zRL5
@@ -463,22 +463,22 @@ The ``get_private_key`` command allows us to obtain the **WIF private key** corr
     create_account_with_brain_key com4 com4 nathan nathan true
     create_account_with_brain_key com5 com5 nathan nathan true
     create_account_with_brain_key com6 com6 nathan nathan true
-	
+
 8-2 Upgrading members
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Since only lifetime members can be committee members, we need to fund these accounts ``transfer``  and upgrade ``upgrade_account`` them accordingly:
 
 .. code-block:: json
-	
+
     transfer nathan com0 100000 CORE "some cash" true
     transfer nathan com1 100000 CORE "some cash" true
     transfer nathan com2 100000 CORE "some cash" true
     transfer nathan com3 100000 CORE "some cash" true
     transfer nathan com4 100000 CORE "some cash" true
     transfer nathan com5 100000 CORE "some cash" true
-    transfer nathan com6 100000 CORE "some cash" true	
-	
+    transfer nathan com6 100000 CORE "some cash" true
+
     upgrade_account com0 true
     upgrade_account com1 true
     upgrade_account com2 true
@@ -486,8 +486,8 @@ Since only lifetime members can be committee members, we need to fund these acco
     upgrade_account com4 true
     upgrade_account com5 true
     upgrade_account com6 true
-	
-	
+
+
 8-3 Registering as committee member
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -496,7 +496,7 @@ We can apply for committee with create_committee_member:
 * ``create_committee_member``
 
  ::
-	
+
     create_committee_member com0 "http://www.com0" true
     create_committee_member com1 "http://www.com1" true
     create_committee_member com2 "http://www.com2" true
@@ -504,8 +504,8 @@ We can apply for committee with create_committee_member:
     create_committee_member com4 "http://www.com4" true
     create_committee_member com5 "http://www.com5" true
     create_committee_member com6 "http://www.com6" true
-	
-	
+
+
 8-4 Voting with faucet account
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -514,7 +514,7 @@ All we need to do know is vote for our own committee members:
 * ``vote_for_committee_member``
 
 ::
-	
+
     vote_for_committee_member nathan com0 true true
     vote_for_committee_member nathan com1 true true
     vote_for_committee_member nathan com2 true true
@@ -542,23 +542,23 @@ If you want to set up a second node (with the same genesis file) and connect it 
 
 	p2p-endpoint = 127.0.0.1:11010
 	# seed-node =                // add a seed node of your own
-	
+
 	rpc-endpoint = 127.0.0.1:11011
-	
-	
+
+
 **Node-002: config.ini**
 
-  - Set the Node-001's ``p2p-endpoint`` as the Node-002's ``seed-node``. 
-  
+  - Set the Node-001's ``p2p-endpoint`` as the Node-002's ``seed-node``.
+
 ::
 
 	p2p-endpoint = 127.0.0.1:11015
-	seed-node = 127.0.0.1:11010	
-	
-	rpc-endpoint = 127.0.0.1:11020
-		
+	seed-node = 127.0.0.1:11010
 
-	
+	rpc-endpoint = 127.0.0.1:11020
+
+
+
 
 |
 

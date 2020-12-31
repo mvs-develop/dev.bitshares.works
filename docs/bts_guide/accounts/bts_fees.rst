@@ -6,7 +6,7 @@ Fees
 ======
 
 
-In the DNA Blockchain Network, every operation is assigned an individual fee. Each operation has different transaction fee. You can check each operation fee schedule if you are interested. 
+In the DNA Blockchain Network, every operation is assigned an individual fee. Each operation has different transaction fee. You can check each operation fee schedule if you are interested.
 
 .. contents:: Table of Contents
 
@@ -15,11 +15,11 @@ In the DNA Blockchain Network, every operation is assigned an individual fee. Ea
 Fee Types
 -------------
 
-There are different Transaction Fee Types. And each operation has own transaction fee amount. Some operations ask Regular Transaction Fee and Price of per KByte Transaction Size. 
+There are different Transaction Fee Types. And each operation has own transaction fee amount. Some operations ask Regular Transaction Fee and Price of per KByte Transaction Size.
 
 For instance, *Transfer operation* asks both (Regular Transaction Fee and Price of per KByte Transaction Size) fees. The *Price per KByte Transaction Size* comes from a size of memo you send. The memo is encrypted by default and can only be decrypted by the participants of the transfer. It's safe to use to sens a message. However, the transfer fee depends on the length of the memo.
 
-You can use the memo section to send a message. Also, some transactions require you to input a necessary information in the memo section. Be sure if you put each information in a correct place before you confirm your transaction! 
+You can use the memo section to send a message. Also, some transactions require you to input a necessary information in the memo section. Be sure if you put each information in a correct place before you confirm your transaction!
 
 - **Fee Types**
 
@@ -31,29 +31,29 @@ You can use the memo section to send a message. Also, some transactions require 
   - Basic Fee (Create Account)
   - Fee for Premium Names (Create Account)
   - (Lifetime Membership Fee)
- 
-- **Fee Schedules** 
+
+- **Fee Schedules**
 
   - You can find `each Operation Fee List here. <https://wallet.bitshares.org/#/explorer/fees>`_
 
 **Example: Fee Schedule View**
-  
+
 .. image:: fee_sched_example.png
         :alt: fee schedule
         :width: 650px
-        :align: center	
-		
+        :align: center
+
 Paying Fees
 ^^^^^^^^^^^^^^^^
 
 Each time you perform an activity (i.e., send fund, place an order, etc), you pay a smell amount of fee. Any transaction fee can be paid by paying any asset that has a Core exchange rate (i.e., price) at which the asset can be exchange implicitly into BTS to cover the network fee. When you confirm your activity (transaction), you can see a fee amount for the transaction.
-   
 
 
-Order Cancellation 
+
+Order Cancellation
 ^^^^^^^^^^^^^^^^
 
-If you cancel an order that has not been fully or partially filled, 90% of the fee will be payed back to your account. However, this cashback will be in BTS (CORE token) and not in the asset you have originally paid the fee in. 
+If you cancel an order that has not been fully or partially filled, 90% of the fee will be payed back to your account. However, this cashback will be in BTS (CORE token) and not in the asset you have originally paid the fee in.
 
 |
 
@@ -62,14 +62,14 @@ If you cancel an order that has not been fully or partially filled, 90% of the f
 Standard Fee and Lifetime Membership Fee
 -----------------------------------------
 
-Your transaction fees depend on your membership status. If you are a Basic Member, you pay "Standard Fee". And if you are a Lifetime Member, you pay "Lifetime Member Fee". 
+Your transaction fees depend on your membership status. If you are a Basic Member, you pay "Standard Fee". And if you are a Lifetime Member, you pay "Lifetime Member Fee".
 
 **20%** of each transaction fee goes to the network. And if you are a **Lifetime Members, you get cashback of 80% of the fee** you payed.
- 
-	 
+
+
 For many cases it may make sense to upgrade the account even though you don’t want to participate in marketing at all simply for the reasons to get a cashback of 80% of the fees you pay for your own transactions!
 
-.. Note:: Technically, the fees that you pay stay the same, but a part of the fees is refunded in the form of a **vesting balance**. Once the fees have vested you can withdraw them. 
+.. Note:: Technically, the fees that you pay stay the same, but a part of the fees is refunded in the form of a **vesting balance**. Once the fees have vested you can withdraw them.
 
 
 |
@@ -100,12 +100,12 @@ Issuers may optionally maintain a Fee Pool. The **Fee Pool is a pool of BTS** an
 If the assets fee pool is funded, the fees can be payed in the native UIA instead of BTS.
 
 
-DNA Reserve Pool and Cashflow 
+DNA Reserve Pool and Cashflow
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: ../../_static/output/DNA-Cashflow2.png
         :alt: DNA cashflow
         :width: 700px
         :align: center
-		
-|		
+
+|

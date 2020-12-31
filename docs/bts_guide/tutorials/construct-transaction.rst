@@ -9,9 +9,9 @@ General Procedure
 
 The general principle for generating, singing and broadcasting an arbitrary transactions works as follows:
 
-.. contents:: 
+.. contents::
    :local:
-   
+
 ------
 
 1. Create an instance of the transaction builder
@@ -44,8 +44,8 @@ The operation types available are:
 * Learning DNA-Core Available Operations! You can find Operations and OperationIDs pair `here. <https://github.com/abitmore/bitshares-core/blob/170523826b82ba754eeae8706a891797b4b37ee8/libraries/chain/include/graphene/chain/protocol/operations.hpp#L50>`_
 
 3. Add the required amount of fees
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
- 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 In practice, each operation has to pay a fee, and hence, each operation has to
 carry a ``fee`` member. When crafting a transaction, you now have the choice
 between either defining each fee for your operations individually, or you use
@@ -120,7 +120,7 @@ We add a fee payed in BTS, sign and broadcast the transaction (if valid):
 
     >>> set_fees_on_builder_transaction 0 BTS
     >>> sign_builder_transaction 0 true
-		
+
 |
 
 --------------------

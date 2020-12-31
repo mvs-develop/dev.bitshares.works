@@ -6,9 +6,9 @@ Websocket Calls & Notifications
 
 .. contents:: Table of Contents
    :local:
-   
-------------------   
-   
+
+------------------
+
 Prerequisites
 ----------------------
 
@@ -53,7 +53,7 @@ In the example above, we query the ``database`` API which carries the identifier
 A non-restricted call against a full-node would take the form:
 
 .. code-block:: sh
-    
+
     wscat -c ws://127.0.0.1:8090
     > {"id":1, "method":"call", "params":[0,"get_accounts",[["1.2.0"]]]}
 
@@ -109,13 +109,13 @@ Find more available APIs: :ref:`blockchain-api`
  If you have :doc:`restricted access <./access>` then you may be required to put your ``username`` and ``pasword`` into the quotes, accordingly. Furthermore, you should verify, that the ``result`` give positive confirmation about your login.
 
 2. Requesting Access to an API
- 
+
  Most data can be queried from the :doc:`database`-API to which we *register* with the following call::
 
     > {"id":2,"method":"call","params":[1,"database",[]]}
 
 3. Obtain the API identifier
- 
+
  After requesting access, the full node will either deny access or return an identifier to be used in future calls::
 
     < {"id":2,"result":2}
@@ -123,7 +123,7 @@ Find more available APIs: :ref:`blockchain-api`
  The ``result`` will be our identifier for the database API, in the following called ``DATABASE_API_ID``!
 
 4. Call methods of a specific API by providing the identifier
- 
+
  Now we can call any methods available to the ``database`` API via::
 
     > {"id":1, "method":"call", "params":[DATABASE_API_ID,"get_accounts",[["1.2.0"]]]}
@@ -165,14 +165,14 @@ After calling ``set_subscribe_callback`` the witness will start to send notices 
     < {
         "method": "notice"
         "params": [
-            SUBSCRIPTION_ID, 
+            SUBSCRIPTION_ID,
             [[
                 { "id": "2.1.0", ...  },
                 { "id": ...  },
                 { "id": ...  },
                 { "id": ...  }
             ]]
-        ], 
+        ],
     }
 
 **Example Session**

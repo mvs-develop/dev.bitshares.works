@@ -6,7 +6,7 @@ What is New in DNA 2.0
 ****************************
 
 
-* **Votable Network Parameters**: 
+* **Votable Network Parameters**:
   DNA 2.0 will allow its shareholders to fine-tune any parameter
   available to the protocol. This includes, block size, block interval, but
   also the payment for block producers and transaction fees.
@@ -20,7 +20,7 @@ What is New in DNA 2.0
 
 * **Transferable Account Names**:
   Since Control over Funds is separated from the control over an account, we
-  can have transferable account names that are registered on the blockchain.  
+  can have transferable account names that are registered on the blockchain.
   Named accounts allows for much easier transfers because no cryptic strings
   needs to be handed out. Read more about `transferable named accounts`_.
 

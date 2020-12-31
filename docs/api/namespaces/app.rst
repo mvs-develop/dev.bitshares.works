@@ -5,8 +5,8 @@ Graphene::App
 ======================
 
 .. contents::
-   :local: 
-   
-   
+   :local:
+
+
 .. doxygennamespace:: graphene::app
    :members:

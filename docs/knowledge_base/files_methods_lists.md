@@ -33,7 +33,7 @@
 
 |  | | release | |
 |---|---|---|---|
-|\libraries\app\application.cpp | [namespaces structures ](../knowledge_base/shared_files/application-cpp-namespaces.pdf) | 2.0.180612 |  
+|\libraries\app\application.cpp | [namespaces structures ](../knowledge_base/shared_files/application-cpp-namespaces.pdf) | 2.0.180612 |
 | \libraries\app\application.cpp | [startup()](../knowledge_base/shared_files/application-cpp-startup.pdf) | 2.0.180612 |
 |\libraries\app\application.cpp | namespace detail {} - [create_example_genesis()](../knowledge_base/shared_files/application-cpp-ns-detail.pdf) | 2.0.180612 |
 | \libraries\app\application.cpp | [get_api_access_info()](../knowledge_base/shared_files/files_methods/application-cpp-20180721.pdf)  (***All below in this file***) | 2.0.180612 |

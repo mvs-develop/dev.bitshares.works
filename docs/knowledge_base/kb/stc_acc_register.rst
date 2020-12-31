@@ -46,7 +46,7 @@ Validations
 ---------------------------------------------
 - tx.validate();
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	processed_transaction database::validate_transaction( const signed_transaction& trx )
 	{
@@ -59,46 +59,46 @@ Initialize Evaluators and Index
 ---------------------------------------------
 
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	void database::initialize_evaluators()
 	{
 	   _operation_evaluators.resize(255);
 	   register_evaluator<account_create_evaluator>()
 	   .......
-	}   
+	}
 
 
 - class generic_evaluator
 - class op_evaluator
 
 
-	
 
-.. code-block:: cpp 
-	
+
+.. code-block:: cpp
+
 	void database::initialize_indexes()
 	{
 	   reset_indexes();
-	   _undo_db.set_max_size( GRAPHENE_MIN_UNDO_HISTORY );    
+	   _undo_db.set_max_size( GRAPHENE_MIN_UNDO_HISTORY );
 
-	   .....   
-	}  
+	   .....
+	}
 
 
 	void database::init_genesis(const genesis_state_type& genesis_state)
 	{ try {
 	.....
 
-	}}	
-	
-	
-	
-   
+	}}
+
+
+
+
 Evaluators
 ---------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 	class account_create_evaluator : public evaluator<account_create_evaluator>
 	{
@@ -111,12 +111,12 @@ Evaluators
 
 CLI Wallet Calls
 ---------------------------------------------
-- 
+-
 
 API calls
 ---------------------------------------------
 
-.. code-block:: cpp 
+.. code-block:: cpp
 
 
   signed_transaction register_account(string name,
@@ -126,25 +126,25 @@ API calls
                                        string  referrer_account,
                                        uint32_t referrer_percent,
                                        bool broadcast = false)
-									   
-									   
+
+
 --------------------
 
 
-broadcast transaction 
+broadcast transaction
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Before the end a method, as one of patterns, 
+Before the end a method, as one of patterns,
 
-  - ``signed_transaction`` instance is created, 
+  - ``signed_transaction`` instance is created,
   - (do some processes...)
-  - check `broadcase1 flag 
+  - check `broadcase1 flag
   - if true, send the instance bt ``broadcast_transaction``
-  
-and return the transaction instance
-  
 
-.. code-block:: cpp 
+and return the transaction instance
+
+
+.. code-block:: cpp
 
    signed_transaction tx;
    // do some processes...
@@ -153,19 +153,19 @@ and return the transaction instance
  	 _remote_net_broadcast->broadcast_transaction( tx );
 
    return tx;
-  
-  
+
+
 
 other methods that have the same pattern ``return`` (wallet.cpp)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	
-- register_account	  
-- create_account_with_private_key  
-- sign_transaction
-- blind_transfer_help	  
-	  
 
-											   
+- register_account
+- create_account_with_private_key
+- sign_transaction
+- blind_transfer_help
+
+
+
 
 |
 

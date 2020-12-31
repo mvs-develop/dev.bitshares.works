@@ -1,12 +1,13 @@
+# -*- coding: utf-8 -*-
+from docutils.parsers.rst.directives import flag, unchanged_required
+
+from ..directive.base import BaseDirective
+from ..parser import FileIOError, ParserError
+from ..project import ProjectError
+from ..renderer import DoxygenToRstRendererFactory, format_parser_error
 from ..renderer.base import RenderContext
 from ..renderer.mask import NullMaskFactory
-from ..renderer import format_parser_error, DoxygenToRstRendererFactory
-from ..directive.base import BaseDirective
-from ..project import ProjectError
-from ..parser import ParserError, FileIOError
 from .base import create_warning
-
-from docutils.parsers.rst.directives import unchanged_required, flag
 
 
 class RootDataObject(object):

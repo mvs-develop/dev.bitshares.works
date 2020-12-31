@@ -6,9 +6,9 @@ RPC (Remote Procedure Calls)
 
 .. contents:: Table of Contents
    :local:
-   
+
 ------------
-   
+
 Prerequisites
 ---------------------
 

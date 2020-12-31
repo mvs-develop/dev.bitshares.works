@@ -7,7 +7,7 @@ How to Set up Nignx Webserver
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 We here use Nginx to deal with Ruby and provide access to the wallet files and the faucet. We use passenger to do so which unfortunatelly requires to compile nginx “manually”. Passenger fortunatelly provides a script that handles all the installation.
@@ -27,7 +27,7 @@ After using the recommended settings and waiting for the script to complete, we 
     sudo ln -s /opt/nginx/ /usr/local/nginx
     sudo ln -s /opt/nginx/conf/ /etc/nginx
 
-	
+
 2. Configuration
 --------------------------------------
 
@@ -39,39 +39,39 @@ We have set it to be::
 
     user gph;
     worker_processes  4;
-    
+
     events {
         worker_connections  1024;
     }
-    
+
     http {
         passenger_root /home/gph/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/passenger-5.0.23;
         passenger_ruby /home/gph/.rbenv/versions/2.2.3/bin/ruby;
         passenger_max_request_queue_size 1000;
-    
+
         include       mime.types;
         default_type  application/octet-stream;
-    
+
         access_log  /www/logs/access.log;
         error_log  /www/logs/error.log;
         log_not_found off;
-    
+
         sendfile        on;
         #tcp_nopush     on;
-    
+
         keepalive_timeout  65;
-    
+
         gzip  on;
-    
+
         upstream websockets {
           ## Put the witness node's websocket rpc port here:
           server localhost:11011;
         }
-    
+
         server {
             listen 80;
             server_name localhost;
-    
+
             location ~ ^/[\w\d\.-]+\.(js|css|dat|png|json)$ {
                 root /www/current/public/;
                 try_files $uri /wallet$uri =404;
@@ -86,7 +86,7 @@ We have set it to be::
                 proxy_http_version 1.1;
                 proxy_set_header Upgrade $http_upgrade;
                 proxy_set_header Connection "upgrade";
-            }  
+            }
             location / {
                 passenger_enabled on;
                 root /www/current/public/;
@@ -111,8 +111,8 @@ After that, nginx can be launched with::
 
     sudo service nginx start
 
-	
-.. Note:: To reload nginx.  ``sudo service nginx reload`` 
+
+.. Note:: To reload nginx.  ``sudo service nginx reload``
 
 
 
@@ -162,7 +162,7 @@ Furthermore, we need to tell our web wallet to which witness node to connect to.
 
 5.4 Compilation
 
-**Compile the web wallet**  
+**Compile the web wallet**
 
 - This will generate the static files in the dist/ folder.
 

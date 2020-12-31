@@ -170,7 +170,7 @@ What are the Flags?
   allow the asset to be fed by the committee
 
  .. _asset-faq11:
- 
+
 What are the Permissions?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -211,9 +211,9 @@ side will pay 0.3% the other will pay 0.1%.
 
 
 
----------  
-   
-  
+---------
+
+
 Market Pegged Assets
 ------------------------
 
@@ -244,7 +244,7 @@ What are market-pegged-asset-specific parameters?
 * ``short_backing_asset``:
   The asset that has to be used to *back* this asset (when borrowing)
 
-  
+
 ---------------------
 
-|  
+|

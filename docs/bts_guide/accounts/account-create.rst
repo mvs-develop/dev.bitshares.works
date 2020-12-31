@@ -6,7 +6,7 @@ Account Registration (developer)
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 The process of registering a new account on the blockchain consists of two
@@ -15,14 +15,14 @@ parts:
 * Picking a random brain key and deriving a *priate/public key* pair
 * Create the corresponding account and registering it on the blockchain
 
-   
+
 1. Prerequisites
 ==================
 
-- Connecting to witness_node (Full node or API Node)  
-- CLI Wallet *commond window* ready to use.  
+- Connecting to witness_node (Full node or API Node)
+- CLI Wallet *commond window* ready to use.
 
-   
+
 2. Brain, Private and Public Key Derivation
 ==========================================
 
@@ -91,27 +91,27 @@ pubkey derived above and let our account ``myfunds`` pay the fee:::
 
 
 --------------------
-   
+
 
 - ``register_account``
 
-:description: *Registers a third party’s account on the blockckain.*  This function is used to register an account for which you do not own the private keys. When acting as a registrar, an end user will generate their own private keys and send you the public keys. The registrar will use this function to register the account on behalf of the end user.   
+:description: *Registers a third party’s account on the blockckain.*  This function is used to register an account for which you do not own the private keys. When acting as a registrar, an end user will generate their own private keys and send you the public keys. The registrar will use this function to register the account on behalf of the end user.
 
-  **parameter** 
+  **parameter**
 
-:[name]:  the name of the account, must be unique on the blockchain. Shorter names are more expensive to register; the rules are still in flux, but in general names of more than 8 characters with at least one digit will be cheap. (e.g., mywallet)   
+:[name]:  the name of the account, must be unique on the blockchain. Shorter names are more expensive to register; the rules are still in flux, but in general names of more than 8 characters with at least one digit will be cheap. (e.g., mywallet)
 
-:[owner_pubkey]:  the owner key for the new account (e.g., "pub_key" value - created by the `suggest_brain_key`)  
+:[owner_pubkey]:  the owner key for the new account (e.g., "pub_key" value - created by the `suggest_brain_key`)
 
 :[active_pubkey]: the active key for the new account  (e.g., "pub_key" value - created by the `suggest_brain_key`)
 
-:[register_account]:  the account which will pay the fee to register the user.  (e.g., myfunds)          
+:[register_account]:  the account which will pay the fee to register the user.  (e.g., myfunds)
 
-:[referrer_account]:  the account who is acting as a referrer, and may receive a portion of the user’s transaction fees. (e.g., anonymous) 
+:[referrer_account]:  the account who is acting as a referrer, and may receive a portion of the user’s transaction fees. (e.g., anonymous)
 
-:[referrer_percentage]: the percentage (0 - 100) of the new user’s transaction fees not claimed by the blockchain that will be distributed to the referrer. (e.g., 100) 
+:[referrer_percentage]: the percentage (0 - 100) of the new user’s transaction fees not claimed by the blockchain that will be distributed to the referrer. (e.g., 100)
 
-:[broadcast]:  true to broadcast the transaction on the network. (e.g., true)   
+:[broadcast]:  true to broadcast the transaction on the network. (e.g., true)
 
 
-|   
+|

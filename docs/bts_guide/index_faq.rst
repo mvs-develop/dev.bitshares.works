@@ -1,7 +1,7 @@
 
 .. _faq-top:
 
-Frequently Asked Questions (FAQ) 
+Frequently Asked Questions (FAQ)
 ********************************
 
 General
@@ -33,7 +33,7 @@ General
 **Data Structures**
 
 * :ref:`dev-faq12`
-* :ref:`How each block is constructed and what kinds of elements are creating the block?   <lib-block>` 
+* :ref:`How each block is constructed and what kinds of elements are creating the block?   <lib-block>`
 * :ref:`What types of objects and the elements DNA has? <lib-objects>`
 
 **Public Key System**
@@ -65,8 +65,8 @@ System Components
    - `saltpass.py <https://github.com/bitshares/bitshares-core/blob/master/programs/witness_node/saltpass.py>`_ (obtain hash and salt values from a password)
 
 
-  
-  
+
+
 Accounts
 -------------------------------------------------------
 
@@ -74,18 +74,18 @@ Accounts
 
   - Include: *Membership, Fees, Permissions, Public Key and Private key, Muiti-Signature, Voting, Referral Program, and Vesting Balances*
 
-  
+
 Install options
 --------------------------------------------------------
 
 * Which development environment would be possible to install DNA-Core?
-  
+
   * Use :ref:`Ubuntu Linux <build-ubuntu>`
   * Use :ref:`OS X <build-osx>`
   * Use :ref:`Windows <build-windows>`
   * Use :ref:`Windows - CLI Tools <cli-tool>`
-  * Use :ref:`Windows Subsystem for Linux <build-wsl>`   
-  
+  * Use :ref:`Windows Subsystem for Linux <build-wsl>`
+
 * :ref:`What is the System Requirements? <system-requirements-node>`
 
 
@@ -167,26 +167,26 @@ Witness Questions
 |
 
 
-.. include:: assets-faq.rst  
-   
------------------   
+.. include:: assets-faq.rst
 
- 
+-----------------
+
+
 .. include:: cli-faq.rst
-   
----------------- 
- 
+
+----------------
+
 .. include:: witness-faq.rst
 
 
 -----------------------
 
-**Developers - Questions** 
+**Developers - Questions**
 
 .. include:: dev_faq.rst
 
-   
+
 |
 
-|   
-   
+|
+

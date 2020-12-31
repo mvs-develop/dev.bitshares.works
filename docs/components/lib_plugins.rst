@@ -7,11 +7,11 @@ Plugins
 
 DNA has prepared several plugins. The below list shows current DNA plugins categories and plugin's names. You can find more information in BitShartes Github - `DNA Plugins ReadMe <https://github.com/bitshares/bitshares-core/blob/master/libraries/plugins/README.md>`_.
 
-  
+
 A plugin adds a specific feature to an existing program. In DNA, **witness, account_history, market_history, and grouped_orders plugins are available as a default**. However, you should specify plugin(s) for your purpose to run a node. You can define specific plugin(s) to activate when you start the node in a :ref:`configuration file <bts-config-ini-eg>`::
 
     #-- Section to modify in a config.ini file --
-	
+
 	# Space-separated list of plugins to activate
 	# plugins =
 
@@ -26,14 +26,14 @@ History
 
 `account_history <https://github.com/bitshares/bitshares-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/account_history>`_
 -----------------------------------
-* account_history_plugin.cpp 
+* account_history_plugin.cpp
 * account_history_plugin.hpp
 
 
 `elasticsearch <https://github.com/bitshares/bitshares-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/elasticsearch>`_
 -----------------------------------
-* elasticsearch_plugin.cpp 
-* elasticsearch_plugin.hpp 
+* elasticsearch_plugin.cpp
+* elasticsearch_plugin.hpp
 
 
 
@@ -97,7 +97,7 @@ Debug
 
 * debug_api.cpp
 * debug_witness.cpp
-   
+
 
 `snapshot <https://github.com/bitshares/bitshares-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/snapshot>`_
 ---------------------------------------
@@ -117,7 +117,7 @@ The below shares plugins methods and processes.
 
 **witness_plugin methods and flow**
 
-(Created: 2018-11-24) 
+(Created: 2018-11-24)
 
 
 .. list-table::
@@ -127,10 +127,10 @@ The below shares plugins methods and processes.
    * - #
      - File name
      - name
-   * - 
+   * -
      - ..\/libraries\/**plugins\/witness\/witness.cpp**
-     - `included several methods below (pdf) <../../../_static/output/witness-plugin-20181124.pdf>`_ 
-	   
+     - `included several methods below (pdf) <../../../_static/output/witness-plugin-20181124.pdf>`_
+
 	   - new_chain_banner()
 	   - plugin_set_program_options()
 	   - plugin_initialize()
@@ -141,10 +141,10 @@ The below shares plugins methods and processes.
 	   - schedule_production_loop()
 	   - block_production_loop()
 	   - maybe_produce)block()
-	
-	   
-	   
-	   
+
+
+
+
 
 
 

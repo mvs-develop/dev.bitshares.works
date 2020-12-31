@@ -10,9 +10,9 @@ article <websocket>`.
 
 .. contents:: Table of Contents
    :local:
-   
+
 ----------------
-   
+
 
 Blinding and Un-Blinding
 ===========================

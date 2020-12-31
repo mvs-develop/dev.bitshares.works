@@ -28,7 +28,7 @@ For exchanges we recommend to also read :ref:`what-is-different` and
 
 .. contents:: Table of Contents
    :local:
-   
+
 ---------------
 
 Step-By-Step Instructions for Exchanges
@@ -47,11 +47,11 @@ In this step-by-step instruction we assume you have successfully built from the 
 For security reasons we will run two daemons and a wallet according to these diagram:
 
 .. image:: exchange-demons.png
-        :alt: DNA 
+        :alt: DNA
         :width: 600px
         :align: center
-		
-		
+
+
 In this tutorial we will run all deamons and the wallet on the same machine and use different ports to distinguish them::
 
 * port ``8090``: trusted full node
@@ -96,7 +96,7 @@ The wallet will be used to transfer assets to the customers. It connects to the 
                                      --rpc-http-endpoint="127.0.0.1:8092"
 
 |
-								 
+
 --------------------
 
 Query Blockchain for Required Data

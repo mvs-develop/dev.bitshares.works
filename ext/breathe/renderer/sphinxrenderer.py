@@ -1,15 +1,16 @@
+# -*- coding: utf-8 -*-
+import re
+import textwrap
+
+import six
 from docutils import nodes
 from docutils.statemachine import ViewList
-from sphinx.domains import cpp, c, python
+from sphinx.domains import c, cpp, python
 
 try:
     from sphinxcontrib import phpdomain as php
 except ImportError:
     php = None
-
-import re
-import six
-import textwrap
 
 
 class WithContext(object):

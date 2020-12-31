@@ -7,8 +7,8 @@ Building on OS X
 
 
 .. contents:: Table of Contents
-   :local: 
-   
+   :local:
+
 ----------------
 
 
@@ -32,8 +32,8 @@ In OS X 10.11 (El Capitan) and newer, you will be prompted to install developer 
 
 4. Install dependencies::
 
-    brew install boost cmake git openssl autoconf automake 
-    brew link --force openssl 
+    brew install boost cmake git openssl autoconf automake
+    brew link --force openssl
 
 5. (Optional) To support importing Bitcoin wallet files:
 
@@ -54,7 +54,7 @@ In OS X 10.11 (El Capitan) and newer, you will be prompted to install developer 
     cmake .
     make
 
-	
+
 .. Notes:: As mentioned elsewhere, Bitshares depends on the third-party libraries "Boost" and "OpenSSL". These libraries need to be in certain version ranges. At the moment, Boost needs to be **between 1.57 and 1.65**. OpenSSL needs to be in the **1.0.x range**.
 
 

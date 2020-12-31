@@ -1,11 +1,11 @@
 
 
-General Network and Wallet Configuration 
+General Network and Wallet Configuration
 =============================================
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 For general purpose setups, we recommend a reduced complexity setup that looks as follows.
@@ -17,7 +17,7 @@ Set up
         :alt: DNA Architecture
         :width: 650px
         :align: center
-		
+
 
 
 **We will work with the following IPs and open the corresponding RPC ports:**
@@ -28,14 +28,14 @@ Set up
   - extern: internet access **required**
   - intern: `192.168.0.100`
   - port: `8090`
-   
+
 * Wallet:
 
   - extern: **no** internet access required
   - intern: `192.168.0.102`
   - port: `8092`
 
-	  
+
 Trusted Full Node
 ----------------------
 

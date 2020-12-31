@@ -88,7 +88,7 @@ are issued by the issuer:
 ::
 
     issue_asset <account> <amount> <symbol> <memo> True
-  
+
 
 Python Example
 ^^^^^^^^^^^^^^^^
@@ -110,66 +110,67 @@ Python Example
     perm["committee_fed_asset"] = 0x100
 
 
-    class Config():
-        wallet_host           = "localhost"
-        wallet_port           = 8092
-        wallet_user           = ""
-        wallet_password       = ""
+    class Config:
+        wallet_host = "localhost"
+        wallet_port = 8092
+        wallet_user = ""
+        wallet_password = ""
 
-    if __name__ == '__main__':
+
+    if __name__ == "__main__":
         graphene = GrapheneClient(Config)
 
-        permissions = {"charge_market_fee" : True,
-                       "white_list" : True,
-                       "override_authority" : True,
-                       "transfer_restricted" : True,
-                       "disable_force_settle" : True,
-                       "global_settle" : True,
-                       "disable_confidential" : True,
-                       "witness_fed_asset" : True,
-                       "committee_fed_asset" : True,
-                       }
-        flags       = {"charge_market_fee" : False,
-                       "white_list" : False,
-                       "override_authority" : False,
-                       "transfer_restricted" : False,
-                       "disable_force_settle" : False,
-                       "global_settle" : False,
-                       "disable_confidential" : False,
-                       "witness_fed_asset" : False,
-                       "committee_fed_asset" : False,
-                       }
+        permissions = {
+            "charge_market_fee": True,
+            "white_list": True,
+            "override_authority": True,
+            "transfer_restricted": True,
+            "disable_force_settle": True,
+            "global_settle": True,
+            "disable_confidential": True,
+            "witness_fed_asset": True,
+            "committee_fed_asset": True,
+        }
+        flags = {
+            "charge_market_fee": False,
+            "white_list": False,
+            "override_authority": False,
+            "transfer_restricted": False,
+            "disable_force_settle": False,
+            "global_settle": False,
+            "disable_confidential": False,
+            "witness_fed_asset": False,
+            "committee_fed_asset": False,
+        }
         permissions_int = 0
-        for p in permissions :
+        for p in permissions:
             if permissions[p]:
                 permissions_int += perm[p]
         flags_int = 0
-        for p in permissions :
+        for p in permissions:
             if flags[p]:
                 flags_int += perm[p]
-        options = {"max_supply" : 10000,
-                   "market_fee_percent" : 0,
-                   "max_market_fee" : 0,
-                   "issuer_permissions" : permissions_int,
-                   "flags" : flags_int,
-                   "core_exchange_rate" : {
-                       "base": {
-                           "amount": 10,
-                           "asset_id": "1.3.0"},
-                       "quote": {
-                           "amount": 10,
-                           "asset_id": "1.3.1"}},
-                   "whitelist_authorities" : [],
-                   "blacklist_authorities" : [],
-                   "whitelist_markets" : [],
-                   "blacklist_markets" : [],
-                   "description" : "My fancy description"
-                   }
+        options = {
+            "max_supply": 10000,
+            "market_fee_percent": 0,
+            "max_market_fee": 0,
+            "issuer_permissions": permissions_int,
+            "flags": flags_int,
+            "core_exchange_rate": {
+                "base": {"amount": 10, "asset_id": "1.3.0"},
+                "quote": {"amount": 10, "asset_id": "1.3.1"},
+            },
+            "whitelist_authorities": [],
+            "blacklist_authorities": [],
+            "whitelist_markets": [],
+            "blacklist_markets": [],
+            "description": "My fancy description",
+        }
 
         tx = graphene.rpc.create_asset("nathan", "SYMBOL", 3, options, {}, True)
         print(json.dumps(tx, indent=4))
 
-		
+
 |
 
 --------------------

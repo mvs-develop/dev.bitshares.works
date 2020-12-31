@@ -6,7 +6,7 @@ How to Create a Worker
 
 .. contents:: Table of Contents
    :local:
-   
+
 -------
 
 
@@ -16,30 +16,30 @@ How to create a Worker
 By using the UI
 ^^^^^^^^^^^^^^^^^^^^^^
 
-You can create a Worker Proposal by using DNA UI form. Go to *Voting* page. There are three tabs: "Witnesses", "Committee", and "Workers". In the "Worker" tab, you will find *CREATE A NEW WORKER* button. 
+You can create a Worker Proposal by using DNA UI form. Go to *Voting* page. There are three tabs: "Witnesses", "Committee", and "Workers". In the "Worker" tab, you will find *CREATE A NEW WORKER* button.
 
 .. image:: ../../../../_static/imgs/ui-worker-create3.png
-        :alt: DNA 
+        :alt: DNA
         :width: 600px
         :align: center
 
 **a worker proposal form**
-		
+
 .. image:: ../../../../_static/imgs/ui-worker-create.png
-        :alt: DNA 
+        :alt: DNA
         :width: 550px
         :align: center
 
 
 
-By using the command 
+By using the command
 ^^^^^^^^^^^^^^^^^^^^^
 
 Workers are currently created with the cli_wallet with the following command syntax::
 
   >>> create_worker owner_account work_begin_date work_end_date daily_pay name url worker_settings broadcast
-    
-+------------------+-------------------------------------------------------+	
+
++------------------+-------------------------------------------------------+
 | parameter        | example value                                         |
 +==================+=======================================================+
 | owner_account    | "worker-name"                                         |
@@ -86,18 +86,18 @@ To **actually** generate a worker proposal, replace the last `false` by `true`.
 How to see Proposals on the Chain
 --------------------------------------
 
-By using the UI 
+By using the UI
 ^^^^^^^^^^^^^^^^^^
 
-You can check the Worker Proposals by DNA UI form. Go to *Voting* page. There are three tabs: "Witnesses", "Committee", and "Workers". In the "Worker" tab, you will find all Worker Proposals list. 
+You can check the Worker Proposals by DNA UI form. Go to *Voting* page. There are three tabs: "Witnesses", "Committee", and "Workers". In the "Worker" tab, you will find all Worker Proposals list.
 
 
 .. image:: ../../../../_static/imgs/ui-voting-worker.png
-        :alt: DNA 
+        :alt: DNA
         :width: 600px
         :align: center
-		
-		
+
+
 By using the command
 ^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -130,17 +130,17 @@ You also can inspect all the objects 1.4.*::
 How to Vote for a Worker
 -------------------------------
 
-By using the UI 
+By using the UI
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Voting is important. You have the UI form for voting. It's very easy to use. Go to *Voting* page. There are three tabs: "Witnesses", "Committee", and "Workers". In the "Worker" tab, check a Toggle Vote check box and *SAVE*. You might be asked to login. Confirm the transaction. ::
 
 
 .. image:: ../../../../_static/imgs/ui-voting-worker-2.png
-        :alt: DNA 
+        :alt: DNA
         :width: 600px
         :align: center
-		
+
 
 By using the command
 ^^^^^^^^^^^^^^^^^^^^^^
