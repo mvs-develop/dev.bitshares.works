@@ -20,20 +20,20 @@ matching.
 
 import six
 
-class NoParameterNamesMask(object):
 
+class NoParameterNamesMask(object):
     def __init__(self, data_object):
         self.data_object = data_object
 
     def __getattr__(self, attr):
 
-        if attr in ['declname', 'defname', 'defval']:
+        if attr in ["declname", "defname", "defval"]:
             return None
 
         return getattr(self.data_object, attr)
 
-class MaskFactory(object):
 
+class MaskFactory(object):
     def __init__(self, lookup):
         self.lookup = lookup
 
@@ -58,6 +58,5 @@ class MaskFactory(object):
 
 
 class NullMaskFactory(object):
-
     def mask(self, data_object):
         return data_object

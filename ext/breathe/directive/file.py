@@ -1,4 +1,3 @@
-
 from ..renderer import DoxygenToRstRendererFactory
 from ..renderer.base import RenderContext
 from ..renderer.mask import NullMaskFactory
@@ -28,23 +27,37 @@ class BaseFileDirective(BaseDirective):
         finder.filter_(finder_filter, matches)
 
         if len(matches) > 1:
-            warning = create_warning(None, self.state, self.lineno, file=file_,
-                                     directivename=self.directive_name)
-            return warning.warn('{directivename}: Found multiple matches for file "{file} {tail}')
+            warning = create_warning(
+                None,
+                self.state,
+                self.lineno,
+                file=file_,
+                directivename=self.directive_name,
+            )
+            return warning.warn(
+                '{directivename}: Found multiple matches for file "{file} {tail}'
+            )
 
         elif not matches:
-            warning = create_warning(None, self.state, self.lineno, file=file_,
-                                     directivename=self.directive_name)
-            return warning.warn('{directivename}: Cannot find file "{file} {tail}')
+            warning = create_warning(
+                None,
+                self.state,
+                self.lineno,
+                file=file_,
+                directivename=self.directive_name,
+            )
+            return warning.warn(
+                '{directivename}: Cannot find file "{file} {tail}'
+            )
 
         target_handler = self.target_handler_factory.create_target_handler(
-            self.options, project_info, self.state.document)
+            self.options, project_info, self.state.document
+        )
         filter_ = self.filter_factory.create_file_filter(file_, self.options)
 
         renderer_factory = DoxygenToRstRendererFactory(
-            self.parser_factory,
-            project_info
-            )
+            self.parser_factory, project_info
+        )
         node_list = []
         for node_stack in matches:
 
@@ -54,10 +67,12 @@ class BaseFileDirective(BaseDirective):
                 self.state.document,
                 filter_,
                 target_handler,
-                )
+            )
 
             mask_factory = NullMaskFactory()
-            context = RenderContext(node_stack, mask_factory, self.directive_args)
+            context = RenderContext(
+                node_stack, mask_factory, self.directive_args
+            )
             node_list.extend(object_renderer.render(node_stack[0], context))
 
         return node_list
@@ -65,7 +80,7 @@ class BaseFileDirective(BaseDirective):
 
 class DoxygenFileDirective(BaseFileDirective):
 
-    directive_name = 'doxygenfile'
+    directive_name = "doxygenfile"
 
     required_arguments = 0
     optional_arguments = 2
@@ -74,7 +89,7 @@ class DoxygenFileDirective(BaseFileDirective):
         "project": unchanged_required,
         "outline": flag,
         "no-link": flag,
-        }
+    }
     has_content = False
 
     def run(self):
@@ -83,24 +98,26 @@ class DoxygenFileDirective(BaseFileDirective):
         file_ = self.arguments[0]
 
         try:
-            project_info = self.project_info_factory.create_project_info(self.options)
+            project_info = self.project_info_factory.create_project_info(
+                self.options
+            )
         except ProjectError as e:
             warning = create_warning(None, self.state, self.lineno)
-            return warning.warn('doxygenfile: %s' % e)
+            return warning.warn("doxygenfile: %s" % e)
 
         return self.handle_contents(file_, project_info)
 
 
 class AutoDoxygenFileDirective(BaseFileDirective):
 
-    directive_name = 'autodoxygenfile'
+    directive_name = "autodoxygenfile"
 
     required_arguments = 1
     option_spec = {
         "project": unchanged_required,
         "outline": flag,
         "no-link": flag,
-        }
+    }
     has_content = False
 
     def run(self):
@@ -111,9 +128,13 @@ class AutoDoxygenFileDirective(BaseFileDirective):
         file_ = self.arguments[0]
 
         try:
-            project_info = self.project_info_factory.retrieve_project_info_for_auto(self.options)
+            project_info = (
+                self.project_info_factory.retrieve_project_info_for_auto(
+                    self.options
+                )
+            )
         except ProjectError as e:
             warning = create_warning(None, self.state, self.lineno)
-            return warning.warn('autodoxygenfile: %s' % e)
+            return warning.warn("autodoxygenfile: %s" % e)
 
         return self.handle_contents(file_, project_info)

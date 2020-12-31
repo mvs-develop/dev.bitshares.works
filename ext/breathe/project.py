@@ -1,4 +1,3 @@
-
 from .exception import BreatheError
 
 import os
@@ -16,20 +15,20 @@ class AutoProjectInfo(object):
     """Created as a temporary step in the automatic xml generation process"""
 
     def __init__(
-            self,
-            name,
-            source_path,
-            build_dir,
-            reference,
-            source_dir,
-            config_dir,
-            domain_by_extension,
-            domain_by_file_pattern,
-            match,
-            show_define_initializer,
-            project_refids,
-            order_parameters_first,
-            ):
+        self,
+        name,
+        source_path,
+        build_dir,
+        reference,
+        source_dir,
+        config_dir,
+        domain_by_extension,
+        domain_by_file_pattern,
+        match,
+        show_define_initializer,
+        project_refids,
+        order_parameters_first,
+    ):
 
         self._name = name
         self._source_path = source_path
@@ -78,25 +77,24 @@ class AutoProjectInfo(object):
             self._show_define_initializer,
             self._project_refids,
             self._order_parameters_first,
-            )
+        )
 
 
 class ProjectInfo(object):
-
     def __init__(
-            self,
-            name,
-            path,
-            source_path,
-            reference,
-            source_dir,
-            config_dir,
-            domain_by_extension,
-            domain_by_file_pattern,
-            match,
-            show_define_initializer,
-            project_refids,
-            order_parameters_first
+        self,
+        name,
+        path,
+        source_path,
+        reference,
+        source_dir,
+        config_dir,
+        domain_by_extension,
+        domain_by_file_pattern,
+        match,
+        show_define_initializer,
+        project_refids,
+        order_parameters_first,
     ):
 
         self._name = name
@@ -132,12 +130,11 @@ class ProjectInfo(object):
         """
 
         # os.path.join does the appropriate handling if _project_path is an absolute path
-        full_xml_project_path = os.path.join(self._config_dir, self._project_path, file_)
-
-        return os.path.relpath(
-            full_xml_project_path,
-            self._source_dir
+        full_xml_project_path = os.path.join(
+            self._config_dir, self._project_path, file_
         )
+
+        return os.path.relpath(full_xml_project_path, self._source_dir)
 
     def sphinx_abs_path_to_file(self, file_):
         """
@@ -175,7 +172,6 @@ class ProjectInfo(object):
 
 
 class ProjectInfoFactory(object):
-
     def __init__(self, source_dir, build_dir, config_dir, match):
 
         self.source_dir = source_dir
@@ -198,17 +194,17 @@ class ProjectInfoFactory(object):
         self.auto_project_info_store = {}
 
     def update(
-            self,
-            projects,
-            default_project,
-            domain_by_extension,
-            domain_by_file_pattern,
-            projects_source,
-            build_dir,
-            show_define_initializer,
-            project_refids,
-            order_parameters_first,
-            ):
+        self,
+        projects,
+        default_project,
+        domain_by_extension,
+        domain_by_file_pattern,
+        projects_source,
+        build_dir,
+        show_define_initializer,
+        project_refids,
+        order_parameters_first,
+    ):
 
         self.projects = projects
         self.default_project = default_project
@@ -236,8 +232,11 @@ class ProjectInfoFactory(object):
             return self.projects[self.default_project]
         except KeyError:
             raise ProjectError(
-                ("breathe_default_project value '%s' does not seem to be a valid key for the "
-                 "breathe_projects dictionary") % self.default_project
+                (
+                    "breathe_default_project value '%s' does not seem to be a valid key for the "
+                    "breathe_projects dictionary"
+                )
+                % self.default_project
             )
 
     def create_project_info(self, options):
@@ -249,8 +248,10 @@ class ProjectInfoFactory(object):
                 path = self.projects[options["project"]]
                 name = options["project"]
             except KeyError:
-                raise ProjectError("Unable to find project '%s' in breathe_projects dictionary"
-                                   % options["project"])
+                raise ProjectError(
+                    "Unable to find project '%s' in breathe_projects dictionary"
+                    % options["project"]
+                )
 
         elif "path" in options:
             path = options["path"]
@@ -281,7 +282,7 @@ class ProjectInfoFactory(object):
                 self.match,
                 self.show_define_initializer,
                 self.project_refids,
-                self.order_parameters_first
+                self.order_parameters_first,
             )
 
             self.project_info_store[path] = project_info
@@ -304,7 +305,7 @@ class ProjectInfoFactory(object):
         sense.
         """
 
-        name = options.get('project', self.default_project)
+        name = options.get("project", self.default_project)
 
         if name is None:
             raise NoDefaultProjectError(
@@ -341,7 +342,7 @@ class ProjectInfoFactory(object):
                 self.match,
                 self.show_define_initializer,
                 self.project_refids,
-                self.order_parameters_first
+                self.order_parameters_first,
             )
 
             self.auto_project_info_store[key] = auto_project_info

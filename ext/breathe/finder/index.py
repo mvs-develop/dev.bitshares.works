@@ -1,9 +1,7 @@
-
 from .base import ItemFinder, stack
 
 
 class DoxygenTypeSubItemFinder(ItemFinder):
-
     def filter_(self, ancestors, filter_, matches):
         """Find nodes which match the filter. Doesn't test this node, only its children"""
 
@@ -18,7 +16,6 @@ class DoxygenTypeSubItemFinder(ItemFinder):
 
 
 class CompoundTypeSubItemFinder(ItemFinder):
-
     def __init__(self, filter_factory, compound_parser, *args):
         ItemFinder.__init__(self, *args)
 
@@ -55,7 +52,8 @@ class CompoundTypeSubItemFinder(ItemFinder):
 
             for member_stack in member_matches:
                 ref_filter = self.filter_factory.create_id_filter(
-                    'memberdef', member_stack[0].refid)
+                    "memberdef", member_stack[0].refid
+                )
                 finder.filter_(node_stack, ref_filter, matches)
 
         else:
@@ -68,7 +66,6 @@ class CompoundTypeSubItemFinder(ItemFinder):
 
 
 class MemberTypeSubItemFinder(ItemFinder):
-
     def filter_(self, ancestors, filter_, matches):
 
         node_stack = stack(self.data_object, ancestors)

@@ -1,6 +1,4 @@
-
 class ItemFinder(object):
-
     def __init__(self, project_info, data_object, item_finder_factory):
 
         self.data_object = data_object

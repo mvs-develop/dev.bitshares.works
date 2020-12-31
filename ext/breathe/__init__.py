@@ -1,4 +1,4 @@
-__version__ = '4.13.0.post0'
+__version__ = "4.13.0.post0"
 
 
 def setup(app):
@@ -14,7 +14,7 @@ def setup(app):
 
     directives.setup(app)
     return {
-        'version': __version__,
-        'parallel_read_safe': True,
-        'parallel_write_safe': True
+        "version": __version__,
+        "parallel_read_safe": True,
+        "parallel_write_safe": True,
     }

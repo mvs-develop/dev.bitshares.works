@@ -1,4 +1,3 @@
-
 import docutils.nodes
 import collections
 import sphinx.addnodes
@@ -12,7 +11,6 @@ class NodeNotFoundError(BreatheError):
 
 
 class NodeFactory(object):
-
     def __init__(self, *args):
 
         self.sources = args

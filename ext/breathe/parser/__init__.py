@@ -1,10 +1,8 @@
-
 from . import index
 from . import compound
 
 
 class ParserError(Exception):
-
     def __init__(self, error, filename):
         Exception.__init__(self, error)
 
@@ -12,11 +10,10 @@ class ParserError(Exception):
         self.filename = filename
 
     def __str__(self):
-        return ("file %s: %s" % (self.filename, self.error))
+        return "file %s: %s" % (self.filename, self.error)
 
 
 class FileIOError(Exception):
-
     def __init__(self, error, filename):
         Exception.__init__(self, error)
 
@@ -25,7 +22,6 @@ class FileIOError(Exception):
 
 
 class Parser(object):
-
     def __init__(self, cache, path_handler, file_state_cache):
 
         self.cache = cache
@@ -34,15 +30,13 @@ class Parser(object):
 
 
 class DoxygenIndexParser(Parser):
-
     def __init__(self, cache, path_handler, file_state_cache):
         Parser.__init__(self, cache, path_handler, file_state_cache)
 
     def parse(self, project_info):
 
         filename = self.path_handler.resolve_path(
-            project_info.project_path(),
-            "index.xml"
+            project_info.project_path(), "index.xml"
         )
 
         self.file_state_cache.update(filename)
@@ -64,7 +58,6 @@ class DoxygenIndexParser(Parser):
 
 
 class DoxygenCompoundParser(Parser):
-
     def __init__(self, cache, path_handler, file_state_cache, project_info):
         Parser.__init__(self, cache, path_handler, file_state_cache)
 
@@ -73,8 +66,7 @@ class DoxygenCompoundParser(Parser):
     def parse(self, refid):
 
         filename = self.path_handler.resolve_path(
-            self.project_info.project_path(),
-            "%s.xml" % refid
+            self.project_info.project_path(), "%s.xml" % refid
         )
 
         self.file_state_cache.update(filename)
@@ -96,7 +88,6 @@ class DoxygenCompoundParser(Parser):
 
 
 class DoxygenParserFactory(object):
-
     def __init__(self, path_handler, file_state_cache):
 
         self.cache = {}
@@ -105,13 +96,12 @@ class DoxygenParserFactory(object):
 
     def create_index_parser(self):
 
-        return DoxygenIndexParser(self.cache, self.path_handler, self.file_state_cache)
+        return DoxygenIndexParser(
+            self.cache, self.path_handler, self.file_state_cache
+        )
 
     def create_compound_parser(self, project_info):
 
         return DoxygenCompoundParser(
-            self.cache,
-            self.path_handler,
-            self.file_state_cache,
-            project_info
+            self.cache, self.path_handler, self.file_state_cache, project_info
         )

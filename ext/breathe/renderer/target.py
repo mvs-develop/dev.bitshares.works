@@ -1,6 +1,4 @@
-
 class TargetHandler(object):
-
     def __init__(self, project_info, node_factory, document):
 
         self.project_info = project_info
@@ -20,13 +18,13 @@ class TargetHandler(object):
 
         return [target]
 
-class NullTargetHandler(object):
 
+class NullTargetHandler(object):
     def create_target(self, refid):
         return []
 
-class TargetHandlerFactory(object):
 
+class TargetHandlerFactory(object):
     def __init__(self, node_factory):
 
         self.node_factory = node_factory

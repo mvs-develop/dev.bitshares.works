@@ -1,4 +1,3 @@
-
 from ..renderer.base import RenderContext
 from ..renderer.mask import NullMaskFactory
 from ..renderer import format_parser_error, DoxygenToRstRendererFactory
@@ -16,8 +15,7 @@ class RootDataObject(object):
 
 
 class BaseIndexDirective(BaseDirective):
-    """Base class handle the main work when given the appropriate project info to work from.
-    """
+    """Base class handle the main work when given the appropriate project info to work from."""
 
     # We use inheritance here rather than a separate object and composition, because so much
     # information is present in the Directive class from the docutils framework that we'd have to
@@ -28,40 +26,47 @@ class BaseIndexDirective(BaseDirective):
         try:
             finder = self.finder_factory.create_finder(project_info)
         except ParserError as e:
-            return format_parser_error(self.name, e.error, e.filename, self.state,
-                                       self.lineno, True)
+            return format_parser_error(
+                self.name, e.error, e.filename, self.state, self.lineno, True
+            )
         except FileIOError as e:
-            return format_parser_error(self.name, e.error, e.filename, self.state, self.lineno)
+            return format_parser_error(
+                self.name, e.error, e.filename, self.state, self.lineno
+            )
 
         data_object = finder.root()
 
         target_handler = self.target_handler_factory.create_target_handler(
-            self.options, project_info, self.state.document)
+            self.options, project_info, self.state.document
+        )
         filter_ = self.filter_factory.create_index_filter(self.options)
 
         renderer_factory = DoxygenToRstRendererFactory(
-            self.parser_factory,
-            project_info
-            )
+            self.parser_factory, project_info
+        )
         object_renderer = renderer_factory.create_renderer(
             [data_object],
             self.state,
             self.state.document,
             filter_,
             target_handler,
-            )
+        )
 
         mask_factory = NullMaskFactory()
-        context = RenderContext([data_object, RootDataObject()], mask_factory,
-                                self.directive_args)
+        context = RenderContext(
+            [data_object, RootDataObject()], mask_factory, self.directive_args
+        )
 
         try:
             node_list = object_renderer.render(context.node_stack[0], context)
         except ParserError as e:
-            return format_parser_error(self.name, e.error, e.filename, self.state,
-                                       self.lineno, True)
+            return format_parser_error(
+                self.name, e.error, e.filename, self.state, self.lineno, True
+            )
         except FileIOError as e:
-            return format_parser_error(self.name, e.error, e.filename, self.state, self.lineno)
+            return format_parser_error(
+                self.name, e.error, e.filename, self.state, self.lineno
+            )
 
         return node_list
 
@@ -75,17 +80,19 @@ class DoxygenIndexDirective(BaseIndexDirective):
         "project": unchanged_required,
         "outline": flag,
         "no-link": flag,
-        }
+    }
     has_content = False
 
     def run(self):
         """Extract the project info and pass it to the helper method"""
 
         try:
-            project_info = self.project_info_factory.create_project_info(self.options)
+            project_info = self.project_info_factory.create_project_info(
+                self.options
+            )
         except ProjectError as e:
             warning = create_warning(None, self.state, self.lineno)
-            return warning.warn('doxygenindex: %s' % e)
+            return warning.warn("doxygenindex: %s" % e)
 
         return self.handle_contents(project_info)
 
@@ -98,7 +105,7 @@ class AutoDoxygenIndexDirective(BaseIndexDirective):
         "project": unchanged_required,
         "outline": flag,
         "no-link": flag,
-        }
+    }
     has_content = False
 
     def run(self):
@@ -107,9 +114,13 @@ class AutoDoxygenIndexDirective(BaseIndexDirective):
         """
 
         try:
-            project_info = self.project_info_factory.retrieve_project_info_for_auto(self.options)
+            project_info = (
+                self.project_info_factory.retrieve_project_info_for_auto(
+                    self.options
+                )
+            )
         except ProjectError as e:
             warning = create_warning(None, self.state, self.lineno)
-            return warning.warn('autodoxygenindex: %s' % e)
+            return warning.warn("autodoxygenindex: %s" % e)
 
         return self.handle_contents(project_info)

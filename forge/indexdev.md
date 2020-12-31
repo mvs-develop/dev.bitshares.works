@@ -1,8 +1,5 @@
-
-
-
 1. Development Community Support Information
- 
+
    1. Introduction
       1. Architecture
       2. Features
@@ -16,7 +13,7 @@
       5. Testnet
       6. Private Testnet
       7. Tutorials
-         1. Specific small Task 1  (e.g. Issuing Assets)
+         1. Specific small Task 1 (e.g. Issuing Assets)
          2. Specific small Task 2
          3. etc.
    3. FAQ/ELI5
