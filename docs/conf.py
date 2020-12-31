@@ -48,6 +48,8 @@ extensions = [
     "sphinx.ext.autosectionlabel",
     "sphinx.ext.todo",
     "breathe",
+    "sphinx.ext.napoleon",
+    "sphinx_autodoc_typehints",
 ]
 
 # Do not warn about external images (status badges in README.rst)
