@@ -11,11 +11,8 @@ package = "dev.dna.works"
 nox.options.sessions = (
     "xdoctest",
     "safety",
-    "tests",
 )
 locations = (
-    "src",
-    "tests",
     "noxfile.py",
     "docs/conf.py",
 )
@@ -189,6 +186,8 @@ def docs(session: Session) -> None:
         session,
         "sphinx",
         "sphinx-autodoc-typehints",
+        "-r",
+        "./docs/requirements.txt",
     )
     session.run(
         "sphinx-build",
