@@ -7,7 +7,7 @@ from typing import Any
 import nox
 from nox.sessions import Session
 
-package = "dev.dna.works""
+package = "dev.dna.works"
 nox.options.sessions = (
     "xdoctest",
     "safety",
