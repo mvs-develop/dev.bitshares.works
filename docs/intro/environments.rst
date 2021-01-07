@@ -23,7 +23,7 @@ DNA Code and Files
 
     + `Libraries <https://github.com/mvs-org/dna-core/tree/master/libraries#bitshares-libraries>`_ : The libraries are the core of the project and defines everything where applications can build on top.
 
-   - **Bitshares-FC** - Fast-compiling C++ library
+   - **dna-fc** - Fast-compiling C++ library
    - (more...)
 
 ----------
