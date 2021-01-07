@@ -22,7 +22,7 @@ Creating a Blind Account
 Blind Accounts are not registered on the blockchain like the named accounts on DNA. Instead a blind account is nothing more than a labeled public key. The label assigned to the key is only known to your wallet. The first step is to create an blind account by giving the wallet a name and a "brainkey". A "brainkey" is effectively the private key used by your account.
 
     >>> create_blind_account alice "alice-brain-key"
-        "BTS7vbxtK1WaZqXsiCHPcjVFBewVj8HFRd5Z5XZDpN6Pvb2dZcMqK"
+        "DNA7vbxtK1WaZqXsiCHPcjVFBewVj8HFRd5Z5XZDpN6Pvb2dZcMqK"
 
 The result of this call is to print out the Public Key associated with blind account alice.
 
@@ -31,7 +31,7 @@ For the purpose of this test we will create two blind accounts in two different 
 .. code-block:: json
 
     >>> create_blind_account bob "bob-brain-key"
-        "BTS8HosMbp7tL614bFgqtXXownHykqASxwmnH9NrhAnvtTuVWRf1X"
+        "DNA8HosMbp7tL614bFgqtXXownHykqASxwmnH9NrhAnvtTuVWRf1X"
 
 
 Alice and Bob now each have their own account in their own wallet that isn't known to anyone else in the world. They can view their blind accounts with the following command:
@@ -41,7 +41,7 @@ Alice and Bob now each have their own account in their own wallet that isn't kno
     >>> get_my_blind_accounts
     [[
     "alice",
-    "BTS7vbxtK1WaZqXsiCHPcjVFBewVj8HFRd5Z5XZDpN6Pvb2dZcMqK"
+    "DNA7vbxtK1WaZqXsiCHPcjVFBewVj8HFRd5Z5XZDpN6Pvb2dZcMqK"
     ]]
 
 

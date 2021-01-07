@@ -390,7 +390,7 @@ Considering security, you can use **two accounts** to handle the deposit and wit
 	{
 	  "brain_priv_key": ".....",
 	  "wif_priv_key": "5JxyJx2KyDmAx5kpkMthWEpqGjzpwtGtEJigSMz5XE1AtrQaZXu",
-	  "pub_key": "BTS69uKRvM8dAPn8En4SCi2nMTHKXt1rWrohFbwaPwv2rAbT3XFzf"
+	  "pub_key": "DNA69uKRvM8dAPn8En4SCi2nMTHKXt1rWrohFbwaPwv2rAbT3XFzf"
 	}
 
 In the light wallet, on the permission page, modify the memo (comment) key to `pub_key` in the above result.
@@ -481,7 +481,7 @@ Return:
 		  "witness_signature":"1f53542bb60f1f7a653bac70d6b1613e73b9adc952031e30e591e601dd60d493ba5c9a832e155ff0c40ea1dd53512e9f93bf65a8191497ea67d701bc2502f93af7",
 		  "transactions": [],
 		  "block_id": "00000001b656820f72f6b28cda811778632d4998",
-		  "signing_key": "BTS6ZQEFsPmG6jWspNDdZHkehNmPpG7gkSHkphmRZQWaJ2LrcaVSi",
+		  "signing_key": "DNA6ZQEFsPmG6jWspNDdZHkehNmPpG7gkSHkphmRZQWaJ2LrcaVSi",
 		  "transaction_ids": []
 		  }
 	}
@@ -572,8 +572,8 @@ The result is an array, sorted in reverse chronological order, with the most rec
 				 "asset_id":"1.3.0"
 			},
 			"memo":{
-				 "from":"BTS7NLcZJzqq3mvKfcqoN52ainajDckyMp5SYRgzicfbHD6u587ib",
-				 "to":"BTS7SakKqZ8HamkTr7FdPn9qYxYmtSh2QzFNn49CiFAkdFAvQVMg6",
+				 "from":"DNA7NLcZJzqq3mvKfcqoN52ainajDckyMp5SYRgzicfbHD6u587ib",
+				 "to":"DNA7SakKqZ8HamkTr7FdPn9qYxYmtSh2QzFNn49CiFAkdFAvQVMg6",
 				 "nonce": "5333758904325274680",
 				 "message": "0b809fa8169453422343434366514a153981ea"
 			},

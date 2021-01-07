@@ -56,7 +56,7 @@ Outputs - wallet.json
 			"weight_threshold": 1,
 			"account_auths": [],
 			"key_auths": [[
-				"BTS7T2swLv3QqBAzP1hByB5khUjNFEahtp1fYEHL2GFubMvNGVXyG",
+				"DNA7T2swLv3QqBAzP1hByB5khUjNFEahtp1fYEHL2GFubMvNGVXyG",
 				1
 			  ]
 			],
@@ -66,14 +66,14 @@ Outputs - wallet.json
 			"weight_threshold": 1,
 			"account_auths": [],
 			"key_auths": [[
-				"BTS7T2swLv3QqBAzP1hByB5khUjNFEahtp1fYEHL2GFubMvNGVXyG",
+				"DNA7T2swLv3QqBAzP1hByB5khUjNFEahtp1fYEHL2GFubMvNGVXyG",
 				1
 			  ]
 			],
 			"address_auths": []
 		  },
 		  "options": {
-			"memo_key": "BTS7T2swLv3QqBAzP1hByB5khUjNFEahtp1fYEHL2GFubMvNGVXyG",
+			"memo_key": "DNA7T2swLv3QqBAzP1hByB5khUjNFEahtp1fYEHL2GFubMvNGVXyG",
 			"voting_account": "1.2.1090",
 			"num_witness": 0,
 			"num_committee": 0,
@@ -98,7 +98,7 @@ Outputs - wallet.json
 	  "cipher_keys": "b973b57b9a1de8e6d6d7588f62d61e1cc6a229c802bf5a3fefbedbebc8b579370e77c2053458a00f13b674371b2e6313febedf7f099864de66e8fcb86d87bd6c8961ece89454ba0a50a965da0b6e67958e491d2df55ebf7cc07c5f4d1e8f7f662347714011b7980657ad5cb4c72d822efd9119a64cfc804c89f635ba567905463e1521c57f41fbb55e43766f8af5cbd02860ac34ef5772753fded808c8db37c6",
 	  "extra_keys": [[
 		  "1.2.298",[
-			"BTS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV"
+			"DNA6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV"
 		  ]
 		]
 	  ],

@@ -21,7 +21,7 @@ Be sure you've built the right build targets::
 Use the ``get_dev_key`` utility to generate a keypair::
 
     $ programs/genesis_util/get_dev_key "" nathan
-    [{"private_key":"5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3","public_key":"BTS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV","address":"BTSFAbAx7yuxt725qSZvfwWqkdCwp9ZnUama"}]
+    [{"private_key":"5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3","public_key":"DNA6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV","address":"DNAFAbAx7yuxt725qSZvfwWqkdCwp9ZnUama"}]
 
 Obtain a copy of the blockchain in `block_db` directory: $ programs/witness_node/witness_node --data-dir data/mydatadir # ... wait for chain to sync ^C $ cp -Rp data/mydatadir/blockchain/database/block_num_to_block ./block_db
 
@@ -92,7 +92,7 @@ Generate (fake) blocks with our own private key::
 
 Update `angel` account to be controlled by our own private key and generate a (fake) transfer::
 
-    dbg_update_object {"_action":"update", "id":"1.2.1090", "active":{"weight_threshold":1,"key_auths":[["BTS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV",1]]}}
+    dbg_update_object {"_action":"update", "id":"1.2.1090", "active":{"weight_threshold":1,"key_auths":[["DNA6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV",1]]}}
     import_key angel 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
     transfer angel init0 999999 DNA "" true
 

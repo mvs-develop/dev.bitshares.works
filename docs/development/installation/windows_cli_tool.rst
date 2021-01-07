@@ -244,7 +244,7 @@ _ ``list_account_balances``  _(e.g. an existing user account "cedar036)_
         "weight_threshold": 1,
         "account_auths": [],
         "key_auths": [[
-            "BTS7pRNvabZG2uU5SS9AyUWmsCdKijC1tHjCtiTDH7AeRkdH4qoVk",
+            "DNA7pRNvabZG2uU5SS9AyUWmsCdKijC1tHjCtiTDH7AeRkdH4qoVk",
             1
           ]
         ],
@@ -254,14 +254,14 @@ _ ``list_account_balances``  _(e.g. an existing user account "cedar036)_
         "weight_threshold": 1,
         "account_auths": [],
         "key_auths": [[
-            "BTS8jpGqVjRYytbguEZd4ao9CqdEUiMjkwfo9pgUE8RofW7higmQx",
+            "DNA8jpGqVjRYytbguEZd4ao9CqdEUiMjkwfo9pgUE8RofW7higmQx",
             1
           ]
         ],
         "address_auths": []
       },
       "options": {
-        "memo_key": "BTS8jpGqVjRYytbguEZd4ao9CqdEUiMjkwfo9pgUE8RofW7higmQx",
+        "memo_key": "DNA8jpGqVjRYytbguEZd4ao9CqdEUiMjkwfo9pgUE8RofW7higmQx",
         "voting_account": "1.2.96393",
         "num_witness": 0,
         "num_committee": 0,

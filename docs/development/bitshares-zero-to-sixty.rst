@@ -104,7 +104,7 @@ To start a node using a custom Genesis block, run ``witness_node --genesis-json 
 	rpc-endpoint = 127.0.0.1:8090
 
 	# This sets the private key used by all witnesses in genesis-dev.json
-	private-key = ["BTS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV","5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3"]
+	private-key = ["DNA6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV","5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3"]
 
 	# This tells the node to produce blocks even if no recent blocks are available
 	# This is disabled in production to prevent forking due to network failures, but it's necessary to start a new testnet

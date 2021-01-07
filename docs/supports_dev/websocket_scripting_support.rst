@@ -36,7 +36,7 @@ Confirm the install by using the `wsdump.py` tool. This should do the same as `w
 
     > {"method": "call", "params": [2, "get_objects", [["1.11.8799012"]]], "id": 4}
     < {"id":4,"result":[{"id":"1.11.8799012","op":[14,{"fee":{"amount":281946,"asset_id":"1.3.0"},"issuer":"1.2.89940","asset_to_issue":{"amount":100,"asset_id":"1.3`
-    `.1276"},"issue_to_account":"1.2.142352","memo":{"from":"BTS8LWkZLmsnWjgtT1PNHT5XGAu1z1ueQkBHBQTVfECFVQfD3s7CF","to":"BTS6F1ZetzyG5FvjRiPjSkAjJfCqfr8AGbnGfH9FAGWZ`
+    `.1276"},"issue_to_account":"1.2.142352","memo":{"from":"DNA8LWkZLmsnWjgtT1PNHT5XGAu1z1ueQkBHBQTVfECFVQfD3s7CF","to":"DNA6F1ZetzyG5FvjRiPjSkAjJfCqfr8AGbnGfH9FAGWZ`
     M3SGVumj5","nonce":"380763353028914","message":"912991d1bb5bccccbd41dbad533836e667e5c5e9a31290c857ed6c5ea01756dd4d5893f1644c16c019170a4d0de346a2"},"extensions":[
     ]}],"result":[0,{}],"block_num":14086551,"trx_in_block":0,"op_in_trx":0,"virtual_op":48819}]}
     >
@@ -66,7 +66,7 @@ Execute as::
     {"id":2,"result":true}
     {"id":3,"result":2}
     {"id":4,"result":[{"id":"1.11.8799012","op":[14,{"fee":{"amount":281946,"asset_id":"1.3.0"},"issuer":"1.2.89940","asset_to_issue":{"amount":100,"asset_id":"1.3.1
-    `276"},"issue_to_account":"1.2.142352","memo":{"from":"BTS8LWkZLmsnWjgtT1PNHT5XGAu1z1ueQkBHBQTVfECFVQfD3s7CF","to":"BTS6F1ZetzyG5FvjRiPjSkAjJfCqfr8AGbnGfH9FAGWZM3
+    `276"},"issue_to_account":"1.2.142352","memo":{"from":"DNA8LWkZLmsnWjgtT1PNHT5XGAu1z1ueQkBHBQTVfECFVQfD3s7CF","to":"DNA6F1ZetzyG5FvjRiPjSkAjJfCqfr8AGbnGfH9FAGWZM3
     SGVumj5","nonce":"380763353028914","message":"912991d1bb5bccccbd41dbad533836e667e5c5e9a31290c857ed6c5ea01756dd4d5893f1644c16c019170a4d0de346a2"},"extensions":[]}
     ],"result":[0,{}],"block_num":14086551,"trx_in_block":0,"op_in_trx":0,"virtual_op":48819}]}
     root@NC-PH-1346-07:~#

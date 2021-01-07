@@ -132,7 +132,7 @@ As a default, most parameters have been commented. You have to uncomment to set 
 	# witness-id =
 
 	# Tuple of [PublicKey, WIF private key] (may specify multiple times)
-	private-key = ["BTS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV","5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3"]
+	private-key = ["DNA6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV","5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3"]
 
 
 	# ==============================================================================
@@ -140,7 +140,7 @@ As a default, most parameters have been commented. You have to uncomment to set 
 	# ==============================================================================
 
 	# Tuple of [PublicKey, WIF private key] (may specify multiple times)
-	debug-private-key = ["BTS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV","5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3"]
+	debug-private-key = ["DNA6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV","5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3"]
 
 
 	# ==============================================================================

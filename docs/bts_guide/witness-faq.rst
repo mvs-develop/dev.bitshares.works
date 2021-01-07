@@ -67,7 +67,7 @@ Related source files are in ``libraries/fc/include/fc/log/`` and ``libraries/fc/
 
 .. _witness-faq-8:
 
-Whose private key is `["BTS6MRyAjQ..","5KQwrPbwdL.."]`? Why is it predefined in the `config.ini`?
+Whose private key is `["DNA6MRyAjQ..","5KQwrPbwdL.."]`? Why is it predefined in the `config.ini`?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 It's a shared key for some special purpose.
 (But I don't remember what it is. If I remember BM or someone else has ever explained it in the forum,

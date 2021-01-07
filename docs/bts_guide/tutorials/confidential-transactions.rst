@@ -104,7 +104,7 @@ then we'll use that label to transfer assets into the alice blind account.
     >>> list_account_balances "peters-public-registered-account"
     5000 DNA
 
-    >>> set_key_label "BTS5Qmr9H9SM39EHmVgXtsVjUGn2xBUtqbF6MdQ6RpnxUWNak7mse" "Alice-is-Blind"
+    >>> set_key_label "DNA5Qmr9H9SM39EHmVgXtsVjUGn2xBUtqbF6MdQ6RpnxUWNak7mse" "Alice-is-Blind"
     true
 
     >>> transfer_to_blind "peters-public-registered-account" DNA [[Alice-is-Blind,100]] true
@@ -179,7 +179,7 @@ accounts returned from that to obtain their balances:
     >>> get_my_blind_accounts
     [[
     "alice",
-    "BTS5Qmr9H9SM39EHmVgXtsVjUGn2xBUtqbF6MdQ6RpnxUWNak7mse"
+    "DNA5Qmr9H9SM39EHmVgXtsVjUGn2xBUtqbF6MdQ6RpnxUWNak7mse"
     ]]
 
     >>> get_blind_balances "alice"
@@ -257,7 +257,7 @@ account to do the transfer.
 
 ::
 
-    >>> set_key_label "BTS6V829H9SM39EHmVgXtsVjUGn2xBUtqbF6MdQ6RpnxUWNakaV26" "bobby"
+    >>> set_key_label "DNA6V829H9SM39EHmVgXtsVjUGn2xBUtqbF6MdQ6RpnxUWNakaV26" "bobby"
     true
 
     >>> blind_transfer alice bobby 80 DNA true
@@ -342,10 +342,10 @@ primarily to illustrate the syntax of the command.
     >>> list_account_balances "peters-public-registered-account"
     4860 DNA
 
-    >>> set_key_label "BTS5Qmr9H9SM39EHmVgXtsVjUGn2xBUtqbF6MdQ6RpnxUWNak7mse" "alice"
+    >>> set_key_label "DNA5Qmr9H9SM39EHmVgXtsVjUGn2xBUtqbF6MdQ6RpnxUWNak7mse" "alice"
     true
 
-    >>> set_key_label "BTS6V829H9SM39EHmVgXtsVjUGn2xBUtqbF6MdQ6RpnxUWNakaV26" "bobby"
+    >>> set_key_label "DNA6V829H9SM39EHmVgXtsVjUGn2xBUtqbF6MdQ6RpnxUWNakaV26" "bobby"
     true
 
     >>> transfer_to_blind peters-public-registered-account DNA [[alice,800],[alice,2000],[bobby,2000]] true
