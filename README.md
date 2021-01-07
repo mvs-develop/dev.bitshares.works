@@ -4,7 +4,7 @@
 
 Welcome to the documentation portal for the DNA Blockchain. The content on this page is managed by the DNA community and is constantly improved.
 
-[DNA Developers Documentation Portal website](http://dev.bitshares.works/en/master/)
+[DNA Developers Documentation Portal website](http://dev-doc.readthedocs.io/en/master/)
 
 ----------------
 
@@ -18,7 +18,7 @@ Welcome to the documentation portal for the DNA Blockchain. The content on this 
 
 ### Contributing
 
-- [How to Contribute to DNA Documentation Project](https://github.com/mvs-org/dev.bitshares.works/blob/master/CONTRIBUTING.md)
+- [How to Contribute to DNA Documentation Project](https://github.com/mvs-org/dev-doc.readthedocs.io/blob/master/CONTRIBUTING.md)
 
 
 ***

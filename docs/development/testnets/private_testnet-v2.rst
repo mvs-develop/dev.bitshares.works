@@ -25,11 +25,11 @@ In this chapter, we define our base directory ``$HOME/`` and create two director
      - uses for your DNA Private Testnet Project
 
 
-* Example files location for this section: /dev.bitshares.works/docs/development/testnets/
+* Example files location for this section: /dev-doc.readthedocs.io/docs/development/testnets/
 
-  - `prv_Get-Dev-Key-used-in-my-genesis.txt (get_dev_key) <https://github.com/mvs-org/dev.bitshares.works/blob/master/docs/development/testnets/prv_Get-Dev-Key-used-in-my-genesis.txt>`_
-  - `prv_my-genesis-example-Private-testnet.json (my-genesis.json) <https://github.com/mvs-org/dev.bitshares.works/blob/master/docs/development/testnets/prv_my-genesis-example-Private-testnet.json>`_
-  - `prv_config-ini-example.txt  (config.ini) <https://github.com/mvs-org/dev.bitshares.works/blob/master/docs/development/testnets/prv_config-ini-example.txt>`_
+  - `prv_Get-Dev-Key-used-in-my-genesis.txt (get_dev_key) <https://github.com/mvs-org/dev-doc.readthedocs.io/blob/master/docs/development/testnets/prv_Get-Dev-Key-used-in-my-genesis.txt>`_
+  - `prv_my-genesis-example-Private-testnet.json (my-genesis.json) <https://github.com/mvs-org/dev-doc.readthedocs.io/blob/master/docs/development/testnets/prv_my-genesis-example-Private-testnet.json>`_
+  - `prv_config-ini-example.txt  (config.ini) <https://github.com/mvs-org/dev-doc.readthedocs.io/blob/master/docs/development/testnets/prv_config-ini-example.txt>`_
 
 
 

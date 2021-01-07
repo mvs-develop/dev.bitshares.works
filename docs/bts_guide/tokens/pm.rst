@@ -80,7 +80,7 @@ corresponding percentage of the collateral.
 Resolving
 -----------------
 
-A price feed needs to be published for the prediction market by the issuer or feed producer. It is essentially a global settlement which will set the parameters of the asset such that the holders of the asset can settle at the outcome of the bet (0, or 1). The details are shown in the guide pm-close-manual (ref: *dev.bitshares.works* material)
+A price feed needs to be published for the prediction market by the issuer or feed producer. It is essentially a global settlement which will set the parameters of the asset such that the holders of the asset can settle at the outcome of the bet (0, or 1). The details are shown in the guide pm-close-manual (ref: *dev-doc.readthedocs.io* material)
 
 |
 

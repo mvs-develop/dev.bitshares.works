@@ -4,7 +4,7 @@
 
 #### Issue:
 
-Testing setup [Private Testnet steps](https://dev.bitshares.works/en/master/development/testnets/private_testnet.html)
+Testing setup [Private Testnet steps](https://dev-doc.readthedocs.io/en/master/development/testnets/private_testnet.html)
 
 (step 3) When I run `./witness_node --create-genesis-json=my-genesis.json`, creating a `my-genesis.json` and also `witness_node_data_dir` folder.
 
@@ -27,7 +27,7 @@ in the documentation clearly mention (warn) to users; you have to define a data 
 
 The warnings were added...
 
-In [Private Testnets](https://dev.bitshares.works/en/master/development/testnets/private_testnet.html#genesis-file)
+In [Private Testnets](https://dev-doc.readthedocs.io/en/master/development/testnets/private_testnet.html#genesis-file)
 
 ## 3. Creating a Genesis File for a Private Testnet
 

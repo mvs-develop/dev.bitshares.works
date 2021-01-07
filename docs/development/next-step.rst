@@ -34,8 +34,8 @@ Know how to Backup/Restore (GUI)
 Create and launch a CLI wallet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Understand `CLI Client and Wallet -  Connectivity <https://dev.bitshares.works/en/master/development/apps/cli_intro.html>`_
-- Learn how to `Connecte a CLI wallet <https://dev.bitshares.works/en/master/development/apps/cli_wallet.html>`_
+- Understand `CLI Client and Wallet -  Connectivity <https://dev-doc.readthedocs.io/en/master/development/apps/cli_intro.html>`_
+- Learn how to `Connecte a CLI wallet <https://dev-doc.readthedocs.io/en/master/development/apps/cli_wallet.html>`_
 - Learn how to :ref:`set up Secure Network and Wallet Configuration <secure-network-configuration>`
 - Know how to :ref:`import a GUI-wallet account into CLI-wallet <howto-import-gui-wallet-account-cli>`
 
