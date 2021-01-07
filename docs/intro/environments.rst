@@ -15,7 +15,7 @@ DNA Code and Files
 
 * Open Source program
 * Language uses (mainly): DNA-Core(C++), python
-* `DNA GitHub <https://github.com/bitshares>`_
+* `DNA GitHub <https://github.com/mvs-org>`_
 
    - **DNA-Core (C++)** - DNA Blockchain implementation and command-line interface.
 
@@ -24,13 +24,6 @@ DNA Code and Files
     + `Libraries <https://github.com/mvs-org/dna-core/tree/master/libraries#bitshares-libraries>`_ : The libraries are the core of the project and defines everything where applications can build on top.
 
    - **Bitshares-FC** - Fast-compiling C++ library
-   - **DNA python** - Fully featured client-side library for the DNA Blockchain - written entirely in python.
-   - **DNA-UI** - Fully featured Graphical User Interface / Reference Wallet for the DNA Blockchain.
-   - **BSIPs** - DNA Improvement Proposals and Protocols. These technical documents describe the process of updating and improving the DNA blockchain and technical ecosystem.
-   - **BitSharesjs** - JavaScript tools for DNA Encryption and Serialization.
-   - **BitSharesjs-ws** - Javascript websocket interface for Bitshares
-   - **Beet** - Beet is a stand-alone key/identity-manager and signing app for DNA, heavily influenced by Scatter
-   - **Bitshares Mobile App** - The mobile app for bitshares blockchain
    - (more...)
 
 ----------
@@ -40,7 +33,7 @@ What's your interests?
 
 What would you like to know more about DNA Blockchain? DNA Core is the DNA blockchain implementation and command-line interface. If you are interested to know about DNA blockchain background, history, and features, please visit `how.bitshares.works <http://how.bitshares.works/en/latest/#>`_ and `bitshares.org <https://bitshares.org/>`_ to read more information.
 
-If yo do not have a DNA account yet, you can use DNA UI wallet (`wallet.bitshares.org <https://wallet.bitshares.org>`_ ) or download a `Light Client Wallet <https://bitshares.org/download>`_  to create your DNA account. Here is the latest `DNA-UI – Release <https://github.com/bitshares/bitshares-ui/releases>`_ information.
+If yo do not have a DNA account yet, you can use DNA UI wallet (`wallet.bitshares.org <https://wallet.bitshares.org>`_ ) or download a `Light Client Wallet <https://bitshares.org/download>`_  to create your DNA account. Here is the latest `DNA-UI – Release <https://github.com/mvs-org/dna-ui/releases>`_ information.
 
 If your interests are trying and learning DNA features, you might want to use DNA TestNet to experience them. If you are a developer who is interested to contribute to the DNA Core team, you could download a developer branch and learn more about DNA-Core current Project might be a good start. Select an appropriate branch when you install DNA-Core.
 
@@ -68,11 +61,6 @@ If you are interested to know or involve DNA-Core developments, you will find th
 
 Project Guide and Milestones
 ------------------------------
-
-- `Contribution Guide [DRAFT] <https://github.com/mvs-org/dna-core/wiki/Contribution-Guide>`_
-- `Project <https://github.com/mvs-org/dna-core/projects/6>`_
-- `DNA-Core: current issues and requests <https://github.com/mvs-org/dna-core/issues>`_
-- `Milestones and Plans <https://github.com/mvs-org/dna-core/milestones>`_
 - `DNA-Core Releases <https://github.com/mvs-org/dna-core/releases>`_
 
 
@@ -169,7 +157,7 @@ For a release,
 9. The **release** branch is merged into **master**, and a version tag is created on **master**. Create tag by git command line and then point the release to the created tag in github. This is needed for Docker to catch the new code.
 10. The **release** branch is merged back into **develop** and **hardfork**.
 11. The **release** branch is merged into **testnet**. This will produce a merge conflict for the hardfork dates, which must be resolved without changing the testnet hardfork date.
-12. Update online code documentation by using updated Doxyfile as config file in the master branch. Send pull request to https://github.com/bitshares/doxygen.bitshares.org with new content in html format. Send pull to https://github.com/bitshares/dev.bitshares.works with new content in xml format.
+12. Update online code documentation by using updated Doxyfile as config file in the master branch. Send pull request to https://github.com/mvs-org/doxygen.bitshares.org with new content in html format. Send pull to https://github.com/mvs-org/dev.bitshares.works with new content in xml format.
 13. Update date of last core download page of bitshares.org site.
 14. Create binaries for linux, macos and windows. Once the tag name is known create binaries for this 3 OS. Attach them to release notes.
 **Example**: https://github.com/mvs-org/dna-core/releases/tag/3.0.0 Binaries names for this release:

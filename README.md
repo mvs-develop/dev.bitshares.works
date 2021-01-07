@@ -12,13 +12,13 @@ Welcome to the documentation portal for the DNA Blockchain. The content on this 
 
 ### Releases
 - [DNA-Core Release](https://github.com/mvs-org/dna-core/releases)
-- [DNA-UI Release](https://github.com/bitshares/bitshares-ui/releases)
+- [DNA-UI Release](https://github.com/mvs-org/dna-ui/releases)
 
 ***
 
 ### Contributing
 
-- [How to Contribute to DNA Documentation Project](https://github.com/bitshares/dev.bitshares.works/blob/master/CONTRIBUTING.md)
+- [How to Contribute to DNA Documentation Project](https://github.com/mvs-org/dev.bitshares.works/blob/master/CONTRIBUTING.md)
 
 
 ***

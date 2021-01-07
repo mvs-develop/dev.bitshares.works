@@ -4,26 +4,25 @@
     <compoundname>index</compoundname>
     <title>DNA Core</title>
     <detaileddescription>
-<para><ulink url="https://travis-ci.org/bitshares/bitshares-core/branches">Build Status</ulink>:</para><para><table rows="2" cols="5"><row>
+<para><ulink url="https://travis-ci.org/bitshares/dna-core/branches">Build Status</ulink>:</para><para><table rows="2" cols="5"><row>
 <entry thead="yes"><para><computeroutput>master</computeroutput> </para></entry><entry thead="yes"><para><computeroutput>develop</computeroutput> </para></entry><entry thead="yes"><para><computeroutput>hardfork</computeroutput> </para></entry><entry thead="yes"><para><computeroutput>testnet</computeroutput> </para></entry><entry thead="yes"><para><computeroutput>bitshares-fc</computeroutput>  </para></entry></row>
 <row>
-<entry thead="no"><para><ulink url="https://travis-ci.org/bitshares/bitshares-core"></ulink> </para></entry><entry thead="no"><para><ulink url="https://travis-ci.org/bitshares/bitshares-core"></ulink> </para></entry><entry thead="no"><para><ulink url="https://travis-ci.org/bitshares/bitshares-core"></ulink> </para></entry><entry thead="no"><para><ulink url="https://travis-ci.org/bitshares/bitshares-core"></ulink> </para></entry><entry thead="no"><para><ulink url="https://travis-ci.org/bitshares/bitshares-fc"></ulink> </para></entry></row>
+<entry thead="no"><para><ulink url="https://travis-ci.org/bitshares/dna-core"></ulink> </para></entry><entry thead="no"><para><ulink url="https://travis-ci.org/bitshares/dna-core"></ulink> </para></entry><entry thead="no"><para><ulink url="https://travis-ci.org/bitshares/dna-core"></ulink> </para></entry><entry thead="no"><para><ulink url="https://travis-ci.org/bitshares/dna-core"></ulink> </para></entry><entry thead="no"><para><ulink url="https://travis-ci.org/bitshares/bitshares-fc"></ulink> </para></entry></row>
 </table>
 </para><para><itemizedlist>
 <listitem><para><ulink url="#getting-started">Getting Started</ulink></para></listitem><listitem><para><ulink url="#support">Support</ulink></para></listitem><listitem><para><ulink url="#using-the-api">Using the API</ulink></para></listitem><listitem><para><ulink url="#accessing-restrictable-node-apis">Accessing restrictable node API&apos;s</ulink></para></listitem><listitem><para><ulink url="#faq">FAQ</ulink></para></listitem><listitem><para><ulink url="#license">License</ulink></para></listitem></itemizedlist>
-</para><para>DNA Core is the DNA blockchain implementation and command-line interface. The web browser based wallet is <ulink url="https://github.com/bitshares/bitshares-ui">DNA UI</ulink>.</para><para>Visit <ulink url="https://bitshares.org/">DNA.org</ulink> to learn about DNA and join the community at <ulink url="https://bitsharestalk.org/">BitSharesTalk.org</ulink>.</para><para>Information for developers can be found in the <ulink url="https://dev.bitshares.works/">DNA Developer Portal</ulink>. Users interested in how DNA works can go to the <ulink url="https://how.bitshares.works/">DNA Documentation</ulink> site.</para><para><heading level="2">Getting Started </heading>
 </para><para>Build instructions and additional documentation are available in the <ulink url="https://github.com/mvs-org/dna-core/wiki">Wiki</ulink>.</para><para><heading level="3">Build</heading>
 </para><para>We recommend building on Ubuntu 16.04 LTS (64-bit)</para><para><bold>Build Dependencies:</bold> <verbatim>sudo apt-get update
 sudo apt-get install autoconf cmake make automake libtool git libboost-all-dev libssl-dev g++ libcurl4-openssl-dev doxygen
-</verbatim></para><para><bold>Build Script:</bold> <verbatim>git clone https://github.com/bitshares/bitshares-core.git
-cd bitshares-core
+</verbatim></para><para><bold>Build Script:</bold> <verbatim>git clone https://github.com/mvs-org/dna-core.git
+cd dna-core
 git checkout master # may substitute &quot;master&quot; with current release tag
 git submodule update --init --recursive
 mkdir build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
 make
-</verbatim></para><para><bold>Upgrade Script:</bold> (prepend to the Build Script above if you built a prior release): <verbatim>git remote set-url origin https://github.com/bitshares/bitshares-core.git
+</verbatim></para><para><bold>Upgrade Script:</bold> (prepend to the Build Script above if you built a prior release): <verbatim>git remote set-url origin https://github.com/mvs-org/dna-core.git
 git checkout master
 git remote set-head origin --auto
 git pull
@@ -68,7 +67,6 @@ unlocked &gt;&gt;&gt;
 </verbatim></para><para>Use <computeroutput>gethelp &lt;COMMAND&gt;</computeroutput> to see more info about individual commands. E.G. <verbatim>&gt;&gt;&gt; gethelp get_order_book
 </verbatim></para><para>The definition of all commands is available in the <ulink url="https://github.com/mvs-org/dna-core/blob/master/libraries/wallet/include/graphene/wallet/wallet.hpp">wallet.hpp</ulink> souce code file. Corresponding documentation can be found in the <ulink url="https://doxygen.bitshares.org/classgraphene_1_1wallet_1_1wallet__api.html">Doxygen documentation</ulink>.</para><para>You can run the program with <computeroutput>--help</computeroutput> parameter to see more info: <verbatim>./programs/cli_wallet/cli_wallet --help
 </verbatim></para><para>There is also some info in the <ulink url="https://github.com/mvs-org/dna-core/wiki/CLI-Wallet-Cookbook">Wiki</ulink>.</para><para><heading level="2">Support </heading>
-</para><para>Technical support is available in the <ulink url="https://bitsharestalk.org/index.php?board=45.0">BitSharesTalk technical support subforum</ulink>.</para><para>DNA Core bugs can be reported directly to the <ulink url="https://github.com/mvs-org/dna-core/issues">issue tracker</ulink>.</para><para>DNA UI bugs should be reported to the <ulink url="https://github.com/bitshares/bitshares-ui/issues">UI issue tracker</ulink>.</para><para>Up to date online Doxygen documentation can be found at <ulink url="https://doxygen.bitshares.org/hierarchy.html">Doxygen.DNA.org</ulink>.</para><para><heading level="2">Using the API </heading>
 </para><para><heading level="3">Node API</heading>
 </para><para>The <computeroutput>witness_node</computeroutput> software provides several different API&apos;s, known as <emphasis>node API</emphasis>.</para><para>Each API has its own ID and a name. When running <computeroutput>witness_node</computeroutput> with RPC connection enabled, initially two API&apos;s are available:<itemizedlist>
 <listitem><para>API 0 has name *&quot;database&quot;*, it provides read-only access to the database,</para></listitem><listitem><para>API 1 has name *&quot;login&quot;*, it is used to login and gain access to additional, restrictable API&apos;s.</para></listitem></itemizedlist>

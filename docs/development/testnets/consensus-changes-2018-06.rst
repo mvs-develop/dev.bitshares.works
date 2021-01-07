@@ -13,7 +13,7 @@ BSIP38: Add target collateral ratio option to short positions
 Motivation
 ---------------------------------------------
 
-From Abstract of `BSIP-38 <https://github.com/bitshares/bsips/blob/master/bsip-0038.md>`_
+From Abstract of `BSIP-38 <https://github.com/mvs-org/bsips/blob/master/bsip-0038.md>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When a short position is margin called, some of its collateral will be sold and some or all of its debt will be covered accordingly.
@@ -22,7 +22,7 @@ However, usually more collateral will be sold, in comparison to the minimum amou
 
 This BSIP proposes a protocol change to let shortes (borrowers) have control over selling how much collateral when being margin called.
 
-This BSIP depends on `BSIP 31 <https://github.com/bitshares/bsips/blob/master/bsip-0031.md>`_ .
+This BSIP depends on `BSIP 31 <https://github.com/mvs-org/bsips/blob/master/bsip-0031.md>`_ .
 
 Discussion and Development
 ---------------------------------------------

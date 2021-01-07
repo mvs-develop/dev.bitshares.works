@@ -4,7 +4,7 @@
 Next step...
 ========================
 
-DNA offers many features, after the bitshares-core installation, you might think what's the next step?  The below is a short contents guide that you might be interested to look into.  Also, visit Developers :ref:`Guide <dev-guides>` and :ref:`FAQs <faq-top>`.
+DNA offers many features, after the dna-core installation, you might think what's the next step?  The below is a short contents guide that you might be interested to look into.  Also, visit Developers :ref:`Guide <dev-guides>` and :ref:`FAQs <faq-top>`.
 
 *If you want to...*
 ------------------------
@@ -20,7 +20,7 @@ Know more about how DNA Works
 Create a DNA GUI wallet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Check `DNA-UI Release <https://github.com/bitshares/bitshares-ui/releases>`_
+- Check `DNA-UI Release <https://github.com/mvs-org/dna-ui/releases>`_
 - Read how to create `DNA UI Wallet  <http://how.bitshares.works/en/latest/user_guide/create_account.html>`_ steps
 - Understand `DNA Client and Login Mode <http://how.bitshares.works/en/latest/user_guide/bitshares-client.html>`_
 - Know :ref:`where to find public/private keys (GUI) <where-pub-prv-keys>`
@@ -79,7 +79,6 @@ Know DNA other languages' supports
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Check :ref:`Python DNA information links <lib-python>`
-- Check  `BitSharesjs: JavaScript Bitshares library <https://bitsharesjs.bitshares.org/>`_
 
 
 
@@ -87,7 +86,7 @@ Know about BSIPs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Read about :ref:`DNA Improvement Proposals and Protocols (BSIPs) <about-bsips>`
-- Check the `BSIP Repository <https://github.com/bitshares/bsips>`_
+- Check the `BSIP Repository <https://github.com/mvs-org/bsips>`_
 
   - In the repository, you will find submitted technical documents. They describe the process of updating and improving the DNA blockchain and technical ecosystem.
 

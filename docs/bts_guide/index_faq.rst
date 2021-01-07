@@ -60,7 +60,7 @@ System Components
 * configuration examples and support files
 
    - :ref:`config.ini <bts-config-ini-eg>` (Node Configuration File )
-   - `apiConfig.js <https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js>`_ (DNA Public Node information)
+   - `apiConfig.js <https://github.com/mvs-org/dna-ui/blob/staging/app/api/apiConfig.js>`_ (DNA Public Node information)
    - :ref:`api-access.json <api-access-json>` (API Access restriction)
    - `saltpass.py <https://github.com/mvs-org/dna-core/blob/master/programs/witness_node/saltpass.py>`_ (obtain hash and salt values from a password)
 
@@ -104,7 +104,7 @@ APIs
 * :ref:`api-core-faq-5`
 * :ref:`api-core-faq-6`
 * `Where can I find a simple Python script saltpass.py to obtain hash and salt values from a password? <https://github.com/mvs-org/dna-core/blob/master/programs/witness_node/saltpass.py>`_ - (rel: *saltpass.py*)
-* `Where Can I find DNA Public Full Node information? (apiconfig) <https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js>`_
+* `Where Can I find DNA Public Full Node information? (apiconfig) <https://github.com/mvs-org/dna-ui/blob/staging/app/api/apiConfig.js>`_
 
 
 .. _asset-faq-index:

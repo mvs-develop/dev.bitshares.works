@@ -1355,7 +1355,7 @@ This function takes a new limit order, and runs the markets attempting to match 
         <argsstring></argsstring>
         <name>_issue_453_affected_assets</name>
         <briefdescription>
-<para>Tracks assets affected by bitshares-core issue #453 before hard fork #615 in one block. </para>        </briefdescription>
+<para>Tracks assets affected by dna-core issue #453 before hard fork #615 in one block. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>

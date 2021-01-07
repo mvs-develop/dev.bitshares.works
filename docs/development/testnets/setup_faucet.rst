@@ -14,7 +14,7 @@ In order to allow people who do not have funds yet to enter the system, we need 
 Tapin
 ----------
 
-If you are interested Python-based faucet, check out `Tapin <https://github.com/bitshares/tapin>`_ . Tapin is a python-based faucet for Graphene-based blockchains (e.g. DNA).
+If you are interested Python-based faucet, check out `Tapin <https://github.com/mvs-org/tapin>`_ . Tapin is a python-based faucet for Graphene-based blockchains (e.g. DNA).
 
 
 ----------------

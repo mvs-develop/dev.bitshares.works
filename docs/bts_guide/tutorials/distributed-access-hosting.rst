@@ -352,12 +352,12 @@ exit bash (terminal) and reconnect
 Download DNA gui
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- https://github.com/bitshares/bitshares-ui/releases
+- https://github.com/mvs-org/dna-ui/releases
 
 Setup light wallet
 ~~~~~~~~~~~~~~~~~~~
 
-.. note:: Please refer bitshares-ui installation guide.
+.. note:: Please refer dna-ui installation guide.
 
 Build light wallet
 ~~~~~~~~~~~~~~~~~~~~~

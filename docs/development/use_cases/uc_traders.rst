@@ -37,7 +37,7 @@ to a public full-node which provides traders with
 * trade history
 * and more.
 
-Here is a latest list of `DNA Public Full Nodes <https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js>`_
+Here is a latest list of `DNA Public Full Nodes <https://github.com/mvs-org/dna-ui/blob/staging/app/api/apiConfig.js>`_
 
 A detailed description of how to interface with Graphene-based blockchain (e.g. DNA) and a list of available calls can be found here:
 

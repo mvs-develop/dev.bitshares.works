@@ -12,7 +12,7 @@ If you have any features in mind that require new kind of transaction on the blo
 
 Feed Backed Assets have been proposed in `BSIP-0007`_.
 
-.. _BSIP-0007: https://github.com/bitshares/bsips/blob/master/bsip-0007.md
+.. _BSIP-0007: https://github.com/mvs-org/bsips/blob/master/bsip-0007.md
 
 
 |

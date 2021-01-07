@@ -181,20 +181,20 @@ DNA-Core
  Find and run `Git Bash` from the Start menu. In the open command line interface, execute the following command::
 
     cd /c/bts
-    git clone https://github.com/bitshares/bitshares-core
-    cd bitshares-core
+    git clone https://github.com/mvs-org/dna-core
+    cd dna-core
     git checkout <LATEST_RELEASE_TAG>
     git submodule update --init --recursive
 
  **Note:**
 
  * Please modify the specific directory according to the actual situation
- * Please replace `<LATEST_RELEASE_TAG>` by the latest release version of bitshares-core. If you need to compile other versions, modify accordingly. Find [DNA Core latest release](https://github.com/mvs-org/dna-core/releases).
+ * Please replace `<LATEST_RELEASE_TAG>` by the latest release version of dna-core. If you need to compile other versions, modify accordingly. Find [DNA Core latest release](https://github.com/mvs-org/dna-core/releases).
 
  **At the end of this, your base directory should look like this**::
 
 	c:\bts
-	+- bitshares-core
+	+- dna-core
 	+- boost_1_57_0
 	+- cmake-3.9.4-win64-x64
 	+- openssl-1.0.1u
@@ -237,7 +237,7 @@ Set up the Environment for Build
 * **CMake GUI**
 
  - Set the values in the CMake GUI
-   - Where is the source code: Enter or select bitshares-core source directory `C:/bts/bitshares-core`
+   - Where is the source code: Enter or select dna-core source directory `C:/bts/dna-core`
    - Where to build the binaries: Enter or choose to compile the output directory, such as `C:/bts/bin`
  - Click the [Configure] button.
    - If prompted to compile the output directory does not exist, point [Yes] Create directory

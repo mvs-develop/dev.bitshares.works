@@ -9,7 +9,7 @@ Articles
 * `Back to Algorithm Based Assets & Targeting DNA as an MPA's reference asset! <https://steemit.com/bitshares/@cm-steem/back-to-algorithm-based-assets-and-targeting-bts-as-an-mpa-s-reference-asset>`_ : by cm-steem
 
 
-* `DNA UI Improvements (13 New Features, 45 Bug Fixes) <https://steemit.com/beyondbitcoin/@sc-steemit/bitshares-ui-improvements-13-new-features-45-bug-fixes>`_ : by cm-steem
+* `DNA UI Improvements (13 New Features, 45 Bug Fixes) <https://steemit.com/beyondbitcoin/@sc-steemit/dna-ui-improvements-13-new-features-45-bug-fixes>`_ : by cm-steem
 
 * `HERTZ Price Feed Script Updates! September 2017 <https://steemit.com/bitshares/@cm-steem/hertz-price-feed-script-updates-september-2017>`_ : by cm-steem
 

@@ -25,8 +25,8 @@ Ubuntu 16.04 LTS (64-bit)
 
 2. Build DNA Core::
 
-    git clone https://github.com/bitshares/bitshares-core.git
-    cd bitshares-core
+    git clone https://github.com/mvs-org/dna-core.git
+    cd dna-core
     git submodule update --init --recursive
     cmake -DCMAKE_BUILD_TYPE=Release  .
     make
@@ -37,8 +37,8 @@ Ubuntu 16.04 LTS (64-bit)
 
 ::
 
-	git clone https://github.com/bitshares/bitshares-core.git
-	cd bitshares-core
+	git clone https://github.com/mvs-org/dna-core.git
+	cd dna-core
 	git checkout master # may substitute "master" with current release tag
 	git submodule update --init --recursive
 	cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo .
@@ -49,7 +49,7 @@ Ubuntu 16.04 LTS (64-bit)
 
 ::
 
-	git remote set-url origin https://github.com/bitshares/bitshares-core.git
+	git remote set-url origin https://github.com/mvs-org/dna-core.git
 	git checkout master
 	git remote set-head origin --auto
 	git pull
@@ -88,7 +88,7 @@ Details `here <https://github.com/DECENTfoundation/DECENT-Network/issues/194>`_
 
 Steps to fix::
 
-    cd ~/bitshares-core/libraries/fc/vendor/websocketpp
+    cd ~/dna-core/libraries/fc/vendor/websocketpp
     git remote set-url origin https://github.com/DECENTfoundation/websocketpp.git
     git fetch
     git checkout

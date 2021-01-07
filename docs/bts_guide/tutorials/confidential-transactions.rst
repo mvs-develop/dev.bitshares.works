@@ -27,13 +27,13 @@ admonition out of the way let's get started.
 We will illustrate the CLI commands required to complete every step in this
 tutorial. You must be familiar with the witness_node and cli_wallet software to
 follow this guide. For further information on how to build and use that software
-consult the `readme file <https://github.com/bitshares/bitshares-2>`_ on github or the DNA wiki. I will be using
+consult the `readme file <https://github.com/mvs-org/bitshares-2>`_ on github or the DNA wiki. I will be using
 simple passwords and account names to simplify the presentation. You should
 change these to more secure values to provide a higher level of security. Also
 note that the CLI wallet echos the command entered which is not reflected in the
 quoted session logs in the examples that follow.
 
-.. _readme file: https://github.com/bitshares/bitshares-2
+.. _readme file: https://github.com/mvs-org/bitshares-2
 
 .. contents:: Table of Contents
    :local:

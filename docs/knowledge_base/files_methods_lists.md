@@ -14,7 +14,7 @@
 
 | dir | folders |  |  |
 |---|---|---|---|
-| bitshares-core/libraries/  | app, chain, db, deterministic_openssl_rand, egenesis, net, plugin, utilities, and wallet  |  |
+| dna-core/libraries/  | app, chain, db, deterministic_openssl_rand, egenesis, net, plugin, utilities, and wallet  |  |
 
 
 ## Code Libraries Files and Methods Lists

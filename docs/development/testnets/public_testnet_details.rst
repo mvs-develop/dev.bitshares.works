@@ -47,8 +47,8 @@ To see more options: Go to :ref:`Installation Guide <installation-guide>`.
 
 *In order to run a full node, get the sources (branch* **testnet** *) and compile*::
 
-	 git clone https://github.com/bitshares/bitshares-core.git bitshares-core-testnet
-	 cd bitshares-core-testnet
+	 git clone https://github.com/mvs-org/dna-core.git dna-core-testnet
+	 cd dna-core-testnet
 	 git checkout testnet
 	 cmake
 
@@ -65,9 +65,7 @@ To see more options: Go to :ref:`Installation Guide <installation-guide>`.
 Other References
 ---------------------
 
-- `Testnet - Python Scripts <https://github.com/BitSharesEurope/testnet-pythonscripts>`_
 
-- **Seed node**: `testnet.bitshares.eu:11010`
 - Chain-id: `39f5e2ede1f8bc1a3a54a7914414e3779e33193f1f5693510e73cb7a87617447`
 - `Genesis Block - for Testnet <https://github.com/mvs-org/dna-core/blob/testnet/genesis.json>`_
 

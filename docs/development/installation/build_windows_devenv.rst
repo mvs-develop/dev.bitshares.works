@@ -50,7 +50,7 @@ The command above will compile the libcURL and install it to the C:\Program File
 
 ::
 
-	git clone https://github.com/bitshares/bitshares-core.git
+	git clone https://github.com/mvs-org/dna-core.git
 	git checkout develop
 	git submodule update --init --recursive
 	cmake  -G "Visual Studio 14 2015 Win64" -DBoost_USE_STATIC_LIBS=ON -DOPENSSL_CONF_SOURCE="C:\OpenSSL-Win64\bin\openssl.cfg" -DCURL_INCLUDE_DIR="C:\Program Files\CURL\include" -DCURL_LIBRARY="C:\Program Files\CURL\lib\libcurl_imp.lib" -DCURL_STATICLIB=ON

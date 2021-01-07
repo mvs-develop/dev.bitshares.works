@@ -29,7 +29,7 @@ Light wallets
 ------------------
 
 - (one time) Install [NSIS](http://nsis.sourceforge.net/Main_Page)
-- `git clone https://github.com/bitshares/bitshares-2-ui` branch `bitshares`
+- `git clone https://github.com/mvs-org/bitshares-2-ui` branch `bitshares`
 - Add upstream repo `git remote add cnx https://github.com/cryptonomex/graphene-ui`
 - Fetch upstream `git fetch cnx`
 - Merge upstream/master into bitshares branch `git merge cnx/master`
@@ -45,13 +45,13 @@ Light wallets
 - Run installer and test the app
 - Go to bitshares-2 repo
 - Update gui_version, commit, tag and push - this will create a new tag
-- Open https://github.com/bitshares/bitshares-2/releases, create new release under tag created in previous step
+- Open https://github.com/mvs-org/bitshares-2/releases, create new release under tag created in previous step
 - Specify release notes, upload dmg/deb/exe wallets created earlie
 
 Bitshares.org wallet and downloads page
 ----------------------------------------------
 
-- Go to bitshares.gihub.io repo (`git clone https://github.com/bitshares/bitshares.github.io`)
+- Go to bitshares.gihub.io repo (`git clone https://github.com/mvs-org/bitshares.github.io`)
 - Copy `bitshares-2-ui/web/dist/*` to `wallet/`
 - Edit `_includes/download.html` and update download links and gui release date
 - Commit and push

@@ -8,7 +8,7 @@ We intend BSIPs to be the primary mechanisms for proposing new features, for col
 
 Because the BSIPs are maintained as text files in a versioned repository, their revision history is the historical record of the feature proposal.
 
-A detailed description of the structure of BSIPs can be found in [BSIP-0001](https://github.com/bitshares/bsips/blob/master/bsip-0001.md)
+A detailed description of the structure of BSIPs can be found in [BSIP-0001](https://github.com/mvs-org/bsips/blob/master/bsip-0001.md)
 
 
 ***

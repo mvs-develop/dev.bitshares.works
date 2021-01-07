@@ -42,7 +42,7 @@ Build with specific Boost version::
 Known Issues
 ===================
 
-bitshares-core
+dna-core
 -------------------
 
 - If built with **boost 1.60** (and perhaps other versions), some parameter styles in command line is not supported. #881

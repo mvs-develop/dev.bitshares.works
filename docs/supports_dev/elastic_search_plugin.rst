@@ -21,7 +21,7 @@ Motivation
 There are 2 main problems this plug-in tries to solve:
 
 - The amount of RAM needed to run a full node. Current options for this are basically store account history: yes/no, store some of the account history, track history for specific accounts, etc. Plugin allows to have all the account history data without the amount of RAM required in current implementation.
-- The number of github issues in regards to new api calls to lookup account history in different ways. ``elasticsearch-plugin`` will allow users to search account history querying directly into the database without the bitshares-core team creating and maintaining API calls for every case.
+- The number of github issues in regards to new api calls to lookup account history in different ways. ``elasticsearch-plugin`` will allow users to search account history querying directly into the database without the dna-core team creating and maintaining API calls for every case.
 
 Additionally we are after a secure way to store error free full account data. The huge amount of operations data involved in bitshares blockchain and the way it is serialized makes this a big challenge.
 
@@ -195,8 +195,8 @@ ES will listen on localhost port 9200 ``127.0.0.1:9200``
 
 Clone repo and install bitshares::
 
-    git clone https://github.com/bitshares/bitshares-core
-    cd bitshares-core
+    git clone https://github.com/mvs-org/dna-core
+    cd dna-core
     git submodule update --init --recursive
     BOOST_ROOT=$HOME/opt/boost_1_63_0
     cmake -DBOOST_ROOT="$BOOST_ROOT" -DCMAKE_BUILD_TYPE=RelWithDebInfo .
@@ -233,7 +233,7 @@ A few minutes after the node start the first batch of 5000 ops will be inserted 
 
 If you only have command line available you can query the database directly throw curl as:::
 
-	root@NC-PH-1346-07:~/bitshares/elastic/bitshares-core# curl -X GET 'http://localhost:9200/bitshares-*/data/_count?pretty=true' -H 'Content-Type: application/json' -d '
+	root@NC-PH-1346-07:~/bitshares/elastic/dna-core# curl -X GET 'http://localhost:9200/bitshares-*/data/_count?pretty=true' -H 'Content-Type: application/json' -d '
 	{
 		"query" : {
 			"bool" : { "must" : [{"match_all": {}}] }
@@ -249,7 +249,7 @@ If you only have command line available you can query the database directly thro
 		"failed" : 0
 	  }
 	}
-	root@NC-PH-1346-07:~/bitshares/elastic/bitshares-core#
+	root@NC-PH-1346-07:~/bitshares/elastic/dna-core#
 
 
 360000 records are inserted at this point of the replay in ES, means it is working.
@@ -326,7 +326,7 @@ List your indexes as::
 	yellow open bitshares-2015-10 XyKOlrTWSK6vQgdXm8SAtQ 5 1    161004 0  84.5mb  84.5mb
 	root@NC-PH-1346-07:~#
 
-If you don't see any index here then something is wrong with the bitshares-core node setup with elasticsearch plugin.
+If you don't see any index here then something is wrong with the dna-core node setup with elasticsearch plugin.
 
 Pre-Define Settings
 =========================
@@ -361,7 +361,7 @@ References:
 - https://github.com/mvs-org/dna-core/pull/405
 - https://github.com/mvs-org/dna-core/pull/379
 - https://github.com/mvs-org/dna-core/pull/430
-- https://github.com/bitshares/bitshares-ui/issues/68
+- https://github.com/mvs-org/dna-ui/issues/68
 
 This is one of the issues that has been requested constantly. It can be easily queried with ES plugin by calling the _search endpoint doing:::
 

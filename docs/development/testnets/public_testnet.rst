@@ -23,12 +23,12 @@ Depending on your OS, we have the Installation guides available. To see more Ins
 1-1. Download the Source files
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Let's get started, open a **new command line interface (CLI) window** and go to a directory you want to download the ``testnet`` branch files. And run the following command lines.  In this example, you create a ``bitshares-core-testnet`` directory.
+Let's get started, open a **new command line interface (CLI) window** and go to a directory you want to download the ``testnet`` branch files. And run the following command lines.  In this example, you create a ``dna-core-testnet`` directory.
 
  ::
 
-    git clone https://github.com/bitshares/bitshares-core.git bitshares-core-testnet
-    cd bitshares-core-testnet/
+    git clone https://github.com/mvs-org/dna-core.git dna-core-testnet
+    cd dna-core-testnet/
     git checkout testnet
     git submodule update --init --recursive
 
@@ -36,7 +36,7 @@ Let's get started, open a **new command line interface (CLI) window** and go to 
 1-2. Initial Compilation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-After you download a testnet branch files in a ``bitshares-core-testnet`` directory, let's build the programs. Run the following commands. This command will create two program files (witness_node and cli_wallet).
+After you download a testnet branch files in a ``dna-core-testnet`` directory, let's build the programs. Run the following commands. This command will create two program files (witness_node and cli_wallet).
 
  ::
 
@@ -52,16 +52,16 @@ You will find the compiled program files in the below folders.
    * - program name
      - directory and folder
    * - witness_node
-     - ../bitshares-core-testnet/programs/witness_node/
+     - ../dna-core-testnet/programs/witness_node/
    * - cli_wallet
-     - ../bitshares-core-testnet/programs/cli_wallet/
+     - ../dna-core-testnet/programs/cli_wallet/
 
 
 
 Genesis File
 ~~~~~~~~~~~~~~~~
 
-As you know, each blockchain starts with a genesis block that definitions are in a :ref:`genesis file <public-testnet-genesis-example>`. The bitshares-core-testnet has already prepared **a genesis.json file for the Public Testnet.**  Unless you want to adjust parameter values, you will not need to modify the public testnet genesis.json file.
+As you know, each blockchain starts with a genesis block that definitions are in a :ref:`genesis file <public-testnet-genesis-example>`. The dna-core-testnet has already prepared **a genesis.json file for the Public Testnet.**  Unless you want to adjust parameter values, you will not need to modify the public testnet genesis.json file.
 
 |
 
@@ -89,11 +89,11 @@ Run the following command and end the process. In Windows, you can use ``[ctl]+c
 
 As a default the BitShatres Blockchain data directory ``witness_node_data_dir`` will be created in a current directory.
 
-For example, if your current directory is ``bitshares-core-testnet`` and you run this command ``./programs/witness_node/witness_node``, you will find the data directory in the same current directory with the programs folder.
+For example, if your current directory is ``dna-core-testnet`` and you run this command ``./programs/witness_node/witness_node``, you will find the data directory in the same current directory with the programs folder.
 
 ::
 
-  ../bitshares-core-testnet/
+  ../dna-core-testnet/
       + /programs/
         + /witness_node/
         + /cli_wallet/
@@ -117,7 +117,7 @@ If you want to create own data directory, use ``--data-dir`` parameter and run t
 
 ::
 
-	../bitshares-core-testnet/
+	../dna-core-testnet/
 		+ /programs/
 			+ /witness_node/
 			+ /cli_wallet/

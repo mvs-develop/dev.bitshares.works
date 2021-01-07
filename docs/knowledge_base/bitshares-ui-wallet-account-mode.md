@@ -3,23 +3,23 @@
 This document purpose: To explain DNA UI wallet Client and wallet types and answer some of frequently asked questions about Wallet and Account.  And also, show how to create a Cloud wallet and a Local wallet.
 
 #### Contents:
-- [DNA Client](../knowledge_base/bitshares-ui-wallet-account-mode.md#bitshares-client)
+- [DNA Client](../knowledge_base/dna-ui-wallet-account-mode.md#bitshares-client)
   - Lite Client
   - Web Client
-- [DNA Wallet Types and Login](../knowledge_base/bitshares-ui-wallet-account-mode.md#bitshares-wallet-types-and-login)
+- [DNA Wallet Types and Login](../knowledge_base/dna-ui-wallet-account-mode.md#bitshares-wallet-types-and-login)
   - Cloud Wallet
   - Local Wallet
-- [Frequently asked Questions](../knowledge_base/bitshares-ui-wallet-account-mode.md#frequently-asked-questions)
-- [Light wallet or Web wallet?](../knowledge_base/bitshares-ui-wallet-account-mode.md#light-wallet-or-web-wallet)
-- [How to Create an Wallet](../knowledge_base/bitshares-ui-wallet-account-mode.md#how-to-create-an-wallet) (Cloud wallet)
-- [How to Create an Wallet](../knowledge_base/bitshares-ui-wallet-account-mode.md#how-to-create-an-wallet---advanced) - Advanced (Local wallet)
+- [Frequently asked Questions](../knowledge_base/dna-ui-wallet-account-mode.md#frequently-asked-questions)
+- [Light wallet or Web wallet?](../knowledge_base/dna-ui-wallet-account-mode.md#light-wallet-or-web-wallet)
+- [How to Create an Wallet](../knowledge_base/dna-ui-wallet-account-mode.md#how-to-create-an-wallet) (Cloud wallet)
+- [How to Create an Wallet](../knowledge_base/dna-ui-wallet-account-mode.md#how-to-create-an-wallet---advanced) - Advanced (Local wallet)
 
 ***
 
 ## DNA Client
 - BitShres wallet has two client types.
   - **Light Client** : Download and install DNA wallet to your computer. **This does not mean that you will have a Local wallet.**
-    - [DNA-UI – Latest Release](https://github.com/bitshares/bitshares-ui/releases)
+    - [DNA-UI – Latest Release](https://github.com/mvs-org/dna-ui/releases)
   - **Web Client** : Access the network and open the wallet in the browsers.
     - wallet.bitshares.org https://wallet.bitshares.org
 
@@ -57,7 +57,7 @@ This document purpose: To explain DNA UI wallet Client and wallet types and answ
   - Not necessary. Because the Could wallet always do it for extra security. Also lets you login without exposing your owner key, you can login using only the active key.
 - **Can I change a Cloud wallet password?**
   - Yes.
-  - Go to [How to change a password if using a Cloud Wallet](https://github.com/bitshares/bitshares-ui/wiki/Cloud-Wallet-Login-and-changing-password) : from DNA UI wiki
+  - Go to [How to change a password if using a Cloud Wallet](https://github.com/mvs-org/dna-ui/wiki/Cloud-Wallet-Login-and-changing-password) : from DNA UI wiki
 - **Can I change a Local wallet password?**
   - Yes.
   - Go to [**Settings**] - [**Password**] - Change your password. Use this page.

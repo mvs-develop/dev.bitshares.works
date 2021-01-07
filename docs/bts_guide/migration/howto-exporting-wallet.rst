@@ -26,7 +26,7 @@ upgrade you need to:
 * uninstall your previous version of the DNA client
 * install the new version
 
-.. _bitshares webpage: https://github.com/bitshares/bitshares-0.x/releases
+.. _bitshares webpage: https://github.com/mvs-org/bitshares-0.x/releases
 
 Synchronize your Wallet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

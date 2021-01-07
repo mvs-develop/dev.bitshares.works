@@ -4,7 +4,7 @@
 Installed DNA-Core Directory
 ===================================
 
-In this section, we show you the installed **bitshares-core** folder structure and explain several points of files in the folder. After we examined the installed folder, we test and run two programs (cli_wallet and witness_node).
+In this section, we show you the installed **dna-core** folder structure and explain several points of files in the folder. After we examined the installed folder, we test and run two programs (cli_wallet and witness_node).
 
 
 .. contents:: Table of Contents

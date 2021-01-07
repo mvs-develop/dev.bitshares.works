@@ -30,7 +30,7 @@ In contrast to many existing ecosystems, there is no centralized service that le
 1.2. Public Full Node information
 -----------------------------
 
-* Here is the latest list of `DNA Public Full Nodes (apiConfig) <https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js>`_
+* Here is the latest list of `DNA Public Full Nodes (apiConfig) <https://github.com/mvs-org/dna-ui/blob/staging/app/api/apiConfig.js>`_
 
 
 -----------------

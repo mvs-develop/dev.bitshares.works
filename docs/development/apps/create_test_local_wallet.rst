@@ -12,14 +12,14 @@ Create your Test Local Wallet
 Create a Test Local Wallet
 -------------------------------
 
-We now know what the installed bitshares-core folder contains and how inside folders and files have been structured. In this section, we test running two programs (witness_node and cli_wallet) to examine and get familiar with the DNA Blockchain data and application program.
+We now know what the installed dna-core folder contains and how inside folders and files have been structured. In this section, we test running two programs (witness_node and cli_wallet) to examine and get familiar with the DNA Blockchain data and application program.
 
 Also, we will launch a cli_wallet and import an existing DNA account and check the balance. Let's start.
 
 **Note: After my initial installation, a database (blocks binary) file size was 306.9MB. And after running a witness_node for several hours, the file size grew to 10GB.**
 
 
-We assume that you are opening a terminal window and moved (i.e., ``cd bitshares-core``) to the bitshares-core folder.
+We assume that you are opening a terminal window and moved (i.e., ``cd dna-core``) to the dna-core folder.
 
 
 

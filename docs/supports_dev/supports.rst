@@ -20,7 +20,7 @@ DNA Core
    :widths: 15 80
    :header-rows: 0
 
-   * - `Bitshares Core <https://github.com/bitshares/bitshares-core>`_
+   * - `Bitshares Core <https://github.com/mvs-org/dna-core>`_
      - DNA Core is the DNA blockchain implementation and command-line interface
    * - `Docker Container <https://github.com/mvs-org/dna-core/blob/master/README-docker.md>`_
      - Built-in Dockerfile to support docker containers.
@@ -34,37 +34,9 @@ DNA Core C++ Library
    :widths: 15 80
    :header-rows: 0
 
-   * - `Bitshares FC <https://github.com/bitshares/bitshares-fc>`_
+   * - `Bitshares FC <https://github.com/mvs-org/dna-fc>`_
      - Fast-compiling C++ library  provides a set of utility libraries useful for the development of asynchronous libraries
-   * - `Websocket pp <https://github.com/bitshares/websocketpp>`_
-     - C++ websocket client/server library
 
-|
-
-HTLC
-----------------------
-
-.. list-table::
-   :widths: 15 80
-   :header-rows: 0
-
-   * - `Hashed Time-Lock Contracts (HTLC) on DNA <https://github.com/mvs-org/dna-core/wiki/HTLC>`_
-     - TESTNET: User Guide for Hashed Time-Lock Contracts (HTLC) on DNA
-   * - `Hashed Time-Lock Contracts (HTLC) on DNA:CN <https://github.com/mvs-org/dna-core/wiki/HTLC-(CN)>`_
-     - 测试网：BitShares 哈希时间锁合约（HTLC）用户指南
-
-
-|
-
-API Related
-----------------------
-
-.. list-table::
-   :widths: 15 80
-   :header-rows: 0
-
-   * - `Bitshares Explorer API <https://github.com/bitshares/bitshares-explorer-api>`_
-     - REST API for DNA
 
 
 |
@@ -76,9 +48,9 @@ Python
    :widths: 15 80
    :header-rows: 0
 
-   * - `Python Bitshares <https://github.com/bitshares/python-bitshares>`_
+   * - `Python Bitshares <https://github.com/mvs-org/python-bitshares>`_
      - Fully featured client-side library for the DNA Blockchain - written entirely in python.
-   * - `uptick <https://github.com/bitshares/uptick>`_
+   * - `uptick <https://github.com/mvs-org/uptick>`_
      - Python-based CLI tool set for DNA blockchain
    * - `Faucet - Tapin <https://github.com/xeroc/tapin>`_
      -  Tapin is a python-based faucet for Graphene-based blockchains (e.g. DNA).
@@ -93,62 +65,15 @@ JavaScript
    :widths: 15 80
    :header-rows: 0
 
-   * - `Bitshares JS <https://github.com/bitshares/bitsharesjs>`_
-     - JavaScript tools for DNA Encryption and Serialization. https://bitsharesjs.bitshares.org/
-   * - `Bitshares JS-WS <https://github.com/bitshares/bitsharesjs-ws>`_
+   * - `Bitshares JS <https://github.com/mvs-org/dna-js>`_
+     - JavaScript tools for DNA Encryption and Serialization. 
+   * - `Bitshares JS-WS <https://github.com/mvs-org/dna-ws-js>`_
      - JavaScript websocket interface for Bitshares
 
 |
 
-DNA UI
-----------------------
-
-.. list-table::
-   :widths: 15 80
-   :header-rows: 0
-
-   * - `Bitshares UI <https://github.com/bitshares/bitshares-ui>`_
-     - Graphical User Interface for Bitshares
-   * - `Bitshares UI API <https://github.com/bitshares/bitshares-ui-api>`_
-     - RESTful API server for Bitshares based on express-es6-rest-api
-   * - `develop.bitshares.org <https://github.com/bitshares/develop.bitshares.org>`_
-     - Bleeding edge hosted wallet off the develop branch of bitshares-ui
-   * - `reconnecting-websocket <https://github.com/bitshares/reconnecting-websocket>`_
-     - A small decorator for the JavaScript WebSocket API that automatically reconnects
-|
-
-Mobile
-----------------------
-
-.. list-table::
-   :widths: 15 80
-   :header-rows: 0
-
-   * - `Bitshares Mobile App <https://github.com/bitshares/bitshares-mobile-app>`_
-     - This is the mobile app for bitshares blockchain
-
-|
-
-Other Related Software
-----------------------
-
-.. list-table::
-   :widths: 15 80
-   :header-rows: 0
-
-   * - `G-Wallet <https://github.com/bitshares/gwallet>`_
-     - G-Wallet is a Bitshares desktop(Linux, Windows, MAC) wallet program written in C++ using wxWidgets.
-   * - `beet <https://github.com/bitshares/beet>`_
-     -  Beet is a stand-alone key/identity-manager and signing app for DNA, heavily influenced by Scatter
-   * - `faucet <https://github.com/bitshares/faucet>`_
-     -
-   * - `secp256k1-zkp <https://github.com/bitshares/secp256k1-zkp>`_
-     - Experimental fork of libsecp256k1 with support for pedersen commitments and range proofs
-   * - `btsgo <https://github.com/bitshares/btsgo>`_
-     -
 
 
-|
 
 
 --------
@@ -159,25 +84,6 @@ References
 DNA Core
 --------------------
 
-* `Bitshares Core: Doxygen Document <https://open-explorer.io/doxygen/fc/>`_
-
-* `BSIPs <https://github.com/bitshares/bsips>`_  - DNA Improvement Proposals and Protocols
-
-* `Bitshares FC: Doxygen Document <https://open-explorer.io/doxygen/fc/>`_
-
-|
-
-API Related
-----------------------
-
-* :ref:`explorer-wrappers`
-
-  - For Mainnet and Tesenet: ES Wrapper to query the Bitshares data. *Try it out!*
-  - Check the DNA blockchain health.
-
-* `DNA Explorer REST API - Installation Guide <https://github.com/oxarbitrage/bitshares-explorer-api#bitshares-explorer-rest-api>`_
-
-  - Step by step on everything needed to have your own DNA Explorer API up and running for a production environment.
 
 |
 

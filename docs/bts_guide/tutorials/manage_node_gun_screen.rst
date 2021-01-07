@@ -8,7 +8,7 @@ Manage a running Node in the background by using GNU screen
 
 *This section will explain how to manage your nodes by using GUN screen and run the node in the background.*
 
-When I started working in the bitshares-core one of the first problems I found after building a node was a proper way to run a node in the background.
+When I started working in the dna-core one of the first problems I found after building a node was a proper way to run a node in the background.
 
 When a node is started, it needs to sync all the chain and this takes time, when the ssh connection between my pc and my server is lost then I need to start all over again.
 
@@ -69,12 +69,12 @@ More cool stuff can be done with screen but these are the basics for using it wi
 
 If you have several screens going on, the ``screen -r`` will not work for you, but follow the command suggestions and you will know how to gain control of each terminal again::
 
-    root@alfredo:~/bitshares-munich/recurring/bitshares-core# screen -r
+    root@alfredo:~/bitshares-munich/recurring/dna-core# screen -r
     There are several suitable screens on:
             11873.pts-2.alfredo     (09/01/17 20:07:00)     (Detached)
             11831.pts-2.alfredo     (09/01/17 19:55:18)     (Detached)
     Type "screen [-d] -r [pid.]tty.host" to resume one of them.
-    root@alfredo:~/bitshares-munich/recurring/bitshares-core#
+    root@alfredo:~/bitshares-munich/recurring/dna-core#
 
 In this case I will do::
 

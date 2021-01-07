@@ -27,7 +27,7 @@ The official DNA repository can be found at https://github.com/mvs-org/dna-core/
 
 This repository uses git submodules, so be sure to fetch the submodules when cloning. This can be done by passing the ``--recursive`` flag when cloning::
 
-  $ git clone https://github.com/bitshares/bitshares-core --recursive
+  $ git clone https://github.com/mvs-org/dna-core --recursive
 
 The most significant subdirectories in the repository are ``libraries``, ``programs``, and ``tests``. The DNA implementation is almost entirely defined within various libraries, which are located in the ``libraries`` subdirectory. The ``programs`` subdirectory contains small wrappers around these libraries, exposing their functionality as executable binaries. Finally, the ``tests`` subdirectory contains various tests to verify that essential blockchain features and functionality are working and to detect regressions should they occur during development.
 

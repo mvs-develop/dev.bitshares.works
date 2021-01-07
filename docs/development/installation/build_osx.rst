@@ -45,8 +45,8 @@ In OS X 10.11 (El Capitan) and newer, you will be prompted to install developer 
 
 7. Clone the Bitshares repository::
 
-    git clone https://github.com/bitshares/bitshares-core.git
-    cd bitshares-core
+    git clone https://github.com/mvs-org/dna-core.git
+    cd dna-core
 
 8. Build DNA::
 

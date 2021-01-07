@@ -4,7 +4,7 @@
     <compoundname>utf8.cpp</compoundname>
     <includes refid="utf8_8hpp" local="yes">fc/utf8.hpp</includes>
     <includes local="yes">utf8/checked.h</includes>
-    <includes local="yes">/home/ubuntu/bitshares-core-4.0/libraries/fc/src/utf8/core.h</includes>
+    <includes local="yes">/home/ubuntu/dna-core-4.0/libraries/fc/src/utf8/core.h</includes>
     <includes local="no">iterator</includes>
     <includes local="no">stdexcept</includes>
     <includes local="yes">utf8/core.h</includes>
@@ -28,7 +28,7 @@
         <label>boost/preprocessor/seq/seq.hpp</label>
       </node>
       <node id="43636">
-        <label>/home/ubuntu/bitshares-core-4.0/libraries/fc/src/utf8/core.h</label>
+        <label>/home/ubuntu/dna-core-4.0/libraries/fc/src/utf8/core.h</label>
       </node>
       <node id="43642">
         <label>assert.h</label>

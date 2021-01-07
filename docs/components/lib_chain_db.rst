@@ -3136,7 +3136,7 @@ process_hf_868_890
 				   ("asset_sym", current_asset.symbol)("asset_id", current_asset.id) );
 		  }
 
-		  // Note: due to bitshares-core issue #935, the check below (using median_changed) is incorrect.
+		  // Note: due to dna-core issue #935, the check below (using median_changed) is incorrect.
 		  //       However, `skip_check_call_orders` will likely be true in both testnet and mainnet,
 		  //         so effectively the incorrect code won't make a difference.
 		  //       Additionally, we have code to update all call orders again during hardfork core-935
@@ -5894,7 +5894,7 @@ update_expired_feeds
 		  }
 	   } // for each asset whose feed is expired
 
-	   // process assets affected by bitshares-core issue 453 before hard fork 615
+	   // process assets affected by dna-core issue 453 before hard fork 615
 	   if( !after_hardfork_615 )
 	   {
 		  for( asset_id_type a : _issue_453_affected_assets )

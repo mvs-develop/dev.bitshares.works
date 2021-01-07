@@ -30,7 +30,7 @@ Vesting Balance
 API
 ============
 
-* `How an Exchange can integrate their services to the DNA UI Wallet - Gateway Integration Requirements <https://github.com/bitshares/bitshares-ui/wiki/Gateway-Integration-Requirements>`_ : from DNA UI wiki
+* `How an Exchange can integrate their services to the DNA UI Wallet - Gateway Integration Requirements <https://github.com/mvs-org/dna-ui/wiki/Gateway-Integration-Requirements>`_ : from DNA UI wiki
 * :ref:`How can I enable RPC Logging? <rpc-logging>`
 * :ref:`How to script Websockets by Python <websocket-script-support>`
 

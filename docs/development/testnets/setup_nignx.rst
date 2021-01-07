@@ -133,10 +133,10 @@ Since we need to provide a way for people to enter the network/blockchain, we ne
 
 5.2 Fetching the web wallet
 
-Afterwards, we download the bitshares-ui repository from Cryptonomex and install the Node dependencies::
+Afterwards, we download the dna-ui repository from Cryptonomex and install the Node dependencies::
 
-    git clone https://github.com/bitshares/bitshares-ui
-    cd bitshares-ui/
+    git clone https://github.com/mvs-org/dna-ui
+    cd dna-ui/
 
     for I in dl web; do cd $I; npm install; cd ..; done
 

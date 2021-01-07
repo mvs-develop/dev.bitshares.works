@@ -27,9 +27,9 @@ In this chapter, we define our base directory ``$HOME/`` and create two director
 
 * Example files location for this section: /dev.bitshares.works/docs/development/testnets/
 
-  - `prv_Get-Dev-Key-used-in-my-genesis.txt (get_dev_key) <https://github.com/bitshares/dev.bitshares.works/blob/master/docs/development/testnets/prv_Get-Dev-Key-used-in-my-genesis.txt>`_
-  - `prv_my-genesis-example-Private-testnet.json (my-genesis.json) <https://github.com/bitshares/dev.bitshares.works/blob/master/docs/development/testnets/prv_my-genesis-example-Private-testnet.json>`_
-  - `prv_config-ini-example.txt  (config.ini) <https://github.com/bitshares/dev.bitshares.works/blob/master/docs/development/testnets/prv_config-ini-example.txt>`_
+  - `prv_Get-Dev-Key-used-in-my-genesis.txt (get_dev_key) <https://github.com/mvs-org/dev.bitshares.works/blob/master/docs/development/testnets/prv_Get-Dev-Key-used-in-my-genesis.txt>`_
+  - `prv_my-genesis-example-Private-testnet.json (my-genesis.json) <https://github.com/mvs-org/dev.bitshares.works/blob/master/docs/development/testnets/prv_my-genesis-example-Private-testnet.json>`_
+  - `prv_config-ini-example.txt  (config.ini) <https://github.com/mvs-org/dev.bitshares.works/blob/master/docs/development/testnets/prv_config-ini-example.txt>`_
 
 
 
@@ -59,7 +59,7 @@ This section includes instructions for the following:
 
   ::
 
-	git clone https://github.com/bitshares/bitshares-core.git bitshares-testnet
+	git clone https://github.com/mvs-org/dna-core.git bitshares-testnet
 	cd bitshares-testnet/
 	git checkout testnet
 	git submodule update --init -–recursive

@@ -27,7 +27,7 @@ Let's get started, open a **new command line interface (CLI) window** and go to 
 
  ::
 
-    git clone https://github.com/bitshares/bitshares-core.git bitshares-testnet
+    git clone https://github.com/mvs-org/dna-core.git bitshares-testnet
     cd bitshares-testnet/
     git checkout testnet
     git submodule update --init --recursive

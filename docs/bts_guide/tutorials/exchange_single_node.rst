@@ -30,7 +30,7 @@ The DNA uses the DPOS consensus mechanism to vote for the block forge by the per
 
 .. Note:: For the exchange, please use the wallet mode (Local Wallet) instead of the account mode  (Cloud Wallet) for the registered account, because the exchange needs to use some advanced functions and there will be problems in the account mode.
 
-  - `DNA-UI Release <https://github.com/bitshares/bitshares-ui/releases>`_
+  - `DNA-UI Release <https://github.com/mvs-org/dna-ui/releases>`_
   - BitShare UI wallet:  https://wallet.bitshares.org
   - `Create an Account Guide <http://how.bitshares.works/en/latest/user_guide/create_account.html>`_
 
@@ -139,8 +139,8 @@ If you are using a Linux system, you need to compile several of these programs y
 	sudo apt-get update
 	sudo apt-get install autoconf cmake git libboost-all-dev libssl-dev doxygen g++ libcurl4-openssl-dev
 
-	git clone https://github.com/bitshares/bitshares-core.git
-	cd bitshares-core
+	git clone https://github.com/mvs-org/dna-core.git
+	cd dna-core
 	git checkout <LATEST_RELEASE_TAG>
 	git submodule update --init --recursive
 	mkdir build

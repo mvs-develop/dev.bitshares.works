@@ -16,7 +16,7 @@
 
 ### During the startup() - application.cpp
 
-In bitshares-core/libraries/app/application.cpp, [`void application_impl::startup()`](https://github.com/mvs-org/dna-core/blob/35ec65b130f63c594afe2c9ab7f931b42be08cdc/libraries/app/application.cpp#L318) sets a `genesis.initial_chain.id` (i.e., `genesis.initial_chain_id = fc::sha256::hash( genesis_str );`) value. In the startup(), there is a flag `modified_genesis`, if it gets `true`, use `genesis_str += "BOGUS";` and sets `genesis.initial_chain_id`.
+In dna-core/libraries/app/application.cpp, [`void application_impl::startup()`](https://github.com/mvs-org/dna-core/blob/35ec65b130f63c594afe2c9ab7f931b42be08cdc/libraries/app/application.cpp#L318) sets a `genesis.initial_chain.id` (i.e., `genesis.initial_chain_id = fc::sha256::hash( genesis_str );`) value. In the startup(), there is a flag `modified_genesis`, if it gets `true`, use `genesis_str += "BOGUS";` and sets `genesis.initial_chain_id`.
 
 - `genesis.initial_chain_id = fc::sha256::hash( genesis_str );`
 

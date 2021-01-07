@@ -83,8 +83,8 @@ The DNA Core software has been updated to the 3.1.0 Feature Release. The Core so
 
 Release Numbering: We changed the versioning of the Core software to reflect a Protocol.Feature.Hotfix release format beginning from 3.0.0
 
-* `Hashed Timelock Contracts (HTLC) <https://github.com/bitshares/bsips/blob/master/bsip-0044.md>`_ : The building blocks for Atomic Cross Chain Swaps
-* `Sharing of Market Fees <https://github.com/bitshares/bsips/blob/master/bsip-0043.md>`_
+* `Hashed Timelock Contracts (HTLC) <https://github.com/mvs-org/bsips/blob/master/bsip-0044.md>`_ : The building blocks for Atomic Cross Chain Swaps
+* `Sharing of Market Fees <https://github.com/mvs-org/bsips/blob/master/bsip-0043.md>`_
 
 
 
