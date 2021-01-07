@@ -40,9 +40,9 @@ Primary Settings
         :width: 600px
         :align: center
 
-To allow transaction fees to be paid in the native asset, a core exchange rate is required at which a customer can implicitly trade the UIA into BTS from the asset’s *fee pool*.
+To allow transaction fees to be paid in the native asset, a core exchange rate is required at which a customer can implicitly trade the UIA into DNA from the asset’s *fee pool*.
 
-This also requires that the fee pool is funded (e.g. by the issuer). Since all prices in DNA are internally represented as *fractions* (i.e. a/b), we need to define a ratio between quote (the UIA) and base (BTS), i.e. the numerator and denominator for price = a/b
+This also requires that the fee pool is funded (e.g. by the issuer). Since all prices in DNA are internally represented as *fractions* (i.e. a/b), we need to define a ratio between quote (the UIA) and base (DNA), i.e. the numerator and denominator for price = a/b
 
 :Symbol:   The Symbol defined here will be reserved in the system for your assets. One the asset is created, the symbol cannot be changed again.
 :Maximum Supply:  This is also a permanent setting and denotes the maximum amount of shares that can ever exist at the same time.  	Please consult the Networks fees in the explorer!

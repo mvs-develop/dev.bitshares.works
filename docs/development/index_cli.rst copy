@@ -12,11 +12,11 @@ CLI
     :maxdepth: 2
 
 
-    apps/cli_wallet
+    apps/cli_wallet	
     apps/cli_intro
-
+	
 -----------
-
+	
 * Quick Guides
 
   - :ref:`CLI Wallet and Witness FAQs <cli-faq-list>`

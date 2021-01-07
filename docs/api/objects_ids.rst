@@ -162,10 +162,10 @@ The DNA blockchain users are requires to register each account with a unique use
 
 **Example Call and a result: asset object (id: 1.3.x)**::
 
-		unlocked >>> list_assets "BTS" "2"
+		unlocked >>> list_assets "DNA" "2"
 		[{
 				"id": "1.3.0",
-				"symbol": "BTS",
+				"symbol": "DNA",
 				"precision": 5,
 				"issuer": "1.2.3",
 

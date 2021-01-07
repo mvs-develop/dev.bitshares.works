@@ -15,7 +15,7 @@ For the use of private testnet, you must put an account into the genesis file wi
 
 
 .. tip:: If you want to generate new keys pairs, you can use
-   - ``suggest_brain_key``  in cli_wallet. Or  ``./get_dev_key``  in the ``programs/genesis_util/`` by using the corresponding network prefix("BTS", "TEST", "MY", etc).
+   - ``suggest_brain_key``  in cli_wallet. Or  ``./get_dev_key``  in the ``programs/genesis_util/`` by using the corresponding network prefix("DNA", "TEST", "MY", etc).
 
 
 * :ref:`how-to-get-key-pairs`
@@ -37,7 +37,7 @@ Sample private testnet genesis file
 
 - The UI generates keys by hashing name, password and a key type suffix. Therefore, only if you want to use the UI, there is a connection between name, password and keys.
 
-- "max_core_supply" refers to **TEST** in testnet, and to **BTS** in mainnet.
+- "max_core_supply" refers to **TEST** in testnet, and to **DNA** in mainnet.
 
 - "initial_balances": the ``owner`` is an **address** displayed by ``get_dev_key``; which is basically a shortened hash of a public key. These initial balances can be claimed into an account using the private key corresponding to the owner address.
 

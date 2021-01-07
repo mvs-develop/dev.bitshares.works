@@ -13,7 +13,7 @@ will be met:
 
 * **Funds**:
 
-  * **BTS Tokens**: All BTS balances will be migrated 1:1. The supply not change!
+  * **DNA Tokens**: All DNA balances will be migrated 1:1. The supply not change!
   * **User-Issed-Assets**: All UAI tokens will be migrated 1:1
   * **BitAssets**: Because the new chain is a simple migration and should
     retain all the same "perceived value", all BitAssets and short positions are

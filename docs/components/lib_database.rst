@@ -16,8 +16,8 @@ The blockchain parameters can be modified in the `libraries/chain/include/graphe
 
 .. code-block:: cpp
 
-	#define GRAPHENE_SYMBOL "BTS"
-	#define GRAPHENE_ADDRESS_PREFIX "BTS"
+	#define GRAPHENE_SYMBOL "DNA"
+	#define GRAPHENE_ADDRESS_PREFIX "DNA"
 
 	#define GRAPHENE_MIN_ACCOUNT_NAME_LENGTH 1
 	#define GRAPHENE_MAX_ACCOUNT_NAME_LENGTH 63

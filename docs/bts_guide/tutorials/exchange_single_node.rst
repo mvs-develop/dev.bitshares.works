@@ -20,7 +20,7 @@ The scheme described in this section is a single node scheme. Compared to the tw
 
 **1.1 Consensus**
 
-The DNA uses the DPOS consensus mechanism to vote for the block forge by the person holding the BTS. The standard block interval is 3 seconds.
+The DNA uses the DPOS consensus mechanism to vote for the block forge by the person holding the DNA. The standard block interval is 3 seconds.
 
 **1.2 Account**
 
@@ -76,7 +76,7 @@ The DNA uses the DPOS consensus mechanism to vote for the block forge by the per
 
 **1.3 Assets**
 
-1) There are various assets in the DNA system, of which the core asset is the BTS. The approach of the exchange to other assets in the DNA system is similar to that of the BTS.
+1) There are various assets in the DNA system, of which the core asset is the DNA. The approach of the exchange to other assets in the DNA system is similar to that of the DNA.
 2) Each account can have multiple assets at the same time.
 
 **1.4 BlockChain Structure**
@@ -239,7 +239,7 @@ For exchanges, some modifications to the ``config.ini`` configuration file are r
 
 After this, the console log for the last 24 hours is kept under the ``witness_node_data_dir/logs/default/`` directory.
 
-3) The following parameters will reduce the memory required for operation. The principle is that the historical transaction record index of the BTS built-in transaction engine is not saved because the exchange does not normally use this data.::
+3) The following parameters will reduce the memory required for operation. The principle is that the historical transaction record index of the DNA built-in transaction engine is not saved because the exchange does not normally use this data.::
 
 	   history-per-size = 0
 
@@ -497,8 +497,8 @@ If the execution is successful, the result will be result, otherwise there will 
 * Enter the command in the wallet and return the result is beautified; when using the HTTP RPC request, the original data in json format is returned. With regard to raw data, there are some things to note:
 * The amount is **{"amount":467116432,"asset_id":"1.3.0"}** format, where
 
-  * The ``asset_id`` can be found by the ``get_asset`` command. The ``asset_id`` of the BTS is 1.3.0. Other assets have other ids.
-  * amount is the value after the decimal point is removed. For example, BTS is `5 decimal` places. In the above example, it is actually 4671.16432 BTS.
+  * The ``asset_id`` can be found by the ``get_asset`` command. The ``asset_id`` of the DNA is 1.3.0. Other assets have other ids.
+  * amount is the value after the decimal point is removed. For example, DNA is `5 decimal` places. In the above example, it is actually 4671.16432 DNA.
 
 * The account is in the form of 1.2.xxxxx. Get account information via ``get_account``
 * Operation type (op) is a numeric format, such as 0 for transfer operation
@@ -555,7 +555,7 @@ The result is an array, sorted in reverse chronological order, with the most rec
 
 	{
 	"memo":"",
-	"description":"Transfer 1 BTS from a to b -- Unlock wallet to see memo. (Fee: 0.22941 BTS)",
+	"description":"Transfer 1 DNA from a to b -- Unlock wallet to see memo. (Fee: 0.22941 DNA)",
 	"op":{
 	"id":"1.11.1234567",
 	"op":[
@@ -707,7 +707,7 @@ Use the ``get_account_id command`` to check whether the customer’s withdrawal 
 
 Use the ``transfer2`` command to send a withdrawal transaction. Such as::
 
-	unlocked >>> transfer2 withdrawal-account to-account 100 BTS "some memo"
+	unlocked >>> transfer2 withdrawal-account to-account 100 DNA "some memo"
 
 The parameters are: **source account name, destination account name, amount, currency, Memo**
 
@@ -715,7 +715,7 @@ The command will sign and broadcast the transaction and return an array. The fir
 
 **Note:**
 
-1) If the currency is BTS, the number of decimal places is up to 5 digits. If it is other assets, you can view the decimal places of the asset with the ``precision`` field with the ``get_asset`` command.
+1) If the currency is DNA, the number of decimal places is up to 5 digits. If it is other assets, you can view the decimal places of the asset with the ``precision`` field with the ``get_asset`` command.
 2) You can also use the transfer command, but this does not directly return the transaction ID. Instead, it needs to call another API to calculate it, so it is not recommended.
 3) Memo are usually encoded in UTF-8
 4) It is recommended to record relevant data for future reference, such as transaction id, detailed transaction content in json format, etc.
@@ -744,7 +744,7 @@ It is recommended to record the ``id (1.11.x)``, ``block_num``, and ``trx_in_blo
 
 In some cases, after the transaction may be sent, it is not packaged into the block in time.
 
-Unlike Bitcoin, there is a timeout in the BTS transaction.
+Unlike Bitcoin, there is a timeout in the DNA transaction.
 
 When using ``cli_wallet`` to sign a broadcast transaction, this field value defaults to the local system time plus 2 minutes.
 
@@ -810,7 +810,7 @@ Therefore, if a transaction broadcast appears but does not appear in the account
 
 (ref)
 
-This information originates [abitmore/bts-cn-docs](https://github.com/abitmore/bts-cn-docs/blob/master/BTS%E4%BA%A4%E6%98%93%E6%89%80%E5%AF%B9%E6%8E%A5%E6%8C%87%E5%8D%97%EF%BC%88%E5%8D%95%E8%8A%82%E7%82%B9%E7%89%88%EF%BC%89.txt) repository.
+This information originates [abitmore/bts-cn-docs](https://github.com/abitmore/bts-cn-docs/blob/master/DNA%E4%BA%A4%E6%98%93%E6%89%80%E5%AF%B9%E6%8E%A5%E6%8C%87%E5%8D%97%EF%BC%88%E5%8D%95%E8%8A%82%E7%82%B9%E7%89%88%EF%BC%89.txt) repository.
 
 *(Translated by an application and adjusted by human. Some words might be not accurate.)*
 

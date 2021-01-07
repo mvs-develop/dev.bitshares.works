@@ -181,7 +181,7 @@ What is the average size in Bytes of a Bitshares transaction?
 What is the standard Bitshares address structure and format?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-address = 'BTS'+base58(ripemd(sha512(compressed_pub)))  (checksum obviated)
+address = 'DNA'+base58(ripemd(sha512(compressed_pub)))  (checksum obviated)
 
 But addresses are not used directly, instead you have an account (that can be controlled by one or more address, pubkey or another account). ** Read more about `Dynamic Account Permissions <https://bitshares.org/technology/dynamic-account-permissions>`_
 

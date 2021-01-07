@@ -73,7 +73,7 @@ Then set fees, sign and broadcast the transaction:
 
 ::
 
-    >>> set_fees_on_builder_transaction $HANDLE BTS
+    >>> set_fees_on_builder_transaction $HANDLE DNA
     >>> sign_builder_transaction $HANDLE true
 
 Notes:

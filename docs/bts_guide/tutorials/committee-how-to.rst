@@ -102,7 +102,7 @@ Then set fees, sign and broadcast the transaction:
 
 ::
 
-    >>> set_fees_on_builder_transaction $HANDLE BTS
+    >>> set_fees_on_builder_transaction $HANDLE DNA
     >>> sign_builder_transaction $HANDLE true
 
 Notes:
@@ -159,7 +159,7 @@ Create a Proposal
 ---------------------
 
 Let's assume we want to propose a new fee for the account creation operation. We
-want 5 BTS as basic fee and want premium names to cost 2000 BTS. Additionally,
+want 5 DNA as basic fee and want premium names to cost 2000 DNA. Additionally,
 a price per kbyte for the account creation transaction can be defined. We get
 
 .. code-block:: js

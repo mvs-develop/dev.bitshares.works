@@ -297,13 +297,13 @@ asset_claim_fees_operation
 asset_claim_pool_operation
 -------------------------------
 
-- Transfers BTS from the fee pool of a specified asset back to the issue's balance.
+- Transfers DNA from the fee pool of a specified asset back to the issue's balance.
 - Parameters
 
   - `fee`  Payment for the operation execution
-  - `issuer`  Account which will be used for transfering BTS
+  - `issuer`  Account which will be used for transfering DNA
   - `asset_id`  Id of the asset whose fee pool is going to be drained
-  - `amount_to_claim`  Amount of BTS to claim from the fee pool
+  - `amount_to_claim`  Amount of DNA to claim from the fee pool
   - `extensions`  Field for future expansion
 
 - Precondition

@@ -13,7 +13,7 @@ Let's obtain the <publickey>::
     Block Signing Key: <publickey>
     [...]
 
-Remark: Public keys in the DNA network have the prefix BTS. Hence, in the case of the Graphene testnet you should replace BTS by GPH.
+Remark: Public keys in the DNA network have the prefix DNA. Hence, in the case of the Graphene testnet you should replace DNA by GPH.
 
 and the corresponding <wifkey>::
 

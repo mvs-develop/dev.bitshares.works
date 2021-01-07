@@ -218,7 +218,7 @@ _ ``list_account_balances``  _(e.g. an existing user account "cedar036)_
 
     unlocked >>> list_account_balances "cedar036"
     list_account_balances "cedar036"
-    75.22668 BTS
+    75.22668 DNA
     3 OPEN.STEEM
 
     unlocked >>>
@@ -299,10 +299,10 @@ _ ``list_account_balances``  _(e.g. an existing user account "cedar036)_
 
     unlocked >>> get_account_history "cedar036" "4"
     get_account_history "cedar036" "4"
-    2018-01-12T23:48:57 Transfer 40.46468 BTS from blocktrades to cedar036   (Fee: 0.01662 BTS)
-    2018-01-12T22:31:00 Transfer 3 OPEN.STEEM from tsugimoto0105 to cedar036   (Fee: 0.01662 BTS)
-    2017-12-25T18:56:03 Transfer 0.00100 BTS from cedar036 to sharebits17 -- could not decrypt memo   (Fee: 0.23700 BTS)
-    2017-12-25T17:44:15 Transfer 35 BTS from bitshares-users to cedar036   (Fee: 0.21851 BTS)
+    2018-01-12T23:48:57 Transfer 40.46468 DNA from blocktrades to cedar036   (Fee: 0.01662 DNA)
+    2018-01-12T22:31:00 Transfer 3 OPEN.STEEM from tsugimoto0105 to cedar036   (Fee: 0.01662 DNA)
+    2017-12-25T18:56:03 Transfer 0.00100 DNA from cedar036 to sharebits17 -- could not decrypt memo   (Fee: 0.23700 DNA)
+    2017-12-25T17:44:15 Transfer 35 DNA from bitshares-users to cedar036   (Fee: 0.21851 DNA)
 
     unlocked >>>
 
@@ -323,11 +323,11 @@ Asset Calls
 
 - list_assets::
 
-    unlocked >>> list_assets "BTS" "2"
-    list_assets "BTS" "2"
+    unlocked >>> list_assets "DNA" "2"
+    list_assets "DNA" "2"
     [{
         "id": "1.3.0",
-        "symbol": "BTS",
+        "symbol": "DNA",
         "precision": 5,
         "issuer": "1.2.3",
         "options": {
@@ -356,7 +356,7 @@ Asset Calls
         "dynamic_asset_data_id": "2.3.0"
       },{
         "id": "1.3.368",
-        "symbol": "BTS.SHARE",
+        "symbol": "DNA.SHARE",
         "precision": 4,
         "issuer": "1.2.31073",
         "options": {
@@ -392,11 +392,11 @@ Asset Calls
 
 - ``get_asset``::
 
-    unlocked >>> get_asset "BTS"
-    get_asset "BTS"
+    unlocked >>> get_asset "DNA"
+    get_asset "DNA"
     {
       "id": "1.3.0",
-      "symbol": "BTS",
+      "symbol": "DNA",
       "precision": 5,
       "issuer": "1.2.3",
       "options": {

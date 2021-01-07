@@ -88,7 +88,7 @@ And to check balance::
 
     unlocked >>> list_account_balances your-account-name
     list_account_balances your-account-name
-    31016.69330 BTS
+    31016.69330 DNA
     0 CNY
     0 USD
 

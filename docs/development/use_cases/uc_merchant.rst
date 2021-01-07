@@ -152,7 +152,7 @@ to the user.
        "to" : "merchant_account_name",
        "to_label" : "Merchant Name",
        "memo" : "Invoice #1234",
-       "currency": "BTS",
+       "currency": "DNA",
        "line_items" : [
             { "label" : "Something to Buy", "quantity": 1, "price" : "1000.00 SYMBOL" },
             { "label" : "10 things to Buy", "quantity": 10, "price" : "1000.00 SYMBOL" },

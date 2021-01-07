@@ -27,7 +27,7 @@ Articles
 - [Howto: Using Nginx to Load Balance Servers (08/2017)](https://steemit.com/witness-category/@full-steem-ahead/howto-using-nginx-to-load-balance-servers) : by @full-steem-ahead
 - [Steem transaction signing in a nutshell (2016)](https://steemit.com/steem/@xeroc/steem-transaction-signing-in-a-nutshell) by @xeroc
 - [How the issuer of an IOU/UIA can transfer assets back to himself (2016)](https://steemit.com/bitshares/@xeroc/how-the-issuer-of-an-iouuia-can-transfer-assets-back-to-himself) : by xeroc
-- [Back to Algorithm Based Assets & Targeting BTS as an MPA’s reference asset!](https://steemit.com/bitshares/@cm-steem/back-to-algorithm-based-assets-and-targeting-bts-as-an-mpa-s-reference-asset) : by cm-steem
+- [Back to Algorithm Based Assets & Targeting DNA as an MPA’s reference asset!](https://steemit.com/bitshares/@cm-steem/back-to-algorithm-based-assets-and-targeting-bts-as-an-mpa-s-reference-asset) : by cm-steem
 - [DNA UI Improvements (13 New Features, 45 Bug Fixes)](https://steemit.com/beyondbitcoin/@sc-steemit/bitshares-ui-improvements-13-new-features-45-bug-fixes): by cm-steem
 - [HERTZ Price Feed Script Updates! September 2017](https://steemit.com/bitshares/@cm-steem/hertz-price-feed-script-updates-september-2017) : by cm-steem
 - [HERTZ - Next area of investigation prior to production!](https://steemit.com/bitshares/@cm-steem/hertz-next-area-of-investigation-prior-to-production) : by cm-steem

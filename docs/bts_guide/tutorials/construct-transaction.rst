@@ -23,7 +23,7 @@ The corresponding API calls in the :ref:`Transaction Builder <w-api-trans-builde
 
     >>> begin_builder_transaction
     >>> add_operation_to_builder_transaction $HANDLE [opId, {operation}]
-    >>> set_fees_on_builder_transaction $HANDLE BTS
+    >>> set_fees_on_builder_transaction $HANDLE DNA
     >>> sign_builder_transaction $HANDLE true
 
 The ``begin_builder_transaction`` call returns a number we call ``$HANDLE`` It allows to construct several transactions in parallel and identify them individually!
@@ -114,11 +114,11 @@ The corresponding ``id`` can be obtained with ``get_account``, and
 4. Sign and broadcast your transaction and fees
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-We add a fee payed in BTS, sign and broadcast the transaction (if valid):
+We add a fee payed in DNA, sign and broadcast the transaction (if valid):
 
 ::
 
-    >>> set_fees_on_builder_transaction 0 BTS
+    >>> set_fees_on_builder_transaction 0 DNA
     >>> sign_builder_transaction 0 true
 
 |

@@ -19,7 +19,7 @@ If, instead, the bet resolves to `false` (i.e. a price feed of `0`), then those 
 Creation
 ---------------
 
-Prediction markets are assets that trade freely and can be borrowed from the market at a 1:1 ratio with the backing asset (which could be any other asset, including BTS, USD, GOLD).
+Prediction markets are assets that trade freely and can be borrowed from the market at a 1:1 ratio with the backing asset (which could be any other asset, including DNA, USD, GOLD).
 
 
 Betting
@@ -53,13 +53,13 @@ Betting for a Negative Outcome
 
 In order to bet for a negative outcome (bet resolves to `false` with a price feed of `0`), you need to **sell** the tokens. In order to get them, you should **not** buy them at the market, but instead **borrow** them from the network by paying collateral at a 1:1 ratio.
 
-For example, in the `PM.PRESIDENT2016` if you want to bet on a negative outcome with `100k BTS`, you can borrow `100k PM.PRESIDENT2016` by paying `100k BTS` to the network.
+For example, in the `PM.PRESIDENT2016` if you want to bet on a negative outcome with `100k DNA`, you can borrow `100k PM.PRESIDENT2016` by paying `100k DNA` to the network.
 
-.. note:: Since PM-Assets can technically be pegged by any other asset, you may need to pay USD (or anything else) instead of BTS.
+.. note:: Since PM-Assets can technically be pegged by any other asset, you may need to pay USD (or anything else) instead of DNA.
 
 Once you borrowed the token, you can sell them at any price between `0` and `1`. If you thing the probability of a negative outcome is `20%`, you should consider selling your tokens at `0.2`.
 
-If the bet resolves negatively (price feed of `0`), your debts is worth `debt = amount * price = 0 BTS`, you can reclaim your collateral at zero cost, and get to keep `20%` profits from selling the token at `0.2`. If instead the bet resolves positively and you sold all tokens, you cannot close your borrow position to redeem your collateral. However, your total loss is reduced by `20%` for selling the tokens at the market.
+If the bet resolves negatively (price feed of `0`), your debts is worth `debt = amount * price = 0 DNA`, you can reclaim your collateral at zero cost, and get to keep `20%` profits from selling the token at `0.2`. If instead the bet resolves positively and you sold all tokens, you cannot close your borrow position to redeem your collateral. However, your total loss is reduced by `20%` for selling the tokens at the market.
 
 If, by the end of the bet, you still have some of the tokens left, you can of course close your borrow position partly and redeem the
 corresponding percentage of the collateral.

@@ -22,9 +22,9 @@ More DNA related Resources
    * - `c-libp2p <https://github.com/Agorise?tab=repositories>`_
      - Implementation of libp2p in C
      - Agorise
-   * - `Bitshares-HUG-REST-API <https://github.com/BTS-CM/Bitshares-HUG-REST-API>`_
+   * - `Bitshares-HUG-REST-API <https://github.com/DNA-CM/Bitshares-HUG-REST-API>`_
      - A HUG REST API for the Bitshares network
-     - BTS-CM
+     - DNA-CM
    * - `ChainSquad GmbH <https://github.com/chainsquad>`_
      - Blockchain development and consultation
      - chainsquad

@@ -19,7 +19,7 @@ What is new in DNA 2.0
 
 
 * **Votable Network Parameters**:
-  DNA 2.0 will allow its BTS Holders to fine-tune any parameter available to the protocol. This includes, block size, block interval, but also the payment for block producers and transaction fees.
+  DNA 2.0 will allow its DNA Holders to fine-tune any parameter available to the protocol. This includes, block size, block interval, but also the payment for block producers and transaction fees.
 
 * **Flexible and Dynamic Access Control**:
   DNA 2.0 allows customers and participants a flexible and dynamic access to its funds or account handle. A so called *Authority* can consist of a flat hierarchy similar to *multi-signature* in Bitcoin, but could also support tree hierarchies never to be seen before. Read more about this about `dynamic account permissions <https://bitshares.org/technology/dynamic-account-permissions>`_.
@@ -35,13 +35,13 @@ What is new in DNA 2.0
   easily, we understand that some users mainly prefer to use the frontend not bothering about the blockchain.
 
 * **Referral Program**:
-  PayPal and Dwolla showed the success of referral programs, a program that could easily and cheaper be implemented in a decentralized software protocol. Hence we took our chance and implemented a blockchain based referral program. From every transaction fee, paid by a customer you referred, you will get a fraction. Of course, this fraction can be tuned by BTS Holders! Read more about the `referral program <https://bitshares.org/technology/referral-rewards-program>`_.
+  PayPal and Dwolla showed the success of referral programs, a program that could easily and cheaper be implemented in a decentralized software protocol. Hence we took our chance and implemented a blockchain based referral program. From every transaction fee, paid by a customer you referred, you will get a fraction. Of course, this fraction can be tuned by DNA Holders! Read more about the `referral program <https://bitshares.org/technology/referral-rewards-program>`_.
 
 * **Recurring & Scheduled Payments**:
   We wanted to offer a way to have our rent payed automatically. So we implemented it in the blockchain. In DNA 2.0, participants are capable of allowing others to withdraw funds from your account. Of course, you can define a daily/weekly or monthly limit. Read more about `recurring and scheduled payments <https://bitshares.org/technology/recurring-scheduled-payments>`_.
 
 * **Additional Privatized BitAssets**:
-  In contrast to Market Pegged Assets (also known as BitAssets) that have a price feed published by witnesses that have approval of BTS Holders, a *privatized* bitasset allows to create market pegged assets that have an individual set of price feed publishers that do not need BTS Holders' approval. Hence, everyone can create a privatized bitAsset to track an individual value, such as indices, or binary predictions.
+  In contrast to Market Pegged Assets (also known as BitAssets) that have a price feed published by witnesses that have approval of DNA Holders, a *privatized* bitasset allows to create market pegged assets that have an individual set of price feed publishers that do not need DNA Holders' approval. Hence, everyone can create a privatized bitAsset to track an individual value, such as indices, or binary predictions.
 
 
 |
@@ -55,7 +55,7 @@ What has changed since DNA 0.9
   Our research has identified an improved mechanism to achieve a solid *peg* of bitAssets to its underlay. BitAssets like the bitUSD in DNA 2.0 will always trade for *at least* the value of its underlying asset, i.e. $1. We have summarized the economical analysis and incentives for market participants here: `bitAssets 2.0`_
 
 * **Faster Blocks**:
-  Initially, the DNA 2.0 blockchain will come with 3 seconds block interval with the option to reduce down to 1 second if BTS Holders agree.
+  Initially, the DNA 2.0 blockchain will come with 3 seconds block interval with the option to reduce down to 1 second if DNA Holders agree.
 
 * **Industrial Performance**:
   DNA 2.0 can support massive load and works well beyond 100k transactions per second. Find out how we achieve `industrial performance and scalability`_.
@@ -93,7 +93,7 @@ DNA 2.0 will be initialized with what is called a *Genesis Block*. That genesis 
 
 * **Funds**:
 
-  * **BTS Tokens**: All BTS balances will be migrated 1:1. The supply not change!
+  * **DNA Tokens**: All DNA balances will be migrated 1:1. The supply not change!
   * **User-Issued-Assets**: All UAI tokens will be migrated 1:1
   * **BitAssets**: Because the new chain is a simple migration and should retain all the same "perceived value", all BitAssets and short positions are migrated 1:1.
 

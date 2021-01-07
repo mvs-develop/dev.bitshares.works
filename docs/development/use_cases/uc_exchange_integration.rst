@@ -7,7 +7,7 @@ Exchanges, Bridges, and Gateways
 **Exchange**, **Bridges**, and **Gateways** represent business that trade or
 exchange assets that are located **inside** a Graphene network (e.g. DNA)
 against assets that are **located** outside the blockchain network. For
-instance, exchanges trade ``BTS:BTC`` while bridges exchange ``bitBTC:BTC``.
+instance, exchanges trade ``DNA:BTC`` while bridges exchange ``bitBTC:BTC``.
 
 We here illustrate the steps necessary to securely operate as exchange or
 gateway. Gateways take Fiat and convert them to their corresponding bitAsset at
@@ -160,7 +160,7 @@ The operation payload, in this case, is:::
                 'from': 'BTS5TPTziKkLexhVKsQKtSpo4bAv5RnB8oXcG4sMHEwCcTf3r7dqE',
                 'message': '58a8a515041812071b2402a0bf67c5e8',
                 'nonce': 3324169168288624499,
-                'prefix': 'BTS',
+                'prefix': 'DNA',
                 'to': 'BTS5TPTziKkLexhVKsQKtSpo4bAv5RnB8oXcG4sMHEwCcTf3r7dqE'},
          'extensions': [],
          'from': '1.2.282',
@@ -178,9 +178,9 @@ can be obtained by:::
 
      amount_integer / 10 ** precision
 
-In the case above, the asset with id 1.3.0 is ``BTS`` which has
+In the case above, the asset with id 1.3.0 is ``DNA`` which has
 precision 5. Hence, the floating number transfered from account 1.2.282
-to 1.2.0 is 1.0000 BTS!
+to 1.2.0 is 1.0000 DNA!
 
 The optional memo is used to send an encrypted message along the
 transfer. To decode the memo, the receivers or senders private key (for

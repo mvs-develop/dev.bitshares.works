@@ -239,7 +239,7 @@ The below table is Example Owner, Active, and Memo key pairs. Each authority has
      - P5J3-Test-MEMO-Private-keyva7C9sYW6
 
 
-You might've noticed each public key start with **TEST**.  So, you know those private keys are for the testnet. If you create DNA mainnet account, you will find **BTS** on the top of each private key.
+You might've noticed each public key start with **TEST**.  So, you know those private keys are for the testnet. If you create DNA mainnet account, you will find **DNA** on the top of each private key.
 
 **Note:** The Memo key is for decrypting transfer memos.
 

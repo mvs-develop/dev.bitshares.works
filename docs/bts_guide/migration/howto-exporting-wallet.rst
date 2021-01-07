@@ -60,7 +60,7 @@ file location where the keys will be exported.
 
 .. note:: Due to a known bug, if you are on Windows the only option that will
         work for you is the console command - the file exported using the menu will not
-        be compatible with BTS 2.0. This refers to Windows only.
+        be compatible with DNA 2.0. This refers to Windows only.
 
 Export via the console
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

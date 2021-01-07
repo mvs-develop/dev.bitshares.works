@@ -6,7 +6,7 @@ External Links
 Articles
 -----------------------------
 
-* `Back to Algorithm Based Assets & Targeting BTS as an MPA's reference asset! <https://steemit.com/bitshares/@cm-steem/back-to-algorithm-based-assets-and-targeting-bts-as-an-mpa-s-reference-asset>`_ : by cm-steem
+* `Back to Algorithm Based Assets & Targeting DNA as an MPA's reference asset! <https://steemit.com/bitshares/@cm-steem/back-to-algorithm-based-assets-and-targeting-bts-as-an-mpa-s-reference-asset>`_ : by cm-steem
 
 
 * `DNA UI Improvements (13 New Features, 45 Bug Fixes) <https://steemit.com/beyondbitcoin/@sc-steemit/bitshares-ui-improvements-13-new-features-45-bug-fixes>`_ : by cm-steem

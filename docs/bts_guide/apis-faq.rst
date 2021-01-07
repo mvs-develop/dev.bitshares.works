@@ -58,7 +58,7 @@ The answer to the previous question was really confusing. Can you make it cleare
 
 All account ID's are of the form 1.2.x. If you were the 9735th account to be registered, your account's ID will be 1.2.9735. Account 0 is special (it's the "committee account," which is controlled by the committee members and has a few abilities and restrictions other accounts do not).
 
-All asset ID's are of the form 1.3.x. If you were the 29th asset to be registered, your asset's ID will be 1.3.29. Asset 0 is special (it's BTS, which is considered the "core asset").
+All asset ID's are of the form 1.3.x. If you were the 29th asset to be registered, your asset's ID will be 1.3.29. Asset 0 is special (it's DNA, which is considered the "core asset").
 
 The first and second number together identify the kind of thing you're talking about (1.2 for accounts, 1.3 for assets). The third number identifies the particular thing.
 

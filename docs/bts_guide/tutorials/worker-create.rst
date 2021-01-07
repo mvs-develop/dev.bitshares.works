@@ -61,7 +61,7 @@ Workers are currently created with the cli_wallet with the following command syn
 
 **Example**
 
-An `owner_account` is creating a one day worker starting Oct 28 and will get paid 1 BTS/day (vesting in 1 day, 1 BTS = 100,000 ‘satoshi’) to make an android app. The first command won’t broadcast, this will just check::
+An `owner_account` is creating a one day worker starting Oct 28 and will get paid 1 DNA/day (vesting in 1 day, 1 DNA = 100,000 ‘satoshi’) to make an android app. The first command won’t broadcast, this will just check::
 
   >>> create_worker "worker-name" "2015-10-28T00:00:00" "2015-10-29T00:00:00" 100000 "Description" "http://URL" {"type" : "vesting", "pay_vesting_period_days" : 1} false
 
@@ -77,7 +77,7 @@ The variable `type` can be
 - ``vesting`` to pay that you pay yourself, or
 - ``burn`` to destroys your pay thus reducing share supply, equivalent to share buy-back of a company stock
 
-The variable ``pay_vesting_period_days`` is the integer number of days you set for vesting. Some people don’t want workers to withdraw and sell large sums of BTS immediately, as it puts sell pressure on BTS. Also, if you require vesting, you have “skin in the game” and thus an incentive to improve BTS value. Pay is pay per day (not hour or maintenance period) and is in units of 1/100,000 BTS (the precision of BTS)
+The variable ``pay_vesting_period_days`` is the integer number of days you set for vesting. Some people don’t want workers to withdraw and sell large sums of DNA immediately, as it puts sell pressure on DNA. Also, if you require vesting, you have “skin in the game” and thus an incentive to improve DNA value. Pay is pay per day (not hour or maintenance period) and is in units of 1/100,000 DNA (the precision of DNA)
 
 To **actually** generate a worker proposal, replace the last `false` by `true`.
 
@@ -187,9 +187,9 @@ Every hour the worker budget is processed and workers are paid in full order of 
 
 So the daily budget is::
 
-    worker_budget*24 = 1340913100 * 24 = 32181914400 (or 321,8191.44 BTS)
+    worker_budget*24 = 1340913100 * 24 = 32181914400 (or 321,8191.44 DNA)
 
-There is currently a maximum daily worker pay of 500k BTS, and this can be found using the `get_global_properties` command in the cli_wallet.
+There is currently a maximum daily worker pay of 500k DNA, and this can be found using the `get_global_properties` command in the cli_wallet.
 
 -----------------
 
@@ -200,13 +200,13 @@ Every second,::
 
     [ 17/(2^32) * reserve fund ]
 
-is allocated for witnesses and workers. The reserve fund is maximum number of BTS available less those currently in circulation ([source](https://github.com/cryptonomex/graphene/blob/f85dec1c23f6bf9259ad9f15311b2e4aac4f9d44/libraries/chain/include/graphene/chain/config.hpp))
+is allocated for witnesses and workers. The reserve fund is maximum number of DNA available less those currently in circulation ([source](https://github.com/cryptonomex/graphene/blob/f85dec1c23f6bf9259ad9f15311b2e4aac4f9d44/libraries/chain/include/graphene/chain/config.hpp))
 
-Every hour the total available reserve fund is calculated by finding how many BTS are available to be distributed and how many BTS will be returned to the reserve fund (i.e., “burnt”) during the next maintenance interval.
+Every hour the total available reserve fund is calculated by finding how many DNA are available to be distributed and how many DNA will be returned to the reserve fund (i.e., “burnt”) during the next maintenance interval.
 
-First find how many BTS have not been distributed::
+First find how many DNA have not been distributed::
 
-    >>> from_initial_reserve = max_supply - current supply of BTS
+    >>> from_initial_reserve = max_supply - current supply of DNA
 
 The max_supply can be obtained by::
 
@@ -216,7 +216,7 @@ and the current_supply is given in::
 
     >>> get_object 2.3.0
 
-Modify it by adding the accumulated fees and witness budget remaining (i.e., 1.5 BTS per block is budgeted, so budget remaining is 1.5 BTS * (number of blocks left in maintenance period+blocks missed by witnesses)) in this maintenance cycle (they will be added to the “reserve fund” permanently at maintenance)::
+Modify it by adding the accumulated fees and witness budget remaining (i.e., 1.5 DNA per block is budgeted, so budget remaining is 1.5 DNA * (number of blocks left in maintenance period+blocks missed by witnesses)) in this maintenance cycle (they will be added to the “reserve fund” permanently at maintenance)::
 
     updated reserve fund = from_initial_reserve + from_accumulated_fees + from_unused_witness_budget
 

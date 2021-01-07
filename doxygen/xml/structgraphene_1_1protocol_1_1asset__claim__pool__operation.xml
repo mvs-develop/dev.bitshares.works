@@ -101,7 +101,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Transfers BTS from the fee pool of a specified asset back to the issuer&apos;s balance. </para>    </briefdescription>
+<para>Transfers DNA from the fee pool of a specified asset back to the issuer&apos;s balance. </para>    </briefdescription>
     <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -115,7 +115,7 @@
 <parametername>issuer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Account which will be used for transfering BTS </para></parameterdescription>
+<para>Account which will be used for transfering DNA </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -129,7 +129,7 @@
 <parametername>amount_to_claim</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Amount of BTS to claim from the fee pool </para></parameterdescription>
+<para>Amount of DNA to claim from the fee pool </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>

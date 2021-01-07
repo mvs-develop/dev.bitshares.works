@@ -35,7 +35,7 @@ achieve this by slightly modifying our procedure:
     # New:
     >>> propose_builder_transaction2 $HANDLE <proposing-account-name> <expiration> <review-period-secs> false
 
-    >>> set_fees_on_builder_transaction $HANDLE BTS
+    >>> set_fees_on_builder_transaction $HANDLE DNA
     >>> sign_builder_transaction $HANDLE true
 
 Definition
@@ -153,11 +153,11 @@ Now let's make it a proposal for the committee members to sign:
 
     >>> propose_builder_transaction2 0 init0 "2015-12-10T14:55:00" 3600 false
 
-We add a fee payed in BTS, sign and broadcast the transaction (if valid):
+We add a fee payed in DNA, sign and broadcast the transaction (if valid):
 
 ::
 
-    >>> set_fees_on_builder_transaction 0 BTS
+    >>> set_fees_on_builder_transaction 0 DNA
     >>> sign_builder_transaction 0 true
 
 |

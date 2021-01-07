@@ -40,7 +40,7 @@ As `options` we pass a JSON object that can contain these settings:
       "core_exchange_rate" : {
           "base": {
             "amount": 21,           # denominator
-            "asset_id": "1.3.0"     # BTS
+            "asset_id": "1.3.0"     # DNA
           },
           "quote": {
             "amount": 76399,        # numerator

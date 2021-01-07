@@ -79,16 +79,16 @@ Fee Pool
 What is Fee Pool Draining?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If an order is created and paid in a non-BTS asset, the fee is
-implicitly exchange into BTS to pay the network fee. However, if the
-order is canceled, 90% of the fee will be returned as BTS. The result
+If an order is created and paid in a non-DNA asset, the fee is
+implicitly exchange into DNA to pay the network fee. However, if the
+order is canceled, 90% of the fee will be returned as DNA. The result
 is, that if the core exchange rate is lower than the highest bid, people
 can simply buy your token from the market, and exchange them implicitly
 with the fee pool by creating and canceling an order. This will deplete
 the fee pool and leave the issuer with his tokens at a slight loss
 (depending on the offset of the core exchange rate). For this reason, we
 recommend to use a core exchange that is slightly higher than the market
-price of your asset. As a consequence, paying fees in BTS should always
+price of your asset. As a consequence, paying fees in DNA should always
 be cheaper.
 
 .. _asset-faq6:
@@ -97,16 +97,16 @@ What is the fee pool all about?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The fee pool allows participants in the network to deal with assets and
-pay for the transaction fees without the need to hold BTS. Any
+pay for the transaction fees without the need to hold DNA. Any
 transaction fee can be paid by paying any asset that has a core exchange
 rate (i.e. a price) at which the asset can be exchange implicitly into
-BTS to cover the network fee. If the asset's fee pool is funded, the
-fees can be payed in the native UIA instead of BTS.
+DNA to cover the network fee. If the asset's fee pool is funded, the
+fees can be payed in the native UIA instead of DNA.
 
 .. note:: The core exchange rate at which a fee can be exchanged into
-          BTS may differ from the actual market valuation of the asset.
+          DNA may differ from the actual market valuation of the asset.
           A user, thus, may pay a premium or spare funds by paying in
-          BTS.
+          DNA.
 
 .. warning:: Make sure your core exchange rate is higher than the lowest
              ask, otherwise, people will buy your token from the market
@@ -114,7 +114,7 @@ fees can be payed in the native UIA instead of BTS.
 
 It is the task of the issuer to keep the fee pool funded and the core
 exchange rate updated unless he wants the owner of his asset to be
-required to hold BTS for the fee.
+required to hold DNA for the fee.
 
 .. _asset-faq7:
 

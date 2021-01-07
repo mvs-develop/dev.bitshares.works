@@ -17,7 +17,7 @@ Welcome to DNA! DNA Blockchain implements an industrial-grade technology focused
 DNA Members
 ===================
 
-First, let's understand how we call DNA Blockchain Community members and groups.  When you create a wallet and hold any BTS, you are a BTS Holder (i.e., shareholder). As a BTS Holder, you have a voting power to make decisions in the DNA Blockchain Community. BTS Holders can vote for witnesses, committee members, and workers by using your wallet. As an option, if you wish,  you can case your voting power to a "Proxy" voter. The Proxy vote in behalf of BTS Holders account.
+First, let's understand how we call DNA Blockchain Community members and groups.  When you create a wallet and hold any DNA, you are a DNA Holder (i.e., shareholder). As a DNA Holder, you have a voting power to make decisions in the DNA Blockchain Community. DNA Holders can vote for witnesses, committee members, and workers by using your wallet. As an option, if you wish,  you can case your voting power to a "Proxy" voter. The Proxy vote in behalf of DNA Holders account.
 
 .. image:: ../../_static/structures/btsholders-v1.png
         :alt: DNA Architecture
@@ -66,7 +66,7 @@ DNA can be made to function as a software, a network, a ledger, a bank, an excha
 * **SmartCoins** are fungible, divisible and free from any restrictions. A SmartCoin is a cryptocurrency whose value is pegged to that of another asset, such as the US Dollar or gold. SmartCoins implement the concept of a collateralized loan and offer it on the blockchain.
 * **Decentralized Exchange** - DNA provides a high-performance decentralized exchange, with all the features you would expect in a trading platform.
 
-  - Secure: All of the reserves are kept as BTS held on the blockchain, and they cannot be stolen, because there are no private keys that can be compromised to steal the reserves.
+  - Secure: All of the reserves are kept as DNA held on the blockchain, and they cannot be stolen, because there are no private keys that can be compromised to steal the reserves.
 
 * Trading / Financial Services
 * Transferable Named Account (human-friendly account name)
@@ -94,7 +94,7 @@ DNA can be made to function as a software, a network, a ledger, a bank, an excha
 * BitAsset - bitUSD, bitEUR, bitCNY, and others.
 * **Delegated Proof of State Consensus (DPOS)**
 
-  - Under DPOS, BTS Holder has influence.
+  - Under DPOS, DNA Holder has influence.
   - A robust and flexible consensus protocol.
 
 * Block Production by Elected witnesses

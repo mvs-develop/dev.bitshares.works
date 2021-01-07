@@ -10,16 +10,16 @@ Claim Worker Pay
 **How to find how much per hour allocated for all worker**
 
 Every second, `[ 17/(2^32) * reserve fund ]` is allocated for witnesses and
-workers where reserve fund is how many BTS are currently not distributed (see
+workers where reserve fund is how many DNA are currently not distributed (see
 the `source code`_).
 
 .. _source code: https://github.com/cryptonomex/graphene/blob/f85dec1c23f6bf9259ad9f15311b2e4aac4f9d44/libraries/chain/include/graphene/chain/config.hpp
 
 Every hour the total available reserve fund is calculated by finding how many
-BTS are available to be distributed and how many BTS will be returned to the
+DNA are available to be distributed and how many DNA will be returned to the
 reserve fund (i.e., "burnt") during the next maintenance interval.
 
-First find how many BTS have not been distributed:
+First find how many DNA have not been distributed:
 
 ::
 
@@ -28,14 +28,14 @@ First find how many BTS have not been distributed:
     # get current_supply from
     get_object 2.3.0
 
-    ==> from_initial_reserve = max_supply - current supply of BTS
+    ==> from_initial_reserve = max_supply - current supply of DNA
 
 Then modify it by adding the accumulated fees and witness budget remaining
-(i.e., 1.5 BTS per block is budgeted, so budget remaining is
+(i.e., 1.5 DNA per block is budgeted, so budget remaining is
 
 ::
 
-    1.5 BTS * (number of blocks left in maintenance period+blocks missed by witnesses))
+    1.5 DNA * (number of blocks left in maintenance period+blocks missed by witnesses))
 
 in this maintenance cycle (they will be added to the "reserve fund" permanently
 at maintenance)

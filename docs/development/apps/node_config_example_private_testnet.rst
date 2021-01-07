@@ -57,7 +57,7 @@ As a default, most parameters have been commented. You have to uncomment to set 
 
 	###--> For Private Testnet, set own key pairs
 	# Tuple of [PublicKey, WIF private key] (may specify multiple times)
-	private-key = ["BTS....","5KQwr...."]
+	private-key = ["DNA....","5KQwr...."]
 
 	# ID of witness controlled by this node (e.g. "1.6.5", quotes are required, may specify multiple times)
 	# witness-id =

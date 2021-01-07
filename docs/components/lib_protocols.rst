@@ -2084,7 +2084,7 @@ vote_id_type
 
 
 
-BTS Holders
+DNA Holders
 ================
 
 committee_member

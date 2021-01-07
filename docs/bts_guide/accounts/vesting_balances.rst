@@ -28,7 +28,7 @@ We make even more use of this functionality in such that an account's income in 
 
 is vesting over several days with different strategies.
 
-For instance, a worker can define for how long he would like his pay to vest to encourage BTS Holders to vote for him due to no imminent additional sell pressure from the worker.
+For instance, a worker can define for how long he would like his pay to vest to encourage DNA Holders to vote for him due to no imminent additional sell pressure from the worker.
 
 **Strategies**
 

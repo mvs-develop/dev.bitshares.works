@@ -568,7 +568,7 @@ generic_evaluator
       void prepare_fee(account_id_type account_id, asset fee);
 
       /**
-       * Convert the fee into BTS through the exchange pool.
+       * Convert the fee into DNA through the exchange pool.
        *
        * Reads core_fee_paid field for how much CORE is deducted from the exchange pool,
        * and fee_from_account for how much USD is added to the pool.

@@ -28,7 +28,7 @@ A **witness node** is a node run by a witness. Each witness node validates all b
 
 So, when and who producing blocks?  We call **Block Producers** ; they serve an important role of validating signatures and timestamping transactions by including them in a block and broadcast it.  Block Producers are witnesses who got enough votes to become **active witnesses** and can produce a block when they got their turn "time slot".
 
-Each time, block producers produce a block, they get paid for their services. Their pay rate is set by the BTS holders via their elected committee members. If failing to produce a block in a time slot, then the block producer is not paid.  Currently, DNA blockchain has 27 Block Producers (Active Witnesses).  You can find DNA Blockchain witnesses in DNA UI wallet  Explorer-witnesses, or :ref:`other Explorers <trx-performance-explorer>`.
+Each time, block producers produce a block, they get paid for their services. Their pay rate is set by the DNA holders via their elected committee members. If failing to produce a block in a time slot, then the block producer is not paid.  Currently, DNA blockchain has 27 Block Producers (Active Witnesses).  You can find DNA Blockchain witnesses in DNA UI wallet  Explorer-witnesses, or :ref:`other Explorers <trx-performance-explorer>`.
 
 
 You could think about DNA blockchain nodes like the below.

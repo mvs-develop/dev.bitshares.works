@@ -14,7 +14,7 @@ The purpose of the referral program is to incentivize people to bring in more pe
 Participation
 ----------------------
 
-Every BTS Holder can become a Lifetime Member and participate in the Referral Program. In this program:
+Every DNA Holder can become a Lifetime Member and participate in the Referral Program. In this program:
 
 .. Attention::
 

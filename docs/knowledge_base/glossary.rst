@@ -47,9 +47,9 @@ Witness Nodes
   - Non-Block producer (a.k.a. standby witness node) is either a not-voted-in witness or a voted-in witness with a different key. If it gets enough votes then it's an active witness.
 
 
-BTS Holder
+DNA Holder
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- "shareholder / stakeholders" --> "BTS Holder"
+- "shareholder / stakeholders" --> "DNA Holder"
 
 |
 
@@ -132,9 +132,9 @@ Genesis Block (in DNA)
 N
 -----
 
-Native Core Token BTS
+Native Core Token DNA
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- BTS
+- DNA
 
 
 Nodes

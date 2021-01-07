@@ -102,21 +102,21 @@ then we'll use that label to transfer assets into the alice blind account.
 ::
 
     >>> list_account_balances "peters-public-registered-account"
-    5000 BTS
+    5000 DNA
 
     >>> set_key_label "BTS5Qmr9H9SM39EHmVgXtsVjUGn2xBUtqbF6MdQ6RpnxUWNak7mse" "Alice-is-Blind"
     true
 
-    >>> transfer_to_blind "peters-public-registered-account" BTS [[Alice-is-Blind,100]] true
+    >>> transfer_to_blind "peters-public-registered-account" DNA [[Alice-is-Blind,100]] true
     3369305ms th_a       wallet.cpp:3794               transfer_to_blind    ] to_amounts: [["Alice-is-Blind","100"]]
-    peters-public-registered-account sent 100 BTS to 1 blinded balance fee: 40 BTS
-    100 BTS to  Alice-is-Blind
+    peters-public-registered-account sent 100 DNA to 1 blinded balance fee: 40 DNA
+    100 DNA to  Alice-is-Blind
               receipt: 2B2vTjJ19hgqzGp8qdc8MEWmsgEUGECNJcoQTYNQqMU8bRofmbQYemXs56FoUc4Z5PdVM65nsySZgwJMq9Z SkpWQFhEqLGuZi1N3jQm8yBwaLD2DQzwY5AEW1rSK9HWJbfqNLtx8U4kc3o9xKtJoED2SgHW6jDQ7igBTcVhuUiKSwFu3DFa6LTeS5 Wm5khjgy1LrR5uhmp
 
     >>> list_account_balances "peters-public-registered-account"
-    4860 BTS
+    4860 DNA
 
-The above 2 steps transmit BTS assets from a public, registered account named
+The above 2 steps transmit DNA assets from a public, registered account named
 "peters-public-registered-account" into a single unregistered blind account
 named alice using a label to refer to it named "Alice-is-Blind".  It is
 important to note that these labels are NOT persistent from one CLI session to
@@ -155,7 +155,7 @@ the correct balance:
 ::
 
     >>> receive_blind_transfer "2B2vTjJ19hgqzGp8qdc8MEWmsgEUGECNJcoQTYNQqMU8bRofmbQYemXs56FoUc4Z5PdVM65nsySZgwJMq9ZSkpWQFhEqLGuZi1N3jQm8yBwaLD2DQzwY5AEW1rSK9HWJbfqNLtx8U4kc3o9xKtJoED2SgHW6jDQ7igBTcVhuUiKSwFu3DFa6LTeS5Wm5khjgy1LrR5uhmp "peter" "from Peter"
-    100 BTS  peter  =>  alice   "from Peter"
+    100 DNA  peter  =>  alice   "from Peter"
 
 Using the balance receipt value returned from the transfer_to_blind command in
 Step 2 we can receive (i.e. import) the balance into alice's blind account.
@@ -183,7 +183,7 @@ accounts returned from that to obtain their balances:
     ]]
 
     >>> get_blind_balances "alice"
-    100 BTS
+    100 DNA
 
 To review, you have learned how to:
 
@@ -250,8 +250,8 @@ before you continue.
     true
 
 We need to restart the CLI wallet with the alice account, where we have a 100
-BTS balance. We will create a label to refer to Bob's confidential account
-(bobby) and transfer some BTS assets from alice to bobby. Note that the process
+DNA balance. We will create a label to refer to Bob's confidential account
+(bobby) and transfer some DNA assets from alice to bobby. Note that the process
 is the same as before, and we need to set a label for the bobby (destination)
 account to do the transfer.
 
@@ -260,30 +260,30 @@ account to do the transfer.
     >>> set_key_label "BTS6V829H9SM39EHmVgXtsVjUGn2xBUtqbF6MdQ6RpnxUWNakaV26" "bobby"
     true
 
-    >>> blind_transfer alice bobby 80 BTS true
+    >>> blind_transfer alice bobby 80 DNA true
     318318ms th_a       wallet.cpp:743                save_wallet_file     ] saving wallet to file /home/admin/BitShares2/blindAliceWallet
-    blind_transfer_operation temp-account fee: 15 BTS
-    5 BTS to  alice
+    blind_transfer_operation temp-account fee: 15 DNA
+    5 DNA to  alice
               receipt: iiMe3q3X4DqW1AqCXfkYEcuRsRATxMwSvJpaUuCbMTcxRUUGeBPPwYU1SRRs4tEQGPNmP$Js4jTJkDGEHzUm33o6h14wa1XNsmedLJCKnwmyGeqFB4vPRk9ZxnaizbMNu8bHr62xQaTc73ALxAZEPRdkNLyqMk$oDEFja3vCPgcyDYCQmkVnNiAQaKeMG83KrW11QZMHQZfzZ8ofTSTEy8qruLAa27vrjAM6q2ckbD8ZTNMWnkSWniq$4fay3Tbcd2zsy9EgxuxN
 
-    80 BTS to  bobby
+    80 DNA to  bobby
               receipt: iiMe3q3X4DqW1AqCXfkYEcuRsRATxMwSvJpaUuCbMTcxRUUsn1qUtjfqLYUaNycrpKHfmUG1PR9mxd2nVKB15RYSryyjSn54ADzNBaFzxTY1s699iJWWHw2itiagfcKtvwizhN9Ru8nfnzgx8c5vi7RCLNB2PgrcTxSjYUJW1sfMicFyLRgYrCHFyNd1VhBeWpsLMwagcTGkUTf4rNDyXTrRqqLf2Nhy6P3ohk3J5WbshYyHxuLJGY2E7B5nPpFuf4Bnf9paD6jW
 
 There is a bit more output printed than what is shown above, but the important
 results are provided. From this you can see we first set a label to refer to the
-newly created "bobby" account, and the blind_transfer command fee was 15 BTS,
-which sent 80 BTS of the balance (100 BTS was transferred to the alice account
+newly created "bobby" account, and the blind_transfer command fee was 15 DNA,
+which sent 80 DNA of the balance (100 DNA was transferred to the alice account
 in Part 1) to the bobby confidential account and provided 2 balance receipts:
-the first for 5 BTS coming back to the alice account as returned change
-(leftover funds), and the second which is the receipt for the 80 BTS being sent
+the first for 5 DNA coming back to the alice account as returned change
+(leftover funds), and the second which is the receipt for the 80 DNA being sent
 to the bobby account, which we will need in order to receive the transfer in the
 bobby account contained in the blindBobWallet file.
 
 As you can see using confidential in the CLI wallet is a rather tedious "manual"
 process. Do note however that you do not need to do a "receive_blind_transfer"
-to import the 5 BTS change back into the alice account, at least that is taken
+to import the 5 DNA change back into the alice account, at least that is taken
 care of. Also important to note is as far as the outside world can see alice
-sent some amount less than 100 BTS to two new outputs, one of which is the
+sent some amount less than 100 DNA to two new outputs, one of which is the
 change returned, which makes it yet that much more difficult to track what is
 going on, especially since the amounts of each output are invisible.
 
@@ -291,7 +291,7 @@ going on, especially since the amounts of each output are invisible.
 Step 5: Transferring Assets From a Confidential Account Back to a Public Account
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In this final step of our round-trip process we will transfer some of the BTS
+In this final step of our round-trip process we will transfer some of the DNA
 from the bobby confidential account back to original public account named peter
 we started out with. This is a simple procedure, but it is worth mentioning that the source
 address for transfers coming into a public account may be inferable by tracing,
@@ -304,7 +304,7 @@ First, be sure that the 'bobby' account has imported the blind receipt from Alic
 ::
 
     >>> receive_blind_transfer "iiMe3q3X4DqW1AqCXfkYEcuRsRATxMwSvJpaUuCbMTcxRUUsn1qUtjfqLYUaNycrpKHfmUG1PR9mxd2nVKB15RYSryyjSn54ADzNBaFzxTY1s699iJWWHw2itiagfcKtvwizhN9Ru8nfnzgx8c5vi7RCLNB2PgrcTxSjYUJW1sfMicFyLRgYrCHFyNd1VhBeWpsLMwagcTGkUTf4rNDyXTrRqqLf2Nhy6P3ohk3J5WbshYyHxuLJGY2E7B5nPpFuf4Bnf9paD6jW "alice" "from Alice"
-    100 BTS  alice  =>  bobby   "from Alice"
+    100 DNA  alice  =>  bobby   "from Alice"
 
 Next, Bobby will use the `transfer_from_blind` operation to transfer a blind balance
 to a public account.  Note that in the following command form the first name argument
@@ -313,23 +313,23 @@ account.
 
 ::
 
-    >>> transfer_from_blind bobby peter 50 BTS true
+    >>> transfer_from_blind bobby peter 50 DNA true
     2263915ms th_a       wallet.cpp:743                save_wallet_file     ] saving wallet to file /home/admin/BitShares2/blindBobWallet
-    blind_transfer_operation temp-account fee: 15 BTS
-    15 BTS to  bobby
+    blind_transfer_operation temp-account fee: 15 DNA
+    15 DNA to  bobby
               receipt: boqRZqyKaZW6bExrystPwFdXvzUBJSjGeaqy482NxBJ6S9Un4zima1mzysTrUipBiBpm4CrLTvCJZfqDaAaqEpmxWAWAKhi2GmnuT7nLU6n18GWjLxUnpskyywA8qCBw9VTAvaxtrNpFRtxx16NzJiZEYk6zfndvLJ2txvjq9cTT16QRXdqPQ75GJxuTAWKNdvzYm3NyK3w3K3462AbutEF9TyNGEfHidvAff49Q3yBATFs1g5NkGAMsmx4ffgwnFeMPBqi58cSZ
 
-    50 BTS to  peter
+    50 DNA to  peter
               receipt: boqRZqyKaZW6bExrystPwFdXvzUBJSjGeaqy482NxBJ6S9VPCqArXCypszWZnpCeG7jfS3oUnbtmn5bmmVH5HCXJg9QxCmn4pocbJ8ipRHfzgeq1mLMewQNn6HGrkb5WbosSntj3o4LcSEMpw2etsR2GjnBxcdxN879rBwxm6inhbpsoYn1nGwS4H o3SqoCF43MRDK3ouYrFBcAK2TTPXfnnvAU3r1UvhNHpxuNaS1cexbd88Nn6BTxSifKdJ8ysFft98e88Cbek
 
     >>> get_blind_balances bobby
     get_blind_balances bobby
-    15 BTS
+    15 DNA
 
 The explanation for this CLI session is essentially the same as it was for step
 4. Although the account information is different the commands used and their
 role in the transfer process are the same.  Also, Peter's public account will now
-show (publicly) that it has received 50 BTS from an "unknown" source.
+show (publicly) that it has received 50 DNA from an "unknown" source.
 
 One last example demonstrates how to split a balance between multiple
 confidential accounts when initially blinding a public balance.
@@ -340,7 +340,7 @@ primarily to illustrate the syntax of the command.
 ::
 
     >>> list_account_balances "peters-public-registered-account"
-    4860 BTS
+    4860 DNA
 
     >>> set_key_label "BTS5Qmr9H9SM39EHmVgXtsVjUGn2xBUtqbF6MdQ6RpnxUWNak7mse" "alice"
     true
@@ -348,25 +348,25 @@ primarily to illustrate the syntax of the command.
     >>> set_key_label "BTS6V829H9SM39EHmVgXtsVjUGn2xBUtqbF6MdQ6RpnxUWNakaV26" "bobby"
     true
 
-    >>> transfer_to_blind peters-public-registered-account BTS [[alice,800],[alice,2000],[bobby,2000]] true
-    peters-registered-account sent 4800 BTS to 3 blinded balances fee: 40 BTS
-    800 BTS to  alice
+    >>> transfer_to_blind peters-public-registered-account DNA [[alice,800],[alice,2000],[bobby,2000]] true
+    peters-registered-account sent 4800 DNA to 3 blinded balances fee: 40 DNA
+    800 DNA to  alice
       receipt: 2Dif6AK9AqYGDLDLYcpcwBmzA36dZRmuXXJR8tTQsXg32nBGs6AetDT2E4u4GSVbMKEiTi54sqYu1Bc23cPvzSAyPGEJTLkVpihaot4e1FUDnNPz41uFfu2G6rug1hcRf2Qp5kkRm4ucsAi4Fzb2M3MSfw4r56ucztRisk9JJjLdqFjUPuiAiTdM99JdfKZy8WTkKF2npd
 
-    2000 BTS to  alice
+    2000 DNA to  alice
       receipt: 28HrgG1nzkGEDNnL1eZmNvN9JmTVQp7X88nf7rfayjM7sACY8yA7FjV1cW5QXHi1sqv1ywCqfnGiNBqDQWMwpcGB1KdRwDcJPaTMZ5gZpw7Vw4BhdnVeZHY88GV5n8j3uGmZuGBEq18zgHDCFiLJ6WAYvs5PiFvjaNjwQmvBXaC6CqAJWJKXeKCCgmoVJ3CQCw2ErocfVH
 
-    2000 BTS to  bobby
+    2000 DNA to  bobby
       receipt: 82NxBJ6S9Un4zima1mzyboqRZqyKaZW6bExrystPwFdXvzUBJSjGeaqy4sTrUipBiBpm4CrLTvCJZfqDaAaqEpmxWAWAKhi2GmnuT7nLU6n18GWjLxUnpskyywA8qCBw9VTAvaxtrk6zfndvLJ2txvjq9cTT16QRXdqPQ75GJNpFRtxx16NzJiZEY49Q3yBATFs1g5NkGAMsmx4ffgwnFeMPBqi58cSZxuTAWKNdvzYm3NyK3w3K3462AbutEF9TyNGEfHidvAff
 
 In this case the only thing the public sees is that account 'peters-public-registered-account' sent 4800
-BTS to three different blinded destinations. Note that although a sum of 2800 BTS were sent to
+DNA to three different blinded destinations. Note that although a sum of 2800 DNA were sent to
 the alice confidential account, and 2000 to the bobby confidential account, there is nothing on the
 blockchain that identifies either Alice or Bob as the recipients.  (Although Peter is visible as the sender,
 since the balance was initially public.)
 
 **Conclusion**: The outside world has no idea *how much* is in each individual blinded output,
-or who is in control of each one, only that together they all add up to 4800 BTS.
+or who is in control of each one, only that together they all add up to 4800 DNA.
 
 
 Summary

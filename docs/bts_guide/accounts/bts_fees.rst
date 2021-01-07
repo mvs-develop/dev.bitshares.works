@@ -46,14 +46,14 @@ You can use the memo section to send a message. Also, some transactions require 
 Paying Fees
 ^^^^^^^^^^^^^^^^
 
-Each time you perform an activity (i.e., send fund, place an order, etc), you pay a smell amount of fee. Any transaction fee can be paid by paying any asset that has a Core exchange rate (i.e., price) at which the asset can be exchange implicitly into BTS to cover the network fee. When you confirm your activity (transaction), you can see a fee amount for the transaction.
+Each time you perform an activity (i.e., send fund, place an order, etc), you pay a smell amount of fee. Any transaction fee can be paid by paying any asset that has a Core exchange rate (i.e., price) at which the asset can be exchange implicitly into DNA to cover the network fee. When you confirm your activity (transaction), you can see a fee amount for the transaction.
 
 
 
 Order Cancellation
 ^^^^^^^^^^^^^^^^
 
-If you cancel an order that has not been fully or partially filled, 90% of the fee will be payed back to your account. However, this cashback will be in BTS (CORE token) and not in the asset you have originally paid the fee in.
+If you cancel an order that has not been fully or partially filled, 90% of the fee will be payed back to your account. However, this cashback will be in DNA (CORE token) and not in the asset you have originally paid the fee in.
 
 |
 
@@ -93,11 +93,11 @@ There are many ways to profit from issuing an asset. As the issuer you have comp
 Fee Pools
 ^^^^^^^^^^^^^^^^^
 
-Issuers may optionally maintain a Fee Pool. The **Fee Pool is a pool of BTS** and an exchange rate at which the issued asset may be converted into BTS. When a user wishes to pay a network fee with the asset, the fee pool will step in to convert the asset into BTS at the rate that the issuer has specified. This means that issuers may charge a premium every time users opt to use their asset to pay network fees rather than paying them directly with BTS.
+Issuers may optionally maintain a Fee Pool. The **Fee Pool is a pool of DNA** and an exchange rate at which the issued asset may be converted into DNA. When a user wishes to pay a network fee with the asset, the fee pool will step in to convert the asset into DNA at the rate that the issuer has specified. This means that issuers may charge a premium every time users opt to use their asset to pay network fees rather than paying them directly with DNA.
 
-.. note:: The purpose of the fee pool is **to provide a convenience to users that would like to use an asset without concerning themselves with the details of acquiring BTS**. Anyone may fund the fee pool, but only the issuer may specify the exchange rate. This exchange rate is automatically set to the settlement price if the asset is collateralized by BTS.
+.. note:: The purpose of the fee pool is **to provide a convenience to users that would like to use an asset without concerning themselves with the details of acquiring DNA**. Anyone may fund the fee pool, but only the issuer may specify the exchange rate. This exchange rate is automatically set to the settlement price if the asset is collateralized by DNA.
 
-If the assets fee pool is funded, the fees can be payed in the native UIA instead of BTS.
+If the assets fee pool is funded, the fees can be payed in the native UIA instead of DNA.
 
 
 DNA Reserve Pool and Cashflow

@@ -8,7 +8,7 @@ Items:
 - Consensus
 - Docker (DNA)
 - ElasticSearch Plugin
-- Native Core Token BTS
+- Native Core Token DNA
 - Nodes (full node)
 - Nodes (witness node)
 - P2P
@@ -25,7 +25,7 @@ Items:
 
 #### Blockchain
 -  	The Blockchain serves as a journal of user-signed instructions that become a binding agreement as soon as they are included into a block. After inclusion into a block, the agreements are stored indefinitely by means of a hash-linked-list (the Blockchain).
-#### BTS Holder
+#### DNA Holder
 - shareholder / stakeholders
 #### CLI
 - Command-line interface
@@ -39,8 +39,8 @@ Items:
 -
 #### ElasticSearch Plugin
 - A "plugin" enables blockchain data to be stored in the elastic search database. A separate instruction guide exists in the -core/wiki. Once data is in ES database, it can be easily access through kibana (e.g. using kibana.bitshares.eu). Many libraries exist to read data from elastic search.
-#### Native Core Token BTS
-- BTS
+#### Native Core Token DNA
+- DNA
 ####
 -
 ####

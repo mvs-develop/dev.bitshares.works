@@ -58,7 +58,7 @@ Python Script Example
     if __name__ == "__main__":
         graphene = GrapheneClient(Config)
 
-        price = 1.50  # one BTS costs 1.50 SYMBOLs
+        price = 1.50  # one DNA costs 1.50 SYMBOLs
         asset_symbol = "SYMBOL.BIT"
         producer = "nathan"
 

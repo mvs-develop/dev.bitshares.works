@@ -99,7 +99,7 @@ Steps
         ...
     ]
     >>> list_account_balances <accountname>
-    XXXXXXX BTS
+    XXXXXXX DNA
 
  Both keys can be exported from the web wallet.
 

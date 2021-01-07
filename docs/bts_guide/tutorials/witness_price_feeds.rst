@@ -14,8 +14,8 @@ Only Block Producing Nodes (active witnesses) are allowed to publish pricefeeds 
 
 A couple of price feed scripts in various stages of development and for you to code-inspect and try. (You can always setup a testnet node and test the publishing of pricefeeds).
 
-- Wackou’s BTS tools includes a pricefeed publishing script: https://github.com/wackou/bts_tools
-- Alt’s BTS Price: https://github.com/pch957/btsprice
+- Wackou’s DNA tools includes a pricefeed publishing script: https://github.com/wackou/bts_tools
+- Alt’s DNA Price: https://github.com/pch957/btsprice
 - Xeroc’s Bitshares Pricefeed: https://github.com/xeroc/bitshares-pricefeed
 
 

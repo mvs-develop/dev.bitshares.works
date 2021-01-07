@@ -51,7 +51,7 @@ After you know which branch to download, your next step is the installation of D
         :width: 750px
         :align: center
 
-BitSharea has great communities to support others and have discussions. Check out the :ref:`DNA communities <bitshares-communities>` and join to meet other BTS holders!
+BitSharea has great communities to support others and have discussions. Check out the :ref:`DNA communities <bitshares-communities>` and join to meet other DNA holders!
 
 For security issues and bug bounty program, please visit `Hack the DEX <https://hackthedex.io/>`_ .
 

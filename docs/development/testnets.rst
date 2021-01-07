@@ -3,7 +3,7 @@
 Testnets
 **************
 
-DNA offers an Open Public Testnet that has been deployed and is fully functional for anyone to join and test without using real BTS.  Instead, you will receive Testnet Core asset TEST.  The Open Public Testnet is a great space to start learning about DNA-Core features and DNA-UI wallet.
+DNA offers an Open Public Testnet that has been deployed and is fully functional for anyone to join and test without using real DNA.  Instead, you will receive Testnet Core asset TEST.  The Open Public Testnet is a great space to start learning about DNA-Core features and DNA-UI wallet.
 
 For the DNA Testnet preparation, you should download a **testnet** branch from the DNA-Core repository. The testnet branch files are for the Testnets to use.
 

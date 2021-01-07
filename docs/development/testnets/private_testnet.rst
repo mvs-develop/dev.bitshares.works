@@ -375,7 +375,7 @@ Now we have the private key imported into the wallet but still no funds assoccia
 
     import_balance nathan ["5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3"] true
 
-As a result, we have one account (named ``nathan``) imported into the wallet and this account is well funded with BTS as we have claimed the funds stored in the genesis file. You can view this account information and the balance by using the below commands:
+As a result, we have one account (named ``nathan``) imported into the wallet and this account is well funded with DNA as we have claimed the funds stored in the genesis file. You can view this account information and the balance by using the below commands:
 
 .. code-block:: json
 
