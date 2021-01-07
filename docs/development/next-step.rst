@@ -56,7 +56,7 @@ Use DNA API
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Learn :ref:`API Restrictions <api-access-and-restrictions>`
-- Understand Bitshares :ref:`Objects and IDs and the format <objects-ids>`
+- Understand DNA :ref:`Objects and IDs and the format <objects-ids>`
 - Understand DNA :ref:`Remote Procedure Calls (RPC) <rpc>`
 - Understand DNA :ref:`Websocket Calls & Notifications <websocket-calls>`
 - Try :ref:`bis-explorer-api-tryitout`

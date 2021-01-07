@@ -31,9 +31,9 @@ following these steps.
 Create a New User
 ---------------------------
 
-I recommend creating a new user on your server to run the Bitshares gui
+I recommend creating a new user on your server to run the DNA gui
 and give the user sudo access. >You can use any name - I have used
-bitshares in this example
+DNA in this example
 
 ::
 

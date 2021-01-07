@@ -21,7 +21,7 @@ What has Changed since DNA 0.9?
   per second. Find out how we achieve `industrial performance and scalability`_.
 
 * **New Reactive UI**:
-  The DNA 1.0 user interface was powerful but lacking in responsiveness and perfomance. For Bitshares 2.0 we've reimplemented the whole wallet using the React.js framework developed by Facebook, which is well-known for having excellent performance. The new DNA UI is an entirely browser-based wallet, with private keys maintained in the browser.
+  The DNA 1.0 user interface was powerful but lacking in responsiveness and perfomance. For DNA 2.0 we've reimplemented the whole wallet using the React.js framework developed by Facebook, which is well-known for having excellent performance. The new DNA UI is an entirely browser-based wallet, with private keys maintained in the browser.
   We expect a flourishing ecosystem of forked and tweaked wallets based off of
   our UI.
 

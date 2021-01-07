@@ -13,9 +13,9 @@ Running a DNA API Node
 Introduction
 ===============
 
-A Bitshares API Node is a witness_node instance specially configured to serve applications with data endpoints. Any bitshares application(gateway, explorer, wallet, trading program, etc) interacts with the decentralized network(blockchain) by connecting to one or many API nodes.
+A DNA API Node is a witness_node instance specially configured to serve applications with data endpoints. Any DNA application(gateway, explorer, wallet, trading program, etc) interacts with the decentralized network(blockchain) by connecting to one or many API nodes.
 
-If you plan to run a business on top of bitshares you will probably want one or several API nodes of your property. You can use public nodes but they are very busy and most of the time running old versions, the most API nodes around the better for the network and final users.
+If you plan to run a business on top of DNA you will probably want one or several API nodes of your property. You can use public nodes but they are very busy and most of the time running old versions, the most API nodes around the better for the network and final users.
 
 This tutorial is for users that already have witness_node compiled successfully.
 
@@ -50,7 +50,7 @@ A typical node start command can be something like::
 
 Above we limit the operations per account to 1000 to save RAM. This is the default behaviour for newest versions of ``witness_node`` as a full node needs more than 80 gigs of ram to run.
 
-We call full node to an API node that have all the account history from all the accounts in the bitshares blockchain. As the amount of RAM needed is so big and increasing this kind of nodes are each time more rare.
+We call full node to an API node that have all the account history from all the accounts in the DNA blockchain. As the amount of RAM needed is so big and increasing this kind of nodes are each time more rare.
 
 Look in the terminal for messages like::
 

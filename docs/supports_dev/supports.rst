@@ -20,7 +20,7 @@ DNA Core
    :widths: 15 80
    :header-rows: 0
 
-   * - `Bitshares Core <https://github.com/mvs-org/dna-core>`_
+   * - `DNA Core <https://github.com/mvs-org/dna-core>`_
      - DNA Core is the DNA blockchain implementation and command-line interface
    * - `Docker Container <https://github.com/mvs-org/dna-core/blob/master/README-docker.md>`_
      - Built-in Dockerfile to support docker containers.
@@ -34,7 +34,7 @@ DNA Core C++ Library
    :widths: 15 80
    :header-rows: 0
 
-   * - `Bitshares FC <https://github.com/mvs-org/dna-fc>`_
+   * - `DNA FC <https://github.com/mvs-org/dna-fc>`_
      - Fast-compiling C++ library  provides a set of utility libraries useful for the development of asynchronous libraries
 
 
@@ -48,7 +48,7 @@ Python
    :widths: 15 80
    :header-rows: 0
 
-   * - `Python Bitshares <https://github.com/mvs-org/python-bitshares>`_
+   * - `Python DNA <https://github.com/mvs-org/python-bitshares>`_
      - Fully featured client-side library for the DNA Blockchain - written entirely in python.
    * - `uptick <https://github.com/mvs-org/uptick>`_
      - Python-based CLI tool set for DNA blockchain
@@ -65,10 +65,10 @@ JavaScript
    :widths: 15 80
    :header-rows: 0
 
-   * - `Bitshares JS <https://github.com/mvs-org/dna-js>`_
+   * - `DNA JS <https://github.com/mvs-org/dna-js>`_
      - JavaScript tools for DNA Encryption and Serialization. 
-   * - `Bitshares JS-WS <https://github.com/mvs-org/dna-ws-js>`_
-     - JavaScript websocket interface for Bitshares
+   * - `DNA JS-WS <https://github.com/mvs-org/dna-ws-js>`_
+     - JavaScript websocket interface for DNA
 
 |
 
@@ -110,7 +110,7 @@ Testing Tool(s)
 Python
 ----------------------
 
-* `Python Bitshares Documentation <http://docs.pybitshares.com/en/latest/>`_
+* `Python DNA Documentation <http://docs.pybitshares.com/en/latest/>`_
 
 * :ref:`how-to-setup-python-lib` (also, How to Create MPAs/UIAs with Python)
 

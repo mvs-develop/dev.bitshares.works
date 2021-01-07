@@ -16,9 +16,8 @@ The DNA Open Public Testnet has been deployed and is fully functional for anyone
 Use a UI Wallet on Public Testnet
 =======================================
 
-- Go to a Web Wallet - Public testnet: (http://testnet.bitshares.eu/)
+- Go to a Web Wallet - Public testnet: (http://testnet.mvsdna.info/)
 - If you need to create an account, set the testnet faucet address
-   - Faucet: (https://faucet.testnet.bitshares.eu/)
    - Go to [Setting] menu - [Faucet] and set the above Faucet address
 - Create an account
    - For a CLOUD Wallet: Use a [CREATE ACCOUNT] button

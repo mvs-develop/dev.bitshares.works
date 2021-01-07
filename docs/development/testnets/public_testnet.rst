@@ -193,9 +193,9 @@ If you want to use the ``cli_wallet``, you need to specify at least the rpc endp
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 (If you have your testnet accounts already, you can jump this section.)
 
-We want to use a DNA Public UI wallet for testnet(http://testnet.bitshares.eu/) to register new testnet account. The public UI wallet has been set the faucet (https://faucet.testnet.bitshares.eu/) already. The faucet address is used to pay the registration fee for new users! (*To learn more details, please refer DNA Users Guide.*)
+We want to use a DNA Public UI wallet for testnet(http://testnet.mvsdna.info/) to register new testnet account. The public UI wallet has been set the faucet () already. The faucet address is used to pay the registration fee for new users! (*To learn more details, please refer DNA Users Guide.*)
 
-  1) Go to the Public testnet UI wallet: (http://testnet.bitshares.eu/) to create new testnet account.
+  1) Go to the Public testnet UI wallet: (http://testnet.mvsdna.info/) to create new testnet account.
   2) If you see "Application initialization issues", try to select "Public Testnet Server (...)" from a FULL NODE API SERVER dropdown list.
   3) Click a [CREATE ACCOUNT] button to register a new testnet account.
   4) Save your password and Create an account.

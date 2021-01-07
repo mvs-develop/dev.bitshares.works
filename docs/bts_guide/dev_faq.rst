@@ -91,7 +91,7 @@ Trusted seed nodes. Knowledge of initial witness keys.
 
 .. _dev-faq7:
 
-How is accounting addressed in Bitshares? Is it a Nxt style accounting model or like Bitcoin's UTXO
+How is accounting addressed in DNA? Is it a Nxt style accounting model or like Bitcoin's UTXO
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Each account has a finite set of balances, one for each asset type.
@@ -112,7 +112,7 @@ No scripting
 
 .. _dev-faq10:
 
-Is there a specification for Bitshares scripting language? (assuming there is one)
+Is there a specification for DNA scripting language? (assuming there is one)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 No scripting
@@ -169,7 +169,7 @@ Current 3 seconds, configurable by chain parameters.
 
 .. _dev-faq14:
 
-What is the average size in Bytes of a Bitshares transaction?
+What is the average size in Bytes of a DNA transaction?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * Average wire size of operations is ~30 bytes.
@@ -178,7 +178,7 @@ What is the average size in Bytes of a Bitshares transaction?
 
 .. _dev-faq17:
 
-What is the standard Bitshares address structure and format?
+What is the standard DNA address structure and format?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 address = 'DNA'+base58(ripemd(sha512(compressed_pub)))  (checksum obviated)

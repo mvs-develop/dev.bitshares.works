@@ -16,7 +16,7 @@ A couple of price feed scripts in various stages of development and for you to c
 
 - Wackou’s DNA tools includes a pricefeed publishing script: https://github.com/wackou/bts_tools
 - Alt’s DNA Price: https://github.com/pch957/btsprice
-- Xeroc’s Bitshares Pricefeed: https://github.com/xeroc/bitshares-pricefeed
+- Xeroc’s DNA Pricefeed: https://github.com/xeroc/bitshares-pricefeed
 
 
 |

@@ -99,7 +99,7 @@ We also need to add an entry to the database so that page loads and referrals wo
 
    1. Go to `/www/current`
    2. execute: `rails db`, a mysql console will open
-   3.  Execute: `insert into widgets set allowed_domains='testnet.bitshares.eu'`; (replace the domain with your domain)
+   3.  Execute: `insert into widgets set allowed_domains='testnet.mvsdna.info'`; (replace the domain with your domain)
 
 
 **4) Mina deployment**

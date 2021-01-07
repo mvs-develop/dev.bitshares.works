@@ -255,7 +255,7 @@ Visual Studio
 
 * **Build**
 
- - Compile Bitshares-core
+ - Compile DNA-core
    - The default is `Debug` in the upper toolbar, modified to `Release`
    - another option mode is `x64` by default and does not require modification
  - Build two executable

@@ -4,7 +4,7 @@
 Websockets Scripting Support
 ********************************
 
-The Bitshares developer community use different ways to interact with the Core API mainly by the use of the Websocket.
+The DNA developer community use different ways to interact with the Core API mainly by the use of the Websocket.
 
 Some of this methods are ``curl``, ``pybitshares``, ``wscat`` and many others.
 
@@ -15,7 +15,7 @@ I was after scripting ``wscat`` since a while until @gdfbacchus asked in telegra
 Python - websocket-client
 ===========================
 
-Python is the choice as it is probably the most used language in the bitshares community.
+Python is the choice as it is probably the most used language in the DNA community.
 
 https://pypi.python.org/pypi/websocket-client
 

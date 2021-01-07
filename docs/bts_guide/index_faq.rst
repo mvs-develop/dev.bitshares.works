@@ -9,7 +9,7 @@ General
 
 * :ref:`dev-faq17`
 * :ref:`What is the format of the block header? <lib-block>`
-* :ref:`What is the maximum bitshares block size?  <protocol-chain-param>` - Configurable by chain parameters
+* :ref:`What is the maximum DNA block size?  <protocol-chain-param>` - Configurable by chain parameters
 * :ref:`dev-faq1`
 * :ref:`dev-faq4`
 * :ref:`dev-faq8`

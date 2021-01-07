@@ -43,7 +43,7 @@ In OS X 10.11 (El Capitan) and newer, you will be prompted to install developer 
 
     brew install google-perftools
 
-7. Clone the Bitshares repository::
+7. Clone the DNA repository::
 
     git clone https://github.com/mvs-org/dna-core.git
     cd dna-core
@@ -55,7 +55,7 @@ In OS X 10.11 (El Capitan) and newer, you will be prompted to install developer 
     make
 
 
-.. Notes:: As mentioned elsewhere, Bitshares depends on the third-party libraries "Boost" and "OpenSSL". These libraries need to be in certain version ranges. At the moment, Boost needs to be **between 1.57 and 1.65**. OpenSSL needs to be in the **1.0.x range**.
+.. Notes:: As mentioned elsewhere, DNA depends on the third-party libraries "Boost" and "OpenSSL". These libraries need to be in certain version ranges. At the moment, Boost needs to be **between 1.57 and 1.65**. OpenSSL needs to be in the **1.0.x range**.
 
 
 ------------

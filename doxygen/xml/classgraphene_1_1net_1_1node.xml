@@ -588,7 +588,7 @@
         <briefdescription>
 <para>Helper to convert a string to a collection of endpoints. </para>        </briefdescription>
         <detaileddescription>
-<para>This converts a string (i.e. &quot;bitshares.eu:665535&quot; to a collection of endpoints. NOTE: Throws an exception if not in correct format or was unable to resolve URL.</para><para><parameterlist kind="param"><parameteritem>
+<para>This converts a string (i.e. &quot;mvsdna.info:665535&quot; to a collection of endpoints. NOTE: Throws an exception if not in correct format or was unable to resolve URL.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>in</parametername>
 </parameternamelist>

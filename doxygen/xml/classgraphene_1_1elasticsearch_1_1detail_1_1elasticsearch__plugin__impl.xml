@@ -104,7 +104,7 @@
         <definition>std::string graphene::elasticsearch::detail::elasticsearch_plugin_impl::_elasticsearch_index_prefix</definition>
         <argsstring></argsstring>
         <name>_elasticsearch_index_prefix</name>
-        <initializer>= &quot;bitshares-&quot;</initializer>
+        <initializer>= &quot;dna-&quot;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>

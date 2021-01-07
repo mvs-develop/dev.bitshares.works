@@ -3,7 +3,7 @@
 Python - DNA
 =========================
 
-* `Python-Bitshares Documentation <http://docs.pybitshares.com/en/latest/>`_
+* `Python-DNA Documentation <http://docs.pybitshares.com/en/latest/>`_
 * `Python Library for DNA: GitHub <https://github.com/mvs-org/python-bitshares#python-library-for-bitshares>`_
 
   - Fully featured client-side library for the DNA Blockchain - written entirely in python.

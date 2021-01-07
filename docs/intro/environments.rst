@@ -67,7 +67,7 @@ Project Guide and Milestones
 DNA-Core (Team)
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-The DNA-Core team is a team of developers who manage the DNA-Core repository code and handle the issues that are submitted by other developers. The team creates project plans for next release(s) and delivers the result to the Bitshares community.
+The DNA-Core team is a team of developers who manage the DNA-Core repository code and handle the issues that are submitted by other developers. The team creates project plans for next release(s) and delivers the result to the DNA community.
 
 * Roles
 
@@ -168,7 +168,7 @@ For a release,
 
 **Note:** Solving conflicts by github(web) will merge branches in unintended directions. Avoid solving this way, merge and resolve conflicts manually through the git command line. Conflicts generally occur when merging release to testnet.
 
-  - How to: `Snapshot Comparison in Bitshares <https://github.com/oxarbitrage/documentation/blob/master/snapshot.md>`_
+  - How to: `Snapshot Comparison in DNA <https://github.com/oxarbitrage/documentation/blob/master/snapshot.md>`_
 
 
 **Note 2:** Follow command line github suggestion to resolve conflicts but at the end of the process you will not have permission to merge directly to ``testnet``, never push the fix to ``release``. Create a new branch and push there, then create a new pull request between ``testnet`` and ``new_branch``, merge ``new_branch`` to ``testnet`` and ``release`` will be automatically added to the merge.

@@ -70,7 +70,7 @@ How you package your component is important. Often, one component is packaged in
 
 cUrl needs the OpenSSL library. DNA needs OpenSSL and cUrl. When DNA needs to be compiled into an application, all components must be using the same library (there are exceptions, but those are special cases). So if cUrl was packaged up with (for example) OpenSSL "static", with debug information, and for Linux, DNA must do the same. Otherwise, the linker (the application that makes other applications) gets confused. "You told me to call a particular OpenSSL function, but I do not know which one you want!"
 
-When Bitshares is compiled, and is using the same OpenSSL components that cUrl did when it was compiled, everyone is happy. There is only 1 version of each OpenSSL function to choose from. The linker is happy, and the application gets built.
+When DNA is compiled, and is using the same OpenSSL components that cUrl did when it was compiled, everyone is happy. There is only 1 version of each OpenSSL function to choose from. The linker is happy, and the application gets built.
 
 .. Note::
  - 1: This applies to Windows users as well, although the terminology is a bit different. They call "shared libraries" "DLLs".

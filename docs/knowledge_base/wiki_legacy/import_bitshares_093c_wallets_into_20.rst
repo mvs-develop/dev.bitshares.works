@@ -4,11 +4,11 @@ Import DNA 0.9.3c wallets into DNA 2.0 CLI wallet
 How to Import Large Wallets from DNA 0.9.3
 -----------------------------------------------------
 
-In bitshares 0.9.3c, run::
+In dna 0.9.3c, run::
 
     wallet_export_keys /tmp/final_bitshares_keys.json
 
-in bitshares 2.0 CLI wallet, run: >>> import_accounts /tmp/final_bitshares_keys.json my_password
+in dna 2.0 CLI wallet, run: >>> import_accounts /tmp/final_bitshares_keys.json my_password
 
 then, for each account in your wallet (run list_my_accounts to see them)::
 

@@ -122,7 +122,7 @@ DNA Cash Flow
 Blockchain Observation
 ===============================
 
-Bitshares Block Explorer
+DNA Block Explorer
 -------------------------------
 
 DNA Explorer shows DNA Blockchain information. You can observe DNA Blockchain *Health* Status (head_block_num, head_block_age, chain_id, etc.), how transactions processing, assets volume, and members.

@@ -34,8 +34,6 @@ Identifier
 
 When you create a DNA account, DNA 2.0 registers the account name to the blockchain and also assigns an incrementing identifier (account id) during the registration. You will not need to remember the account_id while you use the DNA wallet operations (i.e., send fund, place order, etc).
 
-If you want to know your acount_id. go to a `cryptofresh <https://www.cryptofresh.com/>`_ and search your account name. You will find your account id under your account name.
-
 
 *The identifier (account_id) comes with many advantages:*
 Besides improved scalability, we have separated the identity from the transaction authorizing signature. In practice, owning an account name is autonomous from being able to spend its funds. Furthermore, both rights (we call them permissions) can split among an arbitrary complex relation of people (we call them authorities) using weights and required thresholds.

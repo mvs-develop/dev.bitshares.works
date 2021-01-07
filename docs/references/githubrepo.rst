@@ -13,17 +13,17 @@ More DNA related Resources
    * - Name
      - Note
      - Repository
-   * - `bitshares-latency <https://github.com/litepresence/extinction-event/blob/master/EV/bitshares-latency.py>`_
+   * - `DNA-latency <https://github.com/litepresence/extinction-event/blob/master/EV/bitshares-latency.py>`_
      - DNA Nodes list (source code)
      - litepresence
-   * - `bitshares-infrastructure <https://github.com/blockchainbv/bitshares-infrastructure>`_
+   * - `DNA-infrastructure <https://github.com/blockchainbv/bitshares-infrastructure>`_
      - Configuration for HAproxy with DNA Health Monitor
      - blockchainbv
    * - `c-libp2p <https://github.com/Agorise?tab=repositories>`_
      - Implementation of libp2p in C
      - Agorise
-   * - `Bitshares-HUG-REST-API <https://github.com/DNA-CM/Bitshares-HUG-REST-API>`_
-     - A HUG REST API for the Bitshares network
+   * - `DNA-HUG-REST-API <https://github.com/DNA-CM/Bitshares-HUG-REST-API>`_
+     - A HUG REST API for the DNA network
      - DNA-CM
    * - `ChainSquad GmbH <https://github.com/chainsquad>`_
      - Blockchain development and consultation
@@ -31,7 +31,7 @@ More DNA related Resources
    * - `blockchain-telecom.graphene-core <https://github.com/Clementvale-LTD/blockchain-telecom.graphene-core/commit/35366d04f4529363e121366171edbebc846f9327>`_
      - systemd service startup configuration and description is added
      - Clementvale-LTD
-   * - `bitshares-witness-monitor <https://github.com/clockworkgr/bitshares-witness-monitor>`_
+   * - `DNA-witness-monitor <https://github.com/clockworkgr/bitshares-witness-monitor>`_
      - A DNA witness monitoring script with telegram integration written in JS.
      - clockworkgr
    * - `blue-loader-python <https://github.com/LedgerHQ/blue-loader-python>`_
@@ -50,7 +50,7 @@ More DNA related Resources
      -
      - PBSA
    * - `bitshares-ruby <https://github.com/rnglabs/bitshares-ruby>`_
-     - Gem to interact with Bitshares APIs. Porting to Graphene
+     - Gem to interact with DNA APIs. Porting to Graphene
      - rnglabs
    * - `slips <https://github.com/satoshilabs/slips/issues/49>`_
      - SLIP-0048 : Deterministic Key Hierarchy for Graphene-based Networks #49
