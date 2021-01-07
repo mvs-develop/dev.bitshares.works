@@ -129,7 +129,7 @@ DNA Explorer shows DNA Blockchain information. You can observe DNA Blockchain *H
 
 If you would like to see more detailed information, the Open Explorer offers other information tabs (i.e., Operations, Proxies, Markets, SmartCoins, UIAs, and Holders) to view.
 
-- `dna explorer  <https://explorer.mvsdnadev.com/#//>`_
+- `dna explorer  <https://mvsdna.info/>`_
 
 |
 
