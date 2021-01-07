@@ -22,7 +22,7 @@ DNA Core
 
    * - `Bitshares Core <https://github.com/bitshares/bitshares-core>`_
      - DNA Core is the DNA blockchain implementation and command-line interface
-   * - `Docker Container <https://github.com/bitshares/bitshares-core/blob/master/README-docker.md>`_
+   * - `Docker Container <https://github.com/mvs-org/dna-core/blob/master/README-docker.md>`_
      - Built-in Dockerfile to support docker containers.
 
 |
@@ -48,9 +48,9 @@ HTLC
    :widths: 15 80
    :header-rows: 0
 
-   * - `Hashed Time-Lock Contracts (HTLC) on DNA <https://github.com/bitshares/bitshares-core/wiki/HTLC>`_
+   * - `Hashed Time-Lock Contracts (HTLC) on DNA <https://github.com/mvs-org/dna-core/wiki/HTLC>`_
      - TESTNET: User Guide for Hashed Time-Lock Contracts (HTLC) on DNA
-   * - `Hashed Time-Lock Contracts (HTLC) on DNA:CN <https://github.com/bitshares/bitshares-core/wiki/HTLC-(CN)>`_
+   * - `Hashed Time-Lock Contracts (HTLC) on DNA:CN <https://github.com/mvs-org/dna-core/wiki/HTLC-(CN)>`_
      - 测试网：BitShares 哈希时间锁合约（HTLC）用户指南
 
 
@@ -184,7 +184,7 @@ API Related
 Plugins
 ----------------------
 
-* `DNA Plugins List: Github ReadMe <https://github.com/bitshares/bitshares-core/blob/master/libraries/plugins/README.md>`_
+* `DNA Plugins List: Github ReadMe <https://github.com/mvs-org/dna-core/blob/master/libraries/plugins/README.md>`_
 
   - ``account_history``, ``debug_witness``, ``delayed_node``, ``elasticsearch``, ``es_objects``,  ``grouped_orders``, ``market_history``, ``snapshot``, ``witness``
 

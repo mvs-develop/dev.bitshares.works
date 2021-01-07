@@ -19,7 +19,7 @@ How to install DNA-Core CLI Tool
 CLI-Wallet on Windows (x64)
 -------------------------------------------
 
-1. Download the DNA-Core-*-x64-cli-tools.zip file from https://github.com/bitshares/bitshares-core/releases
+1. Download the DNA-Core-*-x64-cli-tools.zip file from https://github.com/mvs-org/dna-core/releases
 2. Unzip the file to your workstation. (e.g., d:\DNA\)
 3. Download the **cacer.pem** file from Mozilla: https://curl.haxx.se/docs/caextract.html
 4. Save the file to the same folder you extracted the cli-tools. (e.g. d:\DNA\)

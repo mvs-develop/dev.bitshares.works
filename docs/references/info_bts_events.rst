@@ -12,7 +12,7 @@ BitFest Amsterdam 2018
 ====================================
 (Saturday 22nd September 2018)
 
-:Peter Conrad:  `DNA Core & Network Performance <../_static/presen_docs/BitFest_BTS_Performance.pdf>`_ (rel: `Performance Test Demonstration <https://github.com/bitshares/bitshares-core/tree/develop/tests/performance>`_ )
+:Peter Conrad:  `DNA Core & Network Performance <../_static/presen_docs/BitFest_BTS_Performance.pdf>`_ (rel: `Performance Test Demonstration <https://github.com/mvs-org/dna-core/tree/develop/tests/performance>`_ )
 :Alfredo Garcia:  `The Business of DNA Plugins <../_static/presen_docs/BitFest_Business_Plugins.pdf>`_
 :John M. Jones:  `Trustless Asset Swaps: DNA and HTLC <http://www.jmjatlanta.com/index.php/2018/09/27/bitshares-and-hashed-time-lock-contracts-htlc/>`_
 :Michel Santos: `Life and Times of a DNA Operation <../_static/presen_docs/Life_and_Times_of_a_BitShares_Operation.pdf>`_

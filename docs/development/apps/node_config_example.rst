@@ -364,7 +364,7 @@ Configure a Witness Node as a Delayed Node
 
 The ``witness_node`` program can be used as a ``delayed_node``. For the instruction, *How to configure a  witness_node as a delayed_node*, check the following link:
 
-* `How to configure a witness_node as a delayed_node <https://github.com/bitshares/bitshares-core/wiki/Delayed-Node>`_
+* `How to configure a witness_node as a delayed_node <https://github.com/mvs-org/dna-core/wiki/Delayed-Node>`_
 
 |
 
@@ -373,7 +373,7 @@ Plugins
 
 To see available DNA Plugins, go to the below link page.
 
-* `DNA Plugins: Github ReadMe <https://github.com/bitshares/bitshares-core/blob/master/libraries/plugins/README.md>`_
+* `DNA Plugins: Github ReadMe <https://github.com/mvs-org/dna-core/blob/master/libraries/plugins/README.md>`_
 
   - ``account_history``, ``debug_witness``, ``delayed_node``, ``elasticsearch``, ``es_objects``,  ``grouped_orders``, ``market_history``, ``snapshot``, ``witness``
 

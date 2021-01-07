@@ -10,14 +10,14 @@ Release Notes
 
 -----------------
 
-`Bugfix release 3.3.2 <https://github.com/bitshares/bitshares-core/releases/tag/3.3.2>`_
+`Bugfix release 3.3.2 <https://github.com/mvs-org/dna-core/releases/tag/3.3.2>`_
 ========================
 
 The DNA Core software has been updated to the 3.3.2 Bugfix Release. The Core software is used to build the validation nodes that perform consensus of all transactions on the DNA blockchain. This release contains only bugfixes related to the P2P networking layer.
 
 |
 
-`Bugfix release 3.3.1 <https://github.com/bitshares/bitshares-core/releases/tag/3.3.1>`_
+`Bugfix release 3.3.1 <https://github.com/mvs-org/dna-core/releases/tag/3.3.1>`_
 ========================
 
 **This release fixes a chain halt. All nodes must upgrade.**
@@ -28,7 +28,7 @@ Note: to avoid replay, nodes on older 3.x.y versions might prefer to upgrade to 
 |
 
 
-`DNA Core 3.3.0 <https://github.com/bitshares/bitshares-core/releases/tag/3.3.0>`_
+`DNA Core 3.3.0 <https://github.com/mvs-org/dna-core/releases/tag/3.3.0>`_
 ========================
 
 The DNA Core software has been updated to the 3.3.0 Feature Release. The Core software is used to build the validation nodes that perform consensus of all transactions on the DNA blockchain. This release includes additions and improvements but does not include any changes to the consensus protocol.
@@ -37,7 +37,7 @@ The DNA Core software has been updated to the 3.3.0 Feature Release. The Core so
 
 |
 
-`DNA Core 3.2.1 <https://github.com/bitshares/bitshares-core/releases/tag/3.2.1>`_
+`DNA Core 3.2.1 <https://github.com/mvs-org/dna-core/releases/tag/3.2.1>`_
 ========================
 
 The DNA Core software has been updated to the 3.2.1 release. The Core software is used to build the validation nodes that perform consensus of all transactions on the DNA blockchain. This release includes a fix for an issue found in the 3.2.0 release, and does not include any changes to the consensus protocol.
@@ -45,7 +45,7 @@ The DNA Core software has been updated to the 3.2.1 release. The Core software i
 
 |
 
-`DNA Core 3.2.0 <https://github.com/bitshares/bitshares-core/releases/tag/3.2.0>`_
+`DNA Core 3.2.0 <https://github.com/mvs-org/dna-core/releases/tag/3.2.0>`_
 ========================
 
 UPDATE: this release has a stability issue, please use 3.2.1.
@@ -56,7 +56,7 @@ The DNA Core software has been updated to the 3.2.0 Feature Release. The Core so
 |
 
 
-`DNA Core 3.1.0 <https://github.com/bitshares/bitshares-core/releases/tag/3.1.0>`_
+`DNA Core 3.1.0 <https://github.com/mvs-org/dna-core/releases/tag/3.1.0>`_
 ========================
 
 The DNA Core software has been updated to the 3.1.0 Feature Release. The Core software is used to build the validation nodes that perform consensus of all transactions on the DNA blockchain. This release includes additions and improvements but does not include any changes to the consensus protocol.
@@ -65,7 +65,7 @@ The DNA Core software has been updated to the 3.1.0 Feature Release. The Core so
 |
 
 
-`DNA Core Release 3.0.1 <https://github.com/bitshares/bitshares-core/releases/tag/3.0.1>`_
+`DNA Core Release 3.0.1 <https://github.com/mvs-org/dna-core/releases/tag/3.0.1>`_
 ================================
 
 * Fixes
@@ -78,7 +78,7 @@ The DNA Core software has been updated to the 3.1.0 Feature Release. The Core so
 |
 
 
-`DNA Core Release 3.0.0 <https://github.com/bitshares/bitshares-core/releases/tag/3.0.0>`_
+`DNA Core Release 3.0.0 <https://github.com/mvs-org/dna-core/releases/tag/3.0.0>`_
 ================================
 
 Release Numbering: We changed the versioning of the Core software to reflect a Protocol.Feature.Hotfix release format beginning from 3.0.0
@@ -92,7 +92,7 @@ Release Numbering: We changed the versioning of the Core software to reflect a P
 
 |
 
-`DNA Core Release 2.0.20190319 <https://github.com/bitshares/bitshares-core/releases/tag/2.0.20190319>`_
+`DNA Core Release 2.0.20190319 <https://github.com/mvs-org/dna-core/releases/tag/2.0.20190319>`_
 =====================================
 
 The DNA Core software has been updated to 2.0.20190319. The Core software is used to build the validation nodes that perform consensus of all transactions on the DNA blockchain. This release includes only 1 bug fix; no new features are added.
@@ -101,7 +101,7 @@ The DNA Core software has been updated to 2.0.20190319. The Core software is use
 
 |
 
-`DNA Core Release 2.0.190305 <https://github.com/bitshares/bitshares-core/releases/tag/2.0.190305>`_
+`DNA Core Release 2.0.190305 <https://github.com/mvs-org/dna-core/releases/tag/2.0.190305>`_
 =====================================
 
 The DNA Core software has been updated to 2.0.190305. The Core software is used to build the validation nodes that perform consensus of all transactions on the DNA blockchain. This release includes only bug fixes; new new features are added.
@@ -109,7 +109,7 @@ The DNA Core software has been updated to 2.0.190305. The Core software is used 
 
 |
 
-`DNA Core Release 2.0.190219 <https://github.com/bitshares/bitshares-core/releases/tag/2.0.20190319>`_
+`DNA Core Release 2.0.190219 <https://github.com/mvs-org/dna-core/releases/tag/2.0.20190319>`_
 ======================================
 
 The DNA Core software has been updated to the 201902 Feature Release. The Core software is used to build the validation nodes that perform consensus of all transactions on the DNA blockchain. This release includes multple optimizations and bug fixes but does not include any changes to the consensus protocol. Numerous performance improvements have been made that will benefit all operators of validation nodes including block producers, seeds, and API nodes especially Elastic Search API nodes.

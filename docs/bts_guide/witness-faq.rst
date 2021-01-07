@@ -20,7 +20,7 @@ Run the ``info`` command in the CLI client and check the ``head_block_age`` valu
 
 If it seems to be unable to sync beyond a certain date
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-You should always make sure you use the newest build available `here <https://github.com/bitshares/bitshares-core/releases>`_
+You should always make sure you use the newest build available `here <https://github.com/mvs-org/dna-core/releases>`_
 as earlier releases will get stuck due to hard-forks.
 
 

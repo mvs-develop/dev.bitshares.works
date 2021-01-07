@@ -21,8 +21,8 @@ Imo it's better to set a threshold equals to (total_weight - approve_threshold) 
 
 #### Findings/Result
 
-- The operation will delete the proposal from the database. text is here: https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/include/graphene/chain/protocol/proposal.hpp#L144-L154.
-- and actual delete is at: https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/proposal_evaluator.cpp#L206.
+- The operation will delete the proposal from the database. text is here: https://github.com/mvs-org/dna-core/blob/master/libraries/chain/include/graphene/chain/protocol/proposal.hpp#L144-L154.
+- and actual delete is at: https://github.com/mvs-org/dna-core/blob/master/libraries/chain/proposal_evaluator.cpp#L206.
 
 ***
 
@@ -55,7 +55,7 @@ Actually it should be `proposal_update_operation` (and if to add an account auth
 
 #### Issue
 
-In [this line](https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/db_block.cpp#L295), we throw an exception with (proposal) but we might have deleted proposal in a [previous line](https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/db_block.cpp#L274).
+In [this line](https://github.com/mvs-org/dna-core/blob/master/libraries/chain/db_block.cpp#L295), we throw an exception with (proposal) but we might have deleted proposal in a [previous line](https://github.com/mvs-org/dna-core/blob/master/libraries/chain/db_block.cpp#L274).
 
 #### Findings/Result
 

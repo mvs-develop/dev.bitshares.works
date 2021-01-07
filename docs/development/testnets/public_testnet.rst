@@ -148,9 +148,9 @@ In DNA, a seed node is a node that accept incoming P2P connection. Its address i
    * -
      - Seed Node Information
    * - testnet
-     - https://github.com/bitshares/bitshares-core/blob/testnet/libraries/app/application.cpp
+     - https://github.com/mvs-org/dna-core/blob/testnet/libraries/app/application.cpp
    * - production
-     - https://github.com/bitshares/bitshares-core/blob/master/libraries/app/application.cpp#L168-L187
+     - https://github.com/mvs-org/dna-core/blob/master/libraries/app/application.cpp#L168-L187
 
 |
 

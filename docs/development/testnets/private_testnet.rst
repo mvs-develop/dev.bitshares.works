@@ -84,11 +84,11 @@ Open a **command prompt window** and switch the current directory to ``[Testnet-
 3. Genesis File
 -------------------------------------------
 
-.. attention:: **Discussion:** `#1591:Add genesis-dev.json and move genesis jsons out of root source directory. <https://github.com/bitshares/bitshares-core/issues/1591>`_
+.. attention:: **Discussion:** `#1591:Add genesis-dev.json and move genesis jsons out of root source directory. <https://github.com/mvs-org/dna-core/issues/1591>`_
  - For a Private Testnet setup, we have a discussion about a ``genesis-dev.json`` file. This genesis-dev file can be used with no modification to create a private testnet and produce blocks on it with the init* accounts.
 
 
-**Note:** The ``--create-example-genesis`` option will be removed by Feature Release (201902). Read more: `#1536 Remove "create-genesis-json" startup option from witness_node <https://github.com/bitshares/bitshares-core/issues/1536>`_
+**Note:** The ``--create-example-genesis`` option will be removed by Feature Release (201902). Read more: `#1536 Remove "create-genesis-json" startup option from witness_node <https://github.com/mvs-org/dna-core/issues/1536>`_
 
 
 |

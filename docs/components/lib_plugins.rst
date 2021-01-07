@@ -5,7 +5,7 @@
 Plugins
 *******************************************
 
-DNA has prepared several plugins. The below list shows current DNA plugins categories and plugin's names. You can find more information in BitShartes Github - `DNA Plugins ReadMe <https://github.com/bitshares/bitshares-core/blob/master/libraries/plugins/README.md>`_.
+DNA has prepared several plugins. The below list shows current DNA plugins categories and plugin's names. You can find more information in BitShartes Github - `DNA Plugins ReadMe <https://github.com/mvs-org/dna-core/blob/master/libraries/plugins/README.md>`_.
 
 
 A plugin adds a specific feature to an existing program. In DNA, **witness, account_history, market_history, and grouped_orders plugins are available as a default**. However, you should specify plugin(s) for your purpose to run a node. You can define specific plugin(s) to activate when you start the node in a :ref:`configuration file <bts-config-ini-eg>`::
@@ -24,20 +24,20 @@ A plugin adds a specific feature to an existing program. In DNA, **witness, acco
 History
 =================
 
-`account_history <https://github.com/bitshares/bitshares-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/account_history>`_
+`account_history <https://github.com/mvs-org/dna-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/account_history>`_
 -----------------------------------
 * account_history_plugin.cpp
 * account_history_plugin.hpp
 
 
-`elasticsearch <https://github.com/bitshares/bitshares-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/elasticsearch>`_
+`elasticsearch <https://github.com/mvs-org/dna-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/elasticsearch>`_
 -----------------------------------
 * elasticsearch_plugin.cpp
 * elasticsearch_plugin.hpp
 
 
 
-`es_objects <https://github.com/bitshares/bitshares-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/es_objects>`_
+`es_objects <https://github.com/mvs-org/dna-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/es_objects>`_
 -----------------------------------
 
 * es_objects.cpp
@@ -48,7 +48,7 @@ History
 Business
 ========================
 
-`delayed_node <https://github.com/bitshares/bitshares-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/delayed_node>`_
+`delayed_node <https://github.com/mvs-org/dna-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/delayed_node>`_
 ------------------------------------
 
 * delayed_node_plugin.hpp
@@ -60,7 +60,7 @@ Market Data
 =========================
 
 
-`market_history <https://github.com/bitshares/bitshares-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/market_history>`_
+`market_history <https://github.com/mvs-org/dna-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/market_history>`_
 ----------------------------------------
 
 * market_history_plugin.cpp
@@ -69,7 +69,7 @@ Market Data
 
 
 
-`grouped_objects <https://github.com/bitshares/bitshares-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/grouped_orders>`_
+`grouped_objects <https://github.com/mvs-org/dna-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/grouped_orders>`_
 -------------------------------------------
 
 * grouped_orders_plugin.cpp
@@ -81,7 +81,7 @@ Market Data
 Block Producer
 ========================
 
-`witness <https://github.com/bitshares/bitshares-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/witness>`_
+`witness <https://github.com/mvs-org/dna-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/witness>`_
 ----------------------------------------
 
 * witness.cpp
@@ -92,14 +92,14 @@ Block Producer
 Debug
 ===========================
 
-`debug_witness <https://github.com/bitshares/bitshares-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/debug_witness>`_
+`debug_witness <https://github.com/mvs-org/dna-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/debug_witness>`_
 -----------------------------------
 
 * debug_api.cpp
 * debug_witness.cpp
 
 
-`snapshot <https://github.com/bitshares/bitshares-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/snapshot>`_
+`snapshot <https://github.com/mvs-org/dna-core/tree/cdc2db30c2f06aaddbfda965ee270b99dc24e0aa/libraries/plugins/snapshot>`_
 ---------------------------------------
 
 * snapshot.cpp

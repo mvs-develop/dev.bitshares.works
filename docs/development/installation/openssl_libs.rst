@@ -82,8 +82,8 @@ When Bitshares is compiled, and is using the same OpenSSL components that cUrl d
 Related Issues & Discussions
 ------------------------------
 
-- `#1304: dynamically linking openssl <https://github.com/bitshares/bitshares-core/issues/1304>`_
-- `#1297: make witness_node cli_wallet error <https://github.com/bitshares/bitshares-core/issues/1297>`_
+- `#1304: dynamically linking openssl <https://github.com/mvs-org/dna-core/issues/1304>`_
+- `#1297: make witness_node cli_wallet error <https://github.com/mvs-org/dna-core/issues/1297>`_
 
 
 

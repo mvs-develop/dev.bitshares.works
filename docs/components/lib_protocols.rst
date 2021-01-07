@@ -2168,7 +2168,7 @@ config
 
   #include <graphene/chain/config.hpp>
 
-  - `config.hpp <https://github.com/bitshares/bitshares-core/blob/release/libraries/chain/include/graphene/chain/config.hpp>`_
+  - `config.hpp <https://github.com/mvs-org/dna-core/blob/release/libraries/chain/include/graphene/chain/config.hpp>`_
 
 
 ext

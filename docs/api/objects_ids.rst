@@ -149,7 +149,7 @@ The DNA blockchain users are requires to register each account with a unique use
 +-------------+---------------------------------------------------------+
 
 
-- A programmatic description of all fields can be found in the `sources <https://github.com/bitshares/bitshares-core/blob/master/libraries/protocol/include/graphene/protocol/types.hpp>`_
+- A programmatic description of all fields can be found in the `sources <https://github.com/mvs-org/dna-core/blob/master/libraries/protocol/include/graphene/protocol/types.hpp>`_
 
 --------------
 

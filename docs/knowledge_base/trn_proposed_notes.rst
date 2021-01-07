@@ -35,8 +35,8 @@ Imo it's better to set a threshold equals to (total_weight - approve_threshold) 
 
 * Findings/Result
 
-  - The operation will delete the proposal from the database. text is here: https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/include/graphene/chain/protocol/proposal.hpp#L144-L154.
-  - and actual delete is at: https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/proposal_evaluator.cpp#L206.
+  - The operation will delete the proposal from the database. text is here: https://github.com/mvs-org/dna-core/blob/master/libraries/chain/include/graphene/chain/protocol/proposal.hpp#L144-L154.
+  - and actual delete is at: https://github.com/mvs-org/dna-core/blob/master/libraries/chain/proposal_evaluator.cpp#L206.
 
 ------
 
@@ -72,7 +72,7 @@ To fix this issue, a hard fork is needed.
 
 * Issue
 
-In `this line <https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/db_block.cpp#L295>`_, we throw an exception with (proposal) but we might have deleted proposal in a `previous line <https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/db_block.cpp#L274>`_.
+In `this line <https://github.com/mvs-org/dna-core/blob/master/libraries/chain/db_block.cpp#L295>`_, we throw an exception with (proposal) but we might have deleted proposal in a `previous line <https://github.com/mvs-org/dna-core/blob/master/libraries/chain/db_block.cpp#L274>`_.
 
 * Findings/Result
 

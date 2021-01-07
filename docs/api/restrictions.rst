@@ -91,7 +91,7 @@ You can restrict API’s to particular users by specifying an ``api-access`` in 
     }
 
 - Passwords are stored in ``ase64`` as as salted `sha256` hashes.
-- A simple Python script, ``saltpass.py`` is avaliable `[click here] <https://github.com/bitshares/bitshares-core/blob/master/programs/witness_node/saltpass.py>`_ to obtain hash and salt values from a password.
+- A simple Python script, ``saltpass.py`` is avaliable `[click here] <https://github.com/mvs-org/dna-core/blob/master/programs/witness_node/saltpass.py>`_ to obtain hash and salt values from a password.
 - A single asterisk ``*`` may be specified as username or password hash to accept any value.
 
 With the above configuration, how to call `add_node` from the `network_node` API

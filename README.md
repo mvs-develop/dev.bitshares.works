@@ -11,7 +11,7 @@ Welcome to the documentation portal for the DNA Blockchain. The content on this 
 [DNA Documentation website](http://how.bitshares.works/en/master/)
 
 ### Releases
-- [DNA-Core Release](https://github.com/bitshares/bitshares-core/releases)
+- [DNA-Core Release](https://github.com/mvs-org/dna-core/releases)
 - [DNA-UI Release](https://github.com/bitshares/bitshares-ui/releases)
 
 ***

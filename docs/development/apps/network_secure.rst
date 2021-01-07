@@ -12,7 +12,7 @@ Secure Network and Wallet Configuration
 
 .. Attention:: The ``delayed_node`` program is no longer supported after DNA Core 4.0.0 is released. For the instruction, *How to configure a witness_node as a delayed_node*, check the following link:
 
-   * `How to configure a witness_node as a delayed_node <https://github.com/bitshares/bitshares-core/wiki/Delayed-Node>`_
+   * `How to configure a witness_node as a delayed_node <https://github.com/mvs-org/dna-core/wiki/Delayed-Node>`_
 
 
 

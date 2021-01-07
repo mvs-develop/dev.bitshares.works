@@ -125,7 +125,7 @@ To start-off the DNA system, you need to run these programs: normal node ``witne
 
 **3.2 Windows**
 
-The compiled Windows executable is available for download on Github, at https://github.com/bitshares/bitshares-core/releases/latest ,
+The compiled Windows executable is available for download on Github, at https://github.com/mvs-org/dna-core/releases/latest ,
 
 The file is `DNA-Core-2.0.xxxxxx-x64-cli-tools.zip` and it can be unzipped. It contains three exe files and two dll files. Here is the :ref:`installation guide: CLI-Wallet on Windows (x64) <cli-tool>`
 

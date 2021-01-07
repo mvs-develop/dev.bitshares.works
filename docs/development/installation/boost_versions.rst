@@ -53,7 +53,7 @@ bitshares-core
    - ``./cli_wallet -s ws://1.2.3.4:5678/`` works with boost 1.57 and 1.58, but doesn't work with 1.60
    - ``./cli_wallet -sws://1.2.3.4:5678/`` works with boost 1.57, 1.58 and 1.60
 
-- ``time_point_sec`` jsonifies to different result in boost 1.64, as mentioned in `#597 <https://github.com/bitshares/bitshares-core/issues/597>`_
+- ``time_point_sec`` jsonifies to different result in boost 1.64, as mentioned in `#597 <https://github.com/mvs-org/dna-core/issues/597>`_
 
 .. note:: This document is for users of witness_node and cli_wallet, not for the core developers.
 

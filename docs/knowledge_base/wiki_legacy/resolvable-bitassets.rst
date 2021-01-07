@@ -150,6 +150,6 @@ Alice shorted, the price feed moved against her, she was de-leveraged when Bob e
 
 ***
 (ref)
-- https://github.com/bitshares/bitshares-core/wiki/resolvable-bitassets
+- https://github.com/mvs-org/dna-core/wiki/resolvable-bitassets
 
 (Vikram Rajkumar edited this page on Jun 9, 2015 · 1 revision)

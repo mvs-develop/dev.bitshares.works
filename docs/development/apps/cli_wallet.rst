@@ -24,7 +24,7 @@ The following will explain about the installation and how to use the console wal
   - DNA offers you to install DNA-Core into different platforms; Ubuntu (x64), OSx, and Windows.  Please refer :ref:`installation-guide`.
 
 - 1b) Use the :ref:`CLI-Wallet tools for Windows (x64)`
-  - This option you do not need to install BitShates Core. To obtain the tool, go to a `DNA release page <https://github.com/bitshares/bitshares-core/releases>`_ and download the DNA-Core-\*-x64-cli-tools.zip.
+  - This option you do not need to install BitShates Core. To obtain the tool, go to a `DNA release page <https://github.com/mvs-org/dna-core/releases>`_ and download the DNA-Core-\*-x64-cli-tools.zip.
 
 
 To reduce compilation time, you can tell the compile infrastructure to only compile the witness node by running.::

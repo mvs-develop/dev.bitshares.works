@@ -23,7 +23,7 @@ This document is intended to give new DNA developers an introduction to the DNA 
 
 The DNA Repository
 ============================
-The official DNA repository can be found at https://github.com/bitshares/bitshares-core/
+The official DNA repository can be found at https://github.com/mvs-org/dna-core/
 
 This repository uses git submodules, so be sure to fetch the submodules when cloning. This can be done by passing the ``--recursive`` flag when cloning::
 
@@ -140,7 +140,7 @@ Once the command line wallet is started, the following commands can be used to c
 
 After this, all funds on the blockchain will be held by the ``init0`` account.
 
-To get a complete list of commands supported by the command line wallet and their argument types, run help. For some commands, there is additional help available by running ``gethelp <command name>``, but in general, the best way to get information on the commands is to read `the source <https://github.com/bitshares/bitshares-core/blob/master/libraries/wallet/include/graphene/wallet/wallet.hpp#L321>`_ .
+To get a complete list of commands supported by the command line wallet and their argument types, run help. For some commands, there is additional help available by running ``gethelp <command name>``, but in general, the best way to get information on the commands is to read `the source <https://github.com/mvs-org/dna-core/blob/master/libraries/wallet/include/graphene/wallet/wallet.hpp#L321>`_ .
 
 
 |
@@ -155,18 +155,18 @@ At its essence, DNA smart contract is comprised of three main types of object: `
 Operations
 -----------------
 
-A complete list of ``operation`` s defined by the DNA protocol is stored `here <https://github.com/bitshares/bitshares-core/blob/57c40ecf472dd8c46ac082ed0e2f0292f147cf80/libraries/chain/include/graphene/chain/protocol/operations.hpp#L49>`_ . The individual ``operation`` s are defined within other headers in that same directory, i.e.  `transfer_operation <https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/include/graphene/chain/protocol/transfer.hpp#L44>`_ .
+A complete list of ``operation`` s defined by the DNA protocol is stored `here <https://github.com/mvs-org/dna-core/blob/57c40ecf472dd8c46ac082ed0e2f0292f147cf80/libraries/chain/include/graphene/chain/protocol/operations.hpp#L49>`_ . The individual ``operation`` s are defined within other headers in that same directory, i.e.  `transfer_operation <https://github.com/mvs-org/dna-core/blob/master/libraries/chain/include/graphene/chain/protocol/transfer.hpp#L44>`_ .
 
 All ``operation`` s charge a fee to execute, and each must specify an account to pay the fee. This account's ID must be returned by the ``fee_payer()`` method on the ``operation``. Each ``operation`` must also provide a stateless consistency check which examines the ``operation``'s fields and throws an exception if anything is invalid. Finally, ``operation`` s must provide a ``calculate_fee()`` method which examines the ``operation`` and calculates the fee to execute it. This method may not reference blockchain state; however, each ``operation`` defines a ``fee_parameters_type`` struct containing settings for the fee calculation defined at runtime, and an instance of this struct is passed to the ``calculate_fee()`` method.
 
-All ``operation`` s automatically require the authorization of their fee paying account, but an ``operation`` may additionally specify other accounts which must authorize their execution by defining the ``get_required_active_authorities()`` and/or ``get_required_owner_authorities()`` methods (i.e. for `account_update_operation <https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/include/graphene/chain/protocol/account.hpp#L161>`_ ). If a transaction contains an ``operation`` which requires a given account's authorization, signatures sufficient to satisfy that account's authority must be provided on the transaction.
+All ``operation`` s automatically require the authorization of their fee paying account, but an ``operation`` may additionally specify other accounts which must authorize their execution by defining the ``get_required_active_authorities()`` and/or ``get_required_owner_authorities()`` methods (i.e. for `account_update_operation <https://github.com/mvs-org/dna-core/blob/master/libraries/chain/include/graphene/chain/protocol/account.hpp#L161>`_ ). If a transaction contains an ``operation`` which requires a given account's authorization, signatures sufficient to satisfy that account's authority must be provided on the transaction.
 
 Evaluators
 ------------------
 
 Each ``operation`` has an ``evaluator`` which implements that ``operation``'s modifications to the blockchain database. Each ``evaluator`` most provide two methods: ``do_evaluate()`` and ``do_apply()``. The evaluate step examines the ``operation`` with read-only access to the database, and verifies that the ``operation`` can be applied successfully. The apply step then modifies the database. Each ``evaluator`` must also define a type alias, ``evaluator::operation_type``, which aliases the specific ``operation`` implemented by that evaluator.
 
-For example, reference the ``transfer_operation``'s evaluator `here <https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/include/graphene/chain/transfer_evaluator.hpp>`_  and `here <https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/transfer_evaluator.cpp>`_ .
+For example, reference the ``transfer_operation``'s evaluator `here <https://github.com/mvs-org/dna-core/blob/master/libraries/chain/include/graphene/chain/transfer_evaluator.hpp>`_  and `here <https://github.com/mvs-org/dna-core/blob/master/libraries/chain/transfer_evaluator.cpp>`_ .
 
 Objects
 ------------------
@@ -174,7 +174,7 @@ The DNA software implementation utilizes a custom, in-memory relational-style da
 
 The DNA database tracks various ``object`` types, each of which defines the columns of a table. The rows of this table represent the individual object instances in the database. Along with each ``object`` type is an index type, which, in relational database terms, defines the primary and secondary keys, which can be used to look up object instances. The primary key is always an ``object_id`` type, a unique numerical ID for each object instance known to the blockchain. All ``objects`` inherit an ``id`` field from their base class which contains this ID. This field is set by the database automatically and does not need to be modified manually.
 
-An example of a simple object is ``transaction_object``, defined `here <https://github.com/bitshares/bitshares-core/blob/master/libraries/chain/include/graphene/chain/transaction_object.hpp>`_ . The index is defined after the object. In this instance, the index defines the primary key (the object ID), and two secondary keys: the transaction ID (its hash), and the transaction's expiration. This means that one can look up a ``transaction_object`` given its object ID or with its transaction hash. Additionally, one can iterate through the ``transaction_object`` s sorted by expiration, or fetch transactions that expire within a given range.
+An example of a simple object is ``transaction_object``, defined `here <https://github.com/mvs-org/dna-core/blob/master/libraries/chain/include/graphene/chain/transaction_object.hpp>`_ . The index is defined after the object. In this instance, the index defines the primary key (the object ID), and two secondary keys: the transaction ID (its hash), and the transaction's expiration. This means that one can look up a ``transaction_object`` given its object ID or with its transaction hash. Additionally, one can iterate through the ``transaction_object`` s sorted by expiration, or fetch transactions that expire within a given range.
 
 Summary
 

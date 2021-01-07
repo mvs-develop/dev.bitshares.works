@@ -24,7 +24,7 @@
          1. Payment Plugins (e.g. woocommerce)
    5. References
       1. JSON/RPC API Reference
-      2. REST Server API reference (TBD. see: https://github.com/bitshares/bitshares-core/issues/870)
+      2. REST Server API reference (TBD. see: https://github.com/mvs-org/dna-core/issues/870)
       3. SDK References
          1. JS SDK
          2. JAVA SDK
@@ -33,7 +33,7 @@
    6. Software
       1. Quickstart Docker Images
       2. DNA Core
-      3. REST API Server (TBD. see: https://github.com/bitshares/bitshares-core/issues/870)
+      3. REST API Server (TBD. see: https://github.com/mvs-org/dna-core/issues/870)
       4. Reference UI
       5. SDKs
          1. JS SDK

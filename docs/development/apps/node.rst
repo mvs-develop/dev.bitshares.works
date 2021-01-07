@@ -70,7 +70,7 @@ Public Full Node Information
 
 * `DNA Public Full Nodes (apiConfig) <https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js>`_
 * `Global DNA Node Distribution Map <https://bitshares.eu/network/>`_
-* `Seed Nodes information (application.cpp) <https://github.com/bitshares/bitshares-core/blob/master/libraries/app/application.cpp>`_
+* `Seed Nodes information (application.cpp) <https://github.com/mvs-org/dna-core/blob/master/libraries/app/application.cpp>`_
 
 
 |

@@ -19,7 +19,7 @@ General
 * :ref:`dev-faq14`
 * :ref:`dev-faq19`
 * :ref:`What parameters in a configuration file in a data directory? <bts-config-ini-eg>` - (rel:*config.ini*)
-* `Is there a Dockerfile support? <https://github.com/bitshares/bitshares-core/blob/master/README-docker.md>`_
+* `Is there a Dockerfile support? <https://github.com/mvs-org/dna-core/blob/master/README-docker.md>`_
 * :ref:`Are there any support information for python and javascript developers? <bitshares-other-language-support>`
 
 **Protocol**
@@ -28,7 +28,7 @@ General
 * :ref:`dev-faq2`
 * :ref:`dev-faq3`
 * :ref:`dev-faq11`
-* `DNA - P2P Network Protocol <https://github.com/bitshares/bitshares-core/wiki/P2P-network-protocol>`_
+* `DNA - P2P Network Protocol <https://github.com/mvs-org/dna-core/wiki/P2P-network-protocol>`_
 
 **Data Structures**
 
@@ -62,7 +62,7 @@ System Components
    - :ref:`config.ini <bts-config-ini-eg>` (Node Configuration File )
    - `apiConfig.js <https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js>`_ (DNA Public Node information)
    - :ref:`api-access.json <api-access-json>` (API Access restriction)
-   - `saltpass.py <https://github.com/bitshares/bitshares-core/blob/master/programs/witness_node/saltpass.py>`_ (obtain hash and salt values from a password)
+   - `saltpass.py <https://github.com/mvs-org/dna-core/blob/master/programs/witness_node/saltpass.py>`_ (obtain hash and salt values from a password)
 
 
 
@@ -103,7 +103,7 @@ APIs
 * :ref:`api-core-faq-3`
 * :ref:`api-core-faq-5`
 * :ref:`api-core-faq-6`
-* `Where can I find a simple Python script saltpass.py to obtain hash and salt values from a password? <https://github.com/bitshares/bitshares-core/blob/master/programs/witness_node/saltpass.py>`_ - (rel: *saltpass.py*)
+* `Where can I find a simple Python script saltpass.py to obtain hash and salt values from a password? <https://github.com/mvs-org/dna-core/blob/master/programs/witness_node/saltpass.py>`_ - (rel: *saltpass.py*)
 * `Where Can I find DNA Public Full Node information? (apiconfig) <https://github.com/bitshares/bitshares-ui/blob/staging/app/api/apiConfig.js>`_
 
 

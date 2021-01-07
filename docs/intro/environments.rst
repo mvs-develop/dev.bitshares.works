@@ -19,9 +19,9 @@ DNA Code and Files
 
    - **DNA-Core (C++)** - DNA Blockchain implementation and command-line interface.
 
-    + `Programs <https://github.com/bitshares/bitshares-core/tree/master/programs#bitshares-programs>`_ : The bitshares programs are a collection of binaries to run the blockchain, interact with it or utilities.
+    + `Programs <https://github.com/mvs-org/dna-core/tree/master/programs#bitshares-programs>`_ : The bitshares programs are a collection of binaries to run the blockchain, interact with it or utilities.
 
-    + `Libraries <https://github.com/bitshares/bitshares-core/tree/master/libraries#bitshares-libraries>`_ : The libraries are the core of the project and defines everything where applications can build on top.
+    + `Libraries <https://github.com/mvs-org/dna-core/tree/master/libraries#bitshares-libraries>`_ : The libraries are the core of the project and defines everything where applications can build on top.
 
    - **Bitshares-FC** - Fast-compiling C++ library
    - **DNA python** - Fully featured client-side library for the DNA Blockchain - written entirely in python.
@@ -69,11 +69,11 @@ If you are interested to know or involve DNA-Core developments, you will find th
 Project Guide and Milestones
 ------------------------------
 
-- `Contribution Guide [DRAFT] <https://github.com/bitshares/bitshares-core/wiki/Contribution-Guide>`_
-- `Project <https://github.com/bitshares/bitshares-core/projects/6>`_
-- `DNA-Core: current issues and requests <https://github.com/bitshares/bitshares-core/issues>`_
-- `Milestones and Plans <https://github.com/bitshares/bitshares-core/milestones>`_
-- `DNA-Core Releases <https://github.com/bitshares/bitshares-core/releases>`_
+- `Contribution Guide [DRAFT] <https://github.com/mvs-org/dna-core/wiki/Contribution-Guide>`_
+- `Project <https://github.com/mvs-org/dna-core/projects/6>`_
+- `DNA-Core: current issues and requests <https://github.com/mvs-org/dna-core/issues>`_
+- `Milestones and Plans <https://github.com/mvs-org/dna-core/milestones>`_
+- `DNA-Core Releases <https://github.com/mvs-org/dna-core/releases>`_
 
 
 DNA-Core (Team)
@@ -172,7 +172,7 @@ For a release,
 12. Update online code documentation by using updated Doxyfile as config file in the master branch. Send pull request to https://github.com/bitshares/doxygen.bitshares.org with new content in html format. Send pull to https://github.com/bitshares/dev.bitshares.works with new content in xml format.
 13. Update date of last core download page of bitshares.org site.
 14. Create binaries for linux, macos and windows. Once the tag name is known create binaries for this 3 OS. Attach them to release notes.
-**Example**: https://github.com/bitshares/bitshares-core/releases/tag/3.0.0 Binaries names for this release:
+**Example**: https://github.com/mvs-org/dna-core/releases/tag/3.0.0 Binaries names for this release:
 
   - Linux: DNA-core-3.0.0-Linux-cli-tools.tar.gz
   - Windows: DNA-Core-3.0.0-Windows-x64-cli-tools.zip

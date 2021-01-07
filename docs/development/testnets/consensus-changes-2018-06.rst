@@ -27,21 +27,21 @@ This BSIP depends on `BSIP 31 <https://github.com/bitshares/bsips/blob/master/bs
 Discussion and Development
 ---------------------------------------------
 
-* `Development Overview <https://github.com/bitshares/bitshares-core/issues/834>`_
+* `Development Overview <https://github.com/mvs-org/dna-core/issues/834>`_
 
-* `Technical Discussion <https://github.com/bitshares/bitshares-core/pull/838>`_
+* `Technical Discussion <https://github.com/mvs-org/dna-core/pull/838>`_
 
-* `Summary of Code Changes (Merge) <https://github.com/bitshares/bitshares-core/pull/838/files/610dbf519aa2a97523a6d753df93a00f368e4f8e>`_
+* `Summary of Code Changes (Merge) <https://github.com/mvs-org/dna-core/pull/838/files/610dbf519aa2a97523a6d753df93a00f368e4f8e>`_
 
-* `Summary of Code Changes (Pull Request) <https://github.com/bitshares/bitshares-core/commit/14c9786ba9946599a6e13ccdb9928d9d152f2a7f>`_
+* `Summary of Code Changes (Pull Request) <https://github.com/mvs-org/dna-core/commit/14c9786ba9946599a6e13ccdb9928d9d152f2a7f>`_
 
-* `Individual Code Changes <https://github.com/bitshares/bitshares-core/pull/838/commits>`_
+* `Individual Code Changes <https://github.com/mvs-org/dna-core/pull/838/commits>`_
 
 
 Unit Tests
 ---------------------------------------------
 
-* `Changes to the test framework that imitates a live blockchain (Implementation) <https://github.com/bitshares/bitshares-core/commit/14c9786ba9946599a6e13ccdb9928d9d152f2a7f#diff-472805f6e072745a1efe846e5a8d44f7>`_
+* `Changes to the test framework that imitates a live blockchain (Implementation) <https://github.com/mvs-org/dna-core/commit/14c9786ba9946599a6e13ccdb9928d9d152f2a7f#diff-472805f6e072745a1efe846e5a8d44f7>`_
 
 
 The "database fixture" is a mock blockchain/database that imitates the internal database tracked by a node on the blockchain.
@@ -50,28 +50,28 @@ The modification permits the optional specification by accounts on the blockchai
 
 ---------
 
-* `Changes to test framework that imitates a live blockchain (Header) <https://github.com/bitshares/bitshares-core/commit/14c9786ba9946599a6e13ccdb9928d9d152f2a7f#diff-39d175fc7ddf571106cb34222239fb3b>`_
+* `Changes to test framework that imitates a live blockchain (Header) <https://github.com/mvs-org/dna-core/commit/14c9786ba9946599a6e13ccdb9928d9d152f2a7f#diff-39d175fc7ddf571106cb34222239fb3b>`_
 
 
 This header has been modified to publicize the optional use of a target collateral ratio for short position (call orders).
 
 ---------
 
-* `Test the ability to create call orders with different target collateral ratios even without submitting them to the blockchain <https://github.com/bitshares/bitshares-core/commit/14c9786ba9946599a6e13ccdb9928d9d152f2a7f#diff-0f99622d84284fc682365f4b325b624e>`_
+* `Test the ability to create call orders with different target collateral ratios even without submitting them to the blockchain <https://github.com/mvs-org/dna-core/commit/14c9786ba9946599a6e13ccdb9928d9d152f2a7f#diff-0f99622d84284fc682365f4b325b624e>`_
 
 
 This functionality that is tested is used by client software (e.g. CLI, reference wallet, Android wallets) to describe an operation (an "intent") that will create or update a short position for an account on the blockchain. This operation should be internally consistent with itself and with the validity rules established for this operation. These intents are checked prior to submitting to an RPC node.
 
 ---------
 
-* `Test of rounding of the multiplication of prices and quantities <https://github.com/bitshares/bitshares-core/commit/14c9786ba9946599a6e13ccdb9928d9d152f2a7f#diff-5984197c09fc34872620ff6206e29e35>`_
+* `Test of rounding of the multiplication of prices and quantities <https://github.com/mvs-org/dna-core/commit/14c9786ba9946599a6e13ccdb9928d9d152f2a7f#diff-5984197c09fc34872620ff6206e29e35>`_
 
 
 The functionality that is tested is used by the blockchain logic when filling orders.
 
 --------
 
-* `Test of call orders <https://github.com/bitshares/bitshares-core/commit/14c9786ba9946599a6e13ccdb9928d9d152f2a7f#diff-6f4426832d588f71164d10b4407f2137>`_
+* `Test of call orders <https://github.com/mvs-org/dna-core/commit/14c9786ba9946599a6e13ccdb9928d9d152f2a7f#diff-6f4426832d588f71164d10b4407f2137>`_
 
 
 These tests are checking specific logic that occurs when investigating the status of existing short positions on the blockchain. The test investigates different short positions (call orders) given a particular feed price and a given match price (where matches are of a buy and sell order on the books). These different short positions have different collateral ratios some of which are not margin called, some of which need to be margin called yet have sufficient collateral, and some of which need to be margin called yet do not have sufficient collateral (i.e. black swan).
@@ -79,7 +79,7 @@ These tests are checking specific logic that occurs when investigating the statu
 ---------
 
 
-* `Test of market orders <https://github.com/bitshares/bitshares-core/commit/14c9786ba9946599a6e13ccdb9928d9d152f2a7f#diff-5c2422e9af6788cd1cc3e76296e1c7c4>`_
+* `Test of market orders <https://github.com/mvs-org/dna-core/commit/14c9786ba9946599a6e13ccdb9928d9d152f2a7f#diff-5c2422e9af6788cd1cc3e76296e1c7c4>`_
 
 
 Both tests are checking the matching of orders on the books.

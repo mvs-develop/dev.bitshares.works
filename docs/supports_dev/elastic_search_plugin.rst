@@ -356,11 +356,11 @@ Get operations by account, time and operation type
 
 References:
 
-- https://github.com/bitshares/bitshares-core/issues/358
-- https://github.com/bitshares/bitshares-core/issues/413
-- https://github.com/bitshares/bitshares-core/pull/405
-- https://github.com/bitshares/bitshares-core/pull/379
-- https://github.com/bitshares/bitshares-core/pull/430
+- https://github.com/mvs-org/dna-core/issues/358
+- https://github.com/mvs-org/dna-core/issues/413
+- https://github.com/mvs-org/dna-core/pull/405
+- https://github.com/mvs-org/dna-core/pull/379
+- https://github.com/mvs-org/dna-core/pull/430
 - https://github.com/bitshares/bitshares-ui/issues/68
 
 This is one of the issues that has been requested constantly. It can be easily queried with ES plugin by calling the _search endpoint doing:::
@@ -379,7 +379,7 @@ This is one of the issues that has been requested constantly. It can be easily q
 Filter based on block number or block range
 -----------------------------------------------------
 
-https://github.com/bitshares/bitshares-core/issues/61
+https://github.com/mvs-org/dna-core/issues/61
 
 ::
 
@@ -395,7 +395,7 @@ https://github.com/bitshares/bitshares-core/issues/61
 Get operations by transaction hash
 -------------------------------------------
 
-Refs: https://github.com/bitshares/bitshares-core/pull/373
+Refs: https://github.com/mvs-org/dna-core/pull/373
 
 The ``get_transaction_id`` can be done as::
 
@@ -443,7 +443,7 @@ By the same team of elasticsearch there is a front end named kibana (https://www
 More visitor code = more indexed data = more filters to use
 ----------------------------------------------------------------
 
-Just as an example, it will be easy to index asset of trading operations by extending the visitor code of them. point 3 of https://github.com/bitshares/bitshares-core/issues/358 request trading pair, can be solved by indexing the asset of the trading ops as mentioned.
+Just as an example, it will be easy to index asset of trading operations by extending the visitor code of them. point 3 of https://github.com/mvs-org/dna-core/issues/358 request trading pair, can be solved by indexing the asset of the trading ops as mentioned.
 
 Remember ES already have all the needed info in the ``op`` text field of the ``operation_history`` object. Client can get all the ops of an account, loop throw them and convert the op string into json being able to filter by the asset or any other field needed. There is no need to index everything but it is possible.
 

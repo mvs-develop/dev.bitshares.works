@@ -3050,12 +3050,12 @@ process_hf_868_890
 	 * Prior to hardfork 868, switching a bitasset's shorting asset would not reset its
 	 * feeds. This method will run at the hardfork time, and erase (or nullify) feeds
 	 * that have incorrect backing assets.
-	 * https://github.com/bitshares/bitshares-core/issues/868
+	 * https://github.com/mvs-org/dna-core/issues/868
 	 *
 	 * Prior to hardfork 890, changing a bitasset's feed expiration time would not
 	 * trigger a median feed update. This method will run at the hardfork time, and
 	 * correct all median feed data.
-	 * https://github.com/bitshares/bitshares-core/issues/890
+	 * https://github.com/mvs-org/dna-core/issues/890
 	 *
 	 * @param db the database
 	 * @param skip_check_call_orders true if check_call_orders() should not be called
@@ -3076,7 +3076,7 @@ process_hf_868_890
 		  // Incorrect witness & committee feeds can simply be removed.
 		  // For non-witness-fed and non-committee-fed assets, set incorrect
 		  // feeds to price(), since we can't simply remove them. For more information:
-		  // https://github.com/bitshares/bitshares-core/pull/832#issuecomment-384112633
+		  // https://github.com/mvs-org/dna-core/pull/832#issuecomment-384112633
 		  bool is_witness_or_committee_fed = false;
 		  if ( current_asset.options.flags & ( witness_fed_asset | committee_fed_asset ) )
 			 is_witness_or_committee_fed = true;
@@ -3123,7 +3123,7 @@ process_hf_868_890
 				   ("asset_sym", current_asset.symbol)("asset_id", current_asset.id) );
 		  }
 
-		  // always update the median feed due to https://github.com/bitshares/bitshares-core/issues/890
+		  // always update the median feed due to https://github.com/mvs-org/dna-core/issues/890
 		  db.modify( bitasset_data, [&head_time]( asset_bitasset_data_object &obj ) {
 			 obj.update_median_feeds( head_time );
 		  });
@@ -3165,7 +3165,7 @@ process_hf_935
 	 * Prior to hardfork 935, `check_call_orders` may be unintendedly skipped when
 	 * median price feed has changed. This method will run at the hardfork time, and
 	 * call `check_call_orders` for all markets.
-	 * https://github.com/bitshares/bitshares-core/issues/935
+	 * https://github.com/mvs-org/dna-core/issues/935
 	 *
 	 * @param db the database
 	 */
@@ -4064,7 +4064,7 @@ apply_order
 	   // Question: will a new limit order trigger a black swan event?
 	   //
 	   // 1. as of writing, it's possible due to the call-order-and-limit-order overlapping issue:
-	   //       https://github.com/bitshares/bitshares-core/issues/606 .
+	   //       https://github.com/mvs-org/dna-core/issues/606 .
 	   //    when it happens, a call order can be very big but don't match with the opposite,
 	   //    even when price feed is too far away, further than swan price,
 	   //    if the new limit order is in the same direction with the call orders, it can eat up all the opposite,
@@ -4688,7 +4688,7 @@ check_call_orders
 		   if( after_hardfork_436 && ( bitasset.current_feed.settlement_price > ~call_itr->call_price ) )
 			  return margin_called;
 
-		   // Old rule: margin calls can only buy high https://github.com/bitshares/bitshares-core/issues/606
+		   // Old rule: margin calls can only buy high https://github.com/mvs-org/dna-core/issues/606
 		   if( before_core_hardfork_606 && match_price > ~call_itr->call_price )
 			  return margin_called;
 

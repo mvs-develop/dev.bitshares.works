@@ -18,7 +18,7 @@ Environmental preparation
 Setup Visual Studio 2015 with Update 1
 ----------------------------------------
 
-*Known Issue: `There is a problem compiling with VS 2015 Update 3 <https://github.com/bitshares/bitshares-core/issues/389>`_
+*Known Issue: `There is a problem compiling with VS 2015 Update 3 <https://github.com/mvs-org/dna-core/issues/389>`_
 
 * **Download Visual Studio 2015 Update 1**
 
@@ -189,7 +189,7 @@ DNA-Core
  **Note:**
 
  * Please modify the specific directory according to the actual situation
- * Please replace `<LATEST_RELEASE_TAG>` by the latest release version of bitshares-core. If you need to compile other versions, modify accordingly. Find [DNA Core latest release](https://github.com/bitshares/bitshares-core/releases).
+ * Please replace `<LATEST_RELEASE_TAG>` by the latest release version of bitshares-core. If you need to compile other versions, modify accordingly. Find [DNA Core latest release](https://github.com/mvs-org/dna-core/releases).
 
  **At the end of this, your base directory should look like this**::
 
@@ -290,7 +290,7 @@ Note: This is a translation of the document contributed by Abit More. The origin
 
 Also, referenced the below
 
-- https://github.com/bitshares/bitshares-core/wiki/BUILD_WIN32
+- https://github.com/mvs-org/dna-core/wiki/BUILD_WIN32
 
 
 

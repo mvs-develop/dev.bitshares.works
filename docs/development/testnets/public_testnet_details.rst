@@ -69,7 +69,7 @@ Other References
 
 - **Seed node**: `testnet.bitshares.eu:11010`
 - Chain-id: `39f5e2ede1f8bc1a3a54a7914414e3779e33193f1f5693510e73cb7a87617447`
-- `Genesis Block - for Testnet <https://github.com/bitshares/bitshares-core/blob/testnet/genesis.json>`_
+- `Genesis Block - for Testnet <https://github.com/mvs-org/dna-core/blob/testnet/genesis.json>`_
 
 
 |
