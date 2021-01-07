@@ -31,7 +31,7 @@ Other tasks, such as basic GUI development, etc. can mostly be dealt with indepe
 ***
 
 (ref)
-- http://docs.bitshares.org/bitshares/developers/bsips.html
-- http://docs.bitshares.org/developers/funding.html
+- http://docs.mvsdna.info/bitshares/developers/bsips.html
+- http://docs.mvsdna.info/developers/funding.html
 
 

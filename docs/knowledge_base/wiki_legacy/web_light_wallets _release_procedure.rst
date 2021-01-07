@@ -48,7 +48,7 @@ Light wallets
 - Open https://github.com/mvs-org/bitshares-2/releases, create new release under tag created in previous step
 - Specify release notes, upload dmg/deb/exe wallets created earlie
 
-Bitshares.org wallet and downloads page
+mvsdna.info wallet and downloads page
 ----------------------------------------------
 
 - Go to bitshares.gihub.io repo (`git clone https://github.com/mvs-org/bitshares.github.io`)

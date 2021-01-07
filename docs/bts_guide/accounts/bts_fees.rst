@@ -34,7 +34,7 @@ You can use the memo section to send a message. Also, some transactions require 
 
 - **Fee Schedules**
 
-  - You can find `each Operation Fee List here. <https://wallet.bitshares.org/#/explorer/fees>`_
+  - You can find `each Operation Fee List here. <https://wallet.mvsdna.info/#/explorer/fees>`_
 
 **Example: Fee Schedule View**
 

@@ -57,6 +57,6 @@ What has Changed since DNA 0.9?
   now call block producers (formerly known as *delegates*) witnesses, while the
   additional payed position for workers are called budget items.
 
-.. _industrial performance and scalability: https://bitshares.org/technology/industrial-performance-and-scalability/
-.. _bitAssets 2.0: https://bitshares.org/technology/price-stable-cryptocurrencies/
-.. _a referral program: https://bitshares.org/technology/recurring-and-scheduled-payments/
+.. _industrial performance and scalability: https://mvsdna.info/technology/industrial-performance-and-scalability/
+.. _bitAssets 2.0: https://mvsdna.info/technology/price-stable-cryptocurrencies/
+.. _a referral program: https://mvsdna.info/technology/recurring-and-scheduled-payments/

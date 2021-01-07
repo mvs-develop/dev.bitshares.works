@@ -63,10 +63,10 @@ What is New in DNA 2.0
   approval. Hence, everyone can create a privatized bitAsset to track an
   individual value, such as indices, or binary predictions.
 
-.. _dynamic account permissions: https://bitshares.org/technology/dynamic-account-permissions/
-.. _transferable named accounts: https://bitshares.org/technology/transferable-named-accounts/
-.. _referral program: https://bitshares.org/referral-program/
-.. _recurring and scheduled payments: https://bitshares.org/technology/recurring-and-scheduled-payments/
+.. _dynamic account permissions: https://mvsdna.info/technology/dynamic-account-permissions/
+.. _transferable named accounts: https://mvsdna.info/technology/transferable-named-accounts/
+.. _referral program: https://mvsdna.info/referral-program/
+.. _recurring and scheduled payments: https://mvsdna.info/technology/recurring-and-scheduled-payments/
 
 
 

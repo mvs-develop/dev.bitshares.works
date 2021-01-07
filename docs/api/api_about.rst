@@ -4,7 +4,7 @@
 1.API Guide
 ========================
 
-DNA APIs are available by using Remote Procedure Calls (RPC) and WebSocket Calls & Notifications. All API calls are formatted in JSON and return JSON only. We look into the APIs' every feature. DNA-Core API references locate in the `Doxygen documentation. <https://bitshares.org/doxygen/index.html>`_  Also, you can find the APIs' classes, components, and elements information looking into "Graphene - Namespaces" section.
+DNA APIs are available by using Remote Procedure Calls (RPC) and WebSocket Calls & Notifications. All API calls are formatted in JSON and return JSON only. We look into the APIs' every feature. DNA-Core API references locate in the `Doxygen documentation. <https://mvsdna.info/doxygen/index.html>`_  Also, you can find the APIs' classes, components, and elements information looking into "Graphene - Namespaces" section.
 
 .. contents:: Table of Contents
    :local:

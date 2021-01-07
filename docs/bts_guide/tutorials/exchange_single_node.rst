@@ -31,7 +31,7 @@ The DNA uses the DPOS consensus mechanism to vote for the block forge by the per
 .. Note:: For the exchange, please use the wallet mode (Local Wallet) instead of the account mode  (Cloud Wallet) for the registered account, because the exchange needs to use some advanced functions and there will be problems in the account mode.
 
   - `DNA-UI Release <https://github.com/mvs-org/dna-ui/releases>`_
-  - DNA UI wallet:  https://wallet.bitshares.org
+  - DNA UI wallet:  https://wallet.mvsdna.info
   - `Create an Account Guide <http://dev-doc.readthedocs.io/en/latest/user_guide/create_account.html>`_
 
 
@@ -800,8 +800,8 @@ Therefore, if a transaction broadcast appears but does not appear in the account
 * Graphic tutorial http://jc.btsabc.org/
   * Self-built node tutorial http://btsabc.org/article-477-1.html
   * Get account private key http://btsabc.org/article-761-1.html
-* English Docking Documents http://docs.bitshares.org/integration/exchanges/step-by-step.html
-* English API Documentation http://docs.bitshares.org/api/index.html
+* English Docking Documents http://docs.mvsdna.info/integration/exchanges/step-by-step.html
+* English API Documentation http://docs.mvsdna.info/api/index.html
 
 
 --------------

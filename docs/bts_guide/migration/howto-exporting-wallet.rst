@@ -85,7 +85,7 @@ Export via the console
         :width: 550px
         :align: center
 
-wallet.bitshares.org
+wallet.mvsdna.info
 =========================
 
 The keys of the `web wallet`_ can be exported simply by downloading a backup
@@ -97,4 +97,4 @@ wallet. It can be obtained from the web wallet's preferences:
         :width: 550px
         :align: center
 
-.. _web wallet: http://wallet.bitshares.org
+.. _web wallet: http://wallet.mvsdna.info

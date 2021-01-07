@@ -152,7 +152,7 @@ Database
 
 (/libraries/chain/include/graphene/chain/database.hpp)
 
-- `graphene::chain::database Class Reference (opens doxygen) <https://bitshares.org/doxygen/classgraphene_1_1chain_1_1database.html>`_
+- `graphene::chain::database Class Reference (opens doxygen) <https://mvsdna.info/doxygen/classgraphene_1_1chain_1_1database.html>`_
 
 .. code-block:: cpp
 
