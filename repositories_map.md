@@ -1,4 +1,4 @@
-### how.bitshares.works & dev.bitshares.works
+### dev-doc.readthedocs.io & dev.bitshares.works
 
 To be filled.
 

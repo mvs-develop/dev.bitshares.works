@@ -888,7 +888,7 @@ This section provides instructions for creating committee members' account.
 
 You would need the committee if you want to change some chain settings, like fees.
 
-- Read more about the `Committees roles in how.bitshares.works. <http://how.bitshares.works/en/latest/bts_holders/community_members.html#committees>`_
+- Read more about the `Committees roles in dev-doc.readthedocs.io. <http://dev-doc.readthedocs.io/en/latest/bts_holders/community_members.html#committees>`_
 
 |
 

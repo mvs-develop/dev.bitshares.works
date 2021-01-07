@@ -15,13 +15,13 @@ API**.
 For exchanges we recommend to also read...
 
 * :ref:`CLI Wallet and the Connectivity <cli-wallet-intro>`
-* `What is different DNA <http://how.bitshares.works/en/latest/technology/difference_bitshares.html>`_
+* `What is different DNA <http://dev-doc.readthedocs.io/en/latest/technology/difference_bitshares.html>`_
 * :ref:`often-used-calls`
-* `User Guide : DNA Decentralized Exchange (DEX) <https://how.bitshares.works/en/latest/bts_holders/dex.html>`_
+* `User Guide : DNA Decentralized Exchange (DEX) <https://dev-doc.readthedocs.io/en/latest/bts_holders/dex.html>`_
 
-  1. `Trading <https://how.bitshares.works/en/latest/bts_holders/dex_trading.html>`_
-  2. `Short Selling BitAssets <https://how.bitshares.works/en/latest/bts_holders/dex_short.html>`_
-  3. `MarginCall Mechanics <https://how.bitshares.works/en/latest/bts_holders/dex_margin_mechanics.html>`_
+  1. `Trading <https://dev-doc.readthedocs.io/en/latest/bts_holders/dex_trading.html>`_
+  2. `Short Selling BitAssets <https://dev-doc.readthedocs.io/en/latest/bts_holders/dex_short.html>`_
+  3. `MarginCall Mechanics <https://dev-doc.readthedocs.io/en/latest/bts_holders/dex_margin_mechanics.html>`_
 
 
 ----------

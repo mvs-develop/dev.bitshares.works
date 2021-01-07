@@ -31,7 +31,7 @@ DNA Code and Files
 What's your interests?
 ========================
 
-What would you like to know more about DNA Blockchain? DNA Core is the DNA blockchain implementation and command-line interface. If you are interested to know about DNA blockchain background, history, and features, please visit `how.bitshares.works <http://how.bitshares.works/en/latest/#>`_ and `bitshares.org <https://bitshares.org/>`_ to read more information.
+What would you like to know more about DNA Blockchain? DNA Core is the DNA blockchain implementation and command-line interface. If you are interested to know about DNA blockchain background, history, and features, please visit `how.dna.works <http://dev-doc.readthedocs.io/en/latest/#>`_ to read more information.
 
 If yo do not have a DNA account yet, you can use DNA UI wallet (`wallet.bitshares.org <https://wallet.bitshares.org>`_ ) or download a `Light Client Wallet <https://bitshares.org/download>`_  to create your DNA account. Here is the latest `DNA-UI – Release <https://github.com/mvs-org/dna-ui/releases>`_ information.
 

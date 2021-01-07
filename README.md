@@ -8,7 +8,7 @@ Welcome to the documentation portal for the DNA Blockchain. The content on this 
 
 ----------------
 
-[DNA Documentation website](http://how.bitshares.works/en/master/)
+[DNA Documentation website](http://dev-doc.readthedocs.io/en/master/)
 
 ### Releases
 - [DNA-Core Release](https://github.com/mvs-org/dna-core/releases)

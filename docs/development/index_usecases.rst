@@ -20,11 +20,11 @@ Banks, exchanges and merchants are integrating with the Graphene technology alre
 Basic Knowledge
 =========================
 
-If you have not read `DNA Documentation for all users <http://how.bitshares.works/en/latest>`_ (http://how.bitshares.works/en/latest), we recommend you to read through as your basic knowledge of DNA.
+If you have not read `DNA Documentation for all users <http://dev-doc.readthedocs.io/en/latest>`_ (http://dev-doc.readthedocs.io/en/latest), we recommend you to read through as your basic knowledge of DNA.
 
 We provide here the necessary information to securely operate as a merchant, trader, exchange, or fiat-gateway. The below-listed contents should be known to all of them before starting to integrate.
 
-* `What is different DNA <http://how.bitshares.works/en/latest/technology/difference_bitshares.html>`_ (http://how.bitshares.works/en/latest)
+* `What is different DNA <http://dev-doc.readthedocs.io/en/latest/technology/difference_bitshares.html>`_ (http://dev-doc.readthedocs.io/en/latest)
 
 
 |

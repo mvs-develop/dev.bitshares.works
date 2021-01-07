@@ -63,7 +63,7 @@ Committee Guide
 
 Delegated Proof of Stake
 ============================
-* Read" User Guide `(DPOS) <https://how.bitshares.works/en/latest/technology/dpos.html#>`_
+* Read" User Guide `(DPOS) <https://dev-doc.readthedocs.io/en/latest/technology/dpos.html#>`_
 
 
 Keys

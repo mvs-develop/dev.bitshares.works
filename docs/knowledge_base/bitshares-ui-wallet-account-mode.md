@@ -21,7 +21,7 @@ This document purpose: To explain DNA UI wallet Client and wallet types and answ
   - **Light Client** : Download and install DNA wallet to your computer. **This does not mean that you will have a Local wallet.**
     - [DNA-UI – Latest Release](https://github.com/mvs-org/dna-ui/releases)
   - **Web Client** : Access the network and open the wallet in the browsers.
-    - wallet.bitshares.org https://wallet.bitshares.org
+    - mvsdna.info https://mvsdna.info
 
 ## DNA Wallet Types and Login
 
