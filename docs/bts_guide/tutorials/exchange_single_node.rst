@@ -31,7 +31,7 @@ The DNA uses the DPOS consensus mechanism to vote for the block forge by the per
 .. Note:: For the exchange, please use the wallet mode (Local Wallet) instead of the account mode  (Cloud Wallet) for the registered account, because the exchange needs to use some advanced functions and there will be problems in the account mode.
 
   - `DNA-UI Release <https://github.com/mvs-org/dna-ui/releases>`_
-  - BitShare UI wallet:  https://wallet.bitshares.org
+  - DNA UI wallet:  https://wallet.bitshares.org
   - `Create an Account Guide <http://how.bitshares.works/en/latest/user_guide/create_account.html>`_
 
 

@@ -3,16 +3,16 @@
 This document purpose: To explain DNA UI wallet Client and wallet types and answer some of frequently asked questions about Wallet and Account.  And also, show how to create a Cloud wallet and a Local wallet.
 
 #### Contents:
-- [DNA Client](../knowledge_base/dna-ui-wallet-account-mode.md#bitshares-client)
+- [DNA Client](../knowledge_base/bitshares-ui-wallet-account-mode.md#bitshares-client)
   - Lite Client
   - Web Client
-- [DNA Wallet Types and Login](../knowledge_base/dna-ui-wallet-account-mode.md#bitshares-wallet-types-and-login)
+- [DNA Wallet Types and Login](../knowledge_base/bitshares-ui-wallet-account-mode.md#bitshares-wallet-types-and-login)
   - Cloud Wallet
   - Local Wallet
-- [Frequently asked Questions](../knowledge_base/dna-ui-wallet-account-mode.md#frequently-asked-questions)
-- [Light wallet or Web wallet?](../knowledge_base/dna-ui-wallet-account-mode.md#light-wallet-or-web-wallet)
-- [How to Create an Wallet](../knowledge_base/dna-ui-wallet-account-mode.md#how-to-create-an-wallet) (Cloud wallet)
-- [How to Create an Wallet](../knowledge_base/dna-ui-wallet-account-mode.md#how-to-create-an-wallet---advanced) - Advanced (Local wallet)
+- [Frequently asked Questions](../knowledge_base/bitshares-ui-wallet-account-mode.md#frequently-asked-questions)
+- [Light wallet or Web wallet?](../knowledge_base/bitshares-ui-wallet-account-mode.md#light-wallet-or-web-wallet)
+- [How to Create an Wallet](../knowledge_base/bitshares-ui-wallet-account-mode.md#how-to-create-an-wallet) (Cloud wallet)
+- [How to Create an Wallet](../knowledge_base/bitshares-ui-wallet-account-mode.md#how-to-create-an-wallet---advanced) - Advanced (Local wallet)
 
 ***
 
@@ -26,7 +26,7 @@ This document purpose: To explain DNA UI wallet Client and wallet types and answ
 ## DNA Wallet Types and Login
 
 ### Cloud Wallet
-- BitShare UI wallet will create a **Cloud wallet** as a default wallet. (i.e., [CREATE ACCOUNT])
+- DNA UI wallet will create a **Cloud wallet** as a default wallet. (i.e., [CREATE ACCOUNT])
 - The Cloud wallet allows you to login from any web browser at any time to gain access to your account by using your credentials (username and password).
 - The Cloud wallet only allows for a single account to be accessed at a time.
 - If you have a Cloud wallet, you don't need to worry about a backup. (*You don't have the functionality in the Cloud wallet*).

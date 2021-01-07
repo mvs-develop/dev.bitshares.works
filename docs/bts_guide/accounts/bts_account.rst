@@ -26,7 +26,7 @@ DNA UI Wallet
 
 If you create an account at one of DNA partners, the account name will be available among DNA partners.  So, you will be able to use the DNA account name to communicate (e.g., sending fund) with **other DNA account holders** like sending an email. The advantage of using account name is you, and other people can identify the account holder.
 
-- If you want to see the DNA wallet, go to this link. It opens `BitShare UI wallet <https://wallet.bitshares.org>`_
+- If you want to see the DNA wallet, go to this link. It opens `DNA UI wallet <https://mvsdna.info>`_
 
 
 Identifier
