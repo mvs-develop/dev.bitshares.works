@@ -70,7 +70,7 @@ This document purpose: To explain DNA UI wallet Client and wallet types and answ
 Before we create a wallet, let’s check which wallet you want to have as your DNA wallet. Quick check the below chart.
 
 <p align="center">
-  <img src="/core/imgs/ui-login/DNA-wallet-flow.png" width="620" title="welcome_bitshares">
+  <img src="/core/imgs/ui-login/BitShares-Cashflow2.png" width="620" title="welcome_bitshares">
 </p>
 
 ***

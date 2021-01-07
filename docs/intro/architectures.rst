@@ -107,7 +107,7 @@ DNA Cash Flow
 ===================
 
 
-.. image:: ../../_static/output/DNA-Cashflow2.png
+.. image:: ../../_static/output/BitShares-Cashflow2.png
         :alt: DNA Architecture
         :width: 700px
         :align: center

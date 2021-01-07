@@ -103,7 +103,7 @@ If the assets fee pool is funded, the fees can be payed in the native UIA instea
 DNA Reserve Pool and Cashflow
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: ../../_static/output/DNA-Cashflow2.png
+.. image:: ../../_static/output/BitShares-Cashflow2.png
         :alt: DNA cashflow
         :width: 700px
         :align: center
