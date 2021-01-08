@@ -12,30 +12,30 @@ DNA offers many features, after the dna-core installation, you might think what'
 Know more about how DNA Works
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Check `How DNA Works <http://dev-doc.readthedocs.io/en/latest/index.html>`_ Guide
+- Check `How DNA Works <http://docs.mvsdna.info/en/latest/index.html>`_ Guide
 - Understand :ref:`DNA Accounts <index-bts-accounts>` Features
-- Read about Types of `Asset Tokens <http://dev-doc.readthedocs.io/en/latest/bts_holders/tokens.html>`_
+- Read about Types of `Asset Tokens <http://docs.mvsdna.info/en/latest/bts_holders/tokens.html>`_
 
 
 Create a DNA GUI wallet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Check `DNA-UI Release <https://github.com/mvs-org/dna-ui/releases>`_
-- Read how to create `DNA UI Wallet  <http://dev-doc.readthedocs.io/en/latest/user_guide/create_account.html>`_ steps
-- Understand `DNA Client and Login Mode <http://dev-doc.readthedocs.io/en/latest/user_guide/bitshares-client.html>`_
+- Read how to create `DNA UI Wallet  <http://docs.mvsdna.info/en/latest/user_guide/create_account.html>`_ steps
+- Understand `DNA Client and Login Mode <http://docs.mvsdna.info/en/latest/user_guide/bitshares-client.html>`_
 - Know :ref:`where to find public/private keys (GUI) <where-pub-prv-keys>`
 
 Know how to Backup/Restore (GUI)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Understand `How to Backup and Restore your wallet <http://dev-doc.readthedocs.io/en/latest/user_guide/backup_local_wallet.html>`_
+- Understand `How to Backup and Restore your wallet <http://docs.mvsdna.info/en/latest/user_guide/backup_local_wallet.html>`_
 
 
 Create and launch a CLI wallet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Understand `CLI Client and Wallet -  Connectivity <https://dev-doc.readthedocs.io/en/master/development/apps/cli_intro.html>`_
-- Learn how to `Connecte a CLI wallet <https://dev-doc.readthedocs.io/en/master/development/apps/cli_wallet.html>`_
+- Understand `CLI Client and Wallet -  Connectivity <https://docs.mvsdna.info/en/master/development/apps/cli_intro.html>`_
+- Learn how to `Connecte a CLI wallet <https://docs.mvsdna.info/en/master/development/apps/cli_wallet.html>`_
 - Learn how to :ref:`set up Secure Network and Wallet Configuration <secure-network-configuration>`
 - Know how to :ref:`import a GUI-wallet account into CLI-wallet <howto-import-gui-wallet-account-cli>`
 

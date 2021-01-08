@@ -10,7 +10,7 @@
 **Additional Context (optional):** This is a short term documentation fix for the to-be-fixed-later #1068
 
 ***
-*This document purpose: In dev-doc.readthedocs.io repo doc, it's not mentioning about `creating_example_genesis` directory. So, the below information shows when, how, where to handling the values.*
+*This document purpose: In docs.mvsdna.info repo doc, it's not mentioning about `creating_example_genesis` directory. So, the below information shows when, how, where to handling the values.*
 
 ***
 

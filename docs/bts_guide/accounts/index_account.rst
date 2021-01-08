@@ -25,7 +25,7 @@ In this section, we introduce you some of the important functionalities to get f
 
 -----------------------------
 
-.. note:: DNA Account section in the dev-doc.readthedocs.io and the dev-doc.readthedocs.io are the same contents. For searching purpose, having pages in both sites.
+.. note:: DNA Account section in the docs.mvsdna.info and the docs.mvsdna.info are the same contents. For searching purpose, having pages in both sites.
 
 |
 
