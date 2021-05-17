@@ -8,7 +8,7 @@ authors = ["Corfucinas <53630064+Corfucinas@users.noreply.github.com>"]
 python = "^3.9"
 
 [tool.poetry.dev-dependencies]
-Sphinx = "^3.4.1"
+Sphinx = "^4.0.1"
 wemake-python-styleguide = "^0.14.1"
 nox = "^2020.8.22"
 pre-commit = "^2.9.3"
